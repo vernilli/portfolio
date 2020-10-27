@@ -1,0 +1,8 @@
+.header {
+  &__title {
+    color: $gray-darkest;
+    font-family: $font-main;
+    font-size: $h1-size;
+    font-weight: 500;
+  }
+}
