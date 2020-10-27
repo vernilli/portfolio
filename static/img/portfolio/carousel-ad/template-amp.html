@@ -1,0 +1,280 @@
+<script src="sdkBridge.js"></script>
+<script src="sdkResourcesValidator.js"></script>
+<script src="mraid.js"></script>
+<!doctype html>
+<html ⚡>
+<head>
+  <meta charset="utf-8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <link rel="canonical" href="https://ampbyexample.com/components/amp-carousel/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Carousel Ad</title>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-custom>
+  body{
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #FFFFFF;
+  -webkit-user-select: none;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  }
+  #ad-container{
+  margin:0px;
+  padding:0px;
+  background-color:#FFFFFF;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  }
+  .container{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #EEEEEE;
+  }
+  .top-bar{
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  }
+  .btn-close{
+  float: right;
+  padding: 10px;
+  opacity: .4;
+  }
+  .wrap-action{
+  position: absolute;bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 7px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0px 1px 7px rgba(0,0,0,.3);
+  }
+  .icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  }
+  .icon amp-img{
+  -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+  box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+  }
+  .icon amp-img img{
+  width: 100%;
+  height: 100%;
+  }
+  .text{
+  position: absolute;
+  }
+  .text h2{
+  margin: 0;
+  color: #000000;
+  font-weight: 400;
+  }
+  .description{
+  position: absolute;
+  bottom: 20%;
+  top: 20%;
+  }
+  .description p{
+  margin: 0;
+  color: #444;
+  font-size: 14px;
+  }
+  .action-button{
+  outline: 0 !important;
+  cursor: pointer;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #ED6825;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border: 0;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  }
+  .action-button:active{
+  outline: 0 !important; 
+  background-color: #00609D !important;
+  }
+  .amp-carousel-slide{
+  text-align: center;
+  border: solid 2px #FFFFFF;
+  }
+  .amp-carousel-slide:last-child{
+  margin-right: 3% !important;
+  }
+  .amp-carousel-button-prev{
+  left: 0;
+  }
+  .amp-carousel-button-next{
+  right: 0;
+  }
+  @media (orientation: landscape) {
+    .amp-carousel-slide{
+      margin-left: 2% !important;
+    }
+    .icon{
+      padding: 2%;
+    }
+    .icon amp-img{
+      width: 50px !important;
+      height: 50px !important;
+    }
+    .wrap-action{
+      height: 17.5%;
+    }
+    .text{
+      left: 10%;
+      padding: 2%;
+    }
+    .container{
+      padding: 10% 0;
+    }
+    .action-button{
+      width: 20%;
+      bottom: 20%;
+      top: 20%;
+      right: 3%;
+      line-height: 20px;
+    }
+    .description{
+      right: 30%;
+      left: 3%;
+    }
+    .amp-carousel-slide amp-img{
+      width: 230px !important;
+      height: 230px !important;
+    }
+  }
+  @media (orientation: portrait) {
+    .amp-carousel-slide{
+      margin-left: 3% !important;
+    }
+    .icon{
+      padding: 3%;
+      padding-top: 5%;
+    }
+    .icon amp-img{
+      width: 75px !important;
+      height: 75px !important;
+    }
+    .wrap-action{
+      height: 20%;
+    }
+    .text{
+      left: 25%;
+      padding: 5% 2%;
+    }
+    .text h2{
+      width: 75%;
+    }
+    .container{
+      padding: 40% 0;
+    }
+    .action-button{
+      width: 30%;
+      bottom: 25%;
+      top: 25%;
+      right: 5%;
+      line-height: 50px;
+    }
+    .description{
+      right: 50%;
+      left: 5%;
+    }
+    .amp-carousel-slide amp-img{
+      width: 300px !important;
+      height: 300px !important;
+    }
+  }
+  </style>
+  </head>
+  <body>
+  <div id="adContainer">
+    <div class="top-bar">
+    <div class="btn-close">
+      <amp-img src="https://25352h.ha.azioncdn.net/icons/close_black.png" width="25" height="25"></amp-img>
+    </div>
+    <div class="icon">
+      <amp-img src="https://25352h.ha.azioncdn.net/citroen/citroen-icon.jpg" width="50" height="50"></amp-img>
+    </div>
+    <div class="text">
+      <h2>CITROËN Aircross 2017</h2>
+    </div>
+    </div>
+    <div class="container">
+    <div style="width: 100%; margin: 0 auto;">
+      <amp-carousel id="carousel_portrait" height="310" layout="fixed-height" type="carousel">
+      <a href="ubee://inlocomedia.com/clicks?key=1">
+        <amp-img src="https://25352h.ha.azioncdn.net/citroen/citroen-7.jpg" width="300" height="300"></amp-img>
+      </a>
+      <a href="ubee://inlocomedia.com/clicks?key=1">
+        <amp-img src="https://25352h.ha.azioncdn.net/citroen/citroen-2.jpg" width="300" height="300"></amp-img>
+      </a>
+      <a href="ubee://inlocomedia.com/clicks?key=1">
+        <amp-img src="https://25352h.ha.azioncdn.net/citroen/citroen-3.jpg" width="300" height="300"></amp-img>
+      </a>
+      <a href="ubee://inlocomedia.com/clicks?key=1">
+        <amp-img src="https://25352h.ha.azioncdn.net/citroen/citroen-4.jpg" width="300" height="300"></amp-img>
+      </a>
+      <a href="ubee://inlocomedia.com/clicks?key=1">
+        <amp-img src="https://25352h.ha.azioncdn.net/citroen/citroen-6.jpg" width="300" height="300"></amp-img>
+      </a>
+      </amp-carousel>
+    </div>
+    <div class="wrap-action">
+      <div class="description">
+      <p>Viva dias mais felizes. <br>Na Le Monde, você tem 3 vezes mais motivos para sorrir.</p>
+      </div>
+      <a id="btn_cta" class="action-button" href="ubee://inlocomedia.com/clicks?key=1">Saiba Mais</a>
+    </div>
+    </div>
+  </div>
+  <script>
+  	function mraidIsReady(){
+      mraid.removeEventListener("ready", mraidIsReady);
+      showMyAd();
+    }
+
+    function showMyAd(){
+      mraid.useCustomClose(true);
+    }
+    
+    function doReadyCheck(){
+      if (mraid.getState() == 'loading') {
+        mraid.addEventListener("ready", mraidIsReady);
+      }
+      else {
+        showMyAd();
+      }
+    }
+    doReadyCheck();
+  </script>
+  </body>
+</html>

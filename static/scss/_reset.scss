@@ -1,0 +1,36 @@
+@import './variables_mixins';
+// Resets
+* {
+  color: $gray-darkest;
+  font-family: $font-main;
+}
+
+.body-base {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  @include transition(all 0.3 ease-in-out);
+
+  &:hover {
+    color: $black;
+  }
+}
+
+h1 { font-size: $h1-size; }
+h2 { font-size: $h2-size; }
+h3 { font-size: $h3-size; }
+h4 { font-size: $h4-size; }
+h5 { font-size: $h5-size; }
+h6 { font-size: $h6-size; }
+
+p {}
+
+strong { 
+  color: $black;
+  font-weight: 700;
+}
