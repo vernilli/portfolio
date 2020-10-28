@@ -1,4 +1,9 @@
 .header {
+
+  @include media-breakpoint-down(sm) {
+    box-shadow: 0 0 6px 0 rgba(71, 71, 71, 0.2);
+  }
+
   &__title {
     color: $gray-darkest;
     font-family: $font-main;
