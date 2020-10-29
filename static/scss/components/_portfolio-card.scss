@@ -1,0 +1,26 @@
+.portfolio{
+  &__showcase {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+
+  &__card {
+    background-color: $gray;
+    border-radius: 5px;
+    text-align: left;
+
+    * { @include transition(all 0.2s); }
+
+    &__title {
+      color: rgba($color: $white, $alpha: 0.85);
+      font-size: $h4-size;
+      width: 80%;
+    }
+
+    &__desc {
+      color: rgba($color: $white, $alpha: 0.85);
+      width: 70%;
+    }
+  }
+}

@@ -40,6 +40,8 @@ h6 { font-size: $h6-size; }
   h5 { font-size: $h5-size-mobile; }
 }
 
+.container { max-width: 960px; }
+
 p {
   color: $gray;
   font-family: $font-paragraph;
