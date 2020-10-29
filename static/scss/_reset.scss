@@ -5,7 +5,7 @@
   margin: 0;
   border: 0;
 
-  color: $gray-darkest;
+  color: $vv-gray-darkest;
   font-family: $font-main;
 }
 
@@ -17,11 +17,11 @@
 
 a {
   @include transition(all 0.2 ease-in-out);
-  color: $gray-dark;
+  color: $vv-gray-dark;
   text-decoration: none;
 
   &:hover {
-    color: $black;
+    color: $vv-black;
   }
 }
 
@@ -43,15 +43,31 @@ h6 { font-size: $h6-size; }
 .container { max-width: 960px; }
 
 p {
-  color: $gray;
+  color: $vv-gray-dark;
   font-family: $font-paragraph;
-  font-size: $h6-size;
+  font-size: $p-size;
+  
+  strong { 
+    color: $vv-black;
+    // font-weight: 700;
+  }
+
+  a {
+    @include transition(all 0.2s);
+    border-bottom: solid 1px $vv-gray-dark;
+    color: $vv-gray-dark;
+
+    &:hover {
+      border-bottom: solid 1px $vv-gray-darkest;
+      color: $vv-gray-darkest;
+
+      strong {
+        color: $vv-gray-darkest;
+      }
+    }
+  }
 }
 
-strong { 
-  color: $black;
-  font-weight: 700;
-}
 
 .cursor-default {
   cursor: default !important;

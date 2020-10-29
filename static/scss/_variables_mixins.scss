@@ -1,22 +1,22 @@
 // Gray Scale
-$white:           #ffffff;
-$gray-lightest:   #dddddd;
-$gray-lighter-2:  #aaaaaa;
-$gray-lighter:    #999999;
-$gray:            #888888;
-$gray-dark:       #666666;
-$gray-darker:     #333333;
-$gray-darkest:    #161616;
-$black:           #000000;
+$vv-white:           #ffffff;
+$vv-gray-lightest:   #dddddd;
+$vv-gray-lighter-2:  #aaaaaa;
+$vv-gray-lighter:    #999999;
+$vv-gray:            #888888;
+$vv-gray-dark:       #666666;
+$vv-gray-darker:     #333333;
+$vv-gray-darkest:    #161616;
+$vv-black:           #000000;
 
 // Main colors
-$green-light:     #90CDBE;
-$green-dark:      #19988F;
-$green-darker:    #142628;
-$blue-dark:       #005361;
-$blue-darker:     #003A61;
-$wine:            #6B2629;
-$wine-dark:       #610E00;
+$vv-green-light:     #007d92;
+$vv-green:           #005361;
+$vv-green-dark:      #00313a;
+// $vv-blue-dark:       #005361;
+// $vv-blue-darker:     #003A61;
+// $vv-wine:            #6B2629;
+// $vv-wine-dark:       #610E00;
 
 // Font families
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900|Montserrat:100,300,400,700,900|Lora:100,300,400,700,900|Merriweather:100,300,400,700,900&font-display=swap');
@@ -26,24 +26,49 @@ $font-paragraph: 'Lora', serif;
 // Font sizes
 // Major third scale. Reference at https://type-scale.com/
 $base-font-size: 16px; // Don't use directly
-$h6-size: $base-font-size;
-$h5-size: $h6-size * 1.250;
-$h4-size: $h6-size * 1.563;
-$h3-size: $h6-size * 1.953;
-$h2-size: $h6-size * 2.441;
-$h1-size: $h6-size * 3.052;
-
-$h5-size-mobile: $h6-size * 1.200;
-$h4-size-mobile: $h6-size * 1.440;
-$h3-size-mobile: $h6-size * 1.728;
-$h2-size-mobile: $h6-size * 2.074;
-$h1-size-mobile: $h6-size * 2.488;
+$p-size:  $base-font-size;
+$h6-size: $base-font-size * 1.200;
+$h5-size: $base-font-size * 1.250;
+$h4-size: $base-font-size * 1.563;
+$h3-size: $base-font-size * 1.953;
+$h2-size: $base-font-size * 2.441;
+$h1-size: $base-font-size * 3.052;
+// Minor third scale. Reference at https://type-scale.com/
+$h6-size-mobile: $base-font-size * 1.100;
+$h5-size-mobile: $base-font-size * 1.200;
+$h4-size-mobile: $base-font-size * 1.440;
+$h3-size-mobile: $base-font-size * 1.728;
+$h2-size-mobile: $base-font-size * 2.074;
+$h1-size-mobile: $base-font-size * 2.488;
 
 // Images
 $img-ace-english-malta: url('../images/portfolio/site-ace-mockup.png');
 $img-time-place: url('../images/portfolio/time-to-place-mockup.png');
 $img-carousel: url('../images/portfolio/carousel-ad-mockup.png');
 $img-inloco: url('../images/portfolio/site-inlocomedia-mockup.png');
+
+.bg{
+  &--green,
+  &--green::before {
+    background-color: $vv-green;
+  }
+
+  &--green-light,
+  &--green-light::before {
+    background-color: $vv-green-light;
+  }
+  &--green-dark,
+  &--green-dark::before {
+    background-color: $vv-green-dark;
+  }
+}
+
+// Grid scale
+$grid-xm:  4px;
+$grid-sm:  8px;
+$grid-md: 16px;
+$grid-lg: 24px;
+$grid-xl: 32px;
 
 // Mixins
 @mixin transition($str){

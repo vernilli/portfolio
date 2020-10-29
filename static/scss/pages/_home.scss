@@ -1,15 +1,9 @@
-.gallery {
-  &__item {
-    &__title {
-      
-    }
+.home {
+  &__title {
 
-    &__desc {
-      
-    }
+  }
 
-    &__img {
-      
-    }
+  &__greetings {
+    font-size: $h6-size;
   }
 }

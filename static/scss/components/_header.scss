@@ -10,7 +10,7 @@
   }
 
   &__title {
-    color: $gray-darkest;
+    color: $vv-gray-darkest;
     font-family: $font-main;
     font-size: $h2-size;
     font-weight: 500;
@@ -20,7 +20,7 @@
     }
 
     a {
-      color: $gray-darkest;
+      color: $vv-gray-darkest;
       text-decoration: none;
     }
   }
@@ -28,14 +28,14 @@
   &__navigation {
     a {
       @include transition(all 0.2s);
-      color: $gray-lighter;
+      color: $vv-gray-lighter;
       position: relative;
       text-decoration: none;
 
       &::before {
         @include transition(all 0.2s);
         content: '';
-        background-color: $gray-darkest;
+        background-color: $vv-gray-darkest;
         border-radius: 100px;
         height: 2px;
         width: 0;
@@ -52,7 +52,7 @@
 
       &:hover,
       &.nuxt-link-exact-active {
-        color: $gray-darkest;
+        color: $vv-gray-darkest;
 
         &::before {
           width: 100%;
@@ -66,7 +66,7 @@
 
     &::after {
       content: '';
-      background-color: rgba($color: $black, $alpha: 0.5);
+      background-color: rgba($color: $vv-black, $alpha: 0.5);
       position: fixed;
       top: 0;
       bottom: 0;
