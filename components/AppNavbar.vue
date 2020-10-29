@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'header--burger-opened': isBurgerOpen}">
+  <div :class="{'header--burger-opened': burgerOpen}">
     <header class="header bg-white w-100">
       <div class="container d-flex align-items-center justify-content-between pt-2 pt-md-4 pb-2 pb-md-4">
         <div class="header__title">
@@ -21,7 +21,7 @@
           id="burger-icon"
           class="d-block d-md-none"
           @click="toggleBurger"
-          :class="{'open': isBurgerOpen}"
+          :class="{'open': burgerOpen}"
         >
           <span></span>
           <span></span>
@@ -31,7 +31,7 @@
       </div>
       
       <transition name="fade">
-        <nav v-if="isBurgerOpen" class="header__navigation container d-flex d-lg-none flex-column pt-3 pb-4">
+        <nav v-if="burgerOpen" class="header__navigation container d-flex d-lg-none flex-column pt-3 pb-4">
           <nuxt-link to="/" class="d-inline mb-4">
             {{ text.projects.en }}
           </nuxt-link>
@@ -51,6 +51,12 @@ export default {
   props: {
     siteLanguage: String,
   },
+  watch: {
+    $route () {
+      // console.log(this.$route)
+      this.burgerOpen = false
+    },
+  },
   data() {
     return {
       title: "Victor Vernilli",
@@ -67,24 +73,11 @@ export default {
       burgerOpen: false,
     }
   },
-  computed: {
-    isBurgerOpen: function () {
-      return this.burgerOpen
-    },
-  },
   methods: {
     toggleBurger: function () {
       this.burgerOpen = !this.burgerOpen
     },
-    hideBurger: function () {
-      this.burgerOpen = false
-    },
   },
-  watch: {
-    $route () {
-      console.log(this.$route)
-      this.hideBurger
-    },
-  },
+  
 }
 </script>
