@@ -2,11 +2,14 @@
   <div class="container mt-5 pt-5">
     <h1 class="text-center">{{ position.en }}</h1>
     <p>{{ greetings.en }}</p>
+
+    <portfolio-showcase />
   </div>
 </template>
 
 <script>
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import PortfolioShowcase from '~/components/PortfolioShowcase.vue'
 
 export default {
   // layout: 'basic',
@@ -14,7 +17,7 @@ export default {
     siteLanguage: String,
   },
   components: {
-
+    PortfolioShowcase,
   },
   data() {
     return {
