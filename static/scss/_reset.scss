@@ -1,6 +1,10 @@
 @import './variables_mixins';
 // Resets
 * {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
   color: $gray-darkest;
   font-family: $font-main;
 }
@@ -28,7 +32,19 @@ h4 { font-size: $h4-size; }
 h5 { font-size: $h5-size; }
 h6 { font-size: $h6-size; }
 
-p {}
+@include media-breakpoint-down(sm) {
+  h1 { font-size: $h1-size-mobile; }
+  h2 { font-size: $h2-size-mobile; }
+  h3 { font-size: $h3-size-mobile; }
+  h4 { font-size: $h4-size-mobile; }
+  h5 { font-size: $h5-size-mobile; }
+}
+
+p {
+  color: $gray;
+  font-family: $font-paragraph;
+  font-size: $h6-size;
+}
 
 strong { 
   color: $black;
