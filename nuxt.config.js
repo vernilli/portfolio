@@ -1,4 +1,4 @@
-import colors from 'vuetify/es5/util/colors'
+// import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
@@ -13,11 +13,15 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['~/static/scss/main.scss'],
+  css: [
+    '~/static/scss/main.scss'
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -30,7 +34,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    // '@nuxtjs/vuetify',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -39,7 +43,31 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-svg-loader',
+    [
+      'nuxt-mq',
+      {
+        defaultBreakpoint: 'lg',
+        breakpoints: {
+          xs: 0,
+          sm: 576,
+          md: 768,
+          lg: 992,
+          xl: Infinity
+        }
+      }
+    ],
   ],
+
+  svgLoader: {
+    svgoConfig: {
+      plugins: [
+        { removeDoctype: true },
+        { removeComments: true },
+        { prefixIds: false }
+      ]
+    }
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
@@ -48,24 +76,36 @@ export default {
   content: {},
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
-  vuetify: {
-    customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: true,
-      themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-        },
-      },
-    },
-  },
+  // vuetify: {
+  //   customVariables: ['~/assets/variables.scss'],
+  //   theme: {
+  //     dark: true,
+  //     themes: {
+  //       dark: {
+  //         primary: colors.blue.darken2,
+  //         accent: colors.grey.darken3,
+  //         secondary: colors.amber.darken3,
+  //         info: colors.teal.lighten1,
+  //         warning: colors.amber.base,
+  //         error: colors.deepOrange.accent4,
+  //         success: colors.green.accent3,
+  //       },
+  //     },
+  //   },
+  // },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    extend(config, { isDev, isClient }) {
+      // Run ESLint on save
+      if (isDev && isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)||(.svg$)/
+        })
+      }
+    }
+  },
 }

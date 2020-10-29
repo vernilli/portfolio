@@ -12,9 +12,9 @@
 }
 
 a {
-  color: $gray;
+  @include transition(all 0.2 ease-in-out);
+  color: $gray-dark;
   text-decoration: none;
-  @include transition(all 0.3 ease-in-out);
 
   &:hover {
     color: $black;
@@ -33,4 +33,8 @@ p {}
 strong { 
   color: $black;
   font-weight: 700;
+}
+
+.cursor-default {
+  cursor: default !important;
 }
