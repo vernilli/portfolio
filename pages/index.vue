@@ -1,7 +1,13 @@
 <template>
   <div class="container mt-5 pt-5">
-    <h1 class="text-center">{{ position.en }}</h1>
-    <p>{{ greetings.en }}</p>
+    <h1 class="home__title text-center mt-4 mt-md-5 mb-4 mb-md-5">
+      {{ position.en }}
+    </h1>
+
+    <p 
+      v-html="greetings.en" 
+      class="home__greetings"
+    />
 
     <portfolio-showcase />
   </div>

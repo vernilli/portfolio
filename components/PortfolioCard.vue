@@ -1,5 +1,8 @@
 <template>
-  <nuxt-link :to="projectUrl" class="portfolio__card d-block p-4">
+  <nuxt-link 
+    :to="projectUrl" 
+    class="portfolio__card d-flex flex-column p-4 pb-5"
+  >
     <h2 class="portfolio__card__title">
       {{ projectTitle }}
     </h2>
