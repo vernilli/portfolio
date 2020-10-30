@@ -7,6 +7,13 @@
 
   color: $vv-gray-darkest;
   font-family: $font-main;
+
+  font-display: swap !important;
+  text-rendering: geometricPrecision !important;
+  -webkit-text-rendering: geometricPrecision !important;
+  font-feature-settings: "kern" 1 !important;
+  -webkit-font-feature-settings: "kern" 1 !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
 }
 
 .body-base {
@@ -40,22 +47,22 @@ h6 { font-size: $h6-size; }
   h5 { font-size: $h5-size-mobile; }
 }
 
-.container { max-width: 960px; }
-
 p {
   color: $vv-gray-dark;
   font-family: $font-paragraph;
   font-size: $p-size;
   
   strong { 
-    color: $vv-black;
-    // font-weight: 700;
+    color: $vv-gray-darkest;
+    font-family: $font-paragraph;
+    font-weight: 600;
   }
 
   a {
     @include transition(all 0.2s);
     border-bottom: solid 1px $vv-gray-dark;
     color: $vv-gray-dark;
+    font-family: $font-paragraph;
 
     &:hover {
       border-bottom: solid 1px $vv-gray-darkest;
@@ -63,11 +70,11 @@ p {
 
       strong {
         color: $vv-gray-darkest;
+        font-family: $font-paragraph;
       }
     }
   }
 }
-
 
 .cursor-default {
   cursor: default !important;

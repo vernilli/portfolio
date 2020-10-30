@@ -1,9 +1,11 @@
 .home {
   &__title {
-
+    font-weight: 600;
   }
 
   &__greetings {
-    font-size: $h6-size;
+    p {
+      font-size: $h6-size;
+    }
   }
 }

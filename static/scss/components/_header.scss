@@ -28,9 +28,12 @@
   &__navigation {
     a {
       @include transition(all 0.2s);
-      color: $vv-gray-lighter;
+      color: $vv-gray;
+      font-family: $font-main;
+      font-weight: 600;
       position: relative;
       text-decoration: none;
+      text-align: center;
 
       &::before {
         @include transition(all 0.2s);

@@ -1,0 +1,17 @@
+.container { max-width: 960px; }
+
+.bg{
+  &--green,
+  &--green::before {
+    background-color: $vv-green;
+  }
+
+  &--green-light,
+  &--green-light::before {
+    background-color: $vv-green-light;
+  }
+  &--green-dark,
+  &--green-dark::before {
+    background-color: $vv-green-dark;
+  }
+}
