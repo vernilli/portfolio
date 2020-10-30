@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-navbar site-language="en" />
+    <app-navbar />
     <nuxt />
   </div>
 </template>

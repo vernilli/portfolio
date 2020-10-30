@@ -27,7 +27,7 @@
     <portfolio-card
       :project-title="projects.ace.title"
       :project-desc="projects.ace.desc"
-      :project-url="projects.ace.url"
+      project-url="/pt-br"
       :class="projects.ace.background"
     />
   </div>
@@ -54,7 +54,7 @@ export default {
           background: 'bg--green-dark'
         },
         timeToPlace: {
-          title: 'Time to place',
+          title: 'Time to Place',
           desc: 'How is it possible to improve the user experience in mobile ads using context elements?',
           url: '/about',
           background: 'bg--green-light'
@@ -66,7 +66,7 @@ export default {
           background: 'bg--green'
         },
         inloco: {
-          title: 'in loco Media',
+          title: 'In Loco Media',
           desc: 'Redesign the In Loco Media’s site - greatest mobile advertising platform in Brazil',
           url: '/about',
           background: 'bg--green-light'
