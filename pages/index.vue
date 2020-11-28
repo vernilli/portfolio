@@ -12,7 +12,6 @@
 </template>
 
 <script>
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 import PortfolioShowcase from '~/components/PortfolioShowcase.vue'
 
 export default {
