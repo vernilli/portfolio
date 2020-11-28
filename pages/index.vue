@@ -23,6 +23,16 @@ export default {
   components: {
     PortfolioShowcase,
   },
+  head: {
+    title: 'Home page',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Home page description'
+      }
+    ],
+  },
   data() {
     return {
       position: {

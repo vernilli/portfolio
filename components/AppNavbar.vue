@@ -118,6 +118,11 @@ export default {
       this.burgerOpen = !this.burgerOpen
     },
   },
+  mounted() {
+    window.addEventListener('resize', function(){
+      this.burgerOpen = false
+    })
+  },
   
 }
 </script>

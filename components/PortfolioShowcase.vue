@@ -4,6 +4,8 @@
       :project-title="projects.ace.title"
       :project-desc="projects.ace.desc"
       :project-url="projects.ace.url"
+      :projectImgUrl="projects.ace.imageUrl"
+      :projectImgAlt="projects.ace.imageAlt"
       :class="projects.ace.background"
     />
     <portfolio-card
@@ -24,12 +26,12 @@
       :project-url="projects.inloco.url"
       :class="projects.inloco.background"
     />
-    <portfolio-card
+    <!-- <portfolio-card
       :project-title="projects.ace.title"
       :project-desc="projects.ace.desc"
       project-url="/pt-br"
       :class="projects.ace.background"
-    />
+    /> -->
   </div>
 </template>
 
@@ -51,6 +53,8 @@ export default {
           title: 'ACE English Malta',
           desc: 'Redesign the ACE English Malta’s site, English School based in Malta',
           url: '/about',
+          imageUrl: 'img/portfolio/site-ace-mockup.png',
+          imageAlt: 'Mockup of ACE English Malta website redesign',
           background: 'bg--green-dark'
         },
         timeToPlace: {
