@@ -56,36 +56,3 @@ $grid-sm:  8px;
 $grid-md: 16px;
 $grid-lg: 24px;
 $grid-xl: 32px;
-
-// Mixins
-@mixin transition($str){
-  -webkit-transition: $str;
-  -moz-transition: $str;
-  -ms-transition: $str;
-  -o-transition: $str;
-  transition: $str;
-}
-
-@mixin transform($str){
-  -webkit-transform: $str;
-  -moz-transform: $str;
-  -ms-transform: $str;
-  -o-transform: $str;
-  transform: $str;
-}
-
-@mixin filter($str) {
-  -webkit-filter: $str;
-  -moz-filter: $str;
-  -ms-filter: $str;
-  -o-filter: $str;
-  filter: $str;
-}
-
-@mixin backdrop-filter($str) {
-  -webkit-backdrop-filter: $str;
-  -moz-backdrop-filter: $str;
-  -ms-backdrop-filter: $str;
-  -o-backdrop-filter: $str;
-  backdrop-filter: $str;
-}

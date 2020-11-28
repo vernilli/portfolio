@@ -2,7 +2,8 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Styles
-@import 'variables_mixins';
+@import 'mixins';
+@import 'variables';
 @import 'reset';
 @import 'animations';
 @import 'basic';
