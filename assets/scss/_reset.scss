@@ -50,6 +50,9 @@ p {
   color: $vv-gray-dark;
   font-family: $font-paragraph;
   font-size: $p-size;
+  line-height: 2;
+  max-width: 70ch;
+  margin-bottom: $grid-xl;
   
   strong { 
     color: $vv-gray-darkest;

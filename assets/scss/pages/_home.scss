@@ -5,7 +5,8 @@
 
   &__greetings {
     p {
-      font-size: $h6-size;
+      font-size: $p-size;
+      line-height: 1.55;
     }
   }
 }
