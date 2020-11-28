@@ -1,0 +1,66 @@
+// Gray Scale
+$vv-white:           #ffffff;
+$vv-gray-lightest:   #dddddd;
+$vv-gray-lighter-2:  #aaaaaa;
+$vv-gray-lighter:    #999999;
+$vv-gray:            #888888;
+$vv-gray-dark:       #666666;
+$vv-gray-darker:     #333333;
+$vv-gray-darkest:    #161616;
+$vv-black:           #000000;
+
+// Main colors
+$vv-green-light:     #007d92;
+$vv-green:           #005361;
+$vv-green-dark:      #00313a;
+// $vv-blue-dark:       #005361;
+// $vv-blue-darker:     #003A61;
+// $vv-wine:            #6B2629;
+// $vv-wine-dark:       #610E00;
+
+// Font families
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,900&font-display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora:100,300,400,700,900&font-display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&font-display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Merriweather:100,300,400,700,900&font-display=swap');
+$font-main:      'Montserrat', sans-serif;
+$font-paragraph: 'Lora', serif;
+
+// Font sizes
+// Major third scale. Reference at https://type-scale.com/
+// Minor third scale. Reference at https://type-scale.com/
+$base-font-size: 16px; // Don't use directly
+
+$span-size:  14px;
+$label-size: 14px;
+$p-size:     20px;
+$h6-size:    18px;
+$h5-size:    20px;
+$h4-size:    24px;
+$h3-size:    32px;
+$h2-size:    40px;
+$h1-size:    48px;
+
+$span-size-mobile:  12px;
+$label-size-mobile: 12px;
+$p-size-mobile:     18px;
+$h6-size-mobile:    16px;
+$h5-size-mobile:    18px;
+$h4-size-mobile:    22px;
+$h3-size-mobile:    28px;
+$h2-size-mobile:    32px;
+$h1-size-mobile:    40px;
+
+// Images
+$img-ace-english-malta: url('../images/portfolio/site-ace-mockup.png');
+$img-time-place: url('../images/portfolio/time-to-place-mockup.png');
+$img-carousel: url('../images/portfolio/carousel-ad-mockup.png');
+$img-inloco: url('../images/portfolio/site-inlocomedia-mockup.png');
+
+// Grid scale
+$grid-xm:  4px;
+$grid-sm:  8px;
+$grid-md: 16px;
+$grid-lg: 24px;
+$grid-xl: 32px;
+$grid-xx: 48px;

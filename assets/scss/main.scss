@@ -1,12 +1,15 @@
 // Bootstrap
-@import '../../node_modules/bootstrap/scss/bootstrap-grid';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Styles
-@import 'variables_mixins';
+@import 'mixins';
+@import 'variables';
 @import 'reset';
 @import 'animations';
+@import 'basic';
 
 @import 'components/burger-icon';
 @import 'components/header';
+@import 'components/portfolio-card';
 
 @import 'pages/home';

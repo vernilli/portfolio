@@ -1,0 +1,12 @@
+.home {
+  &__title {
+    font-weight: 600;
+  }
+
+  &__greetings {
+    p {
+      font-size: $p-size;
+      line-height: 1.55;
+    }
+  }
+}

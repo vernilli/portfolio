@@ -1,0 +1,29 @@
+// Animations
+// Page transition
+.page-enter-active,
+.page-leave-active {
+  @include transition(opacity 0.25s);
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  @include transition(opacity 0.25s);
+}
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;
+}
+
+// Fade transition
+.fade-enter-active,
+.fade-leave-active {
+  @include transition(opacity 0.25s);
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

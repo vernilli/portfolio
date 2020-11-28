@@ -14,13 +14,14 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/favicon/favicon.ico', sizes: '48x48' },
     ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '~/static/scss/main.scss'
+    '~/assets/scss/main.scss'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
