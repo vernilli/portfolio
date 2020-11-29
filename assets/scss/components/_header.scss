@@ -6,7 +6,7 @@
   z-index: $zindex-sticky;
 
   @include media-breakpoint-down(sm) {
-    box-shadow: 0 0 6px 0 rgba(71, 71, 71, 0.2);
+    box-shadow: 0 0 6px 0 rgba($color: $vv-gray-darker, $alpha: 0.2);
   }
 
   * {
