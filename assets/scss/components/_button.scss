@@ -1,0 +1,67 @@
+.vv-button {
+  border: solid 2px $vv-black;
+  border-radius: 5px;
+  color: $vv-black;
+  font-weight: 600;
+  position: relative;
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:hover {
+    text-decoration: none;
+  }
+
+  &::before {
+    @include transition(all 0.2s);
+    content: '';
+    background-color: rgba($color: $vv-black, $alpha: 0.1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &.sm {
+    font-size: $span-size;
+    padding: $grid-xs $grid-md;
+
+    svg {
+      width: 20px;
+      height: 20px;
+
+      * { stroke-width: $icon-thin; }
+    }
+  }
+
+  &.md {
+    font-size: $label-size;
+    padding: $grid-sm $grid-lg;
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      * { stroke-width: $icon-regular; }
+    }
+  }
+
+  &.lg {
+    font-size: $h6-size;
+    padding: $grid-md $grid-xl;
+
+    svg {
+      width: 28px;
+      height: 28px;
+
+      * { stroke-width: $icon-medium; }
+    }
+  }
+}

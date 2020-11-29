@@ -33,7 +33,7 @@ $font-paragraph: 'Lora', serif;
 $base-font-size: 16px; // Don't use directly
 
 $span-size:  14px;
-$label-size: 14px;
+$label-size: 16px;
 $p-size:     20px;
 $h6-size:    18px;
 $h5-size:    20px;
@@ -43,7 +43,7 @@ $h2-size:    40px;
 $h1-size:    48px;
 
 $span-size-mobile:  12px;
-$label-size-mobile: 12px;
+$label-size-mobile: 14px;
 $p-size-mobile:     18px;
 $h6-size-mobile:    16px;
 $h5-size-mobile:    18px;
@@ -53,9 +53,15 @@ $h2-size-mobile:    32px;
 $h1-size-mobile:    40px;
 
 // Grid scale
-$grid-xm:  4px;
+$grid-xs:  4px;
 $grid-sm:  8px;
 $grid-md: 16px;
 $grid-lg: 24px;
 $grid-xl: 32px;
 $grid-xx: 48px;
+
+// Icon scale
+$icon-thin:    24px;
+$icon-regular: 32px;
+$icon-medium:  40px;
+$icon-bold:    48px;
