@@ -11,8 +11,87 @@
   }
 
   &__profile-picture {
-    border-radius: 50%;
-    object-fit: cover;
+
+    &::before {
+      content: '';
+      background: linear-gradient(
+        to top, 
+        rgba($color: $vv-white, $alpha: 1)  5%, 
+        rgba($color: $vv-white, $alpha: 0) 30%
+      );
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__career-item {
+    border-bottom: solid 1px $vv-gray-lightest;
+    padding: $grid-xl 0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &__position {
+      font-size: $h4-size-mobile;
+
+      @include media-breakpoint-up(md) {
+        font-size: $h4-size;
+      }
+    }
+
+    &__company-conference {
+      color: $vv-gray-darkest;
+      font-size: $h5-size-mobile;
+      font-weight: 500;
+      
+      @include media-breakpoint-up(md) {
+        color: $vv-gray-dark;
+        font-size: $h5-size;
+        font-weight: 300;
+      }
+    }
+
+    &__period {
+      color: $vv-gray-darker;
+      font-size: $h5-size-mobile;
+      text-align: right;
+
+      @include media-breakpoint-up(md) {
+        color: $vv-gray-darkest;
+        font-size: $h5-size;
+        font-weight: 500;
+      }
+    }
+
+    &__location {
+      display: flex;
+      align-items: flex-end;
+      justify-content: end;
+      flex-direction: column-reverse;
+      text-align: right;
+
+      @include media-breakpoint-up(md) {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .flag {
+        font-size: 1.75em;
+        margin-left: $grid-sm;
+      }
+    }
+
+
   }
 
 }
