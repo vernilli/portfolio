@@ -1,7 +1,12 @@
 <template>
-  <div :class="{'header--burger-opened': burgerOpen}">
-    <header class="header bg-white w-100">
-      <div class="container d-flex align-items-center justify-content-between pt-2 pt-md-4 pb-2 pb-md-4">
+  <div 
+    :class="{'header--burger-opened': burgerOpen}"
+  >
+    <header 
+      class="header bg-white w-100"
+      :class="{'on-top': topPage}"
+    >
+      <div class="container d-flex align-items-center justify-content-between">
         <div class="header__title">
           <nuxt-link to="/">
             {{ title }}
@@ -111,17 +116,29 @@ export default {
         }
       },
       burgerOpen: false,
+      topPage: true,
     }
   },
   methods: {
     toggleBurger: function () {
       this.burgerOpen = !this.burgerOpen
     },
+    hideBurger: function() {
+      this.burgerOpen = false
+    },
+    onScroll: function(e) {
+      var windowTop = window.top.scrollY
+      if (windowTop >= 150) {
+        this.topPage = false
+      } else {
+        this.topPage = true
+      }
+    },
   },
   mounted() {
-    window.addEventListener('resize', function(){
-      this.burgerOpen = false
-    })
+    this.topPage = true
+    window.addEventListener('resize', this.hideBurger)
+    window.addEventListener('scroll', this.onScroll)
   },
   
 }

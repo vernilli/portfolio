@@ -4,7 +4,7 @@
       <div 
         v-for="(link, index) in links" 
         :key="index" 
-        class="footer__links-container col-12 col-md-4"
+        class="footer__links-container col-12 col-md-3"
       >
         <a 
           :href="link.link"
@@ -33,6 +33,9 @@ export default {
         },{
           text: "medium",
           link: "https://medium.com/@vernilli",
+        },{
+          text: "github",
+          link: "https://github.com/vernilli",
         },
       ],
       burgerOpen: false,

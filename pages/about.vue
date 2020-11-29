@@ -124,7 +124,7 @@ export default {
           title: "Digital Experience Design - Postgraduate course",
           company: "Faculty of Fine Arts of The University of Lisbon",
           companyUrl: "https://dxd.belasartes.ulisboa.pt/",
-          period: "Jan 2011 - Jun 2017",
+          period: "Sep 2020 - Today",
           location: "Lisbon - Portugal",
           locationFlag: "🇵🇹",
         },{
