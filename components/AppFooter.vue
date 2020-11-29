@@ -1,10 +1,10 @@
 <template>
   <footer class="footer mt-5">
-    <div class="container d-flex align-items-center justify-content-between pt-5 pb-5">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between">
       <div 
         v-for="(link, index) in links" 
         :key="index" 
-        class="footer__links-container col-12 col-md-4 p-0"
+        class="footer__links-container col-12 col-md-4"
       >
         <a 
           :href="link.link"
