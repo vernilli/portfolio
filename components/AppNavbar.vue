@@ -15,10 +15,10 @@
             class="header__navigation d-none d-lg-flex"
             :key="language"
           >
-            <nuxt-link to="/" class="ml-md-4">
+            <nuxt-link to="/" class="main-link ml-md-4">
               {{ text.projects.en }}
             </nuxt-link>
-            <nuxt-link to="/about" class="ml-md-4">
+            <nuxt-link to="/about" class="main-link ml-md-4">
               {{ text.about.en }}
             </nuxt-link>
           </nav>
@@ -28,10 +28,10 @@
             class="header__navigation d-none d-lg-flex"
             :key="language"
           >
-            <nuxt-link to="/pt-br" class="ml-md-4">
+            <nuxt-link to="/pt-br" class="main-link ml-md-4">
               {{ text.projects.pt }}
             </nuxt-link>
-            <nuxt-link to="/pt-br/sobre" class="ml-md-4">
+            <nuxt-link to="/pt-br/sobre" class="main-link ml-md-4">
               {{ text.about.pt }}
             </nuxt-link>
           </nav>

@@ -9,6 +9,7 @@
         <a 
           :href="link.link"
           target="_blank"
+          class="main-link"
         >
           {{ link.text }}
         </a>
