@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.indie-icon-lock-0{clip-path:url(#SVGID_2_);}
+	.indie-icon-lock-1{fill:none;stroke:#505050;stroke-width:16;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="0.5" width="500" height="500"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="indie-icon-lock-0">
+		<path class="indie-icon-lock-1" d="M341.1,203.3H158.9c-20.3,0-36.8,16.5-36.8,36.8V380c0,20.3,16.5,36.8,36.8,36.8h182.3
+			c20.3,0,36.8-16.5,36.8-36.8V240C377.9,219.7,361.4,203.3,341.1,203.3z"/>
+		<path class="indie-icon-lock-1" d="M335.7,203.3V169c0-47.3-38.3-85.7-85.7-85.7s-85.7,38.3-85.7,85.7v34.3"/>
+		<circle class="indie-icon-lock-1" cx="250" cy="289.2" r="10.6"/>
+		<line class="indie-icon-lock-1" x1="250" y1="305.2" x2="250" y2="344.7"/>
+	</g>
+</g>
+</svg>

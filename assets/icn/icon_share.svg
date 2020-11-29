@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.indie-icon-share-0{clip-path:url(#SVGID_2_);}
+	.indie-icon-share-1{fill:none;stroke:#505050;stroke-width:16;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="0.5" width="500" height="500"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="indie-icon-share-0">
+		<path class="indie-icon-share-1" d="M416.7,317.6v61.3c0,21.3-17.4,38.8-38.8,38.8H122.1c-21.3,0-38.8-17.4-38.8-38.8v-61.3"/>
+		<path class="indie-icon-share-1" d="M333.6,161.9l-75.3-75.3c-4.3-4.3-11.3-4.3-15.6,0l-75.3,75.3"/>
+		<line class="indie-icon-share-1" x1="250.5" y1="83.3" x2="250.5" y2="339.5"/>
+	</g>
+</g>
+</svg>

@@ -6,7 +6,7 @@
   z-index: $zindex-sticky;
 
   @include media-breakpoint-down(sm) {
-    box-shadow: 0 0 6px 0 rgba(71, 71, 71, 0.2);
+    box-shadow: 0 0 6px 0 rgba($color: $vv-gray-darker, $alpha: 0.2);
   }
 
   * {
@@ -26,45 +26,6 @@
     a {
       color: $vv-gray-darkest;
       text-decoration: none;
-    }
-  }
-
-  &__navigation {
-    a {
-      @include transition(all 0.2s);
-      color: $vv-gray;
-      font-family: $font-main;
-      font-weight: 600;
-      position: relative;
-      text-decoration: none;
-      text-align: center;
-
-      &::before {
-        @include transition(all 0.2s);
-        content: '';
-        background-color: $vv-gray-darkest;
-        border-radius: 100px;
-        height: 2px;
-        width: 0;
-
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -12px;
-      }
-
-      &.nuxt-link-exact-active {
-        cursor: default !important;
-      }
-
-      &:hover,
-      &.nuxt-link-exact-active {
-        color: $vv-gray-darkest;
-
-        &::before {
-          width: 100%;
-        }
-      }
     }
   }
 

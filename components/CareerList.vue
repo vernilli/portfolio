@@ -12,7 +12,7 @@
         <a 
           :href="item.companyUrl" 
           target="_blank"
-          class="about__career-item__company-conference"
+          class="about__career-item__company-conference main-link"
         >
           {{ item.company }}
         </a>

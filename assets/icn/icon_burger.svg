@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.indie-icon-burger-0{clip-path:url(#SVGID_2_);}
+	.indie-icon-burger-1{fill:none;stroke:#505050;stroke-width:16;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="500" height="500"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="indie-icon-burger-0">
+		<g>
+			<line class="indie-icon-burger-1" x1="416.6" y1="250" x2="83.4" y2="250"/>
+		</g>
+		<g>
+			<line class="indie-icon-burger-1" x1="416.6" y1="353.3" x2="83.4" y2="353.3"/>
+		</g>
+		<g>
+			<line class="indie-icon-burger-1" x1="416.6" y1="146.7" x2="83.4" y2="146.7"/>
+		</g>
+	</g>
+</g>
+</svg>
