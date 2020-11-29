@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.indie-icon-chart-0{clip-path:url(#SVGID_2_);}
+	.indie-icon-chart-1{fill:none;stroke:#505050;stroke-width:16;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="500" height="500"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="indie-icon-chart-0">
+		<path class="indie-icon-chart-1" d="M149.2,175h-47c-9.1,0-16.5,7.4-16.5,16.5v167c0,9.1,7.4,16.5,16.5,16.5h47c9.1,0,16.5-7.4,16.5-16.5v-167
+			C165.7,182.4,158.3,175,149.2,175z"/>
+		<path class="indie-icon-chart-1" d="M397.8,225h-47c-9.1,0-16.5,7.4-16.5,16.5v117c0,9.1,7.4,16.5,16.5,16.5h47c9.1,0,16.5-7.4,16.5-16.5v-117
+			C414.3,232.4,406.9,225,397.8,225z"/>
+		<path class="indie-icon-chart-1" d="M273.5,125h-47c-9.1,0-16.5,7.4-16.5,16.5v217c0,9.1,7.4,16.5,16.5,16.5h47c9.1,0,16.5-7.4,16.5-16.5v-217
+			C290,132.4,282.6,125,273.5,125z"/>
+	</g>
+</g>
+</svg>
