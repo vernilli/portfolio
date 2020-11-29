@@ -5,7 +5,7 @@
     </h1>
 
     <div class="d-flex flex-wrap flex-column flex-md-row align-items-md-center mb-3">
-      <div class="about__greetings col-12 col-md-8 pl-md-0">
+      <div class="about__greetings col-12 col-md-8 pl-0">
         <p class="mb-md-0">{{ greetings }}</p>
       </div>
       <div class="about__profile-picture position-relative col-12 col-md-4 pr-md-0">
@@ -22,53 +22,26 @@
 
     <div>
       <h2 class="mt-5 mb-4">{{ experience }}</h2>
-
-      <div>
-        <div 
-          v-for="(item, index) in experienceList" 
-          :key="index"
-          class="about__career-item d-flex align-items-start justify-content-between"
-        >
-          <div class="col-8 p-0 mb-2 mb-md-0">
-            <h3 class="about__career-item__position">
-              {{ item.title }}
-            </h3>
-            <a 
-              :href="item.companyUrl" 
-              target="_blank"
-              class="about__career-item__company-conference"
-            >
-              {{ item.company }}
-            </a>
-          </div>
-          <div class="col-4 p-0 d-flex flex-column align-items-start align-items-md-end">
-            <span class="about__career-item__period">
-              {{ item.period }}
-            </span>
-            <span class="about__career-item__location">
-              {{ item.location }}
-              <span class="flag">
-                {{ item.locationFlag }}
-              </span>
-            </span>
-          </div>
-        </div>
-      </div>
+      <career-list :list="experienceList" />
 
       <h2 class="mt-5 mb-4">{{ presentation }}</h2>
+      <career-list :list="presentationList" />
 
       <h2 class="mt-5 mb-4">{{ education }}</h2>
+      <career-list :list="educationList" />
+
     </div>
     
   </div>
 </template>
 
 <script>
+import CareerList from '~/components/CareerList.vue'
 
 export default {
   // layout: 'basic',
   components: {
-
+    CareerList,
   },
   data() {
     return {
@@ -108,7 +81,7 @@ export default {
           locationFlag: "🇧🇷",
         },{
           title: "CEO / CMO / Frontend Developer",
-          company: "CITi",
+          company: "CITi (Junior Entreprise)",
           companyUrl: "https://citi.org.br/",
           period: "May 2016 - Dec 2016",
           location: "Recife - Brazil",
@@ -116,8 +89,55 @@ export default {
         },
       ],
       presentation: "Presentation",
-      education: "Education"
-
+      presentationList: [
+        {
+          title: "UX + Mobile Ads: Learning to Create Experiences in Mobile Ads",
+          company: "Interaction South America",
+          companyUrl: "http://isa.ixda.org/2017/",
+          period: "Nov 2017",
+          location: "Florianópolis - Brazil",
+          locationFlag: "🇧🇷",
+        },{
+          title: "UX + Mobile Ads: Learning to Create Experiences in Mobile Ads",
+          company: "The Developers Conference",
+          companyUrl: "https://thedevconf.com/en",
+          period: "Nov 2017",
+          location: "Porto Alegre - Brazil",
+          locationFlag: "🇧🇷",
+        },
+      ],
+      education: "Education",
+      educationList: [
+        {
+          title: "Digital Experience Design - Postgraduate course",
+          company: "Faculty of Fine Arts of The University of Lisbon",
+          companyUrl: "https://dxd.belasartes.ulisboa.pt/",
+          period: "Jan 2011 - Jun 2017",
+          location: "Lisbon - Portugal",
+          locationFlag: "🇵🇹",
+        },{
+          title: "Computer Science - Bachelor's Degree",
+          company: "Faculty of Information Tech of The UFPE",
+          companyUrl: "https://www2.cin.ufpe.br/en/",
+          period: "Jan 2011 - Jun 2017",
+          location: "Recife - Brazil",
+          locationFlag: "🇧🇷",
+        },{
+          title: "iOS Developer / Interaction Designer",
+          company: "Apple Developer Academy",
+          companyUrl: "https://academy.cin.ufpe.br/index.php/pt/academia",
+          period: "Mar 2015 - Mar 2016",
+          location: "Recife - Brazil",
+          locationFlag: "🇧🇷",
+        },{
+          title: "Adobe Creative Collection",
+          company: "SAGA - Digital Design School",
+          companyUrl: "https://saga.art.br/",
+          period: "Jan 2009 - Jun 2011",
+          location: "Recife - Brazil",
+          locationFlag: "🇧🇷",
+        },
+      ],
     }
   },
 }

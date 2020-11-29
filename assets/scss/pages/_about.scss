@@ -35,7 +35,7 @@
 
   &__career-item {
     border-bottom: solid 1px $vv-gray-lightest;
-    padding: $grid-xl 0;
+    padding: $grid-lg 0;
 
     &:last-child {
       border-bottom: none;
@@ -57,7 +57,7 @@
       @include media-breakpoint-up(md) {
         color: $vv-gray-dark;
         font-size: $h5-size;
-        font-weight: 300;
+        font-weight: 400;
       }
     }
 
@@ -75,15 +75,10 @@
 
     &__location {
       display: flex;
-      align-items: flex-end;
-      justify-content: end;
-      flex-direction: column-reverse;
-      text-align: right;
-
-      @include media-breakpoint-up(md) {
-        flex-direction: row;
-        align-items: center;
-      }
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: row;
+      text-align: left;
 
       .flag {
         font-size: 1.75em;
