@@ -42,8 +42,7 @@
       </div>
 
       <div v-if="item.parallax">
-        <!-- <img :src="`~/assets/img/portfolio/ace-english-malta/${item.imgUrl}`" alt=""> -->
-        <img src="~/assets/img/portfolio/ace-english-malta/ace-english-malta-parallax-old.jpg" alt="">
+        OLAR
       </div>
 
     </div>
@@ -142,6 +141,44 @@ export default {
                 "After all the research, I invited some students, from different nationalities, who booked directly with the school. I’ve run card sorting sections with them to understand how they would group the information I’ve found on the researches, i.e. course names. Those sections helped me to create an information architecture based on users' experiences.",
               ],
             }
+          ]
+        },{
+          parallax: false,
+          imgUrl: 'ace-english-malta-parallax-old.jpg'
+        },{
+          subsections: [
+            {
+              id: "prototyping",
+              heading: "Prototyping",
+              paragraphs: [
+                "After all conception research and analysis phases, I had to put all gathered findings on paper and organize it in a way to extract insights from it. Before going directly to develop the website, I've decided to go through two prototype steps: a low-fidelity prototype; and a high-fidelity one. The goal of the first was to understand the better user flow; second to test the interface itself and check with chosen elements work on the interface.",
+                "During the research, I've identified the users had questions about the course categories that the school offers. Thus, we decided to put a small paragraph to explain a little bit better about each category. So, I used, in some user tests, the high-fidelity prototype to validate the interface and which UI element worked better.",
+              ]
+            }
+          ]
+        },{
+          parallax: false,
+          imgUrl: 'ace-english-malta-parallax-old.jpg'
+        },{
+          subsections: [
+            {
+              id: "seo-copyright-development",
+              heading: "SEO, Copyright, and Development",
+              paragraphs: [
+                "Another huge factor to think about, was the copyright of the website because it directly how users understand ACE School and impact SEO ranking. We've created, together with one of our teachers, some guidelines on how to write the website copy. The website should have a tone of voice not so formal, considering our main target, but not so informal, and each page should have a copy based on keywords focused on SEO. Working directly with one of our teachers was a great idea because he could bring and combine his outstanding English language expertise and his knowledge about the school and our students, to create a copy to explain better and answer potential questions.",
+                "I've built the website using WordPress, due to my previous experience with the tool, so I could build it exactly the way I want it. Next, I had to choose which would be our host provider. After analyzing several options, I choose <a href='https://www.cloudways.com/en/' target='_blank'>Cloudways</a>, which has a great support team and a platform where I could scale the machine when and how I need it. Also, they help with loading time and performance in general.",
+              ]
+            }
+          ]
+        },{
+          parallax: true,
+          imgUrl: 'ace-english-malta-parallax-old.jpg'
+        },{
+          id: "results",
+          heading: "Results",
+          paragraphs: [
+            "We launched the new website version after I ran all the planning process, previously described. After 5 months from the launching, I've compared the new numbers with the old version:",
+            "<ul><li>New users: increased by 20%;</li><li>New sessions: increased by 30%;</li><li>36% more visualization on the pages;</li><li>Users spent 8% more time;</li><li>“Get a quote” page access: increased 150+%;</li><li>28% more direct bookings;</li></ul>"
           ]
         }
       ],
