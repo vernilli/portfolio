@@ -1,0 +1,75 @@
+.project-page {
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px;
+    height: 30vh;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 100px;
+    }
+
+    img {
+      position: absolute;
+      object-fit: cover;
+      object-position: top center;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    @extend .home__title;
+    background: rgba($color: $vv-white, $alpha: 1);
+    border-radius: 5px;
+    padding: $grid-sm $grid-md;
+  }
+
+  &__section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2,
+    h3 {
+      background: linear-gradient(
+        to top,
+        rgba($color: $vv-white, $alpha: 0),
+        rgba($color: $vv-white, $alpha: 1) 15%
+      );
+      padding-top: $grid-sm;
+      padding-bottom: $grid-md;
+      position: sticky;
+      top: 58px;
+      width: 100%;
+      z-index: 1;
+      
+      @include media-breakpoint-up(md) {
+        top: 65px;
+        width: 80%;
+      }
+    }
+
+    p {
+      @include media-breakpoint-up(md) {
+        width: 80%;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    &__img-caption {
+      
+    }
+  }
+
+  &__other-projects {
+    padding-top: $grid-xx;
+  }
+}

@@ -65,10 +65,28 @@ p {
     border-bottom: solid 1px $vv-gray-dark;
     color: $vv-gray-dark;
     font-family: $font-paragraph;
+    position: relative;
+    text-decoration: none;
+
+    &::before {
+      @include transition(all 0.2s);
+      content: '';
+      background: $vv-gray-darkest;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+    }
 
     &:hover {
       border-bottom: solid 1px $vv-gray-darkest;
       color: $vv-gray-darkest;
+      text-decoration: none;
+
+      &::before {
+        width: 100%;
+      }
 
       strong {
         color: $vv-gray-darkest;
