@@ -2,7 +2,7 @@
   <div 
     :class="{'header--burger-opened': burgerOpen}"
   >
-    <header 
+    <header
       class="header bg-white w-100"
       :class="{'on-top': topPage}"
     >
@@ -84,6 +84,11 @@
         </nav>
       </transition>
 
+      <div class="header__lang-switcher d-none d-md-flex">
+        <nuxt-link to="/">English</nuxt-link>
+        <nuxt-link to="/pt-br">Português</nuxt-link>
+      </div>
+
     </header>
   </div>
 </template>
@@ -96,8 +101,9 @@ export default {
   // },
   watch: {
     $route () {
-      // console.log(this.$route)
-      this.language = this.$route.path.includes('pt-br') ? 'pt-br': 'en'
+      console.log(this.$route)
+      this.language = this.$route.path.includes("pt-br") ? "pt-br": "en"
+      this.pagePath = this.$route.name
       this.burgerOpen = false
     },
   },
@@ -105,6 +111,7 @@ export default {
     return {
       title: "Victor Vernilli",
       language: "en",
+      pagePath: "/",
       text: {
         projects: {
           "en": "projects",
@@ -137,8 +144,8 @@ export default {
   },
   mounted() {
     this.topPage = true
-    window.addEventListener('resize', this.hideBurger)
-    window.addEventListener('scroll', this.onScroll)
+    window.addEventListener("resize", this.hideBurger)
+    window.addEventListener("scroll", this.onScroll)
   },
   
 }

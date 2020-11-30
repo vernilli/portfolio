@@ -63,4 +63,14 @@
       z-index: 1;
     }
   }
+
+  &__lang-switcher {
+
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      right: $grid-md;
+    }
+
+  }
 }
