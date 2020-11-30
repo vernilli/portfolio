@@ -16,7 +16,8 @@
         {{ item.heading }}
       </h2>
       <p 
-        v-for="(paragraph, index) in item.paragraphs" :key="index"
+        v-for="(paragraph, index) in item.paragraphs"
+        :key="index"
         v-html="paragraph"
       />
     </div>
