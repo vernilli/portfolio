@@ -14,7 +14,7 @@
     padding: $grid-sm 0;
   }
 
-  * { @include transition(all 0.2s); }
+  * { @include transition(all 0.4s ease-out); }
 
   &__title {
     color: $vv-gray-darkest;

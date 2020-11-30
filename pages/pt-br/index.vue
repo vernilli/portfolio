@@ -7,7 +7,7 @@
       v-html="greetings.pt" 
       class="home__greetings"
     />
-    <portfolio-showcase />
+    <portfolio-showcase :siteLanguage="'pt-br'" />
   </div>
 </template>
 

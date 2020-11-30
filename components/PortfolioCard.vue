@@ -5,7 +5,7 @@
   >
     <!-- <img 
       class="portfolio__card__image"
-      :src="require(`~/assets/${projectImgUrl}`)" 
+      :src="require(projectImgUrl)"
       :alt="projectImgAlt"
     > -->
     <h2 class="portfolio__card__title">
