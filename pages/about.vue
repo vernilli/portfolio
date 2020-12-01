@@ -10,7 +10,7 @@
       </div>
       <div class="about__profile-picture position-relative col-12 col-md-4 pr-md-0">
         <img 
-          src="~/assets/img/victor-vernilli.jpg"
+          src="~/static/img/victor-vernilli.jpg"
           :alt="altImg"
         >
       </div>
@@ -71,7 +71,7 @@ export default {
         "That’s quite a hard problem to solve, but I believe there is always a way to include users in the process. There are several tools at your disposal when trying to solve this tough problem, such as: qualitative or quantitative tests, A/B test, Big Data analysis, etc.",
       ],
       buttonText: "Check my CV",
-      buttonPath: "/assets/presentations/2017_TDC_ISA.pdf",
+      buttonPath: "presentations/2017_TDC_ISA.pdf",
       experience: "Experience",
       experienceList: [
         {

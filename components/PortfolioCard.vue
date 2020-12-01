@@ -3,11 +3,11 @@
     :to="projectUrl" 
     class="portfolio__card d-flex flex-column p-4 pb-5"
   >
-    <!-- <img 
+    <img 
       class="portfolio__card__image"
-      :src="require(projectImgUrl)"
+      :src="projectImgUrl"
       :alt="projectImgAlt"
-    > -->
+    >
     <h2 class="portfolio__card__title">
       {{ projectTitle }}
     </h2>

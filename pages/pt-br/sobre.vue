@@ -10,7 +10,7 @@
       </div>
       <div class="about__profile-picture position-relative col-12 col-md-4 pr-md-0">
         <img 
-          src="~/assets/img/victor-vernilli.jpg"
+          src="~/static/img/victor-vernilli.jpg"
           :alt="altImg"
         >
       </div>

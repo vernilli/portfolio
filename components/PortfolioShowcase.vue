@@ -62,7 +62,7 @@ export default {
             pt: 'Redesign do site de uma escola de inglês, localizada em St Julians, Malta',
           },
           url: '/ace-english-malta',
-          imageUrl: '~/assets/img/portfolio/site-ace-mockup.png',
+          imageUrl: '/img/portfolio/site-ace-mockup.png',
           imageAlt: 'Mockup of ACE English Malta website redesign',
           background: 'bg--green-dark'
         },
@@ -73,7 +73,7 @@ export default {
             pt: 'Como é possível melhorar a experiência em anúncios utilizando elementos contextuais?',
           },
           url: '/about',
-          imageUrl: '~/assets/img/portfolio/site-ace-mockup.png',
+          imageUrl: '/img/portfolio/site-ace-mockup.png',
           imageAlt: 'Mockup of ACE English Malta website redesign',
           background: 'bg--green-light'
         },
@@ -84,7 +84,7 @@ export default {
             pt: 'Pesquisando e utilizando dados para criar um novo formato de anúncio digital',
           },
           url: '/about',
-          imageUrl: '~/assets/img/portfolio/site-ace-mockup.png',
+          imageUrl: '/img/portfolio/site-ace-mockup.png',
           imageAlt: 'Mockup of ACE English Malta website redesign',
           background: 'bg--green'
         },
@@ -95,7 +95,7 @@ export default {
             pt: 'Redesign do site da In Loco Media, maior rede de anúncios mobile do Brasil',
           },
           url: '/about',
-          imageUrl: '~/assets/img/portfolio/site-ace-mockup.png',
+          imageUrl: '/img/portfolio/site-ace-mockup.png',
           imageAlt: 'Mockup of ACE English Malta website redesign',
           background: 'bg--green-light'
         },

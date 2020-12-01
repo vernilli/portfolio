@@ -1,7 +1,7 @@
 <template>
   <div class="project-page">
     <div class="project-page__hero mb-4">
-      <img src="~/assets/img/portfolio/ace-english-malta/ace-english-malta-header.jpg" alt="" class="w-100 h-100">
+      <img src="~/static/img/portfolio/ace-english-malta/ace-english-malta-header.jpg" alt="" class="w-100 h-100">
       <h1 class="project-page__title text-center">
         {{ projectTitle }}
       </h1>
