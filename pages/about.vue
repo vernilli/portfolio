@@ -16,7 +16,13 @@
       </div>
     </div>
 
-    <div v-html="background" />
+    <div>
+      <p 
+        v-for="(paragraph, index) in background" 
+        :key="index"
+        v-html="paragraph"
+      />
+    </div>
 
     <div class="d-flex justify-content-center">
       <vv-button :text="buttonText" :path="buttonPath">
@@ -58,7 +64,12 @@ export default {
       position: "Product Designer",
       altImg: "Picture of Victor Vernilli",
       greetings: "My name is Victor Vernilli and I'm a Product Designer. I've graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.",
-      background: "<p>The concept of thinking, caring about and bringing the best experience to users/customers of a product caught my attention. Because of that, I’ve been trying to apply UX steps on all my projects during the college whenever possible.</p><p>I believe we can improve people' experience in any area, even in a hated and rejected one. Most of the time these feelings are be caused because no one thinks about users when designing the product/service. This sentence became even more true when I'd been working on mobile ads and there were, even in this area, improvements to be made in the user experience.</p><p>I also know that it's not always easy to make those improvements. Many times we can't access the users directly and simply, or if we ask them to test something, we could bias the results. I learned this with ads, how could you ask someone to \"test\" ads?</p><p>That’s quite a hard problem to solve, but I believe there is always a way to include users in the process. There are several tools at your disposal when trying to solve this tough problem, such as: qualitative or quantitative tests, A/B test, Big Data analysis, etc.</p>",
+      background: [
+        "The concept of thinking, caring about and bringing the best experience to users/customers of a product caught my attention. Because of that, I’ve been trying to apply UX steps on all my projects during the college whenever possible.",
+        "I believe we can improve people' experience in any area, even in a hated and rejected one. Most of the time these feelings are be caused because no one thinks about users when designing the product/service. This sentence became even more true when I'd been working on mobile ads and there were, even in this area, improvements to be made in the user experience.",
+        "I also know that it's not always easy to make those improvements. Many times we can't access the users directly and simply, or if we ask them to test something, we could bias the results. I learned this with ads, how could you ask someone to \"test\" ads?",
+        "That’s quite a hard problem to solve, but I believe there is always a way to include users in the process. There are several tools at your disposal when trying to solve this tough problem, such as: qualitative or quantitative tests, A/B test, Big Data analysis, etc.",
+      ],
       buttonText: "Check my CV",
       buttonPath: "/assets/presentations/2017_TDC_ISA.pdf",
       experience: "Experience",
@@ -95,7 +106,7 @@ export default {
           title: "CEO / CMO / Frontend Developer",
           company: "CITi (Junior Entreprise)",
           companyUrl: "https://citi.org.br/",
-          period: "May 2016 - Dec 2016",
+          period: "Jan 2013 - Dec 2014",
           location: "Recife - Brazil",
           locationFlag: "🇧🇷",
         },

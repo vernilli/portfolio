@@ -3,10 +3,15 @@
     <h1 class="home__title text-center mt-4 mt-md-5 mb-4 mb-md-5">
       {{ position }}
     </h1>
-    <div 
-      v-html="greetings" 
-      class="home__greetings"
-    />
+    
+    <div class="home__greetings">
+      <p 
+        v-for="(paragraph, index) in greetings" 
+        :key="index"
+        v-html="paragraph"
+      />
+    </div>
+    
     <portfolio-showcase :siteLanguage="'pt-br'" />
   </div>
 </template>
@@ -25,7 +30,12 @@ export default {
   data() {
     return {
       position: "Designer de Produto",
-      greetings: "<p>Olá!</p><p>Sou Product Designer e acredito que nós podemos fazer a experiência das pessoas mais fácil, mesmo nas mais complexas áreas. Amo história e sobre nosso passado, adoro aprender e descobrir coisas novas.</p><p>Também sou um amante de café.<strong> Que tal uma conversa com uma xícara de café?</strong></p><p>Aqui estão alguns projetos que fiz ou participei, espero que goste.</p>",
+      greetings: [
+        "Olá!",
+        "Sou Product Designer e acredito que nós podemos fazer a experiência das pessoas mais fácil, mesmo nas mais complexas áreas. Amo história e sobre nosso passado, adoro aprender e descobrir coisas novas.",
+        "Também sou um amante de café.<strong> Que tal uma conversa com uma xícara de café?</strong>",
+        "Aqui estão alguns projetos que fiz ou participei, espero que goste.",
+      ],
     }
   },
 }
