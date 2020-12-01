@@ -83,14 +83,16 @@
       border: solid 1px transparent;
       border-radius: 5px;
       color: $vv-gray-darker;
-      font-size: $span-size-mobile;
+      font-size: $h6-size-mobile;
       font-weight: 500;
-      padding: $grid-xs $grid-sm;
-      margin-left: $grid-xs;
+      padding: $grid-sm $grid-md;
+      margin: 0 $grid-sm;
       text-decoration: none;
 
       @include media-breakpoint-up(md) {
         font-size: $span-size;
+        padding: $grid-xs $grid-sm;
+        margin-left: $grid-xs;
       }
 
       &:hover {

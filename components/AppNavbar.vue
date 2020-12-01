@@ -84,18 +84,33 @@
         </nav>
       </transition>
 
-      <div class="header__lang-switcher d-none d-md-flex">
+      <div v-if="burgerOpen" class="header__lang-switcher d-flex d-md-none justify-content-center">
         <nuxt-link 
-          :to="`/${pagePath}`"
+          :to="`${pagePath}`"
           :class="{'active': language === 'en'}"
         >
-          english
+          {{ languages.english }}
         </nuxt-link>
         <nuxt-link 
           :to="`/pt-br${pagePath}`"
           :class="{'active': language === 'pt-br'}"
         >
-          português
+          {{ languages.portuguese }}
+        </nuxt-link>
+      </div>
+
+      <div class="header__lang-switcher d-none d-md-flex">
+        <nuxt-link 
+          :to="`${pagePath}`"
+          :class="{'active': language === 'en'}"
+        >
+          {{ languages.english }}
+        </nuxt-link>
+        <nuxt-link 
+          :to="`/pt-br${pagePath}`"
+          :class="{'active': language === 'pt-br'}"
+        >
+          {{ languages.portuguese }}
         </nuxt-link>
       </div>
 
@@ -116,7 +131,8 @@ export default {
       let isIndex = 
         this.$route.name === 'index' || 
         this.$route.name === 'pt-br'
-      this.pagePath = isIndex ? '' : `/${this.$route.name}`
+      let routeName = (this.$route.path).split('/')
+      this.pagePath = isIndex ? '/' : `/${routeName.pop()}`
       this.burgerOpen = false
     },
   },
@@ -125,6 +141,10 @@ export default {
       title: "Victor Vernilli",
       language: "en",
       pagePath: "/",
+      languages: {
+        english: 'english',
+        portuguese: 'português'
+      },
       text: {
         projects: {
           "en": "projects",
