@@ -89,13 +89,13 @@
           :to="`/${pagePath}`"
           :class="{'active': language === 'en'}"
         >
-          English
+          english
         </nuxt-link>
         <nuxt-link 
           :to="`/pt-br${pagePath}`"
           :class="{'active': language === 'pt-br'}"
         >
-          Português
+          português
         </nuxt-link>
       </div>
 

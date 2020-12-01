@@ -79,23 +79,28 @@
     }
 
     a {
+      @include transition(all 0.2s);
+      border: solid 1px transparent;
       border-radius: 5px;
       color: $vv-gray-darker;
-      font-size: $h6-size-mobile;
+      font-size: $span-size-mobile;
       font-weight: 500;
       padding: $grid-xs $grid-sm;
+      margin-left: $grid-xs;
       text-decoration: none;
 
       @include media-breakpoint-up(md) {
-        font-size: $h6-size;
+        font-size: $span-size;
       }
 
       &:hover {
+        border: solid 1px $vv-gray-darker;
         text-decoration: none;
       }
 
       &.active {
         background-color: $vv-black;
+        border: solid 1px $vv-black;
         color: $vv-white;
         cursor: default;
 
