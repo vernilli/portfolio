@@ -8,7 +8,7 @@
     >
       <div class="container d-flex align-items-center justify-content-between">
         <div class="header__title">
-          <nuxt-link to="/">
+          <nuxt-link :to="language === 'pt-br' ? '/pt-br' : '/'">
             {{ title }}
           </nuxt-link>
         </div>
@@ -85,8 +85,18 @@
       </transition>
 
       <div class="header__lang-switcher d-none d-md-flex">
-        <nuxt-link to="/">English</nuxt-link>
-        <nuxt-link to="/pt-br">Português</nuxt-link>
+        <nuxt-link 
+          :to="`/${pagePath}`"
+          :class="{'active': language === 'en'}"
+        >
+          English
+        </nuxt-link>
+        <nuxt-link 
+          :to="`/pt-br${pagePath}`"
+          :class="{'active': language === 'pt-br'}"
+        >
+          Português
+        </nuxt-link>
       </div>
 
     </header>
@@ -98,12 +108,15 @@ export default {
   name: "app-navbar",
   // props: {
   //   siteLanguage: String,
-  // },
+  // },\
   watch: {
     $route () {
       console.log(this.$route)
-      this.language = this.$route.path.includes("pt-br") ? "pt-br": "en"
-      this.pagePath = this.$route.name
+      this.language = this.$route.path.includes('pt-br') ? 'pt-br': 'en'
+      let isIndex = 
+        this.$route.name === 'index' || 
+        this.$route.name === 'pt-br'
+      this.pagePath = isIndex ? '' : `/${this.$route.name}`
       this.burgerOpen = false
     },
   },
