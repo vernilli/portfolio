@@ -2,13 +2,13 @@
   <div 
     :class="{'header--burger-opened': burgerOpen}"
   >
-    <header 
+    <header
       class="header bg-white w-100"
       :class="{'on-top': topPage}"
     >
       <div class="container d-flex align-items-center justify-content-between">
         <div class="header__title">
-          <nuxt-link to="/">
+          <nuxt-link :to="language === 'pt-br' ? '/pt-br' : '/'">
             {{ title }}
           </nuxt-link>
         </div>
@@ -84,6 +84,36 @@
         </nav>
       </transition>
 
+      <div v-if="burgerOpen" class="header__lang-switcher d-flex d-md-none justify-content-center">
+        <nuxt-link 
+          :to="`${pagePath}`"
+          :class="{'active': language === 'en'}"
+        >
+          {{ languages.english }}
+        </nuxt-link>
+        <nuxt-link 
+          :to="`/pt-br${pagePath}`"
+          :class="{'active': language === 'pt-br'}"
+        >
+          {{ languages.portuguese }}
+        </nuxt-link>
+      </div>
+
+      <div class="header__lang-switcher d-none d-md-flex">
+        <nuxt-link 
+          :to="`${pagePath}`"
+          :class="{'active': language === 'en'}"
+        >
+          {{ languages.english }}
+        </nuxt-link>
+        <nuxt-link 
+          :to="`/pt-br${pagePath}`"
+          :class="{'active': language === 'pt-br'}"
+        >
+          {{ languages.portuguese }}
+        </nuxt-link>
+      </div>
+
     </header>
   </div>
 </template>
@@ -93,11 +123,16 @@ export default {
   name: "app-navbar",
   // props: {
   //   siteLanguage: String,
-  // },
+  // },\
   watch: {
     $route () {
-      // console.log(this.$route)
+      console.log(this.$route)
       this.language = this.$route.path.includes('pt-br') ? 'pt-br': 'en'
+      let isIndex = 
+        this.$route.name === 'index' || 
+        this.$route.name === 'pt-br'
+      let routeName = (this.$route.path).split('/')
+      this.pagePath = isIndex ? '/' : `/${routeName.pop()}`
       this.burgerOpen = false
     },
   },
@@ -105,6 +140,11 @@ export default {
     return {
       title: "Victor Vernilli",
       language: "en",
+      pagePath: "/",
+      languages: {
+        english: 'english',
+        portuguese: 'português'
+      },
       text: {
         projects: {
           "en": "projects",
@@ -137,8 +177,8 @@ export default {
   },
   mounted() {
     this.topPage = true
-    window.addEventListener('resize', this.hideBurger)
-    window.addEventListener('scroll', this.onScroll)
+    window.addEventListener("resize", this.hideBurger)
+    window.addEventListener("scroll", this.onScroll)
   },
   
 }
