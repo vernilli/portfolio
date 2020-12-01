@@ -54,10 +54,12 @@
       font-size: $h5-size-mobile;
       font-weight: 500;
       
-      @include media-breakpoint-up(md) {
-        color: $vv-gray-dark;
-        font-size: $h5-size;
-        font-weight: 400;
+      &.main-link {
+        @include media-breakpoint-up(md) {
+          color: $vv-gray-dark;
+          font-size: $h5-size;
+          font-weight: 500;
+        }
       }
     }
 

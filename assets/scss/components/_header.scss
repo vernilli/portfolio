@@ -66,10 +66,43 @@
 
   &__lang-switcher {
 
-
     @include media-breakpoint-up(md) {
       position: absolute;
+      top: 0;
       right: $grid-md;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+      // flex-direction: column;
+    }
+
+    a {
+      border-radius: 5px;
+      color: $vv-gray-darker;
+      font-size: $h6-size-mobile;
+      font-weight: 500;
+      padding: $grid-xs $grid-sm;
+      text-decoration: none;
+
+      @include media-breakpoint-up(md) {
+        font-size: $h6-size;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      &.active {
+        background-color: $vv-black;
+        color: $vv-white;
+        cursor: default;
+
+        @include media-breakpoint-up(md) {
+          
+        }
+      }
     }
 
   }
