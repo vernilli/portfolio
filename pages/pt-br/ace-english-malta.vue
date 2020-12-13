@@ -69,59 +69,59 @@ export default {
   },
   data() {
     return {
-      projectTitle: "ACE English Malta PT-BR",
+      projectTitle: "ACE English Malta",
       projectContent: [
         {
-          id: "motivation",
-          heading: "Motivation",
+          id: "objetivos",
+          heading: "Objetivos",
           paragraphs: [
-            "Increase the number of asked quotes sent directly to the school(potential students who asked for a quote on the website or send an email or contact the school staff), with no influence on the number of students coming from agencies; Another goal was to <strong>decrease the wasted time</strong> of our sales team answering clients with basic information.",
+            "Aumentar a quantidade de cotações de curso pedidas de maneira direta(o aluno contatar diretamente a escola), sem influenciar o número de alunos vindos através de agências parceiras; Também reduzir o tempo desperdiçado, pela equipe comercial ou de atendimento ao cliente, respondendo informações básicas.",
           ]
         },{
-          id: "context",
-          heading: "Context",
+          id: "contexto",
+          heading: "Contexto",
           paragraphs: [
-            "The majority number of students, who leave their countries to study abroad, made their bookings through agencies, and that is a fact well known in this industry. At ACE English Malta is not different, the amount of students coming through agencies is bigger than students coming directly, otherwise, we would like to make these numbers more balanced. Of course, without changing the absolute number of bookings made by agencies.",
+            "A grande maioria de alunos que realizam intercâmbio fora de seus países de origem, fazem suas reservas através agencias de intercambio, esse fato é bem conhecido nesse setor. Na ACE English Malta não é diferente, o maior número de reservas de cursos vêm através de agências, porém queríamos fazer com que esse percentual fosse um pouco mais equilibrado, comparando com de reservas diretas. Claro que sem reduzir o número absoluto de reservas feita por agências.",
           ]
         },{
-          id: "general-scenario",
-          heading: "General Scenario",
+          id: "cenario-geral",
+          heading: "Cenário geral",
           paragraphs: [
             "The students are our final clients and the most important stakeholder. Thus, my first step was to understand them better, thus, I’ve elaborated an interview and asked 6 students(from different countries) to participate. Most of our students, 3 out of 4(numbers acquired in our survey on their first day at school) have visited the school website before deciding where they would study. Besides that, they have said several times they had questions regarding what they found on the website. The survey clarified that our website was the first point of contact with a huge number of potential students. Therefore, make the website more accessible and improve its clarity.",
-            "Before all, comparing the final result, it has been necessary to gather current numbers to compare with, from how many quotes do we receive to how much time our team was spending answering questions. Since my first week working at ACE, I always heard that we receive lots of emails with simple questions. Thus, my following step should track and organize all this information, then identify if we were wasting too much time or not."
+            "Antes de tudo, para identificar se conseguiria melhorar, era necessário ter um número para se comparar, e até mesmo saber se esse tempo desperdiçado era uma realidade. Desde que comecei a trabalhar na ACE, sempre foi comentado que chegavam muitos e-mails com perguntas que eram muito simples de responder. Então o primeiro passo, antes de tudo, seria começar a rastrear essas informações, para assim identificar se existia ou não esse desperdício."
           ]
         },{
-          id: "research-process",
-          heading: "Research Process",
+          id: "processo-pesquisa",
+          heading: "Processo de pesquisa",
           paragraphs: [
-            "Like every search process, I had to analyze all aspects of the project. In the big picture, language schools as a foreign language have 2 main stakeholders or clients: the final students and the agencies. My main goal, as previously explained, was to focus on increasing the number of students who rather book directly with the school. Therefore, my research goal was to uncover the main reasons the students take into consideration to choose a school and which aspects they are looking for.",
+            "Como todo processo de pesquisa, precisei analisar todos os aspectos que envolviam o projeto. No aspecto geral, escolas de idiomas como uma língua estrangeira, têm 2 principais stakeholders, os alunos e as agências de intercâmbio. Meu objetivo, como descrito acima, era focar no aumento em alunos que decidiam reservar diretamente com a escola. Quais os principais motivos que os fazem decidir por fazer um intercâmbio em língua inglesa e quais aspectos procuram em uma escola.",
           ],
           subsections: [
             {
-              id: "stakeholder-interview",
-              heading: "Stakeholders Interview",
+              id: "entrevistas-stakeholders",
+              heading: "Entrevistas com stakeholders",
               paragraphs: [
-                "All English schools have students and agencies as clients, but at the end of the day, the students are our main clients. Every week, dozens of new students arrive, from several countries and ages. The main goal of the interview with students was to understand the whole process taken by the students to choose a place to learn or to improve their English abroad. That research was split into groups considering the most common nationalities.",
-                "After creating all objectives we would like to identify during the research, I’ve created a script for a semi-structured interview which will be done with students who fit the profile we were looking for.",
-                "During the interviews and after I’ve documented the interviews, I’ve been able to identify a similar flow among the students, coming from direct bookings or agency bookings. Most of the students, at a certain point in their search, have accessed our website. That was a great indicator that there was one big point of contact - students from direct booking or agency booking. If our website was clear and showed the benefits to study at ACE, we could reach both types of students, even with the main goal being to increase direct bookings."
+                "Como a escola recebe novos estudantes - pessoas de diversas idades e nacionalidades - todas as semanas, temos uma relação mais direta e próxima com eles se comparados com as agências. O objetivo da pesquisa seria então, tentar entender como funciona todo o processo de tomada de decisão de pessoas que desejam fazer um intercâmbio para aprender ou melhorar o inglês, essa pesquisa seria dividida tentando entender as principais nacionalidades que mais recebemos.",
+                "Depois de decididos os objetivos dessa etapa da pesquisa, montei um roteiro de uma entrevista semi-estruturada que seria aplicado com pessoas que se encaixassem com o perfil desejado. Utilizando o nosso sistema interno, filtrei 5 a 10 estudantes de cada um dos países escolhidos.",
+                "Durante as entrevistas identifiquei que existia um fluxo parecido entre os alunos, sejam por reservas diretas ou através de agências. Em algum momento, grande parte dos alunos, entrou no site da nossa escola para conhecer mais sobre a escola, seja durante a procura por conta própria pela escola ou para checar algum orçamento recebido de uma agência. Esse era um indicativo que existia pelo menos um ponto de contato em comum entre esses dois subgrupos. Caso nosso site fosse bem explicativo e mostrasse nossos benefícios, poderíamos atingir e impactar os dois tipos de alunos, mesmo que o foco inicial do projeto fosse aumentar o número de reservas diretas."
               ],
             },{
-              id: "malta-scenario",
-              heading: "Malta’s Scenario",
+              id: "cenario-malta",
+              heading: "Cenário em Malta",
               paragraphs: [
-                "Malta has been investing in the “English as a foreign language” industry, and due to diverse geographic and political factors, the country started to attract a lot of new students, from the whole globe. As the industry increased with all those investments, the <a href='https://nso.gov.mt/en/Pages/NSO-Home.aspx' target='_blank'>Maltese government</a> decided to collect data and information from the schools, creating and sharing freely a report with those data. It’s possible to check how many people came to Malta to study in the past years, such as their nationalities, gender, and other detailed information. This report helped me when I was creating a comparator scenario between ACE and other schools in Malta, identifying potential new markets or already reached markets where we could improve."
+                "Há alguns anos, Malta vem aumentando seu investimento no setor de língua inglesa para não falantes nativos de inglês. Com o crescimento desse setor, o <a href='https://nso.gov.mt/en/Pages/NSO-Home.aspx' target='_blank'>Governo Maltês</a> começou a coletar dados e informações das escolas, criando e disponibilizando gratuitamente, um reporte desses números. É possível saber quantas pessoas vieram estudar inglês em Malta, assim como seu país de origem, sua idade, seu gênero, entre outras informações mais detalhadas. Essa pesquisa me auxiliou consideravelmente a criar um cenário de comparação da nossa escola com o restante das escolas em Malta, identificando possíveis novos mercados para atacar ou mercados que poderíamos melhorar nossos números."
               ],
             },{
-              id: "current-version-analysis",
-              heading: "Website Current Version Analysis",
+              id: "analise-versao-atual",
+              heading: "Análise da versão atual",
               paragraphs: [
-                "The following step would be to analyze the current (at that time) website version and try to understand if it solves students’/users' needs, which we pointed to during the interviews.",
+                "O passo seguinte após as entrevistas seria analisar a versão vigente do website, e tentar entender se ele supria as necessidades que os usuários tinham, necessidades que seriam identificadas durante as entrevistas.",
               ],
             },{
-              id: "competitors-analysis",
-              heading: "Competitors Analysis",
+              id: "analise-competidores",
+              heading: "Análise de competidores",
               paragraphs: [
-                "It would be really hard to analyze all schools around Malta, due to the huge number of English schools, and actually, not all of them were our direct competitors. I’ve worked with the marketing manager and the general manager to review and understand ACE’s strategy and which public they considered the school target. Thus, We’ve created a list of schools that we consider our direct competitors with that strategy in mind. With the list in hand, I’ve started to analyze their website and social media.",
+                "Graças ao número elevado de escolas, seriam muito complicado analisar todas as escolas, e até certo ponto não são todas as escolas que são nossos concorrentes. Junto com o diretor de marketing e o Diretor geral, revisei e alinhei qual era a visão da escola e qual seria, na opinião deles, o principal público-alvo da instituição. Baseado nessa conversa, comecei a procurar e encontrei algumas outras escolas que se encaixavam no perfil conversado.",
               ],
             }
           ],
@@ -129,16 +129,16 @@ export default {
           parallax: true,
           imgUrl: 'ace-english-malta-parallax-old.jpg'
         },{
-          id: "conception-process",
-          heading: "Conception Process",
+          id: "processo-concepcao",
+          heading: "Processo de concepção",
           subsections: [
             {
-              id: "information-architecture",
-              heading: "Information Architecture",
+              id: "arquitetura-informacao",
+              heading: "Arquitetura da informação",
               paragraphs: [
-                "We should display all information in a clear way to our users, which is more than just aesthetics. As described above, there are many English schools in Malta, thus if a user doesn’t understand/find the information they want quickly and easily, they might look for another school that explains it better.",
-                "We observed several factors which people may consider to choose a school: price, country, location, technological techniques in the classroom, etc. During the interviews, I could identify which were the most wanted aspects among our students or which they consider important. Therefore, I documented all the findings and I used them to reformulate the satisfaction survey, which all students fill on their last day at school, aiming to understand better how their stays with ACE were.",
-                "After all the research, I invited some students, from different nationalities, who booked directly with the school. I’ve run card sorting sections with them to understand how they would group the information I’ve found on the researches, i.e. course names. Those sections helped me to create an information architecture based on users' experiences.",
+                "Entregar as informações necessárias pros usuários de maneira clara, é mais que uma questão de beleza. Como explicitado acima, existem diversas escolas de inglês em Malta, então se o estudante não entender/encontrar o que deseja de forma rápida e clara, ele possivelmente irá procurar por outra escola que explique melhor.",
+                "Existem vários fatores que as pessoas levam em consideração ao escolher uma escola, seja preço, país, localização, tecnologia aplicada em sala de aula, etc. Durante as entrevistas pude identificar quais eram os pontos mais procurados ou que eram considerados importantes para os usuários, e depois de documentar os resultados, conseguimos entender com mais clareza cada ponto. Além disso, reestruturei a pesquisa de satisfação que os alunos preenchem ao final de sua estadia na escola, com a finalidade de entender a experiência de cada um e os fatores, de maneira mais geral, que levaram a escolher uma escola.",
+                "Após de toda pesquisa, reunir os cursos e informações que eram necessário, chamei alguns estudantes que se encaixavam no perfil de reservas diretas. Realizei com eles algumas sessões de card sorting com o objetivo de entender como eles iriam agrupar as informações que levantamos, para tentar criar a arquitetura de informações que fosse melhor para os usuários.",
               ],
             }
           ]
@@ -148,11 +148,11 @@ export default {
         },{
           subsections: [
             {
-              id: "prototyping",
-              heading: "Prototyping",
+              id: "prototipacao",
+              heading: "Prototipação",
               paragraphs: [
-                "After all conception research and analysis phases, I had to put all gathered findings on paper and organize it in a way to extract insights from it. Before going directly to develop the website, I've decided to go through two prototype steps: a low-fidelity prototype; and a high-fidelity one. The goal of the first was to understand the better user flow; second to test the interface itself and check with chosen elements work on the interface.",
-                "During the research, I've identified the users had questions about the course categories that the school offers. Thus, we decided to put a small paragraph to explain a little bit better about each category. So, I used, in some user tests, the high-fidelity prototype to validate the interface and which UI element worked better.",
+                "Após toda a fase de concepção, pesquisa e análise, era preciso colocar no papel todo o conhecimento adquirido e entender melhor sobre o nosso cenário em específico. E antes de ir para programação, decidimos passar por dois processos de prototipagem: um em baixa fidelidade, com objetivo de entender fluxo; e outra em alta, para testar a interface em si. Cada uma das versões teve seu papel e sua importância para definir o design/fluxo final.",
+                "Por exemplo, durante as pesquisas sentimos falta uma explicação melhor das categorias de cursos que eram oferecidos, e vimos que os usuários ficavam em dúvida no foco dessas categorias. Por isso definimos que iríamos incluir um parágrafo, mesmo que pequeno, para descrevê-los. Utilizamos os testes com o protótipo de baixa fidelidade para identificar qual seria a melhor das opções.",
               ]
             }
           ]
@@ -162,11 +162,11 @@ export default {
         },{
           subsections: [
             {
-              id: "seo-copyright-development",
-              heading: "SEO, Copyright, and Development",
+              id: "seo-copyright-desenvolvimento",
+              heading: "SEO, Copyright e Desenvolvimento",
               paragraphs: [
-                "Another huge factor to think about, was the copyright of the website because it directly how users understand ACE School and impact SEO ranking. We've created, together with one of our teachers, some guidelines on how to write the website copy. The website should have a tone of voice not so formal, considering our main target, but not so informal, and each page should have a copy based on keywords focused on SEO. Working directly with one of our teachers was a great idea because he could bring and combine his outstanding English language expertise and his knowledge about the school and our students, to create a copy to explain better and answer potential questions.",
-                "I've built the website using WordPress, due to my previous experience with the tool, so I could build it exactly the way I want it. Next, I had to choose which would be our host provider. After analyzing several options, I choose <a href='https://www.cloudways.com/en/' target='_blank'>Cloudways</a>, which has a great support team and a platform where I could scale the machine when and how I need it. Also, they help with loading time and performance in general.",
+                "Outro fator muito importante era o conteúdo escrito e copyright, pois iria influenciar diretamente com o entendimento dos usuários quanto ao SEO. Criei diretrizes e maneiras de como o copyright deveria ser feito, cada uma das páginas teria um foco em seu conteúdo escrita baseado em uma keyword específica para a página. Após isso entramos em contato com um de nossos professores para escrever melhor o conteúdo de cada página, definida por nós anteriormente. A escolha de um professor foi duplamente assertiva, além do alto nível de inglês - escrevendo de maneira coerente e concisa - o professor conhecia nossa escola de dentro, o que auxiliaria na maneira de como criar o conteúdo escrito do site.",
+                "Construí o site inteiro utilizando Wordpress, pela familiaridade que eu já tenho com a plataforma, além de auxiliar no processo de construção e suporte. Após fazer uma análise entre alguns possíveis provedores, escolhi hospedar o site na plataforma <a href='https://www.cloudways.com/en/' target='_blank'>Cloudways</a>, que dá um suporte ótimo além de poder escalar o servidor da maneira que quiser, sempre que preciso. Além de auxiliar no desempenho geral de carregamento, velocidade e performance do site.",
               ]
             }
           ]
@@ -174,15 +174,15 @@ export default {
           parallax: true,
           imgUrl: 'ace-english-malta-parallax-old.jpg'
         },{
-          id: "results",
-          heading: "Results",
+          id: "resultados",
+          heading: "Resultados",
           paragraphs: [
-            "We launched the new website version after I ran all the planning process, previously described. After 5 months from the launching, I've compared the new numbers with the old version:",
-            "<ul><li>New users: increased by 20%;</li><li>New sessions: increased by 30%;</li><li>36% more visualization on the pages;</li><li>Users spent 8% more time;</li><li>“Get a quote” page access: increased 150+%;</li><li>28% more direct bookings;</li></ul>"
+            "Após percorrer todo este processo, lançamos a nova versão do website. Após 5 meses do seu lançamento, em comparação com o período anterior, o website recebeu(por questão de confidencialidade, não posso colocar números absolutos):",
+            "<ul><li>Aumento 20% de novos usuários;</li><li>Aumento 30% novas sessões;</li><li>36% mais visualizações nas páginas;</li><li>Usuários ficaram 8% mais tempo;</li><li>Aumento de 150+% acessos a página de cotação;</li><li>28% mais reservas diretas;</li></ul>"
           ]
         }
       ],
-      otherProjects: "Other projects"
+      otherProjects: "Outros projetos"
     }
   },
 }
