@@ -12,6 +12,7 @@
         <img 
           src="~/static/img/victor-vernilli.jpg"
           :alt="altImg"
+          :title="altImg"
         >
       </div>
     </div>
