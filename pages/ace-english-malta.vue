@@ -7,78 +7,100 @@
       </h1>
     </div>
 
-    <div 
-      v-for="(item, index) in projectContent"
-      :key="index"
-      class="container"
-    >
-      <div class="project-page__section">
-        <h2 :id="item.id">
-          {{ item.heading }}
-        </h2>
-        <p 
-          v-for="(paragraph, index) in item.paragraphs"
-          :key="index"
-          v-html="paragraph"
-        />
+    <main>
+      <project-page-nav 
+        :anchors="itemsPageNav"
+      />
 
-        <div 
-          v-if="item.visualContent"
-          class="pb-5"  
-        >
-          <vv-button 
-            v-if="item.visualContent.contentType === 'btn'"
-            :text="item.visualContent.sourceCaption" 
-            :path="item.visualContent.source"
-          />
-        </div>
+      <div 
+        v-for="(item, index) in projectContent"
+        :key="index"
+      >
+        <div class="container">
+          <div class="project-page__section">
+            <h2 :id="item.id">
+              {{ item.heading }}
+            </h2>
+            <p 
+              v-for="(paragraph, index) in item.paragraphs"
+              :key="index"
+              v-html="paragraph"
+            />
 
-      </div>
-
-      <div v-if="item.subsections">
-        <div 
-          v-for="(section, index) in item.subsections"
-          :key="index"
-          class="project-page__section"
-        >
-          <h3 v-if="section.heading" :id="section.id">
-            {{ section.heading }}
-          </h3>
-
-          <p 
-            v-for="(paragraph, index) in section.paragraphs"
-            :key="index"
-            v-html="paragraph"
-          />
-
-          <div v-if="section.visualContent">
-            <figure 
-              v-if="section.visualContent.contentType === 'img'"
-              :class="{
-                'project-page__section__img--same': section.visualContent.style === 'same',
-                'project-page__section__img--larger': section.visualContent.style === 'larger',
-              }"
+            <div 
+              v-if="item.visualContent"
+              class="pb-5"  
             >
-              <img 
-                :src="section.visualContent.source" 
-                :alt="section.visualContent.sourceCaption"
-                :title="section.visualContent.sourceCaption"
-              >
-              <figcaption 
-                class="project-page__section__img-caption"
-                v-html="section.visualContent.sourceCaption"
+              <vv-button 
+                v-if="item.visualContent.contentType === 'btn'"
+                :text="item.visualContent.sourceCaption" 
+                :path="item.visualContent.source"
               />
-            </figure>
+            </div>
+
           </div>
 
+          <div v-if="item.subsections">
+            <div 
+              v-for="(section, index) in item.subsections"
+              :key="index"
+              class="project-page__section"
+            >
+              <h3 v-if="section.heading" :id="section.id">
+                {{ section.heading }}
+              </h3>
+
+              <p 
+                v-for="(paragraph, index) in section.paragraphs"
+                :key="index"
+                v-html="paragraph"
+              />
+
+              <div v-if="section.visualContent">
+                <figure 
+                  v-if="section.visualContent.contentType === 'img'"
+                  :class="{
+                    'project-page__section__img--same': section.visualContent.style === 'same',
+                    'project-page__section__img--larger': section.visualContent.style === 'larger',
+                  }"
+                >
+                  <img 
+                    :src="section.visualContent.source" 
+                    :alt="section.visualContent.sourceCaption"
+                    :title="section.visualContent.sourceCaption"
+                  >
+                  <figcaption 
+                    class="project-page__section__img-caption"
+                    v-html="section.visualContent.sourceCaption"
+                  />
+                </figure>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div
+          v-if="item.visualContent"
+        >
+          <figure 
+            v-if="item.visualContent.contentType === 'img'"
+            :class="`project-page__section__img--${item.visualContent.style}`"
+          >
+            <img 
+              :src="item.visualContent.source" 
+              :alt="item.visualContent.sourceCaption"
+              :title="item.visualContent.sourceCaption"
+            >
+            <figcaption 
+              class="project-page__section__img-caption"
+              v-html="item.visualContent.sourceCaption"
+            />
+          </figure>
         </div>
       </div>
 
-      <div v-if="item.parallax">
-        OLAR
-      </div>
-
-    </div>
+    </main>
 
     <div class="project-page__other-projects container">
       <h2 class="text-center">
@@ -92,13 +114,30 @@
 
 <script>
 import VvButton from '~/components/VvButton.vue'
+import ProjectPageNav from '~/components/ProjectPageNav.vue'
 import PortfolioShowcase from '~/components/PortfolioShowcase.vue'
 
 export default {
   // layout: 'basic',
   components: {
     VvButton,
+    ProjectPageNav,
     PortfolioShowcase,
+  },
+  computed: {
+    itemsPageNav: function() {
+      let ids = []
+      for(let i = 0; i < this.projectContent.length ; i++) {
+        if(this.projectContent[i].id) {
+          let item = {
+            id: this.projectContent[i].id,
+            heading: this.projectContent[i].heading,
+          }
+          ids.push(item)
+        }
+      }
+      return ids
+    }
   },
   data() {
     return {
@@ -144,29 +183,37 @@ export default {
               paragraphs: [
                 "Malta has been investing in the “English as a foreign language” industry, and due to diverse geographic and political factors, the country started to attract a lot of new students, from the whole globe. As the industry increased with all those investments, the <a href='https://nso.gov.mt/en/Pages/NSO-Home.aspx' target='_blank'>Maltese government</a> decided to collect data and information from the schools, creating and sharing freely a report with those data. It’s possible to check how many people came to Malta to study in the past years, such as their nationalities, gender, and other detailed information. This report helped me when I was creating a comparator scenario between ACE and other schools in Malta, identifying potential new markets or already reached markets where we could improve."
               ],
-              visualContent: {
-                contentType: "img",
-                style: "same",
-                source: '/img/portfolio/ace-english-malta/malta-report.jpg',
-                sourceCaption: 'Part of the Anual Report made by Malta Government',
-              },
-            },{
+            },
+          ],
+        },{
+          visualContent: {
+            contentType: "img",
+            style: "full-contained",
+            source: '/img/portfolio/ace-english-malta/malta-report-desktop.jpg',
+            sourceCaption: 'Part of the Anual Report made by Malta Government',
+          },
+        },{
+          subsections: [
+            {
               id: "current-version-analysis",
               heading: "Website Current Version Analysis",
               paragraphs: [
                 "The following step would be to analyze the current (at that time) website version and try to understand if it solves students’/users' needs, which we pointed to during the interviews.",
               ],
+              visualContent: {
+                contentType: "img",
+                style: "same",
+                source: '/img/portfolio/ace-english-malta/home-old.jpg',
+                sourceCaption: 'Home page of ACE English Malta website <strong>before</strong> the research and redesign',
+              },
             },{
               id: "competitors-analysis",
               heading: "Competitors Analysis",
               paragraphs: [
                 "It would be really hard to analyze all schools around Malta, due to the huge number of English schools, and actually, not all of them were our direct competitors. I’ve worked with the marketing manager and the general manager to review and understand ACE’s strategy and which public they considered the school target. Thus, We’ve created a list of schools that we consider our direct competitors with that strategy in mind. With the list in hand, I’ve started to analyze their website and social media.",
               ],
-            }
+            },
           ],
-        },{
-          parallax: true,
-          imgUrl: 'ace-english-malta-parallax-old.jpg'
         },{
           id: "conception-process",
           heading: "Conception Process",
@@ -183,13 +230,10 @@ export default {
                 contentType: "img",
                 style: "same",
                 source: '/img/portfolio/ace-english-malta/ace-english-malta-cardsort3.jpg',
-                sourceCaption: '<strong>Left</strong>: Card Sorting session on going. <strong>Right</strong>: Final outcome of the Card Sorting session.',
+                sourceCaption: '<strong>Left</strong>: A card Sorting session on going. <strong>Right</strong>: Final outcome of the a card Sorting session.',
               },
             },
           ],
-        },{
-          parallax: false,
-          imgUrl: 'ace-english-malta-parallax-old.jpg'
         },{
           subsections: [
             {
@@ -201,15 +245,12 @@ export default {
               ],
               visualContent: {
                 contentType: "img",
-                style: "inline",
+                style: "same",
                 source: '/img/portfolio/ace-english-malta/ace-english-malta-sketch.jpg',
                 sourceCaption: 'Sketch of Courses Page',
               },
             },
           ],
-        },{
-          parallax: false,
-          imgUrl: 'ace-english-malta-parallax-old.jpg'
         },{
           subsections: [
             {
@@ -218,12 +259,22 @@ export default {
               paragraphs: [
                 "Another huge factor to think about, was the copyright of the website because it directly how users understand ACE School and impact SEO ranking. We've created, together with one of our teachers, some guidelines on how to write the website copy. The website should have a tone of voice not so formal, considering our main target, but not so informal, and each page should have a copy based on keywords focused on SEO. Working directly with one of our teachers was a great idea because he could bring and combine his outstanding English language expertise and his knowledge about the school and our students, to create a copy to explain better and answer potential questions.",
                 "I've built the website using WordPress, due to my previous experience with the tool, so I could build it exactly the way I want it. Next, I had to choose which would be our host provider. After analyzing several options, I choose <a href='https://www.cloudways.com/en/' target='_blank'>Cloudways</a>, which has a great support team and a platform where I could scale the machine when and how I need it. Also, they help with loading time and performance in general.",
-              ]
-            }
-          ]
+              ],
+              visualContent: {
+                contentType: "img",
+                style: "same",
+                source: '/img/portfolio/ace-english-malta/home-new.jpg',
+                sourceCaption: 'Home page of ACE English Malta website <strong>after</strong> the research and redesign',
+              },
+            },
+          ],
         },{
-          parallax: true,
-          imgUrl: 'ace-english-malta-parallax-old.jpg'
+          visualContent: {
+            contentType: "img",
+            style: "full-width",
+            source: '/img/portfolio/ace-english-malta/ace-english-malta-sketch.jpg',
+            sourceCaption: 'Home page of ACE English Malta website <strong>after</strong> the research and redesign',
+          },
         },{
           id: "results",
           heading: "Results",
