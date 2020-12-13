@@ -34,6 +34,7 @@
               <vv-button 
                 v-if="item.visualContent.contentType === 'btn'"
                 :text="item.visualContent.sourceCaption" 
+                :title="item.visualContent.sourceCaption"
                 :path="item.visualContent.source"
               />
             </div>
@@ -66,8 +67,8 @@
                 >
                   <img 
                     :src="section.visualContent.source" 
-                    :alt="section.visualContent.sourceCaption"
-                    :title="section.visualContent.sourceCaption"
+                    :alt="section.visualContent.imgAlt"
+                    :title="section.visualContent.imgAlt"
                   >
                   <figcaption 
                     class="project-page__section__img-caption"
@@ -89,8 +90,8 @@
           >
             <img 
               :src="item.visualContent.source" 
-              :alt="item.visualContent.sourceCaption"
-              :title="item.visualContent.sourceCaption"
+              :alt="item.visualContent.imgAlt"
+              :title="item.visualContent.imgAlt"
             >
             <figcaption 
               class="project-page__section__img-caption"
@@ -191,6 +192,7 @@ export default {
             style: "full-contained",
             source: '/img/portfolio/ace-english-malta/malta-report-desktop.jpg',
             sourceCaption: 'Part of the Anual Report made by Malta Government',
+            imgAlt: 'Part of the Anual Report made by Malta Government',
           },
         },{
           subsections: [
@@ -205,6 +207,7 @@ export default {
                 style: "same",
                 source: '/img/portfolio/ace-english-malta/home-old.jpg',
                 sourceCaption: 'Home page of ACE English Malta website <strong>before</strong> the research and redesign',
+                imgAlt: 'A screenshot of the home page of ACE English Malta website before the research and redesign',
               },
             },{
               id: "competitors-analysis",
@@ -231,6 +234,7 @@ export default {
                 style: "same",
                 source: '/img/portfolio/ace-english-malta/ace-english-malta-cardsort3.jpg',
                 sourceCaption: '<strong>Left</strong>: A card Sorting session on going. <strong>Right</strong>: Final outcome of the a card Sorting session.',
+                imgAlt: 'On the left image: A card Sorting session on going, a person looking at a table with card. On the right image: Final outcome of the a card Sorting session, cards grouped by users.',
               },
             },
           ],
@@ -248,6 +252,7 @@ export default {
                 style: "same",
                 source: '/img/portfolio/ace-english-malta/ace-english-malta-sketch.jpg',
                 sourceCaption: 'Sketch of Courses Page',
+                imgAlt: 'Sketch on paper of Courses Page',
               },
             },
           ],
@@ -265,6 +270,7 @@ export default {
                 style: "same",
                 source: '/img/portfolio/ace-english-malta/home-new.jpg',
                 sourceCaption: 'Home page of ACE English Malta website <strong>after</strong> the research and redesign',
+                imgAlt: 'A screenshot of the home page of ACE English Malta website after the research and redesign',
               },
             },
           ],
@@ -274,6 +280,7 @@ export default {
             style: "full-width",
             source: '/img/portfolio/ace-english-malta/ace-english-malta-sketch.jpg',
             sourceCaption: 'Home page of ACE English Malta website <strong>after</strong> the research and redesign',
+            imgAlt: 'A screenshot of the home page of ACE English Malta website after the research and redesign',
           },
         },{
           id: "results",

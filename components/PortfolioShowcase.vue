@@ -8,7 +8,10 @@
       :project-url="projects.ace.url"
       :projectImgUrl="projects.ace.imageUrl"
       :projectImgAlt="projects.ace.imageAlt"
-      :class="projects.ace.background"
+      :class="[
+        projects.ace.background,
+        projects.ace.device,
+      ]"
     />
     <portfolio-card
       v-if="hideProject != 'time-to-place'"
@@ -16,15 +19,25 @@
       :project-desc="siteLanguage === 'pt-br' ? 
         projects.timeToPlace.desc.pt : projects.timeToPlace.desc.en"
       :project-url="projects.timeToPlace.url"
-      :class="projects.timeToPlace.background"
+      :projectImgUrl="projects.timeToPlace.imageUrl"
+      :projectImgAlt="projects.timeToPlace.imageAlt"
+      :class="[
+        projects.timeToPlace.background,
+        projects.timeToPlace.device,
+      ]"
     />
     <portfolio-card
       v-if="hideProject != 'carousel'"
       :project-title="projects.carouselAd.title"
       :project-desc="siteLanguage === 'pt-br' ? 
-        projects.carouselAd.desc.pt : projects.timeToPlace.desc.en"
+        projects.carouselAd.desc.pt : projects.carouselAd.desc.en"
       :project-url="projects.carouselAd.url"
-      :class="projects.carouselAd.background"
+      :projectImgUrl="projects.carouselAd.imageUrl"
+      :projectImgAlt="projects.carouselAd.imageAlt"
+      :class="[
+        projects.carouselAd.background,
+        projects.carouselAd.device,
+      ]"
     />
     <portfolio-card
       v-if="hideProject != 'inloco'"
@@ -32,7 +45,12 @@
       :project-desc="siteLanguage === 'pt-br' ? 
         projects.inloco.desc.pt : projects.inloco.desc.en"
       :project-url="projects.inloco.url"
-      :class="projects.inloco.background"
+      :projectImgUrl="projects.inloco.imageUrl"
+      :projectImgAlt="projects.inloco.imageAlt"
+      :class="[
+        projects.inloco.background,
+        projects.inloco.device,
+      ]"
     />
   </div>
 </template>
@@ -62,9 +80,10 @@ export default {
             pt: 'Redesign do site de uma escola de inglês, localizada em St Julians, Malta',
           },
           url: '/ace-english-malta',
-          imageUrl: '/img/portfolio/site-ace-mockup.png',
+          imageUrl: '/img/portfolio/mockup-site-ace.png',
           imageAlt: 'Mockup of ACE English Malta website redesign',
-          background: 'bg--green-dark'
+          background: 'bg--green-dark',
+          device: 'desktop'
         },
         timeToPlace: {
           title: 'Time to Place',
@@ -72,10 +91,11 @@ export default {
             en: 'How is it possible to improve the user experience in mobile ads using context elements?',
             pt: 'Como é possível melhorar a experiência em anúncios utilizando elementos contextuais?',
           },
-          url: '/about',
-          imageUrl: '/img/portfolio/site-ace-mockup.png',
+          url: '/time-to-place',
+          imageUrl: '/img/portfolio/mockup-time-to-place.png',
           imageAlt: 'Mockup of ACE English Malta website redesign',
-          background: 'bg--green-light'
+          background: 'bg--green-light',
+          device: 'mobile'
         },
         carouselAd: {
           title: 'Carousel Ad',
@@ -83,10 +103,11 @@ export default {
             en: 'Researching and utilizing data to create a new mobile ad format',
             pt: 'Pesquisando e utilizando dados para criar um novo formato de anúncio digital',
           },
-          url: '/about',
-          imageUrl: '/img/portfolio/site-ace-mockup.png',
+          url: '/carousel-ad',
+          imageUrl: '/img/portfolio/mockup-carousel-ad.png',
           imageAlt: 'Mockup of ACE English Malta website redesign',
-          background: 'bg--green'
+          background: 'bg--green',
+          device: 'mobile'
         },
         inloco: {
           title: 'In Loco Media',
@@ -94,10 +115,11 @@ export default {
             en: 'Redesign the In Loco Media’s site - greatest mobile advertising platform in Brazil',
             pt: 'Redesign do site da In Loco Media, maior rede de anúncios mobile do Brasil',
           },
-          url: '/about',
-          imageUrl: '/img/portfolio/site-ace-mockup.png',
+          url: '/inlocomedia',
+          imageUrl: '/img/portfolio/mockup-site-inlocomedia.png',
           imageAlt: 'Mockup of ACE English Malta website redesign',
-          background: 'bg--green-light'
+          background: 'bg--green-light',
+          device: 'desktop'
         },
       }
       

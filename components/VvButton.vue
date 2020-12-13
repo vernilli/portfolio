@@ -23,7 +23,7 @@
       fullWidth ? 'w-100' : '',
       `vv-button ${buttonSize}`,
     ]"
-    :title="text"
+    :title="title"
     target="_blank"
   >
     <slot name="iconBefore"></slot>
@@ -39,6 +39,7 @@ export default {
   name: "vv-button",
   props: {
     text: String,
+    title: String,
     path: {
       type: String,
       required: true,
