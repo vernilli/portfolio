@@ -8,7 +8,9 @@
         @click="scrollToElement"
         :class="{'subsection': item.subsection}"
       >
-        {{ item.heading }}
+        <button>
+          {{ item.heading }}
+        </button>
       </li>
     </ul>
   </div>
