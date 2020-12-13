@@ -19,7 +19,7 @@
   &__title {
     color: $vv-gray-darkest;
     font-family: $font-main;
-    font-size: $h3-size-mobile;
+    font-size: $h4-size-mobile;
     font-weight: 500;
 
     @include media-breakpoint-up(md) {
@@ -41,7 +41,7 @@
     }
 
     .header__title {
-      font-size: $h2-size-mobile;
+      font-size: $h3-size-mobile;
 
       @include media-breakpoint-up(md) {
         font-size: $h2-size;
@@ -67,15 +67,21 @@
   &__lang-switcher {
 
     @include media-breakpoint-up(md) {
+      @include transform(translate3d(0, 50%, 0));
       position: absolute;
-      top: 0;
+      bottom: 0;
       right: $grid-md;
-      height: 100%;
 
       display: flex;
       align-items: center;
       // justify-content: center;
       // flex-direction: column;
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include transform(none);
+      top: 0;
+      height: 100%;
     }
 
     a {

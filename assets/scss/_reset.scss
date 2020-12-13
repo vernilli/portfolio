@@ -31,28 +31,34 @@ a {
   }
 }
 
-h1 { font-size: $h1-size; }
-h2 { font-size: $h2-size; }
-h3 { font-size: $h3-size; }
-h4 { font-size: $h4-size; }
-h5 { font-size: $h5-size; }
-h6 { font-size: $h6-size; }
+h1 { font-size: $h1-size-mobile; }
+h2 { font-size: $h2-size-mobile; }
+h3 { font-size: $h3-size-mobile; }
+h4 { font-size: $h4-size-mobile; }
+h5 { font-size: $h5-size-mobile; }
+h6 { font-size: $h6-size-mobile; }
 
-@include media-breakpoint-down(sm) {
-  h1 { font-size: $h1-size-mobile; }
-  h2 { font-size: $h2-size-mobile; }
-  h3 { font-size: $h3-size-mobile; }
-  h4 { font-size: $h4-size-mobile; }
-  h5 { font-size: $h5-size-mobile; }
+@include media-breakpoint-up(md) {
+  h1 { font-size: $h1-size; }
+  h2 { font-size: $h2-size; }
+  h3 { font-size: $h3-size; }
+  h4 { font-size: $h4-size; }
+  h5 { font-size: $h5-size; }
+  h6 { font-size: $h6-size; }
 }
 
 p {
   color: $vv-gray-darker;
   font-family: $font-paragraph;
-  font-size: $p-size;
-  line-height: 2;
+  font-size: $p-size-mobile;
+  line-height: 1.8;
   max-width: 70ch;
   margin-bottom: $grid-xl;
+
+  @include media-breakpoint-up(md) {
+    font-size: $p-size;
+    line-height: 2;
+  }
   
   strong { 
     color: $vv-gray-darkest;
@@ -63,7 +69,7 @@ p {
   a {
     @include transition(all 0.2s);
     border-bottom: solid 1px $vv-gray-dark;
-    color: $vv-gray-dark;
+    color: $vv-gray-darker;
     font-family: $font-paragraph;
     position: relative;
     text-decoration: none;
