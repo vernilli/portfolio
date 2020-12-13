@@ -21,6 +21,18 @@
           :key="index"
           v-html="paragraph"
         />
+
+        <div 
+          v-if="item.visualContent"
+          class="pb-5"  
+        >
+          <vv-button 
+            v-if="item.visualContent.contentType === 'btn'"
+            :text="item.visualContent.sourceCaption" 
+            :path="item.visualContent.source"
+          />
+        </div>
+
       </div>
 
       <div v-if="item.subsections">
@@ -29,7 +41,7 @@
           :key="index"
           class="project-page__section"
         >
-          <h3 :id="section.id">
+          <h3 v-if="section.heading" :id="section.id">
             {{ section.heading }}
           </h3>
 
@@ -38,6 +50,27 @@
             :key="index"
             v-html="paragraph"
           />
+
+          <div v-if="section.visualContent">
+            <figure 
+              v-if="section.visualContent.contentType === 'img'"
+              :class="{
+                'project-page__section__img--same': section.visualContent.style === 'same',
+                'project-page__section__img--larger': section.visualContent.style === 'larger',
+              }"
+            >
+              <img 
+                :src="section.visualContent.source" 
+                :alt="section.visualContent.sourceCaption"
+                :title="section.visualContent.sourceCaption"
+              >
+              <figcaption 
+                class="project-page__section__img-caption"
+                v-html="section.visualContent.sourceCaption"
+              />
+            </figure>
+          </div>
+
         </div>
       </div>
 
@@ -111,6 +144,12 @@ export default {
               paragraphs: [
                 "Malta has been investing in the “English as a foreign language” industry, and due to diverse geographic and political factors, the country started to attract a lot of new students, from the whole globe. As the industry increased with all those investments, the <a href='https://nso.gov.mt/en/Pages/NSO-Home.aspx' target='_blank'>Maltese government</a> decided to collect data and information from the schools, creating and sharing freely a report with those data. It’s possible to check how many people came to Malta to study in the past years, such as their nationalities, gender, and other detailed information. This report helped me when I was creating a comparator scenario between ACE and other schools in Malta, identifying potential new markets or already reached markets where we could improve."
               ],
+              visualContent: {
+                contentType: "img",
+                style: "same",
+                source: '/img/portfolio/ace-english-malta/malta-report.jpg',
+                sourceCaption: 'Part of the Anual Report made by Malta Government',
+              },
             },{
               id: "current-version-analysis",
               heading: "Website Current Version Analysis",
@@ -140,8 +179,14 @@ export default {
                 "We observed several factors which people may consider to choose a school: price, country, location, technological techniques in the classroom, etc. During the interviews, I could identify which were the most wanted aspects among our students or which they consider important. Therefore, I documented all the findings and I used them to reformulate the satisfaction survey, which all students fill on their last day at school, aiming to understand better how their stays with ACE were.",
                 "After all the research, I invited some students, from different nationalities, who booked directly with the school. I’ve run card sorting sections with them to understand how they would group the information I’ve found on the researches, i.e. course names. Those sections helped me to create an information architecture based on users' experiences.",
               ],
-            }
-          ]
+              visualContent: {
+                contentType: "img",
+                style: "same",
+                source: '/img/portfolio/ace-english-malta/ace-english-malta-cardsort3.jpg',
+                sourceCaption: '<strong>Left</strong>: Card Sorting session on going. <strong>Right</strong>: Final outcome of the Card Sorting session.',
+              },
+            },
+          ],
         },{
           parallax: false,
           imgUrl: 'ace-english-malta-parallax-old.jpg'
@@ -153,9 +198,15 @@ export default {
               paragraphs: [
                 "After all conception research and analysis phases, I had to put all gathered findings on paper and organize it in a way to extract insights from it. Before going directly to develop the website, I've decided to go through two prototype steps: a low-fidelity prototype; and a high-fidelity one. The goal of the first was to understand the better user flow; second to test the interface itself and check with chosen elements work on the interface.",
                 "During the research, I've identified the users had questions about the course categories that the school offers. Thus, we decided to put a small paragraph to explain a little bit better about each category. So, I used, in some user tests, the high-fidelity prototype to validate the interface and which UI element worked better.",
-              ]
-            }
-          ]
+              ],
+              visualContent: {
+                contentType: "img",
+                style: "inline",
+                source: '/img/portfolio/ace-english-malta/ace-english-malta-sketch.jpg',
+                sourceCaption: 'Sketch of Courses Page',
+              },
+            },
+          ],
         },{
           parallax: false,
           imgUrl: 'ace-english-malta-parallax-old.jpg'
@@ -179,8 +230,20 @@ export default {
           paragraphs: [
             "We launched the new website version after I ran all the planning process, previously described. After 5 months from the launching, I've compared the new numbers with the old version:",
             "<ul><li>New users: increased by 20%;</li><li>New sessions: increased by 30%;</li><li>36% more visualization on the pages;</li><li>Users spent 8% more time;</li><li>“Get a quote” page access: increased 150+%;</li><li>28% more direct bookings;</li></ul>"
-          ]
-        }
+          ],
+          visualContent: {
+            contentType: "btn",
+            source: 'https://www.aceenglishmalta.com/',
+            sourceCaption: 'Check the final result',
+          },
+        },{
+          id: "future-steps",
+          heading: "Future Steps",
+          paragraphs: [
+            "During all these months, I could apply some techniques and tools(i.e. Personas, semi-structured interviews, card sorting, etc), and I plan to apply many others in the new iterations, trying to identify new improvements and potential enhancements. Including new languages to the website aren't so complex, however, they might be small or simple, but they can impact the business significantly. Translating all the content to another language is, indeed, a hard and long job, however, we have to step back to another challenge: understand all the targets more in detail for each new translation.",
+            "Curious and unexpected information I found out: 15% of the website access is from Malta. That is a big challenge to understand why those numbers are so high, considering our target is not Maltese people. But this is a conversation for another time."
+          ],
+        },
       ],
       otherProjects: "Other projects"
     }
