@@ -10,11 +10,12 @@
     <main>
       <project-page-nav 
         :anchors="itemsPageNav"
-        class="d-none d-lg-flex"
+        :activeItem="visibleItemNav"
       />
 
       <project-page-main
         :content="projectContent"
+        @heading-visible-id="activeItemChanged"
       />
     </main>
 
@@ -70,8 +71,14 @@ export default {
       return ids
     }
   },
+  methods: {
+    activeItemChanged: function(el) {
+      this.visibleItemNav = el
+    },
+  },
   data() {
     return {
+      visibleItemNav: "motivation",
       projectTitle: "ACE English Malta",
       projectContent: [
         {

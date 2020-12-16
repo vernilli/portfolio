@@ -54,11 +54,11 @@
       }
 
       button {
+        color: $vv-gray-dark;
         background: transparent;
         position: relative;
         text-align: left;
         
-        &.active,
         &::before {
           @include transition(all 0.2s);
           content: '';
@@ -72,10 +72,20 @@
           right: 0;
           bottom: -2px;
         }
-  
+        
+        &:focus,
         &:hover {
           color: $vv-gray-darkest;
   
+          &::before {
+            width: 100%;
+          }
+        }
+
+        &.active-item {
+          color: $vv-gray-darkest;
+          cursor: default;
+
           &::before {
             width: 100%;
           }

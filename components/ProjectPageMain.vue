@@ -6,7 +6,14 @@
     >
       <div class="container">
         <div class="project-page__section">
-          <h2 :id="item.id">
+          <h2 
+            v-if="item.heading"
+            :id="item.id"
+            v-observe-visibility="{
+              callback: headingVisibilityChanged,
+              throttle: 300
+            }"
+          >
             {{ item.heading }}
           </h2>
           <p 
@@ -16,17 +23,18 @@
           />
 
           <div 
-            v-if="item.visualContent"
+            v-if="
+              item.visualContent && 
+              item.visualContent.contentType === 'btn'
+            "
             class="pb-5"  
           >
             <vv-button 
-              v-if="item.visualContent.contentType === 'btn'"
               :text="item.visualContent.sourceCaption" 
               :title="item.visualContent.sourceCaption"
               :path="item.visualContent.source"
             />
           </div>
-
         </div>
 
         <div v-if="item.subsections">
@@ -35,7 +43,14 @@
             :key="index"
             class="project-page__section"
           >
-            <h3 v-if="section.heading" :id="section.id">
+            <h3 
+              v-if="section.heading" 
+              :id="section.id"
+              v-observe-visibility="{
+                callback: headingVisibilityChanged,
+                throttle: 300
+              }"
+            >
               {{ section.heading }}
             </h3>
 
@@ -92,10 +107,23 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import VueObserveVisibility from 'vue-observe-visibility'
+ 
+Vue.use(VueObserveVisibility)
+
 export default {
   name: "project-page-main",
   props: {
     content: Array,
+  },
+  methods: {
+    headingVisibilityChanged: function(isVisible, el) {
+      if(isVisible) {
+        var visibleItemId = el.target.id
+        this.$emit('heading-visible-id', visibleItemId)
+      }
+    },
   },
 }
 </script>
