@@ -29,14 +29,16 @@
   }
 
   &__nav-container {
-    // display: inline-flex;
+    background: rgba($color: $vv-white, $alpha: 0.8);
+    border-radius: 5px;
     padding: $grid-md;
     position: sticky;
     top: 5rem;
     right: 0;
     float: right;
     min-width: 250px;
-    width: 15vw;
+    width: 250px;
+    z-index: 0;
 
     ul {
       list-style: none;
@@ -45,31 +47,48 @@
     li {
       cursor: pointer;
       margin-top: $grid-sm;
-      position: relative;
+      text-align: left;      
 
       &.subsection {
         margin-left: $grid-md;
       }
 
-      &::before {
-        @include transition(all 0.2s);
-        content: '';
-        background-color: $vv-gray-darkest;
-        border-radius: 100px;
-        height: 2px;
-        width: 0;
-    
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -2px;
-      }
-
-      &:hover {
-        color: $vv-gray-darkest;
-
+      button {
+        color: $vv-gray-dark;
+        background: transparent;
+        position: relative;
+        text-align: left;
+        
         &::before {
-          width: 100%;
+          @include transition(all 0.2s);
+          content: '';
+          background-color: $vv-gray-darkest;
+          border-radius: 100px;
+          height: 2px;
+          width: 0;
+      
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2px;
+        }
+        
+        &:focus,
+        &:hover {
+          color: $vv-gray-darkest;
+  
+          &::before {
+            width: 100%;
+          }
+        }
+
+        &.active-item {
+          color: $vv-gray-darkest;
+          cursor: default;
+
+          &::before {
+            width: 100%;
+          }
         }
       }
     }
@@ -77,8 +96,11 @@
 
   &__section {
     display: flex;
-    align-items: center;
     flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+      align-items: center;
+    }
 
     h2,
     h3 {
@@ -124,17 +146,19 @@
       &--full-width,
       &--full-contained {
         text-align: center;
+        z-index: 1;
 
         img {
           object-position: center;
-          object-fit: contain;
+          object-fit: cover;
           width: 100%;
         }
       }
 
       &--full-contained {
         img {
-          max-width: 1440px;
+          object-fit: contain;
+          max-width: 1280px;
         }
       }
     }

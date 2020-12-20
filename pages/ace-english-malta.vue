@@ -10,97 +10,13 @@
     <main>
       <project-page-nav 
         :anchors="itemsPageNav"
+        :activeItem="visibleItemNav"
       />
 
-      <div 
-        v-for="(item, index) in projectContent"
-        :key="index"
-      >
-        <div class="container">
-          <div class="project-page__section">
-            <h2 :id="item.id">
-              {{ item.heading }}
-            </h2>
-            <p 
-              v-for="(paragraph, index) in item.paragraphs"
-              :key="index"
-              v-html="paragraph"
-            />
-
-            <div 
-              v-if="item.visualContent"
-              class="pb-5"  
-            >
-              <vv-button 
-                v-if="item.visualContent.contentType === 'btn'"
-                :text="item.visualContent.sourceCaption" 
-                :title="item.visualContent.sourceCaption"
-                :path="item.visualContent.source"
-              />
-            </div>
-
-          </div>
-
-          <div v-if="item.subsections">
-            <div 
-              v-for="(section, index) in item.subsections"
-              :key="index"
-              class="project-page__section"
-            >
-              <h3 v-if="section.heading" :id="section.id">
-                {{ section.heading }}
-              </h3>
-
-              <p 
-                v-for="(paragraph, index) in section.paragraphs"
-                :key="index"
-                v-html="paragraph"
-              />
-
-              <div v-if="section.visualContent">
-                <figure 
-                  v-if="section.visualContent.contentType === 'img'"
-                  :class="{
-                    'project-page__section__img--same': section.visualContent.style === 'same',
-                    'project-page__section__img--larger': section.visualContent.style === 'larger',
-                  }"
-                >
-                  <img 
-                    :src="section.visualContent.source" 
-                    :alt="section.visualContent.imgAlt"
-                    :title="section.visualContent.imgAlt"
-                  >
-                  <figcaption 
-                    class="project-page__section__img-caption"
-                    v-html="section.visualContent.sourceCaption"
-                  />
-                </figure>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div
-          v-if="item.visualContent"
-        >
-          <figure 
-            v-if="item.visualContent.contentType === 'img'"
-            :class="`project-page__section__img--${item.visualContent.style}`"
-          >
-            <img 
-              :src="item.visualContent.source" 
-              :alt="item.visualContent.imgAlt"
-              :title="item.visualContent.imgAlt"
-            >
-            <figcaption 
-              class="project-page__section__img-caption"
-              v-html="item.visualContent.sourceCaption"
-            />
-          </figure>
-        </div>
-      </div>
-
+      <project-page-main
+        :content="projectContent"
+        @heading-visible-id="activeItemChanged"
+      />
     </main>
 
     <div class="project-page__other-projects container">
@@ -116,6 +32,7 @@
 <script>
 import VvButton from '~/components/VvButton.vue'
 import ProjectPageNav from '~/components/ProjectPageNav.vue'
+import ProjectPageMain from '~/components/ProjectPageMain.vue'
 import PortfolioShowcase from '~/components/PortfolioShowcase.vue'
 
 export default {
@@ -123,6 +40,7 @@ export default {
   components: {
     VvButton,
     ProjectPageNav,
+    ProjectPageMain,
     PortfolioShowcase,
   },
   computed: {
@@ -136,12 +54,31 @@ export default {
           }
           ids.push(item)
         }
+
+        if(this.projectContent[i].subsections) {
+          for(let j = 0; j < this.projectContent[i].subsections.length ; j++) {
+            if(this.projectContent[i].subsections[j].id) {
+              let item = {
+                id: this.projectContent[i].subsections[j].id,
+                heading: this.projectContent[i].subsections[j].heading,
+                subsection: true,
+              }
+              ids.push(item)
+            }
+          }
+        }
       }
       return ids
     }
   },
+  methods: {
+    activeItemChanged: function(el) {
+      this.visibleItemNav = el
+    },
+  },
   data() {
     return {
+      visibleItemNav: "motivation",
       projectTitle: "ACE English Malta",
       projectContent: [
         {
@@ -197,8 +134,8 @@ export default {
         },{
           subsections: [
             {
-              id: "current-version-analysis",
-              heading: "Website Current Version Analysis",
+              id: "website-analysis",
+              heading: "Website Analysis",
               paragraphs: [
                 "The following step would be to analyze the current (at that time) website version and try to understand if it solves students’/users' needs, which we pointed to during the interviews.",
               ],
@@ -259,26 +196,24 @@ export default {
         },{
           subsections: [
             {
-              id: "seo-copyright-development",
-              heading: "SEO, Copyright, and Development",
+              id: "seo-copyright",
+              heading: "SEO and Copyright",
               paragraphs: [
                 "Another huge factor to think about, was the copyright of the website because it directly how users understand ACE School and impact SEO ranking. We've created, together with one of our teachers, some guidelines on how to write the website copy. The website should have a tone of voice not so formal, considering our main target, but not so informal, and each page should have a copy based on keywords focused on SEO. Working directly with one of our teachers was a great idea because he could bring and combine his outstanding English language expertise and his knowledge about the school and our students, to create a copy to explain better and answer potential questions.",
+              ],
+            },{
+              id: "development",
+              heading: "Development",
+              paragraphs: [
                 "I've built the website using WordPress, due to my previous experience with the tool, so I could build it exactly the way I want it. Next, I had to choose which would be our host provider. After analyzing several options, I choose <a href='https://www.cloudways.com/en/' target='_blank'>Cloudways</a>, which has a great support team and a platform where I could scale the machine when and how I need it. Also, they help with loading time and performance in general.",
               ],
-              visualContent: {
-                contentType: "img",
-                style: "same",
-                source: '/img/portfolio/ace-english-malta/home-new.jpg',
-                sourceCaption: 'Home page of ACE English Malta website <strong>after</strong> the research and redesign',
-                imgAlt: 'A screenshot of the home page of ACE English Malta website after the research and redesign',
-              },
             },
           ],
         },{
           visualContent: {
             contentType: "img",
             style: "full-width",
-            source: '/img/portfolio/ace-english-malta/ace-english-malta-sketch.jpg',
+            source: '/img/portfolio/ace-english-malta/home-new.jpg',
             sourceCaption: 'Home page of ACE English Malta website <strong>after</strong> the research and redesign',
             imgAlt: 'A screenshot of the home page of ACE English Malta website after the research and redesign',
           },
@@ -292,7 +227,7 @@ export default {
           visualContent: {
             contentType: "btn",
             source: 'https://www.aceenglishmalta.com/',
-            sourceCaption: 'Check the final result',
+            sourceCaption: 'Check the final result in live',
           },
         },{
           id: "future-steps",
