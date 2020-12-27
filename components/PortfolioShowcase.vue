@@ -9,7 +9,7 @@
       :projectImgAlt="project.showcase.imageAlt"
       :projectImgUrl="project.showcase.imageUrl"
       :class="[
-        project.showcase.background,
+        backgrounds[index % 4],
         project.showcase.device,
       ]"
     />
@@ -27,6 +27,16 @@ export default {
   props: {
     hideProject: String,
   },
+  data() {
+    return {
+      backgrounds: [
+        "bg--green-dark",
+        "bg--green",
+        "bg--green-light",
+        "bg--green-light",
+      ]
+    }
+  }
   
 }
 </script>
