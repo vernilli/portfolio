@@ -85,6 +85,12 @@ export default {
           fallbackLocale: 'en',
         },
         parsePages: false,
+        pages: {
+          about: {
+            'en': '/about',
+            'pt-BR': '/sobre',
+          },
+        },
       }
     ]
   ],
