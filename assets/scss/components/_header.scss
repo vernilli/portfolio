@@ -29,6 +29,10 @@
     a {
       color: $vv-gray-darkest;
       text-decoration: none;
+
+      &.nuxt-link-exact-active {
+        cursor: default;
+      }
     }
   }
 
@@ -65,7 +69,6 @@
   }
 
   &__lang-switcher {
-
     @include media-breakpoint-up(md) {
       @include transform(translate3d(0, 50%, 0));
       position: absolute;
@@ -106,15 +109,11 @@
         text-decoration: none;
       }
 
-      &.active {
+      &.nuxt-link-exact-active {
         background-color: $vv-black;
         border: solid 1px $vv-black;
         color: $vv-white;
         cursor: default;
-
-        @include media-breakpoint-up(md) {
-          
-        }
       }
     }
 
