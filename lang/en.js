@@ -15,42 +15,6 @@ export default {
   ],
   otherProjects: "Other projects",
 
-  showcase: [
-    {
-      permalink: 'ace-english-malta',
-      title: 'ACE English Malta',
-      desc: 'Redesign the ACE English Malta’s site, English School based in Malta',
-      imageAlt: 'Computer showing the mockup of ACE English Malta website redesign on screen',
-      imageUrl: '/img/portfolio/mockup-site-ace.png',
-      device: 'desktop',
-      background: 'bg--green-dark',
-    },{
-      permalink: 'time-to-place',
-      title: 'Time to Place',
-      desc: 'How is it possible to improve the user experience in mobile ads using context elements?',
-      imageAlt: '',
-      imageUrl: '/img/portfolio/mockup-time-to-place.png',
-      device: 'mobile',
-      background: 'bg--green-light',
-    },{
-      permalink: 'carousel-ad',
-      title: 'Carousel Ad',
-      desc: 'Researching and utilizing data to create a new mobile ad format',
-      imageAlt: '',
-      imageUrl: '/img/portfolio/mockup-carousel-ad.png',
-      device: 'mobile',
-      background: 'bg--green',
-    },{
-      permalink: 'inlocomedia',
-      title: 'In Loco Media',
-      desc: 'Redesign the In Loco Media’s site - greatest mobile advertising platform in Brazil',
-      imageAlt: '',
-      imageUrl: '/img/portfolio/mockup-site-inlocomedia.png',
-      device: 'desktop',
-      background: 'bg--green-light',
-    },
-  ],
-
   aboutPage: {
     greetings: 'My name is Victor Vernilli and I\'m a Product Designer. I\'ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.',
     altImg: 'Picture of Victor Vernilli',
@@ -152,11 +116,19 @@ export default {
     ],
   },
 
-  pages: {
-    ace: {
+  pages: [
+    {
       permalink: 'ace-english-malta',
-      visibleItemNav: "motivation",
       projectTitle: "ACE English Malta",
+      showcase: {
+        desc: 'Redesign the ACE English Malta’s site, English School based in Malta',
+        imageAlt: 'Computer showing the mockup of ACE English Malta website redesign on screen',
+        imageUrl: '/img/portfolio/mockup-site-ace.png',
+        device: 'desktop',
+        background: 'bg--green-dark',
+      },
+      visibleItemNav: "motivation",
+      heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
       projectContent: [
         {
           id: "motivation",
@@ -315,7 +287,66 @@ export default {
           ],
         },
       ],
-    }
-  }
+    },
 
+    {
+      permalink: 'time-to-place',
+      projectTitle: "Time to Place",
+      showcase: {
+        desc: 'How is it possible to improve the user experience in mobile ads using context elements?',
+        imageAlt: '',
+        imageUrl: '/img/portfolio/mockup-time-to-place.png',
+        device: 'mobile',
+        background: 'bg--green-light',
+      },
+      visibleItemNav: "motivation",
+      heroImg: 'time-to-place/time-to-place-header.jpg',
+      projectContent: [
+        {
+          id: "motivation",
+          heading: "Motivation",
+          paragraphs: [
+            "Increase the number of asked quotes sent directly to the school(potential students who asked for a quote on the website or send an email or contact the school staff), with no influence on the number of students coming from agencies; Another goal was to <strong>decrease the wasted time</strong> of our sales team answering clients with basic information.",
+          ]
+        }
+      ]
+    },
+
+    {
+      permalink: 'carousel-ad',
+      projectTitle: 'Carousel Ad',
+      showcase: {
+        desc: 'Researching and utilizing data to create a new mobile ad format',
+        imageAlt: '',
+        imageUrl: '/img/portfolio/mockup-carousel-ad.png',
+        device: 'mobile',
+        background: 'bg--green',
+      },
+      visibleItemNav: "motivation",
+      heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
+      projectContent: [
+        
+      ]
+    },
+
+    {
+      permalink: 'inlocomedia',
+      projectTitle: 'In Loco Media',
+      showcase: {
+        desc: 'Redesign the In Loco Media’s site - greatest mobile advertising platform in Brazil',
+        imageAlt: '',
+        imageUrl: '/img/portfolio/mockup-site-inlocomedia.png',
+        device: 'desktop',
+        background: 'bg--green-light',
+      },
+      visibleItemNav: "motivation",
+      heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
+      projectContent: [
+        
+      ]
+    },
+
+
+
+  ]
 }

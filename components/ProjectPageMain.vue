@@ -27,7 +27,7 @@
               item.visualContent && 
               item.visualContent.contentType === 'btn'
             "
-            class="pb-5"  
+            class="pb-5"
           >
             <vv-button 
               :text="item.visualContent.sourceCaption" 

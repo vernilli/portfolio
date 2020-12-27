@@ -2,20 +2,20 @@
   <transition name="fade" mode="out-in">
     <div :key="currentLocale" class="project-page">
       <div class="project-page__hero mb-4">
-        <img src="~/static/img/portfolio/ace-english-malta/ace-english-malta-header.jpg" alt="" class="w-100 h-100">
+        <img :src="require(`~/static/img/portfolio/${$t('pages[0].heroImg')}`)" alt="" class="w-100 h-100">
         <h1 class="project-page__title text-center">
-          {{ $t('pages.ace.projectTitle') }}
+          {{ $t('pages[0].projectTitle') }}
         </h1>
       </div>
 
       <main>
         <project-page-nav 
           :anchors="itemsPageNav"
-          :activeItem="$t('pages.ace.visibleItemNav')"
+          :activeItem="visibleItemNav"
         />
 
         <project-page-main
-          :content="$t('pages.ace.projectContent', { returnObjects: true })"
+          :content="$t('pages[0].projectContent', { returnObjects: true })"
           @heading-visible-id="activeItemChanged"
         />
       </main>
@@ -24,7 +24,7 @@
         <h2 class="text-center">
           {{ $t('otherProjects') }}
         </h2>
-        <portfolio-showcase :hideProject="$t('pages.ace.permalink')" />
+        <portfolio-showcase :hideProject="$t('pages[0].permalink')" />
       </div>
       
     </div>
@@ -45,12 +45,15 @@ export default {
     ProjectPageMain,
     PortfolioShowcase,
   },
+  props: {
+    visibleItemNav: String,
+  },
   computed: {
     currentLocale () {
       return this.$i18n.locale
     },
     pageContent: function() {
-      return this.$i18n.messages[this.$i18n.locale].pages.ace.projectContent
+      return this.$i18n.messages[this.$i18n.locale].pages[0].projectContent
     },
     itemsPageNav: function() {
       let ids = []
@@ -84,5 +87,8 @@ export default {
       this.visibleItemNav = el
     },
   },
+  mounted() {
+    this.visibleItemNav = this.$i18n.messages[this.$i18n.locale].pages[0].visibleItemNav
+  }
 }
 </script>

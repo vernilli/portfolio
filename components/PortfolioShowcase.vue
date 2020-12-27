@@ -1,16 +1,16 @@
 <template>
   <div class="portfolio__showcase pt-5 pb-3">
     <portfolio-card
-      v-for="(project, index) in $t('showcase', { returnObjects: true })" :key="index"
+      v-for="(project, index) in $t('pages', { returnObjects: true })" :key="index"
       :hide-project="project.permalink === hideProject"
       :project-url="project.permalink"
-      :project-title="project.title"
-      :project-desc="project.desc"
-      :projectImgAlt="project.imageAlt"
-      :projectImgUrl="project.imageUrl"
+      :project-title="project.projectTitle"
+      :project-desc="project.showcase.desc"
+      :projectImgAlt="project.showcase.imageAlt"
+      :projectImgUrl="project.showcase.imageUrl"
       :class="[
-        project.background,
-        project.device,
+        project.showcase.background,
+        project.showcase.device,
       ]"
     />
   </div>

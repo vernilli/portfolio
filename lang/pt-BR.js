@@ -15,42 +15,6 @@ export default {
   ],
   otherProjects: "Outros projetos",
 
-  showcase: [
-    {
-      permalink: 'ace-english-malta',
-      title: 'ACE English Malta',
-      desc: 'Redesign do site de uma escola de inglês, localizada em St Julians, Malta',
-      imageAlt: 'Computador Macbook com mockup após o redesign do website da ACE English Malta na tela',
-      imageUrl: '/img/portfolio/mockup-site-ace.png',
-      device: 'desktop',
-      background: 'bg--green-dark',
-    },{
-      permalink: 'time-to-place',
-      title: 'Time to Place',
-      desc: 'Como é possível melhorar a experiência em anúncios utilizando elementos contextuais?',
-      imageAlt: '',
-      imageUrl: '/img/portfolio/mockup-time-to-place.png',
-      device: 'mobile',
-      background: 'bg--green-light',
-    },{
-      permalink: 'carousel-ad',
-      title: 'Carousel Ad',
-      desc: 'Pesquisando e utilizando dados para criar um novo formato de anúncio digital',
-      imageAlt: '',
-      imageUrl: '/img/portfolio/mockup-carousel-ad.png',
-      device: 'mobile',
-      background: 'bg--green',
-    },{
-      permalink: 'inlocomedia',
-      title: 'In Loco Media',
-      desc: 'Redesign do site da In Loco Media, maior rede de anúncios mobile do Brasil',
-      imageAlt: '',
-      imageUrl: '/img/portfolio/mockup-site-inlocomedia.png',
-      device: 'desktop',
-      background: 'bg--green-light',
-    },
-  ],
-
   aboutPage: {
     greetings: 'Meu nome é Victor Vernilli e sou um Product Designer. Sou formado em ciência da computação pela UFPE, no Centro de Informática. Apesar de uma formação muito mais técnica, foi da área de UX que mais gostei, desde a primeira que conheci na universidade.',
     altImg: 'Foto de Victor Vernilli',
@@ -152,10 +116,19 @@ export default {
     ],
   },
 
-  pages: {
-    ace: {
-      visibleItemNav: "objetivos",
+  pages: [
+    {
+      permalink: 'ace-english-malta',
       projectTitle: "ACE English Malta",
+      showcase: {
+        desc: 'Redesign do site de uma escola de inglês, localizada em St Julians, Malta',
+        imageAlt: 'Computador Macbook com mockup após o redesign do website da ACE English Malta na tela',
+        imageUrl: '/img/portfolio/mockup-site-ace.png',
+        device: 'desktop',
+        background: 'bg--green-dark',
+      },
+      visibleItemNav: "objetivos",
+      heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
       projectContent: [
         {
           id: "objetivos",
@@ -268,7 +241,43 @@ export default {
           ],
         },
       ],
-    }
-  }
+    },
 
+    {
+      permalink: 'time-to-place',
+      projectTitle: 'Time to Place',
+      showcase: {
+        desc: 'Como é possível melhorar a experiência em anúncios utilizando elementos contextuais?',
+        imageAlt: '',
+        imageUrl: '/img/portfolio/mockup-time-to-place.png',
+        device: 'mobile',
+        background: 'bg--green-light',
+      },
+    },
+
+    {
+      permalink: 'carousel-ad',
+      projectTitle: 'Carousel Ad',
+      showcase: {
+        desc: 'Pesquisando e utilizando dados para criar um novo formato de anúncio digital',
+        imageAlt: '',
+        imageUrl: '/img/portfolio/mockup-carousel-ad.png',
+        device: 'mobile',
+        background: 'bg--green',
+      },
+    },
+
+    {
+      permalink: 'inlocomedia',
+      projectTitle: 'In Loco Media',
+      showcase: {
+        desc: 'Redesign do site da In Loco Media, maior rede de anúncios mobile do Brasil',
+        imageAlt: '',
+        imageUrl: '/img/portfolio/mockup-site-inlocomedia.png',
+        device: 'desktop',
+        background: 'bg--green-light',
+      },
+    },
+
+  ]
 }
