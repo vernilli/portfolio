@@ -10,7 +10,7 @@
           {{ item.title }}
         </h3>
         <a 
-          :href="item.companyUrl" 
+          :href="item.company_url" 
           target="_blank"
           class="about__career-item__company-conference main-link"
         >
@@ -24,7 +24,7 @@
         <span class="about__career-item__location">
           {{ item.location }}
           <span class="flag">
-            {{ item.locationFlag }}
+            {{ item.location_flag }}
           </span>
         </span>
       </div>
