@@ -1,32 +1,34 @@
 <template>
-  <div class="project-page">
-    <div class="project-page__hero mb-4">
-      <img src="~/static/img/portfolio/ace-english-malta/ace-english-malta-header.jpg" alt="" class="w-100 h-100">
-      <h1 class="project-page__title text-center">
-        {{ $t('pages.ace.project_title') }}
-      </h1>
+  <transition name="fade" mode="out-in">
+    <div :key="currentLocale" class="project-page">
+      <div class="project-page__hero mb-4">
+        <img src="~/static/img/portfolio/ace-english-malta/ace-english-malta-header.jpg" alt="" class="w-100 h-100">
+        <h1 class="project-page__title text-center">
+          {{ $t('pages.ace.projectTitle') }}
+        </h1>
+      </div>
+
+      <main>
+        <project-page-nav 
+          :anchors="itemsPageNav"
+          :activeItem="$t('pages.ace.visibleItemNav')"
+        />
+
+        <project-page-main
+          :content="$t('pages.ace.projectContent', { returnObjects: true })"
+          @heading-visible-id="activeItemChanged"
+        />
+      </main>
+
+      <div class="project-page__other-projects container">
+        <h2 class="text-center">
+          {{ $t('otherProjects') }}
+        </h2>
+        <portfolio-showcase :hideProject="$t('pages.ace.permalink')" />
+      </div>
+      
     </div>
-
-    <main>
-      <project-page-nav 
-        :anchors="itemsPageNav"
-        :activeItem="$t('pages.ace.visible_item_nav')"
-      />
-
-      <project-page-main
-        :content="$t('pages.ace.project_content', { returnObjects: true })"
-        @heading-visible-id="activeItemChanged"
-      />
-    </main>
-
-    <div class="project-page__other-projects container">
-      <h2 class="text-center">
-        {{ $t('other_projects') }}
-      </h2>
-      <portfolio-showcase :hideProject="'ace'" />
-    </div>
-    
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -44,8 +46,11 @@ export default {
     PortfolioShowcase,
   },
   computed: {
+    currentLocale () {
+      return this.$i18n.locale
+    },
     pageContent: function() {
-      return this.$i18n.messages[this.$i18n.locale].pages.ace.project_content
+      return this.$i18n.messages[this.$i18n.locale].pages.ace.projectContent
     },
     itemsPageNav: function() {
       let ids = []
