@@ -125,7 +125,6 @@ export default {
         imageAlt: 'Computador Macbook com mockup após o redesign do website da ACE English Malta na tela',
         imageUrl: '/img/portfolio/mockup-site-ace.png',
         device: 'desktop',
-        background: 'bg--green-dark',
       },
       visibleItemNav: "objetivos",
       heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
@@ -251,8 +250,18 @@ export default {
         imageAlt: '',
         imageUrl: '/img/portfolio/mockup-time-to-place.png',
         device: 'mobile',
-        background: 'bg--green-light',
       },
+      visibleItemNav: "motivation",
+      heroImg: 'time-to-place/time-to-place-header.jpg',
+      projectContent: [
+        {
+          id: "motivation",
+          heading: "Motivation",
+          paragraphs: [
+            "Increase the number of asked quotes sent directly to the school(potential students who asked for a quote on the website or send an email or contact the school staff), with no influence on the number of students coming from agencies; Another goal was to <strong>decrease the wasted time</strong> of our sales team answering clients with basic information.",
+          ]
+        }
+      ]
     },
 
     {
@@ -263,8 +272,95 @@ export default {
         imageAlt: '',
         imageUrl: '/img/portfolio/mockup-carousel-ad.png',
         device: 'mobile',
-        background: 'bg--green',
       },
+      visibleItemNav: "Motivação",
+      heroImg: 'carousel-ad/carousel-ad-header.jpg',
+      projectContent: [
+        {
+          id: "motivacao",
+          heading: "Motivação",
+          paragraphs: [
+            "Durante o tempo que trabalhei na In Loco Media, participei da equipe de Ads Innovation. Essa equipe era responsável por desenvolver novos formatos de anúncios e melhorar os formatos já existentes. E para isso utilizamos metodologias de design centrado no usuário para alcançar nossos objetivos. Um desses novos formatos que criamos seria o carroussel ad ou galeria.",
+          ]
+        },{
+          id: "processo",
+          heading: "Processo",
+          subsections: [
+            {
+              id: "pesquisa-ideacao",
+              heading: "Pesquisa e Ideação",
+              paragraphs: [
+                "Antes de desenvolver o formato em si, era preciso decidir QUAL formato deveria ser feito. Listamos quais os formatos nós já oferecíamos aos nossos clientes na época, e vimos quais podiam ser desenvolvidos. Levantamos pontos fortes e fracos de cada formato e identificamos o objetivo e segmentação que combinava melhor com cada um.",
+                "A partir disso, vimos quais poderiam ser os objetivos que nosso portfólio não atacava ou não dava um bom suporte. Um exemplo: campanhas para anunciar vários produtos não era suportado pelos nossos anúncios.",
+                "Com essas informações internas, começamos a pesquisar sobre formatos que alguns concorrentes - como Facebook, Instagram, Google, etc - ofereciam e qual o melhor valor que podíamos levar para nossos clientes.",
+                "Depois dessa análise, encontramos um potêncial grande no anúncio em formato de galeria ou carroussel. Esse novo formato adicionaria algo novo ao nosso portfólio e que nossos clientes conseguiriam enxergar valor.",
+              ],
+            },
+          ],
+        },{
+          visualContent: {
+            contentType: "img",
+            style: "full-width",
+            source: '/img/portfolio/carousel-ad/carousel-ad-parallax.jpg',
+            sourceMobile: '',
+            sourceCaption: 'Home page of ACE English Malta website <strong>after</strong> the research and redesign',
+            imgAlt: 'A screenshot of the home page of ACE English Malta website after the research and redesign',
+          },
+        },{
+          subsections: [
+            {
+              id: "prototipacao",
+              heading: "Prototipação",
+              paragraphs: [
+                "Depois de decidido o formato, partimos para a etapa de prototipação. Queríamos criar algo que provesse uma boa experiência para os usuários, que eles não ficassem em dúvidas sobre o que estava sendo anunciado nem o que aconteceria após o clique no mesmo.",
+                "Durante a análise de concorrentes, vimos alguns recursos que eram mais utilizados e difundidos no mercado atual de mídia digital. Listamos alguns elementos que seriam necessários para conseguir entregar o valor para nossos clientes.",
+                "Criamos vários esboços desse novo formato, com o objetivo de identificar variações dos elementos, posição, dimensões, textos, chamadas, etc. Uma das características era que a peça pudesse ser responsiva, se adaptando a tela do usuário não importa a posição do celular, seja “em pé” ou “deitado”.",
+              ],
+              visualContent: {
+                contentType: "img",
+                style: "same",
+                source: '/img/portfolio/carousel-ad/carousel-ad-sketch2.jpg',
+                sourceMobile: '',
+                sourceCaption: 'Esboços de algumas ideias para o anúncio em carroussel',
+                imgAlt: 'Esboços de algumas ideias para o anúncio em carroussel',
+              },
+            },{
+              id: "desenvolvimento",
+              heading: "Desenvolvimento",
+              paragraphs: [
+                "Para o desenvolvimento, seria necessário utilizar pacote front-end - HTML, CSS e JS - para criação da peça, que nesse caso é chamada pelo mercado de rich media. Para desenvolvimento de anúncios, é preciso sempre pensar que a peça poderá aparecer nos mais diversos tipos de telas e dispositivos.",
+                "Então a preocupação com performance e carregamento são de extrema importância, o que leva ao desenvolvimento de peças leves mas que consigam passar seu objetivo e valor. Levantamos algumas opções para o desenvolvimento, que foram: criar o formato todo do zero; ou utilizar um framework. Recentemente, uma pessoa do nosso time tinha ido ao Google I/O e viu algumas palestrar sobre um novo framework. Então decidimos por adotar o <a href='https://amp.dev/' target='_blank'>AMP</a>. Decidimos desenvolver as duas abordagens e testar qual delas teria uma performance melhor, tanto de carregamento quanto de cliques.",
+                "Agora era preciso decidir qual métricas precisaríamos levantar, para conseguir analisar se o novo formato daria certo ou não. Levantamos alguns, como:",
+                "<ul><li>Tempo de carregamento</li><li>Tempo de visualização</li><li>Quantidade de arrastes para lado(swipes)</li><li>Quantidade de imagens vistas</li></ul>",
+                "Para capturar esses dados, além de utilizar os dados da própria rede de anúncios utilizada, foi utilizado o <a href='https://mixpanel.com/' target='_blank'>Mixpanel</a>, uma ferramenta de analytics baseada em eventos, com ele é possível identificar como foi o comportamento de um usuário dentro de uma página, quais itens ele interagiu, etc. Assim seria possível receber esses dados complementares para entender o comportamento de uso do novo formato.",
+              ],
+              visualContent: {
+                contentType: "img",
+                style: "same",
+                source: '/img/portfolio/carousel-ad/carousel-ad-high-fid.jpg',
+                sourceMobile: '',
+                sourceCaption: 'Alguns protótipos em alta fidelidade após iterações realizadas',
+                imgAlt: 'Alguns protótipos em alta fidelidade após iterações realizadas',
+              },
+            },{
+              id: "iteracoes",
+              heading: "Iterações",
+              paragraphs: [
+                "Uma parte importante do processo de design centrado no usuário é iterar. Graças ao grande volume das nossas campanhas, conseguimos realizar ciclos de testes de duas semanas de duração, com um número significante de dados coletados. Esse período de duas semanas foi escolhidos pois evitava comportamentos sazonais dos usuários, durante os finais de semana e dias normais. Assim, coletar datos e entender essas informações nos auxiliaram em realizar modificações em cada iteração, alterando elementos, posições, dimensões, textos, chamadas, etc.",
+              ],
+            }
+          ],
+        },{
+          id: "resultados",
+          heading: "Resultados",
+          paragraphs: [
+            "Ao final de todo esse ciclo, criamos um formato novo, o carroussel ad, um formato para marcas anunciarem mais conteúdo ocupando menos espaço de tela, seja para vários produtos, seja para criar uma história sobre um único produto. Para conseguir ver mais conteúdo, o usuário precisa apenas arrastar os itens para o lado. Foram realizados vários testes, utilizando as duas versões, variando os elementos gráficos, etc.",
+            "A versão que decidimos colocar pra frente foi utilizando o AMP, pois ele carregava mais rápido o primeiro frame do anúncio, não fazendo o usuário esperar demais e enquanto o usuário via a primeira imagem, as outras imagens eram carregadas em segundo plano.",
+            "A versão com AMP teve também mais tempo de visualização, ou seja, as pessoas ficavam mais tempo olhando o anúncio, o que gerou um número maior de interações dos usuários, além de mais conteúdo visto.",
+          ]
+        },
+        
+      ]
     },
 
     {
@@ -275,8 +371,12 @@ export default {
         imageAlt: '',
         imageUrl: '/img/portfolio/mockup-site-inlocomedia.png',
         device: 'desktop',
-        background: 'bg--green-light',
       },
+      visibleItemNav: "motivation",
+      heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
+      projectContent: [
+        
+      ]
     },
 
   ]
