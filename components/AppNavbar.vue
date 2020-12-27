@@ -9,7 +9,7 @@
       <div class="container d-flex align-items-center justify-content-between">
         <div class="header__title d-block d-md-none">
           <nuxt-link :to="localePath('index')">
-            {{ $t('name_mobile') }}
+            {{ $t('nameMobile') }}
           </nuxt-link>
         </div>
         <div class="header__title d-none d-md-block">
@@ -78,18 +78,8 @@
 <script>
 export default {
   name: "app-navbar",
-  // props: {
-  //   siteLanguage: String,
-  // },
   watch: {
     $route () {
-      console.log(this.$route)
-      this.language = this.$route.path.includes('pt-BR') ? 'pt-BR': 'en'
-      let isIndex = 
-        this.$route.name === 'index' || 
-        this.$route.name === 'pt-BR'
-      let routeName = (this.$route.path).split('/')
-      this.pagePath = isIndex ? '/' : `/${routeName.pop()}`
       this.burgerOpen = false
     },
   },
