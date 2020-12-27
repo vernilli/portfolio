@@ -64,11 +64,11 @@ export default {
         locales: [
           {
             code: 'en',
-            file: 'en.js'
+            file: 'en.js',
           },
           {
             code: 'pt-BR',
-            file: 'pt-BR.js'
+            file: 'pt-BR.js', 
           }
         ],
         lazy: true,

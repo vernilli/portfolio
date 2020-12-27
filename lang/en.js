@@ -1,6 +1,6 @@
 export default {
   name: 'Victor Vernilli',
-  name_mobile: 'Vernilli',
+  nameMobile: 'Vernilli',
   languages: {
     english: 'english',
     portuguese: 'português'
@@ -13,137 +13,151 @@ export default {
     'I\'m a Product Designer who believes that we can people’s life easier, even in the most complex areas. I love history and mankind past and eager to discover new things.',
     'I\'m also a coffee lover. <strong>So, let\'s take a coffee and talk.</strong>','Here are some projects that I\'ve done or participated, I hope you like it.'
   ],
-  other_projects: "Other projects",
+  otherProjects: "Other projects",
 
-  showcase: {
-    ace: {
+  showcase: [
+    {
+      permalink: 'ace-english-malta',
       title: 'ACE English Malta',
       desc: 'Redesign the ACE English Malta’s site, English School based in Malta',
       imageAlt: 'Computer showing the mockup of ACE English Malta website redesign on screen',
-    },
-    time_to_place: {
+      imageUrl: '/img/portfolio/mockup-site-ace.png',
+      device: 'desktop',
+      background: 'bg--green-dark',
+    },{
+      permalink: 'time-to-place',
       title: 'Time to Place',
       desc: 'How is it possible to improve the user experience in mobile ads using context elements?',
       imageAlt: '',
-    },
-    carousel_ad: {
+      imageUrl: '/img/portfolio/mockup-time-to-place.png',
+      device: 'mobile',
+      background: 'bg--green-light',
+    },{
+      permalink: 'carousel-ad',
       title: 'Carousel Ad',
       desc: 'Researching and utilizing data to create a new mobile ad format',
       imageAlt: '',
-    },
-    inloco: {
+      imageUrl: '/img/portfolio/mockup-carousel-ad.png',
+      device: 'mobile',
+      background: 'bg--green',
+    },{
+      permalink: 'inlocomedia',
       title: 'In Loco Media',
       desc: 'Redesign the In Loco Media’s site - greatest mobile advertising platform in Brazil',
       imageAlt: '',
+      imageUrl: '/img/portfolio/mockup-site-inlocomedia.png',
+      device: 'desktop',
+      background: 'bg--green-light',
     },
-  },
+  ],
 
-  about_page: {
+  aboutPage: {
     greetings: 'My name is Victor Vernilli and I\'m a Product Designer. I\'ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.',
-    alt_img: 'Picture of Victor Vernilli',
+    altImg: 'Picture of Victor Vernilli',
     background: [
       'The concept of thinking, caring about and bringing the best experience to users/customers of a product caught my attention. Because of that, I’ve been trying to apply UX steps on all my projects during the college whenever possible.',
       'I believe we can improve people\' experience in any area, even in a hated and rejected one. Most of the time these feelings are be caused because no one thinks about users when designing the product/service. This sentence became even more true when I\'d been working on mobile ads and there were, even in this area, improvements to be made in the user experience.',
       'I also know that it\'s not always easy to make those improvements. Many times we can\'t access the users directly and simply, or if we ask them to test something, we could bias the results. I learned this with ads, how could you ask someone to "test" ads?',
       'That’s quite a hard problem to solve, but I believe there is always a way to include users in the process. There are several tools at your disposal when trying to solve this tough problem, such as: qualitative or quantitative tests, A/B test, Big Data analysis, etc.',
     ],
-    button_text: "Check my CV",
+    buttonText: "Check my CV",
     experience: "Experience",
-    experience_list: [
+    experienceList: [
       {
         title: "Product Designer",
         company: "Indie Campers",
-        company_url: "https://indiecampers.com/",
+        companyUrl: "https://indiecampers.com/",
         period: "Nov 2019 - Today",
         location: "Lisbon - Portugal",
-        location_flag: "🇵🇹",
+        locationFlag: "🇵🇹",
       },{
         title: "UX Designer / Web Developer",
         company: "ACE English Malta",
-        company_url: "https://www.aceenglishmalta.com/",
+        companyUrl: "https://www.aceenglishmalta.com/",
         period: "Jun 2018 - Nov 2019",
         location: "St Julians - Malta",
-        location_flag: "🇲🇹",
+        locationFlag: "🇲🇹",
       },{
         title: "UX Engineer",
         company: "In Loco Media",
-        company_url: "https://www.inlocomedia.com/en/",
+        companyUrl: "https://www.inlocomedia.com/en/",
         period: "Jan 2017 - Dec 2017",
         location: "Recife - Brazil",
-        location_flag: "🇧🇷",
+        locationFlag: "🇧🇷",
       },{
         title: "Web Designer Intern",
         company: "In Loco Media",
-        company_url: "https://www.inlocomedia.com/en/",
+        companyUrl: "https://www.inlocomedia.com/en/",
         period: "May 2016 - Dec 2016",
         location: "Recife - Brazil",
-        location_flag: "🇧🇷",
+        locationFlag: "🇧🇷",
       },{
         title: "CEO / CMO / Frontend Developer",
         company: "CITi (Junior Entreprise)",
-        company_url: "https://citi.org.br/",
+        companyUrl: "https://citi.org.br/",
         period: "Jan 2013 - Dec 2014",
         location: "Recife - Brazil",
-        location_flag: "🇧🇷",
+        locationFlag: "🇧🇷",
       },
     ],
     presentation: "Presentation",
-    presentation_list: [
+    presentationList: [
       {
         title: "UX + Mobile Ads: Learning to Create Experiences in Mobile Ads",
         company: "Interaction South America",
-        company_url: "http://isa.ixda.org/2017/",
+        companyUrl: "http://isa.ixda.org/2017/",
         period: "Nov 2017",
         location: "Florianópolis - Brazil",
-        location_flag: "🇧🇷",
+        locationFlag: "🇧🇷",
       },{
         title: "UX + Mobile Ads: Learning to Create Experiences in Mobile Ads",
         company: "The Developers Conference",
-        company_url: "https://thedevconf.com/en",
+        companyUrl: "https://thedevconf.com/en",
         period: "Nov 2017",
         location: "Porto Alegre - Brazil",
-        location_flag: "🇧🇷",
+        locationFlag: "🇧🇷",
       },
     ],
     education: "Education",
-    education_list: [
+    educationList: [
       {
         title: "Digital Experience Design - Postgraduate course",
         company: "Faculty of Fine Arts of The University of Lisbon",
-        company_url: "https://dxd.belasartes.ulisboa.pt/",
+        companyUrl: "https://dxd.belasartes.ulisboa.pt/",
         period: "Sep 2020 - Today",
         location: "Lisbon - Portugal",
-        location_flag: "🇵🇹",
+        locationFlag: "🇵🇹",
       },{
         title: "Computer Science - Bachelor's Degree",
         company: "Faculty of Information Tech of The UFPE",
-        company_url: "https://www2.cin.ufpe.br/en/",
+        companyUrl: "https://www2.cin.ufpe.br/en/",
         period: "Jan 2011 - Jun 2017",
         location: "Recife - Brazil",
-        location_flag: "🇧🇷",
+        locationFlag: "🇧🇷",
       },{
         title: "iOS Developer / Interaction Designer",
         company: "Apple Developer Academy",
-        company_url: "https://academy.cin.ufpe.br/index.php/pt/academia",
+        companyUrl: "https://academy.cin.ufpe.br/index.php/pt/academia",
         period: "Mar 2015 - Mar 2016",
         location: "Recife - Brazil",
-        location_flag: "🇧🇷",
+        locationFlag: "🇧🇷",
       },{
         title: "Adobe Creative Collection",
         company: "SAGA - Digital Design School",
-        company_url: "https://saga.art.br/",
+        companyUrl: "https://saga.art.br/",
         period: "Jan 2009 - Jun 2011",
         location: "Recife - Brazil",
-        location_flag: "🇧🇷",
+        locationFlag: "🇧🇷",
       },
     ],
   },
 
   pages: {
     ace: {
-      visible_item_nav: "motivation",
-      project_title: "ACE English Malta",
-      project_content: [
+      permalink: 'ace-english-malta',
+      visibleItemNav: "motivation",
+      projectTitle: "ACE English Malta",
+      projectContent: [
         {
           id: "motivation",
           heading: "Motivation",
@@ -303,4 +317,5 @@ export default {
       ],
     }
   }
+
 }
