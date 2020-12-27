@@ -95,13 +95,14 @@
       font-size: $h6-size-mobile;
       font-weight: 500;
       padding: $grid-sm $grid-md;
-      margin: 0 $grid-sm;
+      margin: 0 $grid-xs;
+      margin-left: $grid-xs;
       text-decoration: none;
 
       @include media-breakpoint-up(md) {
         font-size: $span-size;
         padding: $grid-xs $grid-sm;
-        margin-left: $grid-xs;
+        margin: 0 0 0 $grid-xs;
       }
 
       &:hover {

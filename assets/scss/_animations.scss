@@ -2,7 +2,7 @@
 // Page transition
 .page-enter-active,
 .page-leave-active {
-  @include transition(opacity 0.25s);
+  @include transition(opacity 0.3s);
 }
 .page-enter,
 .page-leave-to {
@@ -11,7 +11,7 @@
 
 .layout-enter-active,
 .layout-leave-active {
-  @include transition(opacity 0.25s);
+  @include transition(opacity 0.3s);
 }
 .layout-enter,
 .layout-leave-to {
@@ -21,7 +21,7 @@
 // Fade transition
 .fade-enter-active,
 .fade-leave-active {
-  @include transition(opacity 0.25s);
+  @include transition(opacity 0.3s);
 }
 .fade-enter,
 .fade-leave-to {
