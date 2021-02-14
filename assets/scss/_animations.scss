@@ -27,3 +27,14 @@
 .fade-leave-to {
   opacity: 0;
 }
+
+// Fade up transition
+.fade-up-enter-active,
+.fade-up-leave-active {
+  @include transition(all 0.2s);
+}
+.fade-up-enter,
+.fade-up-leave-to {
+  @include transform(translate3d(0, 8px, 0));
+  opacity: 0;
+}
