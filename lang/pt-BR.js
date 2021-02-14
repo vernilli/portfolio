@@ -5,27 +5,27 @@ export default {
     english: 'english',
     portuguese: 'português'
   },
-  projects: 'projetos',
-  about: 'sobre mim',
-  position: 'Designer de Produto',
-  greetings: [
+  projectsCopy: 'projetos',
+  aboutCopy: 'sobre mim',
+  positionCopy: 'Designer de Produto',
+  greetingsCopy: [
     'Olá!',
     'Sou Product Designer e acredito que nós podemos fazer a experiência das pessoas mais fácil, mesmo nas mais complexas áreas. Amo história e sobre nosso passado, adoro aprender e descobrir coisas novas.',
     'Também sou um amante de café.<strong> Que tal uma conversa com uma xícara de café?</strong>','Aqui estão alguns projetos que fiz ou participei, espero que goste.'
   ],
-  otherProjects: "Outros projetos",
+  otherProjectsCopy: "Outros projetos",
 
   aboutPage: {
-    greetings: 'Meu nome é Victor Vernilli e sou um Product Designer. Sou formado em ciência da computação pela UFPE, no Centro de Informática. Apesar de uma formação muito mais técnica, foi da área de UX que mais gostei, desde a primeira que conheci na universidade.',
+    greetingsCopy: 'Meu nome é Victor Vernilli e sou um Product Designer. Sou formado em ciência da computação pela UFPE, no Centro de Informática. Apesar de uma formação muito mais técnica, foi da área de UX que mais gostei, desde a primeira que conheci na universidade.',
     altImg: 'Foto de Victor Vernilli',
-    background: [
+    backgroundCopy: [
       'O conceito de pensar, se importar e tentar trazer a melhor experiência aos clientes/usuários de um produto ou serviço me chamou muita atenção. Eu adicionava essa etapa, sempre que possível, em todos os projetos que participei durante da universidade.',
       'Acredito que podemos melhorar a experiência das pessoas em qualquer área, mesmo que ela seja muito rejeitada ou odiada. Muitas das vezes essa rejeição pode ser causada porque ninguém pensou nos usuários ao projetar esse produto/serviço. Essa mentalidade veio do tempo que trabalhei com anúncios digitais, também conhecidos no mercado como ads.',
       'Melhorar o uso de um produto/serviço nem sempre é fácil, muitas das vezes nós não temos acesso aos usuários de maneira simples ou se perguntarmos para eles testarem algo, poderemos estar tendenciando os resultados. Foi isso que aprendi com ads: como você pede pra um usuário “testar” um anúncio?',
       'Bastante complicado, mas acredito que sempre existe uma maneira de incluir o usuário durante o processo, não importa a dificuldade. Utilizando várias ferramentas, como testes qualitativos ou quantitativos, testes A/B, análise de Big Data, entre outros.',
     ],
-    buttonText: "Veja mais meu CV",
-    experience: "Experiência",
+    buttonTextCopy: "Veja mais meu CV",
+    experienceCopy: "Experiência",
     experienceList: [
       {
         title: "Designer de Produto",
@@ -64,7 +64,7 @@ export default {
         locationFlag: "🇧🇷",
       },
     ],
-    presentation: "Apresentações",
+    presentationCopy: "Apresentações",
     presentationList: [
       {
         title: "UX + Mobile Ads: Aprendendo a Criar Experiência em Anúncios Móveis",
@@ -82,7 +82,7 @@ export default {
         locationFlag: "🇧🇷",
       },
     ],
-    education: "Educação",
+    educationCopy: "Educação",
     educationList: [
       {
         title: "Digital Experience Design - Pós-Graduação",
@@ -116,7 +116,7 @@ export default {
     ],
   },
 
-  pages: [
+  projects: [
     {
       permalink: 'ace-english-malta',
       projectTitle: "ACE English Malta",
