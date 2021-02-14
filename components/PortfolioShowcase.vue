@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio__showcase pt-5 pb-3">
     <portfolio-card
-      v-for="(project, index) in $t('pages', { returnObjects: true })" :key="index"
+      v-for="(project, index) in $t('projects', { returnObjects: true })" :key="index"
       :hide-project="project.permalink === hideProject"
       :project-url="project.permalink"
       :project-title="project.projectTitle"

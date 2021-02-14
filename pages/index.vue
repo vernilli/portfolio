@@ -2,12 +2,12 @@
   <transition name="fade" mode="out-in">
     <div :key="currentLocale" class="container mt-5 pt-5">
       <h1 class="home__title text-center mt-4 mt-md-5 mb-4 mb-md-5">
-        {{ $t('position') }}
+        {{ $t('positionCopy') }}
       </h1>
     
       <div class="home__greetings">
         <p 
-          v-for="(paragraph, index) in $t('greetings', { returnObjects: true })" 
+          v-for="(paragraph, index) in $t('greetingsCopy', { returnObjects: true })" 
           :key="index"
           v-html="paragraph"
         />
