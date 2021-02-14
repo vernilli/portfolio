@@ -1,7 +1,7 @@
 <template>
   <transition name="fade" mode="out-in">
     <div :key="currentLocale" class="project-page">
-      <div class="project-page__hero mb-4">
+      <div class="project-page__hero desktop-image mb-4">
         <img :src="require(`~/static/img/portfolio/${$t('projects[0].heroImg')}`)" alt="" class="w-100 h-100">
         <h1 class="project-page__title text-center">
           {{ $t('projects[0].projectTitle') }}
@@ -22,7 +22,7 @@
 
       <div class="project-page__other-projects container">
         <h2 class="text-center">
-          {{ $t('otherProjects') }}
+          {{ $t('otherProjectsCopy') }}
         </h2>
         <portfolio-showcase :hideProject="$t('projects[0].permalink')" />
       </div>

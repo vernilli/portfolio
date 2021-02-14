@@ -4,7 +4,7 @@
       class="header bg-white w-100"
       :class="{'on-top': topPage}"
     >
-      <div class="container d-flex align-items-center justify-content-between">
+      <div class="container--expanded d-flex align-items-center justify-content-between">
         <div class="header__title d-block d-md-none">
           <nuxt-link :to="localePath('index')">
             {{ $t('nameMobile') }}

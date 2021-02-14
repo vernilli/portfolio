@@ -7,16 +7,28 @@
     position: relative;
     overflow: hidden;
     margin-top: 80px;
-    height: 36vh;
+    height: 30vh;
 
     @include media-breakpoint-up(md) {
       margin-top: 100px;
     }
 
+    &.mobile-image {
+      img {
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    &.desktop-image {
+      img {
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
+
     img {
       position: absolute;
-      object-fit: cover;
-      object-position: top center;
       z-index: -1;
     }
   }
