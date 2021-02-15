@@ -278,6 +278,14 @@ export default {
             '<ul><li>New users: increased by 20%;</li><li>New sessions: increased by 30%;</li><li>36% more visualization on the pages;</li><li>Users spent 8% more time;</li><li>“Get a quote” page access: increased 150+%;</li><li>28% more direct bookings;</li></ul>'
           ],
           visualContent: {
+            contentType: 'comparison',
+            usage: 'Drag and slide the green circle to compare versions',
+            sourceOld: '/img/portfolio/ace-english-malta/home-old.jpg',
+            sourceNew: '/img/portfolio/ace-english-malta/home-new.jpg',
+            sourceCaption: 'Comparison between the old and new version of the website',
+          },
+        },{
+          visualContent: {
             contentType: 'btn',
             source: 'https://www.aceenglishmalta.com/',
             sourceMobile: '',

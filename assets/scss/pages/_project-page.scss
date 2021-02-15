@@ -186,7 +186,44 @@
     }
   }
 
+  &__img-comp {
+    &__container {
+      height: 886px; /*should be the same height as the images*/
+      position: relative;
+    }
+  
+    &__img {
+      position: absolute;
+      width: auto;
+      height: auto;
+      overflow: hidden;
+  
+      img {
+        border-radius: 0;
+        display: block;
+        width: 580px;
+        height: 886px;
+        object-fit: cover;
+        object-position: left;
+        vertical-align: middle;
+      }
+    }
+  
+    &__slider {
+      background-color: $vv-green-lighter;
+      border-radius: 50%;
+      cursor: ew-resize;
+      position: absolute;
+      
+      width: 40px;
+      height: 40px;
+      opacity: 0.85;
+      z-index: 9;
+    }
+  }
+
   &__other-projects {
     padding-top: $grid-xx;
   }
 }
+
