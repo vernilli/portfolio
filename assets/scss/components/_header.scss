@@ -80,22 +80,16 @@
       border-radius: 5px;
       color: $vv-black;
       cursor: pointer;
+      font-weight: 500;
       padding: $grid-xs $grid-md;
 
       &:hover {
         background-color: $vv-gray-lightest;
       }
 
-      svg {
-        &.options-open {
-          @include transform(rotate(-180deg));
-          @include transition(all 0.2s);
-        }
-
-        * {
-          stroke: $vv-black;
-          stroke-width: $icon-medium;
-        }
+      svg * {
+        stroke: $vv-black;
+        stroke-width: $icon-regular;
       }
     }
 
@@ -113,7 +107,7 @@
       left: 0;
 
       a {
-        padding: $grid-xs $grid-sm;
+        padding: $grid-xs $grid-md;
         margin: 0;
         width: 100%;
 

@@ -15,6 +15,7 @@
           class="about__career-item__company-conference main-link"
         >
           {{ item.company }}
+          <external-link-icon :width="20" :height="20" />
         </a>
       </div>
       <div class="col-12 col-md-4 p-0 d-flex flex-column align-items-start align-items-md-end">
@@ -33,8 +34,13 @@
 </template>
 
 <script>
+import ExternalLinkIcon from '~/assets/icn/icon_external_link.svg'
+
 export default {
   name: "career-list",
+  components: {
+    ExternalLinkIcon
+  },
   props: {
     list: Array,
   },

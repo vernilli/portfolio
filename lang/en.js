@@ -10,14 +10,14 @@ export default {
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
-    'I’m a Product Designer who believes that we can people’s life easier, even in the most complex areas. I love history and mankind past and eager to discover new things.',
+    'I’m a Product Designer who believes that we can people’s life better and easier, even in the most complex areas. I love history and mankind past and eager to discover new things.',
     'I’m also a coffee lover. <strong>So, let’s take a coffee and talk.</strong>','Here are some projects that I’ve done or participated, I hope you like it.'
   ],
   otherProjectsCopy: 'Other projects',
 
   aboutPage: {
-    greetingsCopy: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.',
-    altImg: 'Picture of Victor Vernilli',
+    greetingsCopy: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college. Currently I’m taking a Postgraduate Course to dive deeper on Digital Experience Design.',
+    altImg: 'Picture of Victor Vernilli, a young adult smiling, short dark-brown hair and he is wearing a dark-blue with flowers t-shirt',
     backgroundCopy: [
       'The concept of thinking, caring about and bringing the best experience to users/customers of a product caught my attention. Because of that, I’ve been trying to apply UX steps on all my projects during the college whenever possible.',
       'I believe we can improve people’ experience in any area, even in a hated and rejected one. Most of the time these feelings are be caused because no one thinks about users when designing the product/service. This sentence became even more true when I’d been working on mobile ads and there were, even in this area, improvements to be made in the user experience.',
@@ -176,7 +176,7 @@ export default {
             contentType: 'img',
             style: 'full-contained',
             source: '/img/portfolio/ace-english-malta/malta-report-desktop.jpg',
-            sourceMobile: '',
+            sourceMobile: '/img/portfolio/ace-english-malta/malta-report-mobile.jpg',
             sourceCaption: 'Part of the Anual Report made by Malta Government',
             imgAlt: 'Part of the Anual Report made by Malta Government',
           },

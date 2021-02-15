@@ -38,11 +38,8 @@
                 @click="toggleLangOptions"
                 class="header__lang-switcher__selector"
               >
+                <language-icon :width="24" :height="24" />
                 {{ isPtLang ? $t('languages.portuguese') : $t('languages.english') }}
-                <arrow-down-icon 
-                  :class="{'options-open': langOptionsOpen}"
-                  :width="18" :height="18" 
-                />
               </div>
 
               <transition name="fade-up">
@@ -96,12 +93,12 @@
 </template>
 
 <script>
-import ArrowDownIcon from '~/assets/icn/icon_arrow_chevron_down.svg'
+import LanguageIcon from '~/assets/icn/icon_language.svg'
 
 export default {
   name: "app-navbar",
   components: {
-    ArrowDownIcon
+    LanguageIcon
   },
   watch: {
     $route () {

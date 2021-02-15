@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.indie-icon-language-switcher-0{clip-path:url(#SVGID_2_);}
+	.indie-icon-language-switcher-1{fill:none;stroke:#505050;stroke-width:16;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="500" height="500"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="indie-icon-language-switcher-0">
+		<g>
+			<path class="indie-icon-language-switcher-1" d="M148,285.5c12.1,4.9,25.3,7.6,39.2,7.6c57.4,0,103.9-46.5,103.9-103.9S244.6,85.4,187.2,85.4
+				S83.4,131.9,83.4,189.3c0,20.8,6.1,40.2,16.7,56.4c1.2,1.9,1.4,4.2,0.6,6.2l-9,21.4c-1,2.4,1.2,4.9,3.7,4.2l27.3-8.1"/>
+			<g>
+				<line class="indie-icon-language-switcher-1" x1="153.3" y1="176" x2="221.1" y2="176"/>
+				<g>
+					<path class="indie-icon-language-switcher-1" d="M187.2,140.2V181c0,0,2.5,35.6-37,57.2"/>
+					<path class="indie-icon-language-switcher-1" d="M199.6,217.4c5.5,7.3,13.4,14.7,24.7,20.9"/>
+				</g>
+			</g>
+		</g>
+		<g>
+			<g>
+				<line class="indie-icon-language-switcher-1" x1="277.3" y1="336.2" x2="312.9" y2="250.9"/>
+				<polyline class="indie-icon-language-switcher-1" points="348.5,336.2 344.1,325.7 343.4,323.9 337.5,309.8 312.9,250.9 				"/>
+			</g>
+			<line class="indie-icon-language-switcher-1" x1="338.1" y1="308.5" x2="344.9" y2="308.5"/>
+			<line class="indie-icon-language-switcher-1" x1="280.8" y1="308.5" x2="312.5" y2="308.5"/>
+		</g>
+		<path class="indie-icon-language-switcher-1" d="M322.1,205.1h70.5c13.3,0,24.1,10.8,24.1,24.1V358c0,13.3-10.8,24.1-24.1,24.1H381c-2.6,0-4.6,2.1-4.6,4.6
+			V411c0,3-3.4,4.6-5.8,2.8l-36.2-28.6c-2.6-2-5.8-3.1-9.1-3.1h-92.1c-13.3,0-24.1-10.8-24.1-24.1v-36.1"/>
+	</g>
+</g>
+</svg>
