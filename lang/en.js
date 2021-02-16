@@ -377,8 +377,8 @@ export default {
             style: 'full-contained',
             source: '/img/portfolio/time-to-place/time-to-place-parallax.jpg',
             sourceMobile: '',
-            sourceCaption: 'Part of the Annual Report made by Malta Government',
-            imgAlt: 'Part of the Annual Report made by Malta Government',
+            sourceCaption: 'Some examples of the rich media used during the tests',
+            imgAlt: 'Some examples of the rich media used during the tests',
           },
         },{
           id: 'results',
