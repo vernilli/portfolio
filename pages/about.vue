@@ -29,11 +29,10 @@
       </div>
 
       <div class="d-flex justify-content-center">
-        <vv-button :text="$t('aboutPage.buttonTextCopy')" :path="buttonPath">
-          <template v-slot:iconAfter>
-            <file-icon />
-          </template>
-        </vv-button>
+        <vv-button 
+          :text="$t('aboutPage.buttonTextCopy')" 
+          :path="buttonPath" 
+        />
       </div>
 
       <div>
@@ -77,7 +76,7 @@ export default {
   },
   data() {
     return {
-      buttonPath: "presentations/2017_TDC_ISA.pdf",
+      buttonPath: 'victor-vernilli-cv.pdf',
     }
   },
 }

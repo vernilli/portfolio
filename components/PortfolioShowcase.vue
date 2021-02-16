@@ -20,7 +20,7 @@
 import PortfolioCard from '~/components/PortfolioCard.vue'
 
 export default {
-  name: "portfolio-showcase",
+  name: 'portfolio-showcase',
   components: {
     PortfolioCard,
   },
@@ -30,10 +30,10 @@ export default {
   data() {
     return {
       backgrounds: [
-        "bg--green-dark",
-        "bg--green",
-        "bg--green-light",
-        "bg--green-light",
+        'bg--green-dark',
+        'bg--green',
+        'bg--green-light',
+        'bg--green-light',
       ]
     }
   }

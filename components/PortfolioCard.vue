@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "portfolio-card",
+  name: 'portfolio-card',
   props: {
     hideProject: Boolean,
     projectTitle: String,

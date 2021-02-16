@@ -139,7 +139,7 @@ import VueObserveVisibility from 'vue-observe-visibility'
 Vue.use(VueObserveVisibility)
 
 export default {
-  name: "project-page-main",
+  name: 'project-page-main',
   props: {
     content: Array,
   },
@@ -155,7 +155,7 @@ export default {
     function initComparisons() {
       var x, i;
       /*find all elements with an "overlay" class:*/
-      x = document.getElementsByClassName("project-page__img-comp__overlay");
+      x = document.getElementsByClassName('project-page__img-comp__overlay');
       for (i = 0; i < x.length; i++) {
         /*once for each "overlay" element:
         pass the "overlay" element as a parameter when executing the compareImages function:*/
@@ -167,31 +167,31 @@ export default {
         w = img.offsetWidth;
         h = img.offsetHeight;
         /*set the width of the img element to 50%:*/
-        img.style.width = (w / 2) + "px";
+        img.style.width = (w / 2) + 'px';
         /*create slider:*/
-        slider = document.createElement("DIV");
-        slider.setAttribute("class", "project-page__img-comp__slider");
+        slider = document.createElement('DIV');
+        slider.setAttribute('class', 'project-page__img-comp__slider');
         /*insert slider*/
         img.parentElement.insertBefore(slider, img);
         /*position the slider in the middle:*/
-        slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-        slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+        slider.style.top = (h / 2) - (slider.offsetHeight / 2) + 'px';
+        slider.style.left = (w / 2) - (slider.offsetWidth / 2) + 'px';
         /*execute a function when the mouse button is pressed:*/
-        slider.addEventListener("mousedown", slideReady);
+        slider.addEventListener('mousedown', slideReady);
         /*and another function when the mouse button is released:*/
-        window.addEventListener("mouseup", slideFinish);
+        window.addEventListener('mouseup', slideFinish);
         /*or touched (for touch screens:*/
-        slider.addEventListener("touchstart", slideReady);
+        slider.addEventListener('touchstart', slideReady);
         /*and released (for touch screens:*/
-        window.addEventListener("touchstop", slideFinish);
+        window.addEventListener('touchstop', slideFinish);
         function slideReady(e) {
           /*prevent any other actions that may occur when moving over the image:*/
           e.preventDefault();
           /*the slider is now clicked and ready to move:*/
           clicked = 1;
           /*execute a function when the slider is moved:*/
-          window.addEventListener("mousemove", slideMove);
-          window.addEventListener("touchmove", slideMove);
+          window.addEventListener('mousemove', slideMove);
+          window.addEventListener('touchmove', slideMove);
         }
         function slideFinish() {
           /*the slider is no longer clicked:*/
@@ -222,9 +222,9 @@ export default {
         }
         function slide(x) {
           /*resize the image:*/
-          img.style.width = x + "px";
+          img.style.width = x + 'px';
           /*position the slider:*/
-          slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+          slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + 'px';
         }
       }
     }

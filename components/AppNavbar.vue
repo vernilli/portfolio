@@ -96,7 +96,7 @@
 import LanguageIcon from '~/assets/icn/icon_language.svg'
 
 export default {
-  name: "app-navbar",
+  name: 'app-navbar',
   components: {
     LanguageIcon
   },
@@ -148,8 +148,8 @@ export default {
   },
   mounted() {
     this.topPage = true
-    window.addEventListener("resize", this.hideBurger)
-    window.addEventListener("scroll", this.onScroll)
+    window.addEventListener('resize', this.hideBurger)
+    window.addEventListener('scroll', this.onScroll)
   },
   
 }

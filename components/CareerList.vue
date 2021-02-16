@@ -37,7 +37,7 @@
 import ExternalLinkIcon from '~/assets/icn/icon_external_link.svg'
 
 export default {
-  name: "career-list",
+  name: 'career-list',
   components: {
     ExternalLinkIcon
   },

@@ -177,8 +177,8 @@ export default {
             style: 'full-contained',
             source: '/img/portfolio/ace-english-malta/malta-report-desktop.jpg',
             sourceMobile: '/img/portfolio/ace-english-malta/malta-report-mobile.jpg',
-            sourceCaption: 'Part of the Anual Report made by Malta Government',
-            imgAlt: 'Part of the Anual Report made by Malta Government',
+            sourceCaption: 'Part of the Annual Report made by Malta Government',
+            imgAlt: 'Part of the Annual Report made by Malta Government',
           },
         },{
           subsections: [
@@ -377,8 +377,8 @@ export default {
             style: 'full-contained',
             source: '/img/portfolio/time-to-place/time-to-place-parallax.jpg',
             sourceMobile: '',
-            sourceCaption: 'Part of the Anual Report made by Malta Government',
-            imgAlt: 'Part of the Anual Report made by Malta Government',
+            sourceCaption: 'Part of the Annual Report made by Malta Government',
+            imgAlt: 'Part of the Annual Report made by Malta Government',
           },
         },{
           id: 'results',
@@ -392,7 +392,7 @@ export default {
           ],
           visualContent: {
             contentType: 'btn',
-            source: 'https://vernilli.com/presentations/2017_TCC_CONTEXT_ADS.pdf',
+            source: 'presentations/2017_TCC_CONTEXT_ADS.pdf',
             sourceMobile: '',
             sourceCaption: 'Read full report (Portuguese)',
           },
