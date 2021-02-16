@@ -16,7 +16,7 @@
   &__card {
     @include transition(all 0.35s);
     border-radius: 5px;
-    box-shadow: none;
+    box-shadow: 0 0 0 0 transparent;
     position: relative;
     text-align: left;
 

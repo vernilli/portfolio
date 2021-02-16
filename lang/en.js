@@ -14,6 +14,7 @@ export default {
     'I’m also a coffee lover. <strong>So, let’s take a coffee and talk.</strong>','Here are some projects that I’ve done or participated, I hope you like it.'
   ],
   otherProjectsCopy: 'Other projects',
+  imageComparatorUsageCopy: 'Drag and slide the green circle to compare versions',
 
   aboutPage: {
     greetingsCopy: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college. Currently I’m taking a Postgraduate Course to dive deeper on Digital Experience Design.',
@@ -279,7 +280,6 @@ export default {
           ],
           visualContent: {
             contentType: 'comparison',
-            usage: 'Drag and slide the green circle to compare versions',
             sourceOld: '/img/portfolio/ace-english-malta/home-old.jpg',
             sourceNew: '/img/portfolio/ace-english-malta/home-new.jpg',
             sourceCaption: 'Comparison between the old and new version of the website',

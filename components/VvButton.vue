@@ -36,7 +36,7 @@
 
 <script>
 export default {
-  name: "vv-button",
+  name: 'vv-button',
   props: {
     text: String,
     title: String,
