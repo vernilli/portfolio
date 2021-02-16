@@ -2,7 +2,7 @@
 // Page transition
 .page-enter-active,
 .page-leave-active {
-  @include transition(opacity 0.25s);
+  @include transition(opacity 0.3s);
 }
 .page-enter,
 .page-leave-to {
@@ -11,7 +11,7 @@
 
 .layout-enter-active,
 .layout-leave-active {
-  @include transition(opacity 0.25s);
+  @include transition(opacity 0.3s);
 }
 .layout-enter,
 .layout-leave-to {
@@ -21,9 +21,20 @@
 // Fade transition
 .fade-enter-active,
 .fade-leave-active {
-  @include transition(opacity 0.25s);
+  @include transition(opacity 0.3s);
 }
 .fade-enter,
 .fade-leave-to {
+  opacity: 0;
+}
+
+// Fade up transition
+.fade-up-enter-active,
+.fade-up-leave-active {
+  @include transition(all 0.2s);
+}
+.fade-up-enter,
+.fade-up-leave-to {
+  @include transform(translate3d(0, 8px, 0));
   opacity: 0;
 }

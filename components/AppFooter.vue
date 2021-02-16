@@ -34,23 +34,23 @@
 
 <script>
 export default {
-  name: "app-footer",
+  name: 'app-footer',
   data() {
     return {
       email: {
-        text: "victorvernilli[at]gmail[dot]com",
-        link: "mailto:victorvernilli@gmail.com",
+        text: 'victorvernilli[at]gmail[dot]com',
+        link: 'mailto:victorvernilli@gmail.com',
       },
       links: [
         {
-          text: "linkedin",
-          link: "https://www.linkedin.com/in/vernilli/",
+          text: 'linkedin',
+          link: 'https://www.linkedin.com/in/vernilli/',
         },{
-          text: "medium",
-          link: "https://medium.com/@vernilli",
+          text: 'medium',
+          link: 'https://medium.com/@vernilli',
         },{
-          text: "github",
-          link: "https://github.com/vernilli",
+          text: 'github',
+          link: 'https://github.com/vernilli',
         },
       ],
       burgerOpen: false,

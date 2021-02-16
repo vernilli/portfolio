@@ -27,12 +27,25 @@
               item.visualContent && 
               item.visualContent.contentType === 'btn'
             "
-            class="pb-5"  
+            class="pb-5"
           >
             <vv-button 
               :text="item.visualContent.sourceCaption" 
               :title="item.visualContent.sourceCaption"
               :path="item.visualContent.source"
+            />
+          </div>
+
+          <div 
+            v-if="
+              item.visualContent && 
+              item.visualContent.contentType === 'comparison'
+            "
+          >
+            <image-comparator
+              :image-old-path="item.visualContent.sourceOld"
+              :image-new-path="item.visualContent.sourceNew"
+              :comparator-disclaimer="item.visualContent.sourceCaption"
             />
           </div>
         </div>
@@ -109,11 +122,15 @@
 <script>
 import Vue from 'vue'
 import VueObserveVisibility from 'vue-observe-visibility'
+import ImageComparator from './ImageComparator.vue'
  
 Vue.use(VueObserveVisibility)
 
 export default {
-  name: "project-page-main",
+  components: { 
+    ImageComparator
+  },
+  name: 'project-page-main',
   props: {
     content: Array,
   },

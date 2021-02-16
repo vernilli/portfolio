@@ -1,10 +1,10 @@
 <template>
   <transition name="fade" mode="out-in">
     <div :key="currentLocale" class="project-page">
-      <div class="project-page__hero desktop-image mb-4">
-        <img :src="require(`~/static/img/portfolio/${$t('projects[0].heroImg')}`)" alt="" class="w-100 h-100">
+      <div class="project-page__hero mobile-image mb-4">
+        <img :src="require(`~/static/img/portfolio/${$t('projects[1].heroImg')}`)" alt="" class="w-100 h-100">
         <h1 class="project-page__title text-center">
-          {{ $t('projects[0].projectTitle') }}
+          {{ $t('projects[1].projectTitle') }}
         </h1>
       </div>
 
@@ -15,7 +15,7 @@
         />
 
         <project-page-main
-          :content="$t('projects[0].projectContent', { returnObjects: true })"
+          :content="$t('projects[1].projectContent', { returnObjects: true })"
           @heading-visible-id="activeItemChanged"
         />
       </main>
@@ -24,7 +24,7 @@
         <h2 class="text-center">
           {{ $t('otherProjectsCopy') }}
         </h2>
-        <portfolio-showcase :hideProject="$t('projects[0].permalink')" />
+        <portfolio-showcase :hideProject="$t('projects[1].permalink')" />
       </div>
       
     </div>
@@ -53,7 +53,7 @@ export default {
       return this.$i18n.locale
     },
     pageContent: function() {
-      return this.$i18n.messages[this.$i18n.locale].projects[0].projectContent
+      return this.$i18n.messages[this.$i18n.locale].projects[1].projectContent
     },
     itemsPageNav: function() {
       let ids = []
@@ -88,7 +88,7 @@ export default {
     },
   },
   mounted() {
-    this.visibleItemNav = this.$i18n.messages[this.$i18n.locale].projects[0].visibleItemNav
+    this.visibleItemNav = this.$i18n.messages[this.$i18n.locale].projects[1].visibleItemNav
   }
 }
 </script>

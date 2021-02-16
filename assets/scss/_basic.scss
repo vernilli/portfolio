@@ -1,4 +1,11 @@
-.container { max-width: 960px; }
+.container { 
+  max-width: 960px;
+
+  &--expanded {
+    @extend .container;
+    max-width: 1180px;
+  }
+}
 
 .bg{
   &--green,
@@ -25,6 +32,9 @@ a.main-link {
   text-decoration: none;
   text-align: center;
 
+  display: inline-flex;
+  align-items: center;
+
   &::before {
     @include transition(all 0.2s);
     content: '';
@@ -49,6 +59,14 @@ a.main-link {
 
     &::before {
       width: 100%;
+    }
+  }
+
+  svg {
+    margin-left: $grid-sm;
+
+    * {
+      stroke-width: $icon-regular;
     }
   }
 }

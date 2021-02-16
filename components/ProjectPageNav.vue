@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "project-page-nav",
+  name: 'project-page-nav',
   props: {
     anchors: Array,
     activeItem: String,
@@ -28,11 +28,11 @@ export default {
   methods: {
     scrollToElement: function(e) {
       e.preventDefault()
-      const itemId = e.currentTarget.getAttribute("to-element")
+      const itemId = e.currentTarget.getAttribute('to-element')
       const offsetTop = document.getElementById(itemId).offsetTop
       scroll({
         top: (offsetTop - 80),
-        behavior: "smooth"
+        behavior: 'smooth'
       });
     },
   },

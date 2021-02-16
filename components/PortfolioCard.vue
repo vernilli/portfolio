@@ -1,5 +1,6 @@
 <template>
   <nuxt-link 
+    v-if="!hideProject"
     :to="projectUrl" 
     class="portfolio__card d-flex flex-column p-4 pb-5"
   >
@@ -19,8 +20,9 @@
 
 <script>
 export default {
-  name: "portfolio-card",
+  name: 'portfolio-card',
   props: {
+    hideProject: Boolean,
     projectTitle: String,
     projectDesc: String,
     projectUrl: String,

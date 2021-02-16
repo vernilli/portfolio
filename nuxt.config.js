@@ -58,6 +58,41 @@ export default {
         }
       }
     ],
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            file: 'en.js',
+          },
+          {
+            code: 'pt-BR',
+            file: 'pt-BR.js', 
+          }
+        ],
+        lazy: true,
+        langDir: 'lang/',
+        seo: false,
+        vueI18nLoader: true,
+        strategy: 'prefix_except_default',
+        undefinedDomainStrategy: 'prefix',
+        detectBrowserLanguage: false,
+        defaultLocale: 'en',
+        vueI18n: {
+          silentTranslationWarn: true,
+          silentFallbackWarn: true,
+          fallbackLocale: 'en',
+        },
+        parsePages: false,
+        pages: {
+          about: {
+            'en': '/about',
+            'pt-BR': '/sobre',
+          },
+        },
+      }
+    ]
   ],
 
   svgLoader: {
