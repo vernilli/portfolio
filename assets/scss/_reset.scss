@@ -5,7 +5,7 @@
   border: 0;
 
   color: $vv-gray-darkest;
-  font-family: $font-main;
+  font-family: $font-sans;
 
   font-display: swap !important;
   text-rendering: geometricPrecision !important;
@@ -51,7 +51,7 @@ h6 { font-size: $h6-size-mobile; }
 
 p {
   color: $vv-gray-darker;
-  font-family: $font-paragraph;
+  font-family: $font-sans;
   font-size: $p-size-mobile;
   line-height: 1.8;
   max-width: 70ch;
@@ -64,7 +64,7 @@ p {
   
   strong { 
     color: $vv-gray-darkest;
-    font-family: $font-paragraph;
+    font-family: $font-sans;
     font-weight: 600;
   }
 
@@ -72,7 +72,7 @@ p {
     @include transition(all 0.2s);
     border-bottom: solid 1px $vv-gray-dark;
     color: $vv-gray-darker;
-    font-family: $font-paragraph;
+    font-family: $font-sans;
     position: relative;
     text-decoration: none;
 
@@ -98,7 +98,7 @@ p {
 
       strong {
         color: $vv-gray-darkest;
-        font-family: $font-paragraph;
+        font-family: $font-sans;
       }
     }
   }
