@@ -1,6 +1,6 @@
 export default {
   name: 'Victor Vernilli',
-  nameMobile: 'Vernilli',
+  nameMobile: 'V. Vernilli',
   languages: {
     english: 'english',
     portuguese: 'português'

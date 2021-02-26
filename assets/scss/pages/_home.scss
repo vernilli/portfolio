@@ -5,8 +5,13 @@
 
   &__greetings {
     p {
-      font-size: $p-size;
-      line-height: 1.55;
+      font-size: $p-size-mobile;
+      line-height: 1.8;
+
+      @include media-breakpoint-up(md) {
+        font-size: $p-size;
+        line-height: 2;
+      }
     }
   }
 }
