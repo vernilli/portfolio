@@ -21,12 +21,13 @@ $vv-green-darker:    #001a1f;
 // $vv-wine-dark:       #610E00;
 
 // Font families
+@import url('https://fonts.googleapis.com/css?family=Varela+Round:100,300,400,500,600,700,900&font-display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,900&font-display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lora:100,300,400,700,900&font-display=swap');
 // @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&font-display=swap');
 // @import url('https://fonts.googleapis.com/css?family=Merriweather:100,300,400,700,900&font-display=swap');
-$font-main:      'Montserrat', sans-serif;
-$font-paragraph: 'Lora', serif;
+$font-sans:  'Varela Round', 'Montserrat', sans-serif;
+$font-serif: 'Lora', serif;
 
 // Font sizes
 // Major third scale. Reference at https://type-scale.com/
