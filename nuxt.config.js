@@ -66,10 +66,10 @@ export default {
             code: 'en',
             file: 'en.js',
           },
-          {
-            code: 'pt-BR',
-            file: 'pt-BR.js', 
-          }
+          // {
+          //   code: 'pt-BR',
+          //   file: 'pt-BR.js', 
+          // }
         ],
         lazy: true,
         langDir: 'lang/',
@@ -88,7 +88,7 @@ export default {
         pages: {
           about: {
             'en': '/about',
-            'pt-BR': '/sobre',
+            // 'pt-BR': '/sobre',
           },
         },
       }
