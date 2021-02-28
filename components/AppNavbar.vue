@@ -21,19 +21,19 @@
             <nav class="header__navigation d-flex">
               <nuxt-link 
                 :to="localePath('index')" 
-                class="main-link mr-2 mr-md-0 ml-md-4"
+                class="main-link ml-3 ml-md-4"
               >
                 {{ $t('projectsCopy') }}
               </nuxt-link>
               <nuxt-link 
                 :to="localePath('about')" 
-                class="main-link mr-2 mr-md-0 ml-md-4"
+                class="main-link ml-3 ml-md-4"
               >
                 {{ $t('aboutCopy') }}
               </nuxt-link>
             </nav>
           
-            <div class="header__lang-switcher d-none d-md-flex position-relative ml-4">
+            <!-- <div class="header__lang-switcher d-none d-md-flex position-relative ml-4">
               <div 
                 @click="toggleLangOptions"
                 class="header__lang-switcher__selector"
@@ -55,9 +55,9 @@
                   </nuxt-link>
                 </div>
               </transition>
-            </div>
+            </div> -->
 
-            <div 
+            <!-- <div 
               id="burger-icon"
               class="d-block d-md-none"
               :class="{'open': burgerOpen}"
@@ -67,28 +67,29 @@
               <span></span>
               <span></span>
               <span></span>
-            </div>
+            </div> -->
+
           </div>      
         </transition>
 
       </div>
 
-      <div v-if="burgerOpen" class="header__lang-switcher d-flex d-md-none justify-content-center mt-4">
+      <!-- <div v-if="burgerOpen" class="header__lang-switcher d-flex d-md-none justify-content-center mt-4">
         <nuxt-link :to="switchLocalePath('en')">
           {{ $t('languages.english') }}
         </nuxt-link>
         <nuxt-link :to="switchLocalePath('pt-BR')">
           {{ $t('languages.portuguese') }}
         </nuxt-link>
-      </div>
+      </div> -->
       
     </header>
 
-    <div 
+    <!-- <div 
       v-if="burgerOpen" 
       @click="hideBurger"
       class="header__fade-background"
-    />
+    /> -->
   </div>
 </template>
 

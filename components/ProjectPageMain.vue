@@ -73,7 +73,7 @@
               v-html="paragraph"
             />
 
-            <div v-if="section.visualContent">
+            <div v-if="section.visualContent" class="mb-4">
               <figure 
                 v-if="section.visualContent.contentType === 'img'"
                 :class="{

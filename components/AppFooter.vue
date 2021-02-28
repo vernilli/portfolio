@@ -38,8 +38,8 @@ export default {
   data() {
     return {
       email: {
-        text: 'victorvernilli[at]gmail[dot]com',
-        link: 'mailto:victorvernilli@gmail.com',
+        text: 'victor.vernilli[at]gmail[dot]com',
+        link: 'mailto:victor.vernilli@gmail.com',
       },
       links: [
         {

@@ -5,31 +5,33 @@
 
   &__greetings {
     p {
-      font-size: $h4-size;
-      line-height: 1.55;
+      font-size: $h5-size;
+      line-height: 1.6;
     }
   }
 
   &__profile-picture {
 
-    &::before {
-      content: '';
-      background: linear-gradient(
-        to top, 
-        rgba($color: $vv-white, $alpha: 1)  5%, 
-        rgba($color: $vv-white, $alpha: 0) 30%
-      );
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-    }
+    // &::before {
+    //   content: '';
+    //   background: linear-gradient(
+    //     to top, 
+    //     rgba($color: $vv-white, $alpha: 1)  5%, 
+    //     rgba($color: $vv-white, $alpha: 0) 30%
+    //   );
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   bottom: 0;
+    //   right: 0;
+    // }
 
     img {
+      border-radius: 5px;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
     }
   }
 
