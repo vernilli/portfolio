@@ -230,8 +230,8 @@ export default {
         },{
           subsections: [
             {
-              id: 'prototyping',
-              heading: 'Prototyping',
+              id: 'sketching-prototyping',
+              heading: 'Sketching and Prototyping',
               paragraphs: [
                 'After all conception research and analysis phases, I had to put all gathered findings on paper and organize it in a way to extract insights from it. Before going directly to develop the website, I’ve decided to go through two prototype steps: a low-fidelity prototype; and a high-fidelity one. The goal of the first was to understand the better user flow; second to test the interface itself and check with chosen elements work on the interface.',
                 'During the research, I’ve identified the users had questions about the course categories that the school offers. Thus, we decided to put a small paragraph to explain a little bit better about each category. So, I used, in some user tests, the high-fidelity prototype to validate the interface and which UI element worked better.',
@@ -502,91 +502,91 @@ export default {
 
 
 
-    {
-      permalink: 'inlocomedia',
-      projectTitle: 'In Loco Media',
-      showcase: {
-        desc: 'Redesign the In Loco Media’s site - greatest mobile advertising platform in Brazil',
-        imageAlt: '',
-        imageUrl: '/img/portfolio/mockup-site-inlocomedia.png',
-        device: 'desktop',
-      },
-      visibleItemNav: 'goal',
-      heroImg: 'inloco-media/inloco-media-header.jpg',
-      projectContent: [
-        {
-          id: 'goal',
-          heading: 'Goal',
-          paragraphs: [
-            'Redesign In Loco Media’s site - greatest mobile advertising platform in Brazil -, giving attention to both enterprise stakeholders: Advertisers and Publishers. Also creating an international expansion version.',
-          ]
-        },{
-          id: 'challenge',
-          heading: 'Challenge',
-          paragraphs: [
-            'The In Loco Media’s site, before the redesign, was focused only on advertisers. This was considered a problem since the enterprise also had publishers as stakeholders. As different groups, they have different intentions when contacting In Loco: the former wants to show their brand/product and the latter wants to monetize their apps. So it was necessary to give attention to both, clarifying that In Loco could help them, without one detracting importance from the other.',
-          ]
-        },{
-          id: 'process',
-          heading: 'Process',
-          subsections: [
-            {
-              id: 'research-ideation',
-              heading: 'Research and Ideation',
-              paragraphs: [
-                'The process has begun with a chat between the team - a designer and me - and the CEO to align enterprise goals and how the new site would help to reach these objectives. We also talked to the CMO, to identify what the marketing team intended, and which discourse we could use on the site.',
-                'This step has been very important and critical because we’ve needed to identify and find a way to communicate these goals through the site pages. And try to solve inconsistencies created by the former site.',
-                'We’ve identified that the live version was a bit confusing, it didn’t explain clearly what In Loco Media does. We also saw a higher emphasis for advertisers than for publishers. This was something that we needed to fix because one of the business goals was: to increase the number of apps on their platform.',
-                'Another problem which we’ve figured out in other meetings was: advertisers don’t understand very well how mobile ads work. And this was critical! Since if the client doesn’t understand the product/service, he/she hardly would pay for it.',
-                'We also accessed the Google Analytics account to use this information to understand how had been the behavior of users who access the site. In addition, we’ve started to use Mixpanel, other software analytics tool - but an event-based one, in contrast to Google Analytics, a view-based one - to understand the users’ interest in the content.'
-              ],
-              visualContent: {
-                contentType: 'img',
-                style: 'same',
-                source: '/img/portfolio/inloco-media/inloco-media-sketch.jpg',
-                sourceMobile: '',
-                sourceCaption: '<strong>Sketches</strong>: In Loco Media’s main page sketch',
-                imgAlt: 'First draft sketches during a brainstorm session',
-              },
-            },{
-              id: 'prototyping',
-              heading: 'Prototyping',
-              paragraphs: [
-                'After two weeks of identifying the objectives, problems, and good site aspects, we started the next step: prototyping and graphic designing. We brought up all important pages that would solve the listed problems, using the minimum viable product - MVP - to conceptualize, build, and test it.',
-                'We created a low fidelity paper version of all new screens, to check if those pages really would fulfill every redesign goal. So, we did some usability tests with stakeholders to identify what was right or not.',
-                'After the tests and some adjustments in the paper prototype, we advanced to a high fidelity prototype. For this, we used software like Photoshop, Sketch, and Zeplin.',
-              ],
-              visualContent: {
-                contentType: 'img',
-                style: 'same',
-                source: '/img/portfolio/inloco-media/inloco-media-sketch2.jpg',
-                sourceMobile: '',
-                sourceCaption: '<strong>Sketches</strong>: In Loco Media’s main page sketch',
-                imgAlt: 'First draft sketches during a brainstorm session',
-              },
-            }
-          ]
-        },{
-          id: 'development',
-          heading: 'Development',
-          paragraphs: [
-            'After all, we created all screens and we started the development. This step was relatively simple, taking a few sprints - we were using Scrum for project management. In Loco Media used to use WordPress as a base, this helped to build the main site structure. However, various elements needed to be built from scratch.',
-          ]
-        },{
-          id: 'final-result',
-          heading: 'Final Result',
-          paragraphs: [
-            '',
-          ],
-          visualContent: {
-            contentType: 'btn',
-            source: 'https://invis.io/3XS39WKV2RC#/364149714_Home',
-            sourceMobile: '',
-            sourceCaption: 'Check final prototype',
-          },
-        },
-      ]
-    },
+    // {
+    //   permalink: 'inlocomedia',
+    //   projectTitle: 'In Loco Media',
+    //   showcase: {
+    //     desc: 'Redesign the In Loco Media’s site - greatest mobile advertising platform in Brazil',
+    //     imageAlt: '',
+    //     imageUrl: '/img/portfolio/mockup-site-inlocomedia.png',
+    //     device: 'desktop',
+    //   },
+    //   visibleItemNav: 'goal',
+    //   heroImg: 'inloco-media/inloco-media-header.jpg',
+    //   projectContent: [
+    //     {
+    //       id: 'goal',
+    //       heading: 'Goal',
+    //       paragraphs: [
+    //         'Redesign In Loco Media’s site - greatest mobile advertising platform in Brazil -, giving attention to both enterprise stakeholders: Advertisers and Publishers. Also creating an international expansion version.',
+    //       ]
+    //     },{
+    //       id: 'challenge',
+    //       heading: 'Challenge',
+    //       paragraphs: [
+    //         'The In Loco Media’s site, before the redesign, was focused only on advertisers. This was considered a problem since the enterprise also had publishers as stakeholders. As different groups, they have different intentions when contacting In Loco: the former wants to show their brand/product and the latter wants to monetize their apps. So it was necessary to give attention to both, clarifying that In Loco could help them, without one detracting importance from the other.',
+    //       ]
+    //     },{
+    //       id: 'process',
+    //       heading: 'Process',
+    //       subsections: [
+    //         {
+    //           id: 'research-ideation',
+    //           heading: 'Research and Ideation',
+    //           paragraphs: [
+    //             'The process has begun with a chat between the team - a designer and me - and the CEO to align enterprise goals and how the new site would help to reach these objectives. We also talked to the CMO, to identify what the marketing team intended, and which discourse we could use on the site.',
+    //             'This step has been very important and critical because we’ve needed to identify and find a way to communicate these goals through the site pages. And try to solve inconsistencies created by the former site.',
+    //             'We’ve identified that the live version was a bit confusing, it didn’t explain clearly what In Loco Media does. We also saw a higher emphasis for advertisers than for publishers. This was something that we needed to fix because one of the business goals was: to increase the number of apps on their platform.',
+    //             'Another problem which we’ve figured out in other meetings was: advertisers don’t understand very well how mobile ads work. And this was critical! Since if the client doesn’t understand the product/service, he/she hardly would pay for it.',
+    //             'We also accessed the Google Analytics account to use this information to understand how had been the behavior of users who access the site. In addition, we’ve started to use Mixpanel, other software analytics tool - but an event-based one, in contrast to Google Analytics, a view-based one - to understand the users’ interest in the content.'
+    //           ],
+    //           visualContent: {
+    //             contentType: 'img',
+    //             style: 'same',
+    //             source: '/img/portfolio/inloco-media/inloco-media-sketch.jpg',
+    //             sourceMobile: '',
+    //             sourceCaption: '<strong>Sketches</strong>: In Loco Media’s main page sketch',
+    //             imgAlt: 'First draft sketches during a brainstorm session',
+    //           },
+    //         },{
+    //           id: 'prototyping',
+    //           heading: 'Prototyping',
+    //           paragraphs: [
+    //             'After two weeks of identifying the objectives, problems, and good site aspects, we started the next step: prototyping and graphic designing. We brought up all important pages that would solve the listed problems, using the minimum viable product - MVP - to conceptualize, build, and test it.',
+    //             'We created a low fidelity paper version of all new screens, to check if those pages really would fulfill every redesign goal. So, we did some usability tests with stakeholders to identify what was right or not.',
+    //             'After the tests and some adjustments in the paper prototype, we advanced to a high fidelity prototype. For this, we used software like Photoshop, Sketch, and Zeplin.',
+    //           ],
+    //           visualContent: {
+    //             contentType: 'img',
+    //             style: 'same',
+    //             source: '/img/portfolio/inloco-media/inloco-media-sketch2.jpg',
+    //             sourceMobile: '',
+    //             sourceCaption: '<strong>Sketches</strong>: In Loco Media’s main page sketch',
+    //             imgAlt: 'First draft sketches during a brainstorm session',
+    //           },
+    //         }
+    //       ]
+    //     },{
+    //       id: 'development',
+    //       heading: 'Development',
+    //       paragraphs: [
+    //         'After all, we created all screens and we started the development. This step was relatively simple, taking a few sprints - we were using Scrum for project management. In Loco Media used to use WordPress as a base, this helped to build the main site structure. However, various elements needed to be built from scratch.',
+    //       ]
+    //     },{
+    //       id: 'final-result',
+    //       heading: 'Final Result',
+    //       paragraphs: [
+    //         '',
+    //       ],
+    //       visualContent: {
+    //         contentType: 'btn',
+    //         source: 'https://invis.io/3XS39WKV2RC#/364149714_Home',
+    //         sourceMobile: '',
+    //         sourceCaption: 'Check final prototype',
+    //       },
+    //     },
+    //   ]
+    // },
 
   ]
 }

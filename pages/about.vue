@@ -28,7 +28,7 @@
         />
       </div>
 
-      <div class="d-flex justify-content-center">
+      <div v-if="false" class="d-flex justify-content-center">
         <vv-button 
           :text="$t('aboutPage.buttonTextCopy')" 
           :path="buttonPath" 

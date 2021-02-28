@@ -75,6 +75,7 @@ p {
     font-family: $font-sans;
     position: relative;
     text-decoration: none;
+    white-space: nowrap;
 
     &::before {
       @include transition(all 0.2s);
