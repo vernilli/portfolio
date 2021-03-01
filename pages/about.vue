@@ -79,5 +79,84 @@ export default {
       buttonPath: 'victor-vernilli-cv.pdf',
     }
   },
+  head: {
+    title: 'Portfolio',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.'
+      },{
+        hid: 'keywords',
+        name: 'keywords',
+        content: 'time to place, in loco, in loco media, carousel ad, context ads, victor vernilli, ux portfolio, mobile portfolio, ux mobile, ux designer, user-centered design'
+      },{
+        hid: 'author',
+        name: 'author',
+        content: 'Victor Vernilli'
+      },
+      // Facebook metadata
+      {
+        hid: 'og:locale',
+        property: 'og:locale',
+        content: 'en_US'
+      },{
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://vernilli.com'
+      },{
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'About me | Victor Vernilli'
+      },{
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'Victor Vernilli | Product Designer'
+      },{
+        hid: 'og:og:description',
+        property: 'og:og:description',
+        content: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.'
+      },{
+        hid: 'og:image',
+        property: 'og:image',
+        content: '~/static/img/TDC17.jpg'
+      },{
+        hid: 'og:image:type',
+        property: 'og:image:type',
+        content='image/jpeg'
+      },{
+        hid: 'og:image:width',
+        property: 'og:image:width',
+        content='1200'
+      },{
+        hid: 'og:image:height',
+        property: 'og:image:height',
+        content='628'
+      },{
+        hid: 'og:type',
+        property: 'og:type',
+        content='website'
+      },
+
+      // Twitter metadata
+      { 
+        hid='twitter:card',
+        name='twitter:card',
+        content='summary'
+      },{ 
+        hid='twitter:title',
+        name='twitter:title',
+        content='Victor Vernilli | Product Designer'
+      },{
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '~/static/img/TDC17.jpg'
+      },{
+        hid='twitter:description',
+        name='twitter:description',
+        content='My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.'
+      }
+    ],
+  },
 }
 </script>
