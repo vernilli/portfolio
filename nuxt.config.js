@@ -36,6 +36,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
     // '@nuxtjs/vuetify',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -103,6 +104,10 @@ export default {
         { prefixIds: false }
       ]
     }
+  },
+
+  googleAnalytics: {
+    id: 'UA-114959088-1'
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
