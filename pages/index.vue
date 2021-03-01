@@ -74,38 +74,37 @@ export default {
       },{
         hid: 'og:image:type',
         property: 'og:image:type',
-        content='image/jpeg'
+        content: 'image/jpeg'
       },{
         hid: 'og:image:width',
         property: 'og:image:width',
-        content='1200'
+        content: '1200'
       },{
         hid: 'og:image:height',
         property: 'og:image:height',
-        content='628'
+        content: '628'
       },{
         hid: 'og:type',
         property: 'og:type',
-        content='website'
+        content: 'website'
       },
-
       // Twitter metadata
       { 
-        hid='twitter:card',
-        name='twitter:card',
-        content='summary'
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary'
       },{ 
-        hid='twitter:title',
-        name='twitter:title',
-        content='Victor Vernilli | Product Designer'
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Portfolio | Victor Vernilli'
       },{
         hid: 'twitter:image',
         name: 'twitter:image',
         content: '~/static/img/TDC17.jpg'
       },{
-        hid='twitter:description',
-        name='twitter:description',
-        content='I’m a Product Designer. Here are some projects that I did or participated, I hope you like it. I work with UX design and front-end development.'
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'I’m a Product Designer. Here are some projects that I did or participated, I hope you like it. I work with UX design and front-end development.'
       }
     ],
   },

@@ -1,5 +1,5 @@
-<template>
-  <transition name="fade" mode="out-in">
+<templa: e>
+  <transition name: "fade" mode="out-in">
     <div :key="currentLocale" class="container mt-5 pt-5">
       <h1 class="about__title text-center mt-4 mt-md-5 mb-4 mb-md-5">
         {{ $t('positionCopy') }}
@@ -123,38 +123,37 @@ export default {
       },{
         hid: 'og:image:type',
         property: 'og:image:type',
-        content='image/jpeg'
+        content: 'image/jpeg'
       },{
         hid: 'og:image:width',
         property: 'og:image:width',
-        content='1200'
+        content: '1200'
       },{
         hid: 'og:image:height',
         property: 'og:image:height',
-        content='628'
+        content: '628'
       },{
         hid: 'og:type',
         property: 'og:type',
-        content='website'
+        content: 'website'
       },
-
       // Twitter metadata
       { 
-        hid='twitter:card',
-        name='twitter:card',
-        content='summary'
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary'
       },{ 
-        hid='twitter:title',
-        name='twitter:title',
-        content='Victor Vernilli | Product Designer'
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'About me | Victor Vernilli'
       },{
         hid: 'twitter:image',
         name: 'twitter:image',
         content: '~/static/img/TDC17.jpg'
       },{
-        hid='twitter:description',
-        name='twitter:description',
-        content='My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.'
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.'
       }
     ],
   },
