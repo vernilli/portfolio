@@ -89,6 +89,84 @@ export default {
   },
   mounted() {
     this.visibleItemNav = this.$i18n.messages[this.$i18n.locale].projects[2].visibleItemNav
-  }
+  },
+  head: {
+    title: 'Carousel Ad',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'How was the process to create a new ad format for greatest mobile advertising platform in Brazil.'
+      },{
+        hid: 'keywords',
+        name: 'keywords',
+        content: 'carousel ad, victor vernilli, ux mobile, ux designer, user-centered design'
+      },{
+        hid: 'author',
+        name: 'author',
+        content: 'Victor Vernilli'
+      },
+      // Facebook metadata
+      {
+        hid: 'og:locale',
+        property: 'og:locale',
+        content: 'en_US'
+      },{
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://vernilli.com'
+      },{
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Carousel Ad | Victor Vernilli'
+      },{
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'Victor Vernilli | Product Designer'
+      },{
+        hid: 'og:og:description',
+        property: 'og:og:description',
+        content: 'How was the process to create a new ad format for greatest mobile advertising platform in Brazil.'
+      },{
+        hid: 'og:image',
+        property: 'og:image',
+        content: '~/static/img/portfolio/carousel-ad/carousel-ad-thumbnail.jpg'
+      },{
+        hid: 'og:image:type',
+        property: 'og:image:type',
+        content: 'image/jpeg'
+      },{
+        hid: 'og:image:width',
+        property: 'og:image:width',
+        content: '1200'
+      },{
+        hid: 'og:image:height',
+        property: 'og:image:height',
+        content: '628'
+      },{
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website'
+      },
+      // Twitter metadata
+      { 
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary'
+      },{ 
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Carousel Ad | Victor Vernilli'
+      },{
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: '~/static/img/portfolio/carousel-ad/carousel-ad-thumbnail.jpg'
+      },{
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: 'How was the process to create a new ad format for greatest mobile advertising platform in Brazil.'
+      }
+    ],
+  },
 }
 </script>

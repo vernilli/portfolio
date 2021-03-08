@@ -36,18 +36,15 @@
             />
           </div>
 
-          <div 
+          <image-comparator
             v-if="
               item.visualContent && 
               item.visualContent.contentType === 'comparison'
             "
-          >
-            <image-comparator
-              :image-old-path="item.visualContent.sourceOld"
-              :image-new-path="item.visualContent.sourceNew"
-              :comparator-disclaimer="item.visualContent.sourceCaption"
-            />
-          </div>
+            :image-old-path="item.visualContent.sourceOld"
+            :image-new-path="item.visualContent.sourceNew"
+            :comparator-disclaimer="item.visualContent.sourceCaption"
+          />
         </div>
 
         <div v-if="item.subsections">

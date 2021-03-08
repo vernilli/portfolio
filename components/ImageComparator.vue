@@ -1,9 +1,9 @@
 <template>
-  <div class="project-page__img-comp d-none d-md-block pb-5">
-    <p>
+  <div class="project-page__img-comp d-none d-md-block pb-5 w-100 text-center">
+    <p class="w-100 mw-100">
       <em>{{ $t('imageComparatorUsageCopy') }}</em>
     </p>
-    <div class="project-page__img-comp__container">
+    <div class="project-page__img-comp__container m-auto">
       <div class="project-page__img-comp__img">
         <img :src="imageNewPath">
       </div>
@@ -11,10 +11,10 @@
         <img :src="imageOldPath">
       </div>
     </div>
-    <p>
+    <p class="mt-3 w-100 mw-100">
       {{ comparatorDisclaimer }}
     </p>
-    <p>
+    <p class="w-100 mw-100">
       <em>{{ $t('imageComparatorUsageCopy') }}</em>
     </p>
   </div>

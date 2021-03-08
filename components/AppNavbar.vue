@@ -5,12 +5,7 @@
       :class="{'on-top': topPage}"
     >
       <div class="container--expanded d-flex align-items-center justify-content-between">
-        <div class="header__title d-block d-md-none">
-          <nuxt-link :to="localePath('index')">
-            {{ $t('nameMobile') }}
-          </nuxt-link>
-        </div>
-        <div class="header__title d-none d-md-block">
+        <div class="header__title">
           <nuxt-link :to="localePath('index')">
             {{ $t('name') }}
           </nuxt-link>
@@ -94,12 +89,12 @@
 </template>
 
 <script>
-import LanguageIcon from '~/assets/icn/icon_language.svg'
+// import LanguageIcon from '~/assets/icn/icon_language.svg'
 
 export default {
   name: 'app-navbar',
   components: {
-    LanguageIcon
+    // LanguageIcon
   },
   watch: {
     $route () {

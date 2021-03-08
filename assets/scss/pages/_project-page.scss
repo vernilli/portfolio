@@ -139,6 +139,7 @@
 
     ul {
       list-style: inside;
+      padding-inline-start: $grid-lg;
     }
 
     &__img {
@@ -179,6 +180,9 @@
 
   &__img-comp {
     &__container {
+      box-shadow: 0 1px 16px rgba($color: $vv-black, $alpha: 0.12);
+      border-radius: 5px;
+      width: 580px; /*should be the same height as the images*/
       height: 886px; /*should be the same height as the images*/
       position: relative;
     }
@@ -190,7 +194,7 @@
       overflow: hidden;
   
       img {
-        border-radius: 0;
+        border-radius: 5px;
         display: block;
         width: 580px;
         height: 886px;

@@ -1,6 +1,5 @@
 export default {
   name: 'Victor Vernilli',
-  nameMobile: 'V. Vernilli',
   languages: {
     english: 'english',
     portuguese: 'português'
@@ -10,11 +9,20 @@ export default {
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
-    'I’m a Product Designer who believes that we can people’s life better and easier, even in the most complex areas. I love history and mankind past and eager to discover new things.',
-    'I’m also a coffee lover. <strong>So, let’s take a coffee and talk.</strong>','Here are some projects that I’ve done or participated, I hope you like it.'
+    'I’m a Product Designer based in Lisbon, who believes that we can people’s life better and easier, even in the most complex areas.',
+    'I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one one my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕ <strong>So, let’s grab a coffee and have a talk.</strong>',
+    'Below are some projects 💻 📱 that I’ve done or participated, I hope you like it 😊'
   ],
   otherProjectsCopy: 'Other projects',
   imageComparatorUsageCopy: 'Drag and slide the green circle to compare versions',
+  homeHead: {
+    headTitle: 'Portfolio',
+    meta: {
+      desc: 'My name is Victor Vernilli and I’m a Product Designer. Here are some projects that I did or participated, I hope you like it. I work with UX designer and front-end developer.',
+      keywords: 'time to place, in loco, in loco media, carousel ad, context ads, victor vernilli, ux portfolio, mobile portfolio, ux mobile, ux designer, user-centered design',
+      author: 'Victor Vernilli'
+    }
+  },
 
   aboutPage: {
     greetingsCopy: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college. Currently I’m taking a Postgraduate Course to dive deeper on Digital Experience Design.',
@@ -30,35 +38,35 @@ export default {
     experienceList: [
       {
         title: 'Product Designer',
-        company: 'Indie Campers',
+        company: '@ Indie Campers',
         companyUrl: 'https://indiecampers.com/',
         period: 'Nov 2019 - Today',
         location: 'Lisbon - Portugal',
         locationFlag: '🇵🇹',
       },{
         title: 'UX Designer / Web Developer',
-        company: 'ACE English Malta',
+        company: '@ ACE English Malta',
         companyUrl: 'https://www.aceenglishmalta.com/',
         period: 'Jun 2018 - Nov 2019',
-        location: 'St Julians - Malta',
+        location: 'St Julian’s - Malta',
         locationFlag: '🇲🇹',
       },{
         title: 'UX Engineer',
-        company: 'In Loco Media',
-        companyUrl: 'https://www.inlocomedia.com/en/',
+        company: '@ In Loco Media',
+        companyUrl: 'https://www.incognia.com/',
         period: 'Jan 2017 - Dec 2017',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'Web Designer Intern',
-        company: 'In Loco Media',
-        companyUrl: 'https://www.inlocomedia.com/en/',
+        company: '@ In Loco Media',
+        companyUrl: 'https://www.incognia.com/',
         period: 'May 2016 - Dec 2016',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'CEO / CMO / Frontend Developer',
-        company: 'CITi (Junior Entreprise)',
+        company: '@ CITi (Junior Enterprise)',
         companyUrl: 'https://citi.org.br/',
         period: 'Jan 2013 - Dec 2014',
         location: 'Recife - Brazil',
@@ -69,14 +77,14 @@ export default {
     presentationList: [
       {
         title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
-        company: 'Interaction South America',
+        company: '@ Interaction South America',
         companyUrl: 'http://isa.ixda.org/2017/',
         period: 'Nov 2017',
         location: 'Florianópolis - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
-        company: 'The Developers Conference',
+        company: '@ The Developers Conference',
         companyUrl: 'https://thedevconf.com/en',
         period: 'Nov 2017',
         location: 'Porto Alegre - Brazil',
@@ -87,28 +95,28 @@ export default {
     educationList: [
       {
         title: 'Digital Experience Design - Postgraduate course',
-        company: 'Faculty of Fine Arts of The University of Lisbon',
+        company: '@ Faculty of Fine Arts of The University of Lisbon',
         companyUrl: 'https://dxd.belasartes.ulisboa.pt/',
         period: 'Sep 2020 - Today',
         location: 'Lisbon - Portugal',
         locationFlag: '🇵🇹',
       },{
         title: 'Computer Science - Bachelor’s Degree',
-        company: 'Faculty of Information Tech. of UFPE',
+        company: '@ Faculty of Information Tech. of UFPE',
         companyUrl: 'https://www2.cin.ufpe.br/en/',
         period: 'Jan 2011 - Jun 2017',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'iOS Developer / Interaction Designer',
-        company: 'Apple Developer Academy',
+        company: '@ Apple Developer Academy',
         companyUrl: 'https://academy.cin.ufpe.br/index.php/pt/academia',
         period: 'Mar 2015 - Mar 2016',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'Adobe Creative Suite',
-        company: 'SAGA - Digital Design School',
+        company: '@ SAGA - Digital Design School',
         companyUrl: 'https://saga.art.br/',
         period: 'Jan 2009 - Jun 2011',
         location: 'Recife - Brazil',
@@ -129,6 +137,14 @@ export default {
       },
       visibleItemNav: 'motivation',
       heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
+      head: {
+        headTitle: 'ACE English Malta',
+        meta: {
+          desc: 'Redesign the ACE English Malta’s site, English School based in Malta',
+          keywords: 'ace english malta, st julians, malta, ux portfolio, redesign, mobile ux, ux designer, victor vernilli, user-centered design',
+          author: 'Victor Vernilli'
+        }
+      },
       projectContent: [
         {
           id: 'motivation',
@@ -182,22 +198,21 @@ export default {
             imgAlt: 'Part of the Annual Report made by Malta Government',
           },
         },{
-          subsections: [
-            {
-              id: 'website-analysis',
-              heading: 'Website Analysis',
-              paragraphs: [
-                'The following step would be to analyze the current (at that time) website version and try to understand if it solves students’/users’ needs, which we pointed to during the interviews.',
-              ],
-              visualContent: {
-                contentType: 'img',
-                style: 'same',
-                source: '/img/portfolio/ace-english-malta/home-old.jpg',
-                sourceMobile: '',
-                sourceCaption: 'Home page of ACE English Malta website <strong>before</strong> the research and redesign',
-                imgAlt: 'A screenshot of the home page of ACE English Malta website before the research and redesign',
-              },
-            },{
+          subsections: [{
+            //   id: 'website-analysis',
+            //   heading: 'Website Analysis',
+            //   paragraphs: [
+            //     'The following step would be to analyze the current (at that time) website version and try to understand if it solves students’/users’ needs, which we pointed to during the interviews.',
+            //   ],
+            //   visualContent: {
+            //     contentType: 'img',
+            //     style: 'same',
+            //     source: '/img/portfolio/ace-english-malta/home-old.jpg',
+            //     sourceMobile: '',
+            //     sourceCaption: 'Home page of ACE English Malta website <strong>before</strong> the research and redesign',
+            //     imgAlt: 'A screenshot of the home page of ACE English Malta website before the research and redesign',
+            //   },
+            // },{
               id: 'competitors-analysis',
               heading: 'Competitors Analysis',
               paragraphs: [
@@ -266,10 +281,10 @@ export default {
           visualContent: {
             contentType: 'img',
             style: 'full-width',
-            source: '/img/portfolio/ace-english-malta/home-new.jpg',
+            source: '/img/portfolio/ace-english-malta/ace-english-malta-mockups.jpg',
             sourceMobile: '',
-            sourceCaption: 'Home page of ACE English Malta website <strong>after</strong> the research and redesign',
-            imgAlt: 'A screenshot of the home page of ACE English Malta website after the research and redesign',
+            sourceCaption: 'Mockups of some pages of the ACE English Malta website <strong>after</strong> the research and redesign',
+            imgAlt: 'Mockups of some pages of the ACE English Malta website after the research and redesign',
           },
         },{
           id: 'results',
@@ -384,8 +399,8 @@ export default {
           id: 'results',
           heading: 'Results',
           paragraphs: [
-            'The tests took two weeks because I wanted to compare the original ads’ performance with the ones that had a time context included. The period of two weeks was important because it avoided seasonal behavior by users during the week compared to weekends. In general, there were almost <strong>375 thousand</strong> views, divided between <strong>190 thousand</strong> and <strong>184 thousand</strong> of versions with and without TTP, respectively.',
-            ',In the following paragraphs, it’s possible to check the most important data for a mobile ad.',
+            'The tests took two weeks because I wanted to compare the original ads’ performance with the ones that had a time context included. The period of two weeks was important because it avoided seasonal behavior by users during the week compared to weekends. During a 2-week test, in total (interstitial version):',
+            '<ul><li>Impressions: 103 hundreds</li><li>Clicks: 1935<ul><li>Version A: 905 clicks</li></ul><li><strong>Version B: 1030 clicks</strong></li></li><li>CTR<ul><li>Version A: 1.6%</li></ul><li><strong>Version B: 2.1% (+30%)</strong></li></li></ul>',
             'The CTR - Click Through Rate - measures the user’s interest in an ad, it’s one of the most important metrics in digital ads. It’s calculated by dividing the total number of clicks by the number of views, it goes from 0% to 100%. Each ad format has an expected CTR number, but for various reasons - which included the rejection by users - these metrics generally don’t reach 4%.',
             'It’s possible to identify the increase in results of tests on the ads’ CTR performance. The numbers raised more than 30% and 27% in the interstitial and small banner, respectively. Besides, the number of visits at POS increased for ads that received the TTP.',
             'Thus I identified that the addition of context can be a new solution for increasing the digital ad results, also, it can improve the impression that people have about digital ads.',
@@ -476,8 +491,8 @@ export default {
                 style: 'same',
                 source: '/img/portfolio/carousel-ad/carousel-ad-high-fid.jpg',
                 sourceMobile: '',
-                sourceCaption: 'High fidelity prototypes of some ideas for Carousel Ads after all iteractions',
-                imgAlt: 'High fidelity prototypes of some ideas for Carousel Ads after all iteractions',
+                sourceCaption: 'High fidelity prototypes of some ideas for Carousel Ads after all iterations',
+                imgAlt: 'High fidelity prototypes of some ideas for Carousel Ads after all iterations',
               },
             },{
               id: 'iterations',
