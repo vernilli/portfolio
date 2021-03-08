@@ -80,7 +80,7 @@ export default {
     }
   },
   head: {
-    title: 'Portfolio',
+    title: 'About me',
     meta: [
       {
         hid: 'description',
@@ -89,7 +89,7 @@ export default {
       },{
         hid: 'keywords',
         name: 'keywords',
-        content: 'time to place, in loco, in loco media, carousel ad, context ads, victor vernilli, ux portfolio, mobile portfolio, ux mobile, ux designer, user-centered design'
+        content: 'victor vernilli, design portfolio, product designer, ux portfolio, mobile portfolio, ux mobile, ux designer, user-centered design, time to place, carousel ad, context ads'
       },{
         hid: 'author',
         name: 'author',

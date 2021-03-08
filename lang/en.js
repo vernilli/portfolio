@@ -10,7 +10,8 @@ export default {
   greetingsCopy: [
     'Hello!',
     'I’m a Product Designer based in Lisbon, who believes that we can people’s life better and easier, even in the most complex areas.',
-    'I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one one my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕ <strong>So, let’s grab a coffee and have a talk.</strong>','Below are some projects 💻 📱 that I’ve done or participated, I hope you like it 😊.'
+    'I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one one my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕ <strong>So, let’s grab a coffee and have a talk.</strong>',
+    'Below are some projects 💻 📱 that I’ve done or participated, I hope you like it 😊'
   ],
   otherProjectsCopy: 'Other projects',
   imageComparatorUsageCopy: 'Drag and slide the green circle to compare versions',
@@ -65,7 +66,7 @@ export default {
         locationFlag: '🇧🇷',
       },{
         title: 'CEO / CMO / Frontend Developer',
-        company: '@ CITi (Junior Entreprise)',
+        company: '@ CITi (Junior Enterprise)',
         companyUrl: 'https://citi.org.br/',
         period: 'Jan 2013 - Dec 2014',
         location: 'Recife - Brazil',
@@ -490,8 +491,8 @@ export default {
                 style: 'same',
                 source: '/img/portfolio/carousel-ad/carousel-ad-high-fid.jpg',
                 sourceMobile: '',
-                sourceCaption: 'High fidelity prototypes of some ideas for Carousel Ads after all iteractions',
-                imgAlt: 'High fidelity prototypes of some ideas for Carousel Ads after all iteractions',
+                sourceCaption: 'High fidelity prototypes of some ideas for Carousel Ads after all iterations',
+                imgAlt: 'High fidelity prototypes of some ideas for Carousel Ads after all iterations',
               },
             },{
               id: 'iterations',
