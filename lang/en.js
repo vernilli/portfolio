@@ -197,22 +197,21 @@ export default {
             imgAlt: 'Part of the Annual Report made by Malta Government',
           },
         },{
-          subsections: [
-            {
-              id: 'website-analysis',
-              heading: 'Website Analysis',
-              paragraphs: [
-                'The following step would be to analyze the current (at that time) website version and try to understand if it solves students’/users’ needs, which we pointed to during the interviews.',
-              ],
-              visualContent: {
-                contentType: 'img',
-                style: 'same',
-                source: '/img/portfolio/ace-english-malta/home-old.jpg',
-                sourceMobile: '',
-                sourceCaption: 'Home page of ACE English Malta website <strong>before</strong> the research and redesign',
-                imgAlt: 'A screenshot of the home page of ACE English Malta website before the research and redesign',
-              },
-            },{
+          subsections: [{
+            //   id: 'website-analysis',
+            //   heading: 'Website Analysis',
+            //   paragraphs: [
+            //     'The following step would be to analyze the current (at that time) website version and try to understand if it solves students’/users’ needs, which we pointed to during the interviews.',
+            //   ],
+            //   visualContent: {
+            //     contentType: 'img',
+            //     style: 'same',
+            //     source: '/img/portfolio/ace-english-malta/home-old.jpg',
+            //     sourceMobile: '',
+            //     sourceCaption: 'Home page of ACE English Malta website <strong>before</strong> the research and redesign',
+            //     imgAlt: 'A screenshot of the home page of ACE English Malta website before the research and redesign',
+            //   },
+            // },{
               id: 'competitors-analysis',
               heading: 'Competitors Analysis',
               paragraphs: [
@@ -281,10 +280,10 @@ export default {
           visualContent: {
             contentType: 'img',
             style: 'full-width',
-            source: '/img/portfolio/ace-english-malta/home-new.jpg',
+            source: '/img/portfolio/ace-english-malta/ace-english-malta-mockups.jpg',
             sourceMobile: '',
-            sourceCaption: 'Home page of ACE English Malta website <strong>after</strong> the research and redesign',
-            imgAlt: 'A screenshot of the home page of ACE English Malta website after the research and redesign',
+            sourceCaption: 'Mockups of some pages of the ACE English Malta website <strong>after</strong> the research and redesign',
+            imgAlt: 'Mockups of some pages of the ACE English Malta website after the research and redesign',
           },
         },{
           id: 'results',
@@ -399,8 +398,8 @@ export default {
           id: 'results',
           heading: 'Results',
           paragraphs: [
-            'The tests took two weeks because I wanted to compare the original ads’ performance with the ones that had a time context included. The period of two weeks was important because it avoided seasonal behavior by users during the week compared to weekends. In general, there were almost <strong>375 thousand</strong> views, divided between <strong>190 thousand</strong> and <strong>184 thousand</strong> of versions with and without TTP, respectively.',
-            ',In the following paragraphs, it’s possible to check the most important data for a mobile ad.',
+            'The tests took two weeks because I wanted to compare the original ads’ performance with the ones that had a time context included. The period of two weeks was important because it avoided seasonal behavior by users during the week compared to weekends. During a 2-week test, in total (interstitial version):',
+            '<ul><li>Impressions: 103 hundreds</li><li>Clicks: 1935<ul><li>Version A: 905 clicks</li></ul><li><strong>Version B: 1030 clicks</strong></li></li><li>CTR<ul><li>Version A: 1.6%</li></ul><li><strong>Version B: 2.1% (+30%)</strong></li></li></ul>',
             'The CTR - Click Through Rate - measures the user’s interest in an ad, it’s one of the most important metrics in digital ads. It’s calculated by dividing the total number of clicks by the number of views, it goes from 0% to 100%. Each ad format has an expected CTR number, but for various reasons - which included the rejection by users - these metrics generally don’t reach 4%.',
             'It’s possible to identify the increase in results of tests on the ads’ CTR performance. The numbers raised more than 30% and 27% in the interstitial and small banner, respectively. Besides, the number of visits at POS increased for ads that received the TTP.',
             'Thus I identified that the addition of context can be a new solution for increasing the digital ad results, also, it can improve the impression that people have about digital ads.',

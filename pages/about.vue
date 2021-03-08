@@ -1,5 +1,5 @@
-<templa: e>
-  <transition name: "fade" mode="out-in">
+<template>
+  <transition name="fade" mode="out-in">
     <div :key="currentLocale" class="container mt-5 pt-5">
       <h1 class="about__title text-center mt-4 mt-md-5 mb-4 mb-md-5">
         {{ $t('positionCopy') }}

@@ -91,7 +91,7 @@ export default {
     this.visibleItemNav = this.$i18n.messages[this.$i18n.locale].projects[1].visibleItemNav
   },
   head: {
-    title: 'Portfolio',
+    title: 'Time to Place',
     meta: [
       {
         hid: 'description',

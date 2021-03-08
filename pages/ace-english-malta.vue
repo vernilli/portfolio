@@ -91,7 +91,7 @@ export default {
     this.visibleItemNav = this.$i18n.messages[this.$i18n.locale].projects[0].visibleItemNav
   },
   head: {
-    title: 'Portfolio',
+    title: 'ACE English Malta',
     meta: [
       {
         hid: 'description',
