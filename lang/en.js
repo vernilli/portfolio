@@ -9,9 +9,9 @@ export default {
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
-    'I’m a Product Designer based in Lisbon, who believes that we can people’s life better and easier, even in the most complex areas.',
-    'I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one one my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕ <strong>So, let’s grab a coffee and have a talk.</strong>',
-    'Below are some projects 💻 📱 that I’ve done or participated, I hope you like it 😊'
+    'my name is Victor Vernilli, an end-to-end Product Designer based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the <strong>more diverse</strong> is the team, the more ✨<strong>amazing the outcomes will be</strong>✨',
+    'I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one of my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕ <strong>So, let’s grab a coffee and have a talk.</strong>',
+    'Below are some projects 💻 📱 that I’ve done or participated in, I hope you like them 😊'
   ],
   otherProjectsCopy: 'Other projects',
   imageComparatorUsageCopy: 'Drag and slide the green circle to compare versions',
@@ -38,35 +38,35 @@ export default {
     experienceList: [
       {
         title: 'Product Designer',
-        company: '@ Indie Campers',
+        company: 'Indie Campers',
         companyUrl: 'https://indiecampers.com/',
         period: 'Nov 2019 - Today',
         location: 'Lisbon - Portugal',
         locationFlag: '🇵🇹',
       },{
         title: 'UX Designer / Web Developer',
-        company: '@ ACE English Malta',
+        company: 'ACE English Malta',
         companyUrl: 'https://www.aceenglishmalta.com/',
         period: 'Jun 2018 - Nov 2019',
         location: 'St Julian’s - Malta',
         locationFlag: '🇲🇹',
       },{
         title: 'UX Engineer',
-        company: '@ In Loco Media',
+        company: 'In Loco Media',
         companyUrl: 'https://www.incognia.com/',
         period: 'Jan 2017 - Dec 2017',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'Web Designer Intern',
-        company: '@ In Loco Media',
+        company: 'In Loco Media',
         companyUrl: 'https://www.incognia.com/',
         period: 'May 2016 - Dec 2016',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'CEO / CMO / Frontend Developer',
-        company: '@ CITi (Junior Enterprise)',
+        company: 'CITi (Junior Enterprise)',
         companyUrl: 'https://citi.org.br/',
         period: 'Jan 2013 - Dec 2014',
         location: 'Recife - Brazil',
@@ -77,14 +77,14 @@ export default {
     presentationList: [
       {
         title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
-        company: '@ Interaction South America',
+        company: 'Interaction South America',
         companyUrl: 'http://isa.ixda.org/2017/',
         period: 'Nov 2017',
         location: 'Florianópolis - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
-        company: '@ The Developers Conference',
+        company: 'The Developers Conference',
         companyUrl: 'https://thedevconf.com/en',
         period: 'Nov 2017',
         location: 'Porto Alegre - Brazil',
@@ -95,28 +95,28 @@ export default {
     educationList: [
       {
         title: 'Digital Experience Design - Postgraduate course',
-        company: '@ Faculty of Fine Arts of The University of Lisbon',
+        company: 'Faculty of Fine Arts of The University of Lisbon',
         companyUrl: 'https://dxd.belasartes.ulisboa.pt/',
         period: 'Sep 2020 - Today',
         location: 'Lisbon - Portugal',
         locationFlag: '🇵🇹',
       },{
         title: 'Computer Science - Bachelor’s Degree',
-        company: '@ Faculty of Information Tech. of UFPE',
+        company: 'Faculty of Information Tech. of UFPE',
         companyUrl: 'https://www2.cin.ufpe.br/en/',
         period: 'Jan 2011 - Jun 2017',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
-        title: 'iOS Developer / Interaction Designer',
-        company: '@ Apple Developer Academy',
+        title: 'Interaction Designer / iOS Developer',
+        company: 'Apple Developer Academy',
         companyUrl: 'https://academy.cin.ufpe.br/index.php/pt/academia',
         period: 'Mar 2015 - Mar 2016',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'Adobe Creative Suite',
-        company: '@ SAGA - Digital Design School',
+        company: 'SAGA - Digital Design School',
         companyUrl: 'https://saga.art.br/',
         period: 'Jan 2009 - Jun 2011',
         location: 'Recife - Brazil',
