@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="about__description">
         <p 
           v-for="(paragraph, index) in $t('aboutPage.backgroundCopy', { returnObjects: true })" 
           :key="index"

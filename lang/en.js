@@ -9,8 +9,7 @@ export default {
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
-    'my name is Victor Vernilli, an end-to-end Product Designer based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the <strong>more diverse</strong> is the team, the more ✨<strong>amazing the outcomes will be</strong>✨',
-    'I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one of my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕ <strong>So, let’s grab a coffee and have a talk.</strong>',
+    'my name is Victor Vernilli, an <strong>end-to-end Product Designer</strong> based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more ✨ <strong>amazing the outcomes will be</strong> ✨',
     'Below are some projects 💻 📱 that I’ve done or participated in, I hope you like them 😊'
   ],
   otherProjectsCopy: 'Other projects',
@@ -18,20 +17,20 @@ export default {
   homeHead: {
     headTitle: 'Portfolio',
     meta: {
-      desc: 'My name is Victor Vernilli and I’m a Product Designer. Here are some projects that I did or participated, I hope you like it. I work with UX designer and front-end developer.',
+      desc: 'Hello, my name is Victor Vernilli, an end-to-end Product Designer based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more amazing the outcomes will be.',
       keywords: 'time to place, in loco, in loco media, carousel ad, context ads, victor vernilli, ux portfolio, mobile portfolio, ux mobile, ux designer, user-centered design',
       author: 'Victor Vernilli'
     }
   },
 
   aboutPage: {
-    greetingsCopy: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college. Currently I’m taking a Postgraduate Course to dive deeper on Digital Experience Design.',
+    greetingsCopy: 'I’m an end-to-end product designer who strongly believes user-centered design can create meaningful and impactful products.',
     altImg: 'Picture of Victor Vernilli, a young adult smiling, short dark-brown hair and he is wearing a dark-blue with flowers t-shirt',
     backgroundCopy: [
-      'The concept of thinking, caring about and bringing the best experience to users/customers of a product caught my attention. Because of that, I’ve been trying to apply UX steps on all my projects during the college whenever possible.',
-      'I believe we can improve people’ experience in any area, even in a hated and rejected one. Most of the time these feelings are be caused because no one thinks about users when designing the product/service. This sentence became even more true when I’d been working on mobile ads and there were, even in this area, improvements to be made in the user experience.',
-      'I also know that it’s not always easy to make those improvements. Many times we can’t access the users directly and simply, or if we ask them to test something, we could bias the results. I learned this with ads, how could you ask someone to "test" ads?',
-      'That’s quite a hard problem to solve, but I believe there is always a way to include users in the process. There are several tools at your disposal when trying to solve this tough problem, such as: qualitative or quantitative tests, A/B test, Big Data analysis, etc.',
+      '<strong>Defined as a generalist</strong>, I’m comfortable collaborating and building products from scratch to release. With a strong tech background, I’m able to transit from research to front-end technologies.',
+      'But before a Designer, <strong>I’m a human being... we all ARE</strong>. Before users or clients, we are HUMANS. That mindset can make the best changes in the tech-based industry.',
+      'Also, I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one of my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕',
+      '<strong>So, let’s grab a coffee and have a talk.</strong>',
     ],
     buttonTextCopy: 'Check my CV',
     experienceCopy: 'Experience',
