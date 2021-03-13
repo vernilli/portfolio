@@ -28,9 +28,9 @@
         />
       </div>
 
-      <div v-if="false" class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center">
         <vv-button 
-          :text="$t('aboutPage.buttonTextCopy')" 
+          :text="$t('aboutPage.checkResumeCopy')" 
           :path="buttonPath" 
         />
       </div>

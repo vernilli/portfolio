@@ -6,6 +6,7 @@ export default {
   },
   projectsCopy: 'projects',
   aboutCopy: 'about me',
+  resumeCopy: 'resume',
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
@@ -32,7 +33,7 @@ export default {
       'Also, I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one of my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕',
       '<strong>So, let’s grab a coffee and have a talk.</strong>',
     ],
-    buttonTextCopy: 'Check my CV',
+    checkResumeCopy: 'Check my Resume',
     experienceCopy: 'Experience',
     experienceList: [
       {
@@ -149,7 +150,7 @@ export default {
           id: 'motivation',
           heading: 'Motivation',
           paragraphs: [
-            'Increase the number of asked quotes sent directly to the school(potential students who asked for a quote on the website or send an email or contact the school staff), with no influence on the number of students coming from agencies; Another goal was to <strong>decrease the wasted time</strong> of our sales team answering clients with basic information.',
+            'Increase the number of requested quotes sent directly to the school(potential students who request a quote on the website or send an email or contact the school staff), with no influence on the number of students coming from agencies; Another goal was to <strong>decrease the wasted time</strong> of our sales team answering clients with basic information.',
           ]
         },{
           id: 'context',
@@ -161,7 +162,7 @@ export default {
           id: 'general-scenario',
           heading: 'General Scenario',
           paragraphs: [
-            'The students are our final clients and the most important stakeholder. Thus, my first step was to understand them better, thus, I’ve elaborated an interview and asked 6 students(from different countries) to participate. Most of our students, 3 out of 4(numbers acquired in our survey on their first day at school) have visited the school website before deciding where they would study. Besides that, they have said several times they had questions regarding what they found on the website. The survey clarified that our website was the first point of contact with a huge number of potential students. Therefore, make the website more accessible and improve its clarity.',
+            'The students are our final clients and the most important stakeholder. Thus, my first step was to understand them better, thus, I’ve elaborated an interview script and invited 6 students(from different countries) to participate. Most of our students, 3 out of 4(numbers acquired in our survey on their first day at school) have visited the school website before deciding where they would study. Besides that, they have said several times they had questions regarding what they found on the website. The survey clarified that our website was the first point of contact with a huge number of potential students. Therefore, make the website more accessible and improve its clarity.',
             'Before all, comparing the final result, it has been necessary to gather current numbers to compare with, from how many quotes do we receive to how much time our team was spending answering questions. Since my first week working at ACE, I always heard that we receive lots of emails with simple questions. Thus, my following step should track and organize all this information, then identify if we were wasting too much time or not.'
           ]
         },{
