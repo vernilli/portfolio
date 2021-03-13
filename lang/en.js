@@ -39,7 +39,7 @@ export default {
         title: 'Product Designer',
         company: 'Indie Campers',
         companyUrl: 'https://indiecampers.com/',
-        period: 'Nov 2019 - Today',
+        period: 'Nov 2019 - Present',
         location: 'Lisbon - Portugal',
         locationFlag: '🇵🇹',
       },{
@@ -53,7 +53,7 @@ export default {
         title: 'UX Engineer',
         company: 'In Loco Media',
         companyUrl: 'https://www.incognia.com/',
-        period: 'Jan 2017 - Dec 2017',
+        period: 'Jan 2017 - Jan 2018',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
