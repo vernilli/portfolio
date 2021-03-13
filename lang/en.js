@@ -6,67 +6,67 @@ export default {
   },
   projectsCopy: 'projects',
   aboutCopy: 'about me',
+  resumeCopy: 'resume',
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
-    'I’m a Product Designer based in Lisbon, who believes that we can people’s life better and easier, even in the most complex areas.',
-    'I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one one my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕ <strong>So, let’s grab a coffee and have a talk.</strong>',
-    'Below are some projects 💻 📱 that I’ve done or participated, I hope you like it 😊'
+    'my name is Victor Vernilli, an <strong>end-to-end Product Designer</strong> based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more ✨ <strong>amazing the outcomes will be</strong> ✨',
+    'Below are some projects 💻 📱 that I’ve done or participated in, I hope you like them 😊'
   ],
   otherProjectsCopy: 'Other projects',
   imageComparatorUsageCopy: 'Drag and slide the green circle to compare versions',
   homeHead: {
     headTitle: 'Portfolio',
     meta: {
-      desc: 'My name is Victor Vernilli and I’m a Product Designer. Here are some projects that I did or participated, I hope you like it. I work with UX designer and front-end developer.',
+      desc: 'Hello, my name is Victor Vernilli, an end-to-end Product Designer based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more amazing the outcomes will be.',
       keywords: 'time to place, in loco, in loco media, carousel ad, context ads, victor vernilli, ux portfolio, mobile portfolio, ux mobile, ux designer, user-centered design',
       author: 'Victor Vernilli'
     }
   },
 
   aboutPage: {
-    greetingsCopy: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college. Currently I’m taking a Postgraduate Course to dive deeper on Digital Experience Design.',
+    greetingsCopy: 'I’m an end-to-end product designer who strongly believes user-centered design can create meaningful and impactful products.',
     altImg: 'Picture of Victor Vernilli, a young adult smiling, short dark-brown hair and he is wearing a dark-blue with flowers t-shirt',
     backgroundCopy: [
-      'The concept of thinking, caring about and bringing the best experience to users/customers of a product caught my attention. Because of that, I’ve been trying to apply UX steps on all my projects during the college whenever possible.',
-      'I believe we can improve people’ experience in any area, even in a hated and rejected one. Most of the time these feelings are be caused because no one thinks about users when designing the product/service. This sentence became even more true when I’d been working on mobile ads and there were, even in this area, improvements to be made in the user experience.',
-      'I also know that it’s not always easy to make those improvements. Many times we can’t access the users directly and simply, or if we ask them to test something, we could bias the results. I learned this with ads, how could you ask someone to "test" ads?',
-      'That’s quite a hard problem to solve, but I believe there is always a way to include users in the process. There are several tools at your disposal when trying to solve this tough problem, such as: qualitative or quantitative tests, A/B test, Big Data analysis, etc.',
+      '<strong>Defined as a generalist</strong>, I’m comfortable collaborating and building products from scratch to release. With a strong tech background, I’m able to transit from research to front-end technologies.',
+      'But before a Designer, <strong>I’m a human being... we all ARE</strong>. Before users or clients, we are HUMANS. That mindset can make the best changes in the tech-based industry.',
+      'Also, I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one of my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕',
+      '<strong>So, let’s grab a coffee and have a talk.</strong>',
     ],
-    buttonTextCopy: 'Check my CV',
+    checkResumeCopy: 'Check my Resume',
     experienceCopy: 'Experience',
     experienceList: [
       {
         title: 'Product Designer',
-        company: '@ Indie Campers',
+        company: 'Indie Campers',
         companyUrl: 'https://indiecampers.com/',
-        period: 'Nov 2019 - Today',
+        period: 'Nov 2019 - Present',
         location: 'Lisbon - Portugal',
         locationFlag: '🇵🇹',
       },{
         title: 'UX Designer / Web Developer',
-        company: '@ ACE English Malta',
+        company: 'ACE English Malta',
         companyUrl: 'https://www.aceenglishmalta.com/',
         period: 'Jun 2018 - Nov 2019',
         location: 'St Julian’s - Malta',
         locationFlag: '🇲🇹',
       },{
         title: 'UX Engineer',
-        company: '@ In Loco Media',
+        company: 'In Loco Media',
         companyUrl: 'https://www.incognia.com/',
-        period: 'Jan 2017 - Dec 2017',
+        period: 'Jan 2017 - Jan 2018',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'Web Designer Intern',
-        company: '@ In Loco Media',
+        company: 'In Loco Media',
         companyUrl: 'https://www.incognia.com/',
         period: 'May 2016 - Dec 2016',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'CEO / CMO / Frontend Developer',
-        company: '@ CITi (Junior Enterprise)',
+        company: 'CITi (Junior Enterprise)',
         companyUrl: 'https://citi.org.br/',
         period: 'Jan 2013 - Dec 2014',
         location: 'Recife - Brazil',
@@ -77,14 +77,14 @@ export default {
     presentationList: [
       {
         title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
-        company: '@ Interaction South America',
+        company: 'Interaction South America',
         companyUrl: 'http://isa.ixda.org/2017/',
         period: 'Nov 2017',
         location: 'Florianópolis - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
-        company: '@ The Developers Conference',
+        company: 'The Developers Conference',
         companyUrl: 'https://thedevconf.com/en',
         period: 'Nov 2017',
         location: 'Porto Alegre - Brazil',
@@ -95,28 +95,28 @@ export default {
     educationList: [
       {
         title: 'Digital Experience Design - Postgraduate course',
-        company: '@ Faculty of Fine Arts of The University of Lisbon',
+        company: 'Faculty of Fine Arts of The University of Lisbon',
         companyUrl: 'https://dxd.belasartes.ulisboa.pt/',
         period: 'Sep 2020 - Today',
         location: 'Lisbon - Portugal',
         locationFlag: '🇵🇹',
       },{
         title: 'Computer Science - Bachelor’s Degree',
-        company: '@ Faculty of Information Tech. of UFPE',
+        company: 'Faculty of Information Tech. of UFPE',
         companyUrl: 'https://www2.cin.ufpe.br/en/',
         period: 'Jan 2011 - Jun 2017',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
-        title: 'iOS Developer / Interaction Designer',
-        company: '@ Apple Developer Academy',
+        title: 'Interaction Designer / iOS Developer',
+        company: 'Apple Developer Academy',
         companyUrl: 'https://academy.cin.ufpe.br/index.php/pt/academia',
         period: 'Mar 2015 - Mar 2016',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'Adobe Creative Suite',
-        company: '@ SAGA - Digital Design School',
+        company: 'SAGA - Digital Design School',
         companyUrl: 'https://saga.art.br/',
         period: 'Jan 2009 - Jun 2011',
         location: 'Recife - Brazil',
@@ -150,7 +150,7 @@ export default {
           id: 'motivation',
           heading: 'Motivation',
           paragraphs: [
-            'Increase the number of asked quotes sent directly to the school(potential students who asked for a quote on the website or send an email or contact the school staff), with no influence on the number of students coming from agencies; Another goal was to <strong>decrease the wasted time</strong> of our sales team answering clients with basic information.',
+            'Increase the number of requested quotes sent directly to the school(potential students who request a quote on the website or send an email or contact the school staff), with no influence on the number of students coming from agencies; Another goal was to <strong>decrease the wasted time</strong> of our sales team answering clients with basic information.',
           ]
         },{
           id: 'context',
@@ -162,7 +162,7 @@ export default {
           id: 'general-scenario',
           heading: 'General Scenario',
           paragraphs: [
-            'The students are our final clients and the most important stakeholder. Thus, my first step was to understand them better, thus, I’ve elaborated an interview and asked 6 students(from different countries) to participate. Most of our students, 3 out of 4(numbers acquired in our survey on their first day at school) have visited the school website before deciding where they would study. Besides that, they have said several times they had questions regarding what they found on the website. The survey clarified that our website was the first point of contact with a huge number of potential students. Therefore, make the website more accessible and improve its clarity.',
+            'The students are our final clients and the most important stakeholder. Thus, my first step was to understand them better, thus, I’ve elaborated an interview script and invited 6 students(from different countries) to participate. Most of our students, 3 out of 4(numbers acquired in our survey on their first day at school) have visited the school website before deciding where they would study. Besides that, they have said several times they had questions regarding what they found on the website. The survey clarified that our website was the first point of contact with a huge number of potential students. Therefore, make the website more accessible and improve its clarity.',
             'Before all, comparing the final result, it has been necessary to gather current numbers to compare with, from how many quotes do we receive to how much time our team was spending answering questions. Since my first week working at ACE, I always heard that we receive lots of emails with simple questions. Thus, my following step should track and organize all this information, then identify if we were wasting too much time or not.'
           ]
         },{

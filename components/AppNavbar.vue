@@ -26,6 +26,13 @@
               >
                 {{ $t('aboutCopy') }}
               </nuxt-link>
+              <nuxt-link 
+                :to="'victor-vernilli-cv.pdf'" 
+                class="main-link ml-3 ml-md-4 d-flex d-md-none"
+                target="_blank"
+              >
+                {{ $t('resumeCopy') }}
+              </nuxt-link>
             </nav>
           
             <!-- <div class="header__lang-switcher d-none d-md-flex position-relative ml-4">

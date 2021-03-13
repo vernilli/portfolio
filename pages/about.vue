@@ -6,12 +6,12 @@
       </h1>
 
       <div class="d-flex flex-wrap flex-column flex-md-row align-items-md-center mb-3">
-        <div class="about__greetings col-12 col-md-8 pl-0">
+        <div class="about__greetings col-12 col-md-6 offset-md-2 pl-0">
           <p class="mb-md-0">
             {{ $t('aboutPage.greetingsCopy') }}
           </p>
         </div>
-        <div class="about__profile-picture position-relative col-12 col-md-4 pr-md-0">
+        <div class="about__profile-picture position-relative col-12 col-md-3 pr-md-0">
           <img 
             src="~/static/img/victor-vernilli.jpg"
             :alt="$t('aboutPage.altImg')"
@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="about__description">
         <p 
           v-for="(paragraph, index) in $t('aboutPage.backgroundCopy', { returnObjects: true })" 
           :key="index"
@@ -28,9 +28,9 @@
         />
       </div>
 
-      <div v-if="false" class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center">
         <vv-button 
-          :text="$t('aboutPage.buttonTextCopy')" 
+          :text="$t('aboutPage.checkResumeCopy')" 
           :path="buttonPath" 
         />
       </div>

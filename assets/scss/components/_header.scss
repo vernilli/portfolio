@@ -20,7 +20,7 @@
     color: $vv-gray-darkest;
     font-family: $font-sans;
     font-size: $h5-size-mobile;
-    font-weight: 500;
+    font-weight: 700;
 
     @include media-breakpoint-up(md) {
       font-size: $h3-size;
@@ -45,7 +45,7 @@
     }
 
     .header__title {
-      font-size: $h3-size-mobile;
+      font-size: $h5-size-mobile;
 
       @include media-breakpoint-up(md) {
         font-size: $h2-size;
