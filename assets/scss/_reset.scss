@@ -54,12 +54,13 @@ p {
   font-family: $font-sans;
   font-size: $p-size-mobile;
   line-height: 1.8;
-  max-width: 70ch;
+  max-width: 60ch;
   margin-bottom: $grid-xl;
 
   @include media-breakpoint-up(md) {
     font-size: $p-size;
     line-height: 2;
+    width: 60ch;
   }
   
   strong { 
