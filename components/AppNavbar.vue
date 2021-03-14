@@ -27,7 +27,7 @@
                 {{ $t('aboutCopy') }}
               </nuxt-link>
               <nuxt-link 
-                :to="'victor-vernilli-cv.pdf'" 
+                :to="$t('resumePath')" 
                 class="main-link ml-3 ml-md-4 d-flex d-md-none"
                 target="_blank"
               >
