@@ -31,7 +31,7 @@
       <div class="d-flex justify-content-center">
         <vv-button 
           :text="$t('aboutPage.checkResumeCopy')" 
-          :path="buttonPath" 
+          :path="$t('resumePath')" 
         />
       </div>
 
@@ -73,11 +73,6 @@ export default {
     currentLocale () {
       return this.$i18n.locale
     },
-  },
-  data() {
-    return {
-      buttonPath: 'victor-vernilli-cv.pdf',
-    }
   },
   head: {
     title: 'About me',
