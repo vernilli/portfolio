@@ -13,7 +13,7 @@
 
         <transition name="fade" mode="out-in">
           <div :key="currentLocale" class="d-flex align-items-center">
-            <nav class="header__navigation d-flex">
+            <nav class="header__navigation d-none d-md-flex">
               <nuxt-link 
                 :to="localePath('index')" 
                 class="main-link ml-3 ml-md-4"
@@ -28,7 +28,7 @@
               </nuxt-link>
               <nuxt-link 
                 :to="$t('resumePath')" 
-                class="main-link ml-3 ml-md-4 d-flex d-md-none"
+                class="main-link ml-3 ml-md-4"
                 target="_blank"
               >
                 {{ $t('resumeCopy') }}
@@ -59,7 +59,7 @@
               </transition>
             </div> -->
 
-            <!-- <div 
+            <div 
               id="burger-icon"
               class="d-block d-md-none"
               :class="{'open': burgerOpen}"
@@ -69,29 +69,45 @@
               <span></span>
               <span></span>
               <span></span>
-            </div> -->
+            </div>
 
           </div>      
         </transition>
 
       </div>
 
-      <!-- <div v-if="burgerOpen" class="header__lang-switcher d-flex d-md-none justify-content-center mt-4">
-        <nuxt-link :to="switchLocalePath('en')">
-          {{ $t('languages.english') }}
+      <nav 
+        v-if="burgerOpen" 
+        class="header__lang-switcher d-flex d-md-none flex-column justify-content-center align-items-center mt-5 w-100"
+      >
+        <nuxt-link 
+          :to="localePath('index')" 
+          class="mb-3 d-inline-flex text-center"
+        >
+          {{ $t('projectsCopy') }}
         </nuxt-link>
-        <nuxt-link :to="switchLocalePath('pt-BR')">
-          {{ $t('languages.portuguese') }}
+        <nuxt-link 
+          :to="localePath('about')" 
+          class="mb-3 d-inline-flex text-center"
+        >
+          {{ $t('aboutCopy') }}
         </nuxt-link>
-      </div> -->
+        <nuxt-link 
+          :to="$t('resumePath')" 
+          class="mb-3 d-inline-flex text-center"
+          target="_blank"
+        >
+          {{ $t('resumeCopy') }}
+        </nuxt-link>
+      </nav>
       
     </header>
 
-    <!-- <div 
+    <div 
       v-if="burgerOpen" 
       @click="hideBurger"
       class="header__fade-background"
-    /> -->
+    />
   </div>
 </template>
 
