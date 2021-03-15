@@ -7,11 +7,11 @@ export default {
   projectsCopy: 'projects',
   aboutCopy: 'about me',
   resumeCopy: 'resume',
-  resumePath: 'VictorVernilli-Resume2021.pdf',
+  resumePath: 'https://vernilli.com/VictorVernilli-Resume2021.pdf',
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
-    'my name is Victor Vernilli, an <strong>end-to-end Product Designer</strong> based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more ✨ <strong>amazing the outcomes will be</strong> ✨',
+    'My name is Victor Vernilli, an <strong>end-to-end Product Designer</strong> based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more ✨ <strong>amazing the outcomes will be</strong> ✨',
     'Below are some projects 💻 📱 that I’ve done or participated in, I hope you like them 😊'
   ],
   otherProjectsCopy: 'Other projects',
@@ -137,7 +137,7 @@ export default {
         imageUrl: '/img/portfolio/mockup-site-ace.png',
         device: 'desktop',
       },
-      visibleItemNav: 'motivation',
+      visibleItemNav: 'challenge',
       heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
       head: {
         headTitle: 'ACE English Malta',
@@ -149,8 +149,8 @@ export default {
       },
       projectContent: [
         {
-          id: 'motivation',
-          heading: 'Motivation',
+          id: 'challenge',
+          heading: 'The Challenge',
           paragraphs: [
             'Increase the number of requested quotes sent directly to the school(potential students who request a quote on the website or send an email or contact the school staff), with no influence on the number of students coming from agencies; Another goal was to <strong>decrease the wasted time</strong> of our sales team answering clients with basic information.',
           ]
@@ -402,7 +402,7 @@ export default {
           heading: 'Results',
           paragraphs: [
             'The tests took two weeks because I wanted to compare the original ads’ performance with the ones that had a time context included. The period of two weeks was important because it avoided seasonal behavior by users during the week compared to weekends. During a 2-week test, in total (interstitial version):',
-            '<ul><li>Impressions: 103 hundreds</li><li>Clicks: 1935<ul><li>Version A: 905 clicks</li></ul><li><strong>Version B: 1030 clicks</strong></li></li><li>CTR<ul><li>Version A: 1.6%</li></ul><li><strong>Version B: 2.1% (+30%)</strong></li></li></ul>',
+            '<ul><li>Impressions: 103 hundreds</li><li>Clicks:<ul><li>Version A: 905 clicks</li><li><strong>Version B: 1030 clicks (+13%)</strong></li></ul></li><li>CTR:<ul><li>Version A: 1.6%</li><li><strong>Version B: 2.1% (+30%)</strong></li></ul></li></ul>',
             'The CTR - Click Through Rate - measures the user’s interest in an ad, it’s one of the most important metrics in digital ads. It’s calculated by dividing the total number of clicks by the number of views, it goes from 0% to 100%. Each ad format has an expected CTR number, but for various reasons - which included the rejection by users - these metrics generally don’t reach 4%.',
             'It’s possible to identify the increase in results of tests on the ads’ CTR performance. The numbers raised more than 30% and 27% in the interstitial and small banner, respectively. Besides, the number of visits at POS increased for ads that received the TTP.',
             'Thus I identified that the addition of context can be a new solution for increasing the digital ad results, also, it can improve the impression that people have about digital ads.',
