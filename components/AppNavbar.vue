@@ -26,13 +26,13 @@
               >
                 {{ $t('aboutCopy') }}
               </nuxt-link>
-              <nuxt-link 
-                :to="$t('resumePath')" 
+              <a 
+                :href="$t('resumePath')" 
                 class="main-link ml-3 ml-md-4"
                 target="_blank"
               >
                 {{ $t('resumeCopy') }}
-              </nuxt-link>
+              </a>
             </nav>
           
             <!-- <div class="header__lang-switcher d-none d-md-flex position-relative ml-4">
@@ -92,13 +92,13 @@
         >
           {{ $t('aboutCopy') }}
         </nuxt-link>
-        <nuxt-link 
-          :to="$t('resumePath')" 
+        <a 
+          :href="$t('resumePath')" 
           class="mb-3 d-inline-flex text-center"
           target="_blank"
         >
           {{ $t('resumeCopy') }}
-        </nuxt-link>
+        </a>
       </nav>
       
     </header>
