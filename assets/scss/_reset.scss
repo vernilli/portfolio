@@ -1,9 +1,5 @@
 // Resets
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
-
   color: $vv-gray-darkest;
   font-family: $font-sans;
 
@@ -17,9 +13,10 @@
   outline-color: $vv-black;
 }
 
+*:not(ul),
 .body-base {
-  margin: 0;
   padding: 0;
+  margin: 0;
   border: 0;
 }
 
