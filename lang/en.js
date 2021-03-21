@@ -216,8 +216,8 @@ export default {
               visualContent: {
                 contentType: 'img',
                 style: 'same',
-                source: '/img/portfolio/ace-english-malta/malta-report-desktop.jpg',
-                sourceMobile: '/img/portfolio/ace-english-malta/malta-report-mobile.jpg',
+                source: '/img/portfolio/ace-english-malta/ace-english-malta-survey.jpg',
+                sourceMobile: '',
                 sourceCaption: 'Miguel picture',
                 imgAlt: 'Miguel picture',
               },
@@ -267,7 +267,7 @@ export default {
               visualContent: {
                 contentType: 'img',
                 style: 'same',
-                source: '/img/portfolio/ace-english-malta/ace-english-malta-cardsort3.jpg',
+                source: '/img/portfolio/ace-english-malta/ace-english-malta-cardsorting.jpg',
                 sourceMobile: '',
                 sourceCaption: '<strong>Left</strong>: A card Sorting session on going. <strong>Right</strong>: Final outcome of the a card Sorting session.',
                 imgAlt: 'On the left image: A card Sorting session on going, a person looking at a table with card. On the right image: Final outcome of the a card Sorting session, cards grouped by users.',
@@ -296,8 +296,8 @@ export default {
         },{
           subsections: [
             {
-              id: 'copyright-seo-pictures',
-              heading: 'Copyright, SEO, and Pictures',
+              id: 'copyright-seo',
+              heading: 'Copyright and SEO',
               paragraphs: [
                 'Another huge factor we had to think about, was the copyright. Because it directly influences how users understand the school, services provided, and important information to take into consideration. We’ve created, together with one of our teachers, some guidelines on how the website copy should be written and the tone of voice — not so formal, considering our main target, but not so informal.',
               ],
@@ -313,7 +313,7 @@ export default {
             {
               paragraphs: [
                 'In these guidelines, each page should have a copy explaining the topic, but also based on keywords focused on SEO. Working directly with one of our teachers was a great idea because he could bring and combine his outstanding English language expertise with his knowledge about the school and the students.',
-                'Another important aspect was the pictures to be used on the new website. Thus, we hired a professional photographer, and coordinating with her, we aligned the ideas and concepts of pictures, and how we would like to express them on the website.',
+                // 'Another important aspect was the pictures to be used on the new website. Thus, we hired a professional photographer, and coordinating with her, we aligned the ideas and concepts of pictures, and how we would like to express them on the website.',
               ],
             },{
               id: 'development',
