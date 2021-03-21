@@ -106,6 +106,23 @@
     }
   }
 
+  &__quote {
+    color: $vv-gray-darkest;
+    font-family: $font-sans;
+    font-weight: 600;
+    font-style: italic;
+    font-size: $h5-size-mobile;
+    line-height: $h4-size-mobile;
+    margin: $grid-xs auto $grid-xl;
+    max-width: 44ch;
+
+    @include media-breakpoint-up(md) {
+      font-size: $h5-size;
+      line-height: $h4-size;
+      margin: $grid-sm auto $grid-xx;
+    }
+  }
+
   &__section {
     display: flex;
     flex-direction: column;
@@ -129,6 +146,11 @@
       @include media-breakpoint-up(md) {
         width: 80%;
       }
+    }
+
+    ul, 
+    ol {
+      margin-left: $grid-lg;
     }
     
     img {
@@ -166,10 +188,6 @@
       margin: $grid-sm auto;
       text-align: center;
       width: 100%;
-
-      em {
-        
-      }
     }
   }
 

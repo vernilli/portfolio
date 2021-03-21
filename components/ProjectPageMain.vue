@@ -36,6 +36,16 @@
             />
           </div>
 
+          <p 
+            v-if="
+              item.visualContent && 
+              item.visualContent.contentType === 'quote'
+            "
+            class="project-page__quote"
+          >
+            "{{ item.visualContent.source }}"
+          </p>
+
           <image-comparator
             v-if="
               item.visualContent && 
