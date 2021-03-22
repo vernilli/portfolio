@@ -138,6 +138,7 @@ export default {
         device: 'desktop',
       },
       visibleItemNav: 'challenge',
+      readingTime: '5 minutes read',
       heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
       head: {
         headTitle: 'ACE English Malta',
@@ -377,6 +378,7 @@ export default {
         device: 'mobile',
       },
       visibleItemNav: 'goal',
+      readingTime: '4 minutes read',
       heroImg: 'time-to-place/time-to-place-header.jpg',
       projectContent: [
         {
@@ -473,6 +475,7 @@ export default {
         device: 'mobile',
       },
       visibleItemNav: 'motivation',
+      readingTime: '3 minutes read',
       heroImg: 'carousel-ad/carousel-ad-header.jpg',
       projectContent: [
         {
