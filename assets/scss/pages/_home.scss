@@ -1,6 +1,10 @@
 .home {
   &__title {
-    font-weight: 600;
+    font-weight: 900;
+
+    @include media-breakpoint-up(md) {
+      font-weight: 600;
+    }
   }
 
   &__greetings {
