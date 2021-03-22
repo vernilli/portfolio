@@ -1,9 +1,20 @@
 <template>
   <transition name="fade" mode="out-in">
     <div :key="currentLocale" class="project-page">
-      <div class="project-page__hero desktop-image mb-4">
-        <img :src="require(`~/static/img/portfolio/${$t('projects[0].heroImg')}`)" alt="" class="w-100 h-100">
-        <h1 class="project-page__title text-center">
+      <div class="project-page__hero desktop-image mb-2 mb-md-4">
+        <img 
+          :src="require(`~/static/img/portfolio/${$t('projects[0].heroImg')}`)" 
+          alt="" 
+          class="w-100 h-100"
+        >
+
+        <h1 class="project-page__title d-none d-md-flex text-center">
+          {{ $t('projects[0].projectTitle') }}
+        </h1>
+      </div>
+
+      <div class="d-flex d-md-none text-center justify-content-center w-100">
+        <h1 class="project-page__title ">
           {{ $t('projects[0].projectTitle') }}
         </h1>
       </div>

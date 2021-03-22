@@ -34,41 +34,12 @@
                 {{ $t('resumeCopy') }}
               </a>
             </nav>
-          
-            <!-- <div class="header__lang-switcher d-none d-md-flex position-relative ml-4">
-              <div 
-                @click="toggleLangOptions"
-                class="header__lang-switcher__selector"
-              >
-                <language-icon :width="24" :height="24" />
-                {{ isPtLang ? $t('languages.portuguese') : $t('languages.english') }}
-              </div>
 
-              <transition name="fade-up">
-                <div
-                  v-if="langOptionsOpen"
-                  class="header__lang-switcher__selector-options"
-                >
-                  <nuxt-link v-if="isPtLang" :to="switchLocalePath('en')">
-                    {{ $t('languages.english') }}
-                  </nuxt-link>
-                  <nuxt-link v-else :to="switchLocalePath('pt-BR')">
-                    {{ $t('languages.portuguese') }}
-                  </nuxt-link>
-                </div>
-              </transition>
-            </div> -->
-
-            <div 
-              id="burger-icon"
-              class="d-block d-md-none"
-              :class="{'open': burgerOpen}"
+            <div
               @click="toggleBurger"
+              class="p-1"
             >
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+              <burger-icon :width="32" :height="32" class="vv-icon" />
             </div>
 
           </div>      
@@ -112,12 +83,12 @@
 </template>
 
 <script>
-// import LanguageIcon from '~/assets/icn/icon_language.svg'
+import BurgerIcon from '~/assets/icn/icon_burger.svg'
 
 export default {
   name: 'app-navbar',
   components: {
-    // LanguageIcon
+    BurgerIcon
   },
   watch: {
     $route () {
