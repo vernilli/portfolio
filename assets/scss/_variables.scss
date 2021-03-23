@@ -1,24 +1,26 @@
 // Gray Scale
-$vv-white:           #ffffff;
-$vv-gray-lightest:   #dddddd;
-$vv-gray-lighter-2:  #aaaaaa;
-$vv-gray-lighter:    #999999;
-$vv-gray:            #888888;
-$vv-gray-dark:       #666666;
-$vv-gray-darker:     #333333;
-$vv-gray-darkest:    #161616;
-$vv-black:           #000000;
+$vv-white:           hsl(0, 0%, 100%);
+$vv-gray-lightest:   hsl(0, 0%,  85%);
+$vv-gray-lighter-2:  hsl(0, 0%,  70%);
+$vv-gray-lighter:    hsl(0, 0%,  55%);
+$vv-gray:            hsl(0, 0%,  45%);
+$vv-gray-dark:       hsl(0, 0%,  30%);
+$vv-gray-darker:     hsl(0, 0%,  20%);
+$vv-gray-darkest:    hsl(0, 0%,  10%);
+$vv-black:           hsl(0, 0%,   0%);
 
 // Main colors
-$vv-green-lighter:   #02a3c0;
-$vv-green-light:     #007d92;
-$vv-green:           #005361;
-$vv-green-dark:      #00313a;
-$vv-green-darker:    #001a1f;
-// $vv-blue-dark:       #005361;
-// $vv-blue-darker:     #003A61;
-// $vv-wine:            #6B2629;
-// $vv-wine-dark:       #610E00;
+$vv-green-lighter:   hsl(189,  95%, 45%);
+$vv-green-light:     hsl(189, 100%, 35%);
+$vv-green:           hsl(189, 100%, 25%);
+$vv-green-dark:      hsl(189, 100%, 15%);
+$vv-green-darker:    hsl(189, 100%,  5%);
+
+$vv-blue:            hsl(204, 100%, 25%);
+$vv-blue-dark:       hsl(204, 100%, 15%);
+
+$vv-wine:            hsl(0, 100%, 25%);
+$vv-wine-dark:       hsl(0, 100%, 15%);
 
 // Font families
 @import url('https://fonts.googleapis.com/css?family=Varela:100,300,400,500,600,700,900&font-display=swap');
@@ -32,7 +34,6 @@ $font-serif: 'Lora', serif;
 
 // Font sizes
 // Major third scale. Reference at https://type-scale.com/
-// Minor third scale. Reference at https://type-scale.com/
 $span-size:  14px;
 $label-size: 16px;
 $p-size:     16px;
@@ -67,3 +68,7 @@ $icon-thin:    24px;
 $icon-regular: 32px;
 $icon-medium:  40px;
 $icon-bold:    48px;
+
+$shadow-1: 0 0    6px 0   rgba($color: $vv-black, $alpha: 0.12);
+$shadow-2: 0 1px 16px 0   rgba($color: $vv-black, $alpha: 0.12);
+$shadow-3: 0 6px 16px 4px rgba($color: $vv-black, $alpha: 0.20);

@@ -1,6 +1,6 @@
 .header {
   @include transition(all 0.2s);
-  box-shadow: 0 0 6px 0 rgba($color: $vv-gray-darker, $alpha: 0.2);
+  box-shadow: $shadow-1;
   position: fixed;
   top: 0;
   left: 0;
@@ -97,7 +97,7 @@
       @include transform(translate3d(0, calc(100% + 8px), 0));
       background: $white;
       border-radius: 5px;
-      box-shadow: 0 0 6px 0 rgba($color: $vv-gray-darker, $alpha: 0.2);
+      box-shadow: $shadow-1;
       display: flex;
       padding: $grid-sm 0;
 

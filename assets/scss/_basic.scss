@@ -82,7 +82,5 @@ a.main-link {
 }
 
 .vv-icon {
-  * {
-    stroke-width: $icon-regular;
-  } 
+  * { stroke-width: $icon-regular !important; } 
 }
