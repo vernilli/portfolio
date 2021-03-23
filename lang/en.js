@@ -138,7 +138,7 @@ export default {
         device: 'desktop',
       },
       visibleItemNav: 'challenge',
-      readingTime: '5 minutes read',
+      readingTime: '5 min read',
       heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
       head: {
         headTitle: 'ACE English Malta',
@@ -148,6 +148,27 @@ export default {
           author: 'Victor Vernilli'
         }
       },
+      summaryContent: [
+        {
+          title: '🙋‍♂️ My role',
+          info: 'Main contributor',
+        },{
+          title: '👏 Team',
+          info: 'PM, CMO, SEO Writer, Photographer',
+        },{
+          title: '⏳ Duration',
+          info: '3 months and a half',
+        },{
+          title: '🔎 Discovery',
+          info: 'Interviews, survey, market and competitors analysis',
+        },{
+          title: '✏️ Designing',
+          info: 'Card sorting, paper prototype and high-fidelity',
+        },{
+          title: '🛠 Tools / Dev',
+          info: 'HTML, CSS, WordPress, Google Analytics, Adobe Suite',
+        }
+      ],
       projectContent: [
         {
           id: 'challenge',
@@ -378,7 +399,7 @@ export default {
         device: 'mobile',
       },
       visibleItemNav: 'goal',
-      readingTime: '4 minutes read',
+      readingTime: '4 min read',
       heroImg: 'time-to-place/time-to-place-header.jpg',
       projectContent: [
         {
@@ -475,7 +496,7 @@ export default {
         device: 'mobile',
       },
       visibleItemNav: 'motivation',
-      readingTime: '3 minutes read',
+      readingTime: '3 min read',
       heroImg: 'carousel-ad/carousel-ad-header.jpg',
       projectContent: [
         {
