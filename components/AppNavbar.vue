@@ -37,7 +37,7 @@
 
             <div
               @click="toggleBurger"
-              class="p-1"
+              class="d-flex d-md-none p-1"
             >
               <burger-icon :width="32" :height="32" class="vv-icon" />
             </div>
