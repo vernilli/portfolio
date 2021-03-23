@@ -63,7 +63,6 @@ import VvButton from '~/components/VvButton.vue'
 import FileIcon from '~/assets/icn/icon_file.svg'
 
 export default {
-  // layout: 'basic',
   components: {
     CareerList,
     VvButton,

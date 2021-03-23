@@ -2,11 +2,34 @@
   <transition name="fade" mode="out-in">
     <div :key="currentLocale" class="project-page">
       <div class="project-page__hero mobile-image mb-4">
-        <img :src="require(`~/static/img/portfolio/${$t('projects[1].heroImg')}`)" alt="" class="w-100 h-100">
-        <h1 class="project-page__title text-center">
+        <img 
+          :src="require(`~/static/img/portfolio/${$t('projects[1].heroImg')}`)" 
+          alt="" 
+          class="w-100 h-100"
+        >
+
+        <div class="d-none d-md-block text-center">
+          <h1 class="project-page__title">
+            {{ $t('projects[1].projectTitle') }}
+          </h1>
+          <span class="project-page__reading-time">
+            {{ $t('projects[1].readingTime') }}
+          </span>
+        </div>
+      </div>
+
+      <div class="d-block d-md-none text-center justify-content-center w-100">
+        <h1 class="project-page__title">
           {{ $t('projects[1].projectTitle') }}
         </h1>
+        <span class="project-page__reading-time">
+          {{ $t('projects[1].readingTime') }}
+        </span>
       </div>
+
+      <project-page-summary
+        :summaryContent="$t('projects[1].summaryContent', { returnObjects: true })"
+      />
 
       <main>
         <project-page-nav 
@@ -35,14 +58,15 @@
 import VvButton from '~/components/VvButton.vue'
 import ProjectPageNav from '~/components/ProjectPageNav.vue'
 import ProjectPageMain from '~/components/ProjectPageMain.vue'
+import ProjectPageSummary from '~/components/ProjectPageSummary.vue'
 import PortfolioShowcase from '~/components/PortfolioShowcase.vue'
 
 export default {
-  // layout: 'basic',
   components: {
     VvButton,
     ProjectPageNav,
     ProjectPageMain,
+    ProjectPageSummary,
     PortfolioShowcase,
   },
   props: {
@@ -96,7 +120,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Improve people’s experience on mobile ads, using context elements from around them. Generating an improve in interest and performance, in addition to decrease the dislike for ads.'
+        content: '4 min read — Improve people’s experience on mobile ads, using context elements from around them. Generating an improve in interest and performance, in addition to decrease the dislike for ads.'
       },{
         hid: 'keywords',
         name: 'keywords',
@@ -126,7 +150,7 @@ export default {
       },{
         hid: 'og:og:description',
         property: 'og:og:description',
-        content: 'Improve people’s experience on mobile ads, using context elements from around them. Generating an improve in interest and performance, in addition to decrease the dislike for ads.'
+        content: '4 min read — Improve people’s experience on mobile ads, using context elements from around them. Generating an improve in interest and performance, in addition to decrease the dislike for ads.'
       },{
         hid: 'og:image',
         property: 'og:image',
@@ -164,7 +188,7 @@ export default {
       },{
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Improve people’s experience on mobile ads, using context elements from around them. Generating an improve in interest and performance, in addition to decrease the dislike for ads.'
+        content: '4 min read — Improve people’s experience on mobile ads, using context elements from around them. Generating an improve in interest and performance, in addition to decrease the dislike for ads.'
       }
     ],
   },
