@@ -5,9 +5,10 @@
       :hide-project="project.permalink === hideProject"
       :project-url="project.permalink"
       :project-title="project.projectTitle"
+      :project-reading-time="project.readingTime"
       :project-desc="project.showcase.desc"
-      :projectImgAlt="project.showcase.imageAlt"
-      :projectImgUrl="project.showcase.imageUrl"
+      :project-img-alt="project.showcase.imageAlt"
+      :project-img-url="project.showcase.imageUrl"
       :class="[
         backgrounds[index % 4],
         project.showcase.device,
@@ -32,7 +33,6 @@ export default {
       backgrounds: [
         'bg--green-dark',
         'bg--green',
-        'bg--green-light',
         'bg--green-light',
       ]
     }
