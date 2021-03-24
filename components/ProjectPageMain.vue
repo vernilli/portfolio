@@ -106,6 +106,7 @@
 
       <div
         v-if="item.visualContent"
+        class="mb-4 mb-md-5"
       >
         <figure 
           v-if="item.visualContent.contentType === 'img'"

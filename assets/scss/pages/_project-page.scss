@@ -63,6 +63,18 @@
     box-shadow: $shadow-2;
     border-radius: 10px;
 
+    @include media-breakpoint-up(md) {
+      box-shadow: none;
+    }
+
+    &__emoji {
+      font-size: $h3-size-mobile;
+
+      @include media-breakpoint-up(md) {
+        font-size: $h3-size;
+      }
+    }
+
     &__title {
       font-size: $h5-size-mobile;
       font-weight: 900;
@@ -146,13 +158,13 @@
     font-weight: 600;
     font-style: italic;
     font-size: $h5-size-mobile;
-    line-height: $h4-size-mobile;
+    line-height: $h3-size-mobile;
     margin: $grid-xs auto $grid-xl;
     max-width: 44ch;
 
     @include media-breakpoint-up(md) {
       font-size: $h5-size;
-      line-height: $h4-size;
+      line-height: $h3-size;
       margin: $grid-sm auto $grid-xx;
     }
   }
