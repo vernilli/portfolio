@@ -1,12 +1,35 @@
 <template>
   <transition name="fade" mode="out-in">
     <div :key="currentLocale" class="project-page">
-      <div class="project-page__hero desktop-image mb-4">
-        <img :src="require(`~/static/img/portfolio/${$t('projects[0].heroImg')}`)" alt="" class="w-100 h-100">
-        <h1 class="project-page__title text-center">
+      <div class="project-page__hero desktop-image mb-2 mb-md-4">
+        <img 
+          :src="require(`~/static/img/portfolio/${$t('projects[0].heroImg')}`)" 
+          alt="" 
+          class="w-100 h-100"
+        >
+
+        <div class="d-none d-md-block text-center">
+          <h1 class="project-page__title">
+            {{ $t('projects[0].projectTitle') }}
+          </h1>
+          <span class="project-page__reading-time">
+            {{ $t('projects[0].readingTime') }}
+          </span>
+        </div>
+      </div>
+
+      <div class="d-block d-md-none text-center justify-content-center w-100">
+        <h1 class="project-page__title">
           {{ $t('projects[0].projectTitle') }}
         </h1>
+        <span class="project-page__reading-time">
+          {{ $t('projects[0].readingTime') }}
+        </span>
       </div>
+
+      <project-page-summary
+        :summaryContent="$t('projects[0].summaryContent', { returnObjects: true })"
+      />
 
       <main>
         <project-page-nav 
@@ -35,14 +58,15 @@
 import VvButton from '~/components/VvButton.vue'
 import ProjectPageNav from '~/components/ProjectPageNav.vue'
 import ProjectPageMain from '~/components/ProjectPageMain.vue'
+import ProjectPageSummary from '~/components/ProjectPageSummary.vue'
 import PortfolioShowcase from '~/components/PortfolioShowcase.vue'
 
 export default {
-  // layout: 'basic',
   components: {
     VvButton,
     ProjectPageNav,
     ProjectPageMain,
+    ProjectPageSummary,
     PortfolioShowcase,
   },
   props: {
@@ -96,7 +120,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Redesign the ACE English Malta’s site, English School based in Malta'
+        content: '5 min read — Redesign the ACE English Malta’s site, English School based in Malta'
       },{
         hid: 'keywords',
         name: 'keywords',
@@ -126,7 +150,7 @@ export default {
       },{
         hid: 'og:og:description',
         property: 'og:og:description',
-        content: 'Redesign the ACE English Malta’s site, English School based in Malta'
+        content: '5 min read — Redesign the ACE English Malta’s site, English School based in Malta'
       },{
         hid: 'og:image',
         property: 'og:image',
@@ -164,7 +188,7 @@ export default {
       },{
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Redesign the ACE English Malta’s site, English School based in Malta'
+        content: '5 min read — Redesign the ACE English Malta’s site, English School based in Malta'
       }
     ],
   },

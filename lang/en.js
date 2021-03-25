@@ -138,15 +138,35 @@ export default {
         device: 'desktop',
       },
       visibleItemNav: 'challenge',
+      readingTime: '5 min read',
       heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
-      head: {
-        headTitle: 'ACE English Malta',
-        meta: {
-          desc: 'Redesign the ACE English Malta’s site, English School based in Malta',
-          keywords: 'ace english malta, st julians, malta, ux portfolio, redesign, mobile ux, ux designer, victor vernilli, user-centered design',
-          author: 'Victor Vernilli'
+      summaryContent: [
+        {
+          emoji: '🙋‍♂️',
+          title: 'My role',
+          info: 'Main contributor',
+        },{
+          emoji: '👏',
+          title: 'Team',
+          info: 'Me, CMO, SEO Writer and Photographer',
+        },{
+          emoji: '⏳',
+          title: 'Duration',
+          info: '3 months and a half',
+        },{
+          emoji: '🔎',
+          title: 'Discovery',
+          info: 'Interviews, survey, market and competitors analysis',
+        },{
+          emoji: '✏️',
+          title: 'Designing',
+          info: 'Card sorting, paper prototype and high-fidelity',
+        },{
+          emoji: '🛠',
+          title: 'Tools / Dev',
+          info: 'HTML, CSS, WordPress, Google Analytics, Adobe Suite',
         }
-      },
+      ],
       projectContent: [
         {
           id: 'challenge',
@@ -306,7 +326,7 @@ export default {
         },{
           visualContent: {
             contentType: 'quote',
-            source: 'Our new website should be easy to navigate and the content should be easy to be found and to be readen.'
+            source: 'In a market full of competitors, impacting SEO ranking is mandatory to get noticed'
           }
         },{
           subsections: [
@@ -377,7 +397,35 @@ export default {
         device: 'mobile',
       },
       visibleItemNav: 'goal',
+      readingTime: '4 min read',
       heroImg: 'time-to-place/time-to-place-header.jpg',
+      summaryContent: [
+        {
+          emoji: '🙋‍♂️',
+          title: 'My role',
+          info: 'Main contributor',
+        },{
+          emoji: '👏',
+          title: 'Team',
+          info: 'Me and Marketing Analyst',
+        },{
+          emoji: '⏳',
+          title: 'Duration',
+          info: '5 months',
+        },{
+          emoji: '🔎',
+          title: 'Discovery',
+          info: 'Desk research, state of art and competitors analysis',
+        },{
+          emoji: '✏️',
+          title: 'Designing',
+          info: 'Sketching, paper prototype and high-fidelity',
+        },{
+          emoji: '🛠',
+          title: 'Tools / Dev',
+          info: 'HTML, CSS, Mixpanel',
+        }
+      ],
       projectContent: [
         {
           id: 'goal',
@@ -473,7 +521,35 @@ export default {
         device: 'mobile',
       },
       visibleItemNav: 'motivation',
+      readingTime: '3 min read',
       heroImg: 'carousel-ad/carousel-ad-header.jpg',
+      summaryContent: [
+        {
+          emoji: '🙋‍♂️',
+          title: 'My role',
+          info: 'Researcher and Front-ender',
+        },{
+          emoji: '👏',
+          title: 'Team',
+          info: 'Me, Product Designer and Back-end developer',
+        },{
+          emoji: '⏳',
+          title: 'Duration',
+          info: '3 months',
+        },{
+          emoji: '🔎',
+          title: 'Discovery',
+          info: 'Interviews, survey, market and competitors analysis',
+        },{
+          emoji: '✏️',
+          title: 'Designing',
+          info: 'Card sorting, paper prototype and high-fidelity',
+        },{
+          emoji: '🛠',
+          title: 'Tools / Dev',
+          info: 'HTML, CSS, WordPress, Google Analytics, Adobe Suite',
+        }
+      ],
       projectContent: [
         {
           id: 'motivation',

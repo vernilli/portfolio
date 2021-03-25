@@ -26,10 +26,7 @@
     }
 
     &:hover {
-      // @include transform(translate3d(0, -4px, 0));
-      box-shadow: 
-        // inset 0 0 0 4px rgba($color: $vv-white, $alpha: 0.5),
-        0 6px 16px 4px rgba($color: $vv-black, $alpha: 0.2);
+      box-shadow: $shadow-3;
       text-decoration: none;
     }
 
@@ -73,15 +70,21 @@
 
     &__title {
       color: $white;
-      font-family: $font-sans;
       font-size: $h4-size;
-      margin-bottom: $grid-md;
+      font-weight: 600;
       width: 80%;
+    }
+
+    &__reading-time {
+      background: $vv-white;
+      border-radius: 3px;
+      color: $vv-green-darker;
+      font-size: $p-size;
+      font-weight: 600;
     }
 
     &__desc {
       color: $white;
-      font-family: $font-sans;
       font-size: $h6-size;
       line-height: 1.45;
       width: 72%;

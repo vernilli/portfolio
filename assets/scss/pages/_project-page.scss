@@ -6,11 +6,12 @@
 
     position: relative;
     overflow: hidden;
-    margin-top: 80px;
-    height: 30vh;
+    margin-top: 60px;
+    height: 24vh;
 
     @include media-breakpoint-up(md) {
       margin-top: 100px;
+      height: 30vh;
     }
 
     &.mobile-image {
@@ -34,10 +35,55 @@
   }
 
   &__title {
-    @extend .home__title;
-    background: rgba($color: $vv-white, $alpha: 1);
+    background: $vv-white;
     border-radius: 5px;
+    font-size: $h2-size-mobile;
+    font-weight: 900;
     padding: $grid-sm $grid-md;
+
+    @include media-breakpoint-up(md) {
+      font-size: $h2-size;
+      font-weight: 600;
+    }
+  }
+
+  &__reading-time {
+    background: $vv-white;
+    border-radius: 0 0 10px 10px;
+    font-size: $h5-size-mobile;
+    padding: $grid-sm $grid-lg;
+
+    @include media-breakpoint-up(md) {
+      font-size: $h5-size;
+    }
+  }
+
+  &__summary {
+    background: $vv-white;
+    box-shadow: $shadow-2;
+    border-radius: 10px;
+
+    @include media-breakpoint-up(md) {
+      box-shadow: none;
+    }
+
+    &__emoji {
+      font-size: $h3-size-mobile;
+
+      @include media-breakpoint-up(md) {
+        font-size: $h3-size;
+      }
+    }
+
+    &__title {
+      font-size: $h5-size-mobile;
+      font-weight: 900;
+
+      @include media-breakpoint-up(md) {
+        font-size: $h5-size;
+        font-weight: 600;
+      }
+    }
   }
 
   &__nav-container {
@@ -112,13 +158,13 @@
     font-weight: 600;
     font-style: italic;
     font-size: $h5-size-mobile;
-    line-height: $h4-size-mobile;
+    line-height: $h3-size-mobile;
     margin: $grid-xs auto $grid-xl;
     max-width: 44ch;
 
     @include media-breakpoint-up(md) {
       font-size: $h5-size;
-      line-height: $h4-size;
+      line-height: $h3-size;
       margin: $grid-sm auto $grid-xx;
     }
   }
@@ -133,10 +179,12 @@
 
     h2,
     h3 {
+      font-weight: 900;
       padding-top: $grid-sm;
       padding-bottom: $grid-lg;
       
       @include media-breakpoint-up(md) {
+        font-weight: 600;
         top: 65px;
         width: 80%;
       }
@@ -193,7 +241,7 @@
 
   &__img-comp {
     &__container {
-      box-shadow: 0 1px 16px rgba($color: $vv-black, $alpha: 0.12);
+      box-shadow: $shadow-2;
       border-radius: 5px;
       width: 580px; /*should be the same height as the images*/
       height: 886px; /*should be the same height as the images*/
