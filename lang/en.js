@@ -326,7 +326,7 @@ export default {
         },{
           visualContent: {
             contentType: 'quote',
-            source: 'Our new website should be easy to navigate and the content should be easy to be found and to be readen.'
+            source: 'In a market full of competitors, impacting SEO ranking is mandatory to get noticed'
           }
         },{
           subsections: [
