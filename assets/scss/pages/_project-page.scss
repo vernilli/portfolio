@@ -190,6 +190,14 @@
       }
     }
 
+    h2 {
+      margin-top: $grid-md;
+
+      @include media-breakpoint-up(md) {
+        margin-top: $grid-xl;
+      }
+    }
+
     p {
       @include media-breakpoint-up(md) {
         width: 80%;

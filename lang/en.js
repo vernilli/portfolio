@@ -396,7 +396,7 @@ export default {
         imageUrl: '/img/portfolio/mockup-time-to-place.png',
         device: 'mobile',
       },
-      visibleItemNav: 'goal',
+      visibleItemNav: 'challenge',
       readingTime: '4 min read',
       heroImg: 'time-to-place/time-to-place-header.jpg',
       summaryContent: [
@@ -407,7 +407,7 @@ export default {
         },{
           emoji: '👏',
           title: 'Team',
-          info: 'Me and Marketing Analyst',
+          info: 'Me, UX Designer and Marketing Analyst',
         },{
           emoji: '⏳',
           title: 'Duration',
@@ -415,11 +415,11 @@ export default {
         },{
           emoji: '🔎',
           title: 'Discovery',
-          info: 'Desk research, state of art and competitors analysis',
+          info: 'User journey, Focal group, Interview, Desk research, and competitors analysis',
         },{
           emoji: '✏️',
           title: 'Designing',
-          info: 'Sketching, paper prototype and high-fidelity',
+          info: 'Sketching, paper prototype and Mockups',
         },{
           emoji: '🛠',
           title: 'Tools / Dev',
@@ -428,63 +428,109 @@ export default {
       ],
       projectContent: [
         {
-          id: 'goal',
-          heading: 'Goal',
-          paragraphs: [
-            'Improve people’s experience in mobile ads, using context elements from around them. Generating improvement in interest and performance, also, to decrease the dislike for ads.',
-          ]
-        },{
           id: 'challenge',
-          heading: 'Challenge',
+          heading: 'The Challenge',
           paragraphs: [
-            'During years - since advertisers discovered that the internet could be a new platform for media - brands used the digital to advertise themselves without any care to people’s experience. Not only advertisers had this impression, but also publishers and developers always wanted to increase their revenue, even so, their first act was to make it difficult for users to close the ads, generating misclicks or fake-clicks.',
-            'These two groups have complementary interests, the first wants to pay for advertising spaces and the other wants to get paid for their spaces. But there is a group even more interested, the users who will receive these ads.',
-            'This behavior - from advertisers and publishers - generates in people a dislike, even hate, of mobile ads and ads in general, most people say the feeling related to ads is ‘hate’. So the ideal solution would be to improve the user’s experience, making the brand more well-seen and the publishers increasing their monetization in his/her app.',
-            'So I created some hypothesis: <strong>What if ads that included contextual information increased performance and improved the experience?</strong> Would it work both digitally and physically? Is there a way, and how would it be feasible, to add this contextual information in ads?',
+            'Digital campaigns delivered by ad networks are, in general, completely generic. This project shows how inserting contextual information of users — location and time to the point-of-sale — on mobile ads can improve the performance of digital campaigns and increase visits to the point-of-sale(POS).',
           ]
         },{
-          id: 'process',
-          heading: 'Process',
+          id: 'context',
+          heading: 'Context',
+          paragraphs: [
+            'Brands and app publishers rely on digital advertisements without thinking properly, the first wants to share their product/service, and the second wants to increase revenue. Most of them didn’t think is on how the app users will interact with those digital ads. That makes ads interrupt the users’ experience on the web.',
+          ]
+        },{
+          visualContent: {
+            contentType: 'quote',
+            source: 'Nobody wants to be interrupted while reading a text or watching a video. We want to continue doing what pleases us.'
+          }
+        },{
+          paragraphs: [
+            'The misuse of digital advertisement makes users start to dislike ads, and sometimes, even to dislike the brand which interrupts them. So, <strong>what if we could make the mobile ads more contextualized, will it increase performance and people’s perception of the ads?</strong>',
+          ]
+        },{
+          id: 'discovery',
+          heading: 'Discovery',
+          paragraphs: [
+            'I had to choose now which type of contextual information I would use. There are two main categories of contextual information:',
+            '<ul><li><strong>Digital</strong>: uses information and behavior in the <strong>digital world</strong>; or</li><li><strong>Physical</strong>: uses information and behavior used are found in the <strong>real world</strong></li></ul>',
+            'As In Loco Media was the biggest ad platform that uses geo-location data to deliver mobile ads, <strong>I choose the Physical context.</strong>',
+          ],
           subsections: [
             {
-              id: 'research',
-              heading: 'Research',
+              id: 'focal-groups-interviews',
+              heading: 'Focal groups and Interviews',
               paragraphs: [
-                'With the problem in hand, I started talking with mobile-ads professionals to understand some market problems, I interviewed both advertisers and publishers.',
-                'I found out the main problem: the content that users receive and the way it’s delivered. Many times the ads were about products or services that made no sense for them. And even in cases that received ads were about things they liked, the ads weren’t clear or lacked personalized information.',
-                'Then I started to elaborate more on this idea and search forms to include the context in ads, making them personalized for each people. There are two main types of context: <strong>digital and physical</strong>. In the first case, the information and behavior used are found in the real world; The other case is utilizing data and behavior in the digital world. I chose the first one because I would use a geolocation-based ad-network to deliver my test ads.',
-                'Even with some ideas in mind, I organized some talks with friends and colleagues to discuss a little more about the theme and to discover possible new ideas. I listed some ways to use context: time, distance, weather, the day of the week, etc. With these in hand, I went on to identify ways to apply each of them.',
+                'What do the users think when they are interacting with ads? Thus, <strong>we’ve run some focal group sessions</strong> to analyze how other users would discuss the topic as a group of people. Also, to understand a bit deeper as they thoughts, <strong>I’ve interview other users to perceive a personal perspective</strong>.',
               ],
             },{
-              id: 'ideation-prototyping',
-              heading: 'Ideation and Prototyping',
-              paragraphs: [
-                'The most interesting and quick to validate was the <strong>time context</strong>. The main goal was to show - in a visual way - the person <strong>an estimated time between the user and the point of sale (POS)</strong>. I called this idea Time to Place or TTP. Some ad networks - Google, for example - already have a similar feature: after the user clicks in the ad, it opens the maps app showing the POS location.',
-                'I wanted to identify if the inclusion of a simple phrase as <strong>"only 5 minutes away"</strong> could be powerful, grabbing people’s attention. It was necessary to find the best form to add this kind of context. Including subtly and without taking the focus off the product, because the product still should be the focus of attention.',
-                'In this research, real campaigns from <strong>real brands</strong> were used, because the objective was to test this context addition in the <strong>real market ecosystem</strong>, with no fake brands and campaigns.',
-              ],
               visualContent: {
                 contentType: 'img',
                 style: 'same',
-                source: '/img/portfolio/time-to-place/time-to-place-sketch2.jpg',
+                source: '/img/portfolio/time-to-place/time-to-place-discovery.jpg',
+                sourceMobile: '',
+                sourceCaption: '',
+                imgAlt: '',
+              },
+            },{
+              id: 'desk-research',
+              heading: 'Desk research',
+              paragraphs: [
+                'Now, I had to discover what are the best practices in the market and if other companies were using contextual information on ads. During the research, <strong>I found the most common sizes: interstitial and small banners</strong>. Interstitial ones are the biggest ads, filling the whole device’s screen, giving more possibilities for creators.',
+                'The small banners are the most popular ones, generally shown at screen corners. However, due to their size, small banners are frequently ignored by users — consciously or not. This problem is well-known in the market, called <a href="https://www.nngroup.com/videos/banner-blindness/" target="_blank"><strong>banner blindness</strong></a>.',
+              ],
+            },
+          ],
+        },{
+          id: 'designing',
+          heading: 'Designing',
+          paragraphs: [
+            'During the interview and focus groups, one of the findings I could identify that nowadays people don’t realize short distances, what they realize is how long it will take to go to a place.',
+          ],
+        },{
+          visualContent: {
+            contentType: 'quote',
+            source: '\"It’s 300m from here. Nah, it’s far. I’m fine here.\" \"It’s 5min from here. Cool, it’s quicky, let’s go\" 5min = avg 400m'
+          }
+        },{
+          subsections: [
+            {
+              id: 'sketching',
+              heading: 'Sketching',
+              paragraphs: [
+                'I’ve selected some campaigns from real brands, as I wanted to test in real the real market, not in fake and unreal campaigns. My intervention on the images should be subtly and keeping the main focus on the product/service, as the major goal of the campaign is to share them.',
+              ],
+            }
+          ]
+        },{
+          visualContent: {
+            contentType: 'quote',
+            source: 'What if I insert an ’only 5 minutes away’ label on the image, would it increase performance?'
+          }
+        },{
+          subsections: [
+            {
+              visualContent: {
+                contentType: 'img',
+                style: 'same',
+                source: '/img/portfolio/time-to-place/time-to-place-sketches.jpg',
                 sourceMobile: '',
                 sourceCaption: '<strong>Sketches</strong>: Low fidelity sketches of some ideas for Time to Place',
                 imgAlt: 'Low fidelity sketches draw on paper of some ideas for Time to Place',
               },
-            },{
-              id: 'development',
-              heading: 'Development',
-              paragraphs: [
-                'After all the concept steps, it was time to develop the ads. So a rich media ad was created, one that would be capable to identify and estimate the time between user and POS. It was possible to create a rich media structure using HTML, CSS, and JS.',
-                'Two ad types were developed: interstitial and small banner. Interstitial ads are ads that fill all the device’s screen, giving more possibilities for creators. The small banners are the most popular ones. They are small ads that appear generally at screen corners. Because of that those small banners are ignored - consciously or not - many times by users, a problem called <a href="https://www.nngroup.com/videos/banner-blindness/" target="_blank"><strong>Banner Blindness</strong></a>.',
-              ],
-            },
+            }
+          ]
+        },{
+          id: 'development',
+          heading: 'Development',
+          paragraphs: [
+            'I’ve developed several rich media ads, artifacts capable to identify and estimate the time between user and POS — when the user sees the ad. Mobile ads require to be light, thus I had to create the rich media structure using pure HTML, CSS, and JS.',
           ],
         },{
           visualContent: {
             contentType: 'img',
             style: 'full-contained',
-            source: '/img/portfolio/time-to-place/time-to-place-parallax.jpg',
+            source: '/img/portfolio/time-to-place/time-to-place-mockups.jpg',
             sourceMobile: '',
             sourceCaption: 'Some examples of the rich media used during the tests',
             imgAlt: 'Some examples of the rich media used during the tests',
@@ -493,18 +539,11 @@ export default {
           id: 'results',
           heading: 'Results',
           paragraphs: [
-            'The tests took two weeks because I wanted to compare the original ads’ performance with the ones that had a time context included. The period of two weeks was important because it avoided seasonal behavior by users during the week compared to weekends. During a 2-week test, in total (interstitial version):',
-            '<ul><li>Impressions: 103 hundreds</li><li>Clicks:<ul><li>Version A: 905 clicks</li><li><strong>Version B: 1030 clicks (+13%)</strong></li></ul></li><li>CTR:<ul><li>Version A: 1.6%</li><li><strong>Version B: 2.1% (+30%)</strong></li></ul></li></ul>',
-            'The CTR - Click Through Rate - measures the user’s interest in an ad, it’s one of the most important metrics in digital ads. It’s calculated by dividing the total number of clicks by the number of views, it goes from 0% to 100%. Each ad format has an expected CTR number, but for various reasons - which included the rejection by users - these metrics generally don’t reach 4%.',
-            'It’s possible to identify the increase in results of tests on the ads’ CTR performance. The numbers raised more than 30% and 27% in the interstitial and small banner, respectively. Besides, the number of visits at POS increased for ads that received the TTP.',
-            'Thus I identified that the addition of context can be a new solution for increasing the digital ad results, also, it can improve the impression that people have about digital ads.',
+            'The tests last 2 weeks, avoiding getting data for only one specific period — weekdays and weekends. Two versions were delivered:',
+            '<ul><li>Version A: the original image (no intervention);</li><li>Version B: the image showing the time to POS.</li></ul>',
+            'During the tests, there were almost <strong>104 thousand visualizations</strong>, the general results are below:',
+            '<ul><li>Visualizations:<ul><li>Version A: 56 thousand</li><li><strong>Version B: 48 thousand</strong></li></ul></li><li>Clicks:<ul><li>Version A: 905 clicks</li><li><strong>Version B: 1030 clicks (+13%)</strong></li></ul></li><li>CTR(Click Through Rate):<ul><li>Version A: 1.6%</li><li><strong>Version B: 2.1% (+30%)</strong></li></ul></li><li>Visits to POS (estimation):<ul><li>Version A: 236</li><li><strong>Version B: 284 (+20%)</strong></li></ul></li></ul>'
           ],
-          visualContent: {
-            contentType: 'btn',
-            source: 'presentations/2017_TCC_CONTEXT_ADS.pdf',
-            sourceMobile: '',
-            sourceCaption: 'Read full report (Portuguese)',
-          },
         },
       ],
     },
