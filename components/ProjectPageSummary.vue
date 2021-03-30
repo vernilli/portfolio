@@ -1,5 +1,5 @@
 <template>
-  <div class="container--expanded my-4 mb-md-5 px-3 px-4 w-100">
+  <div class="container--expanded my-4 mb-md-1 px-3 px-4 w-100">
     <div class="project-page__summary d-flex flex-wrap justify-content-center m-auto p-3 py-md-4">
 
       <div 
