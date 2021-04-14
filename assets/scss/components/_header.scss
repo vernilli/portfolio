@@ -21,6 +21,7 @@
     font-family: $font-sans;
     font-size: $h5-size-mobile;
     font-weight: 700;
+    white-space: nowrap;
 
     @include media-breakpoint-up(md) {
       font-size: $h3-size;

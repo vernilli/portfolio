@@ -27,9 +27,25 @@
   &--green-light::before {
     background-color: $vv-green-light;
   }
+
   &--green-dark,
   &--green-dark::before {
     background-color: $vv-green-dark;
+  }
+
+  &--green-darker,
+  &--green-darker::before {
+    background-color: $vv-green-darker;
+  }
+
+  &--blue,
+  &--blue::before {
+    background-color: $vv-blue;
+  }
+
+  &--blue-dark,
+  &--blue-dark::before {
+    background-color: $vv-blue-dark;
   }
 }
 

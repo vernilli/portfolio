@@ -87,15 +87,15 @@
   }
 
   &__nav-container {
-    background: rgba($color: $vv-white, $alpha: 0.8);
+    background: rgba($color: $vv-white, $alpha: 0.9);
     border-radius: 5px;
     padding: $grid-md;
     position: sticky;
-    top: 5rem;
+    top: 6rem;
     right: 0;
     float: right;
-    min-width: 250px;
-    width: 250px;
+    max-width: 200px;
+    width: 20vw;
     z-index: 0;
 
     ul {
@@ -104,7 +104,7 @@
 
     li {
       cursor: pointer;
-      margin-top: $grid-sm;
+      margin-top: $grid-xs;
       text-align: left;      
 
       &.subsection {
@@ -114,6 +114,7 @@
       button {
         color: $vv-gray-dark;
         background: transparent;
+        font-size: $span-size;
         position: relative;
         text-align: left;
         
@@ -159,13 +160,15 @@
     font-style: italic;
     font-size: $h5-size-mobile;
     line-height: $h3-size-mobile;
-    margin: $grid-xs auto $grid-xl;
+    // margin: $grid-xs auto $grid-xl;
+    margin: $grid-xs auto;
     max-width: 44ch;
 
     @include media-breakpoint-up(md) {
       font-size: $h5-size;
       line-height: $h3-size;
-      margin: $grid-sm auto $grid-xx;
+      // margin: $grid-sm auto $grid-xx;
+      margin: $grid-sm auto;
     }
   }
 
