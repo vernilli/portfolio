@@ -248,8 +248,8 @@ export default {
         },{
           subsections: [
             {
-              id: 'customer-listing',
-              heading: 'Customer listing',
+              id: 'customer-listening',
+              heading: 'Customer listening',
               paragraphs: [
                 'The Customer Support Team listed the most frequent questions they received about the vehicles, such as insurance, fuel type, extras available to hire, features and amenities, location to pick up the vehicle, etc.',
               ]
