@@ -15,7 +15,15 @@ export default {
     ],
     link: [
       // { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'icon', type: 'image/png', href: '/favicon/favicon.ico', sizes: '48x48' },
+      { 
+        rel: 'icon', 
+        type: 'image/png', 
+        href: '/favicon/favicon.ico', 
+        sizes: '48x48' 
+      },{
+        rel: 'preconnect',
+        href: 'https://www.google-analytics.com'
+      },
     ],
   },
 
