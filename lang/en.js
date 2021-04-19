@@ -137,8 +137,8 @@ export default {
         imageUrl: '/img/portfolio/showcase-card-indie-campers.png',
       },
       visibleItemNav: 'challenge',
-      readingTime: '4 min read - 2020',
-      heroImg: 'ace-english-malta/ace-english-malta-mockups.jpg',
+      readingTime: '4 min read',
+      heroImg: 'indie-campers-funnel-redesign/mockups.jpg',
       summaryContent: [
         {
           emoji: '🙋‍♂️',
@@ -147,7 +147,7 @@ export default {
         },{
           emoji: '👏',
           title: 'Team',
-          info: 'Me, PM, CPTO and Fullstack Dev',
+          info: 'Me, PM, CPTO, and Fullstack Devs',
         },{
           emoji: '⏳',
           title: 'Duration',
@@ -155,15 +155,15 @@ export default {
         },{
           emoji: '🔎',
           title: 'Discovery',
-          info: 'Client feedback, Customer Journey Map and competitors analysis',
+          info: 'Customer listening, Experience Map and competitors analysis',
         },{
           emoji: '✏️',
           title: 'Designing',
-          info: 'sketching, mockups and prototyping',
+          info: 'sketching, mockups, prototyping, and user testing',
         },{
           emoji: '🛠',
-          title: 'Tools / Dev',
-          info: 'HTML, CSS, VueJS. Google Analytics, Adobe Suite, Hotjar',
+          title: 'Tools / Tech',
+          info: 'Adobe XD, HTML, CSS, VueJS. Google Analytics, Adobe Suite, Hotjar',
         }
       ],
       projectContent: [
@@ -171,28 +171,28 @@ export default {
           id: 'challenge',
           heading: 'The Challenge',
           paragraphs: [
-            '<strong>Create a new page for the Indie Campers’ vehicles</strong>, showing technical info to support the clients when choosing a model to travel. <strong>The checkout page also had to be redesigned</strong>, as it has a strong correlation with those new pages.',
+            '<strong>Create a new page for the Indie Campers’ models/categories</strong>, showing technical info to support the clients when choosing a model to travel. <strong>The whole funnel experience — including sign up page and checkout page — also had to be redesigned</strong>, as it has a strong correlation with those new pages.',
           ]
         },{
           id: 'context',
           heading: 'Context',
           paragraphs: [
-            'Traveling in a campervan is not something in the routine as in general public mind. <strong>Indie Campers is the biggest own-fleet campervan renter in Europe</strong>, with around 1600 vehicles around Europe. That means, our customer support team receives many requests and spent a lot of time answering questions regarding the models.',
-            'If clients are asking for basic information, they are not comfortable picking a modal, making their experience on the website is not smooth and they are not able to book a trip with Indie Campers.'
+            'Traveling in a campervan is trending all over Europe although most travellers are doing that for the first time. <strong>Indie Campers is the biggest own-fleet campervan rental in Europe, with around 1600 vehicles around Europe</strong>. That said, our customer support team receives many requests and has to answer questions regarding the features, available extras and price breakdown',
+            // 'If clients are asking for basic information, they are not comfortable picking a modal, making their experience on the website is not smooth and they are not able to book a trip with Indie Campers.'
           ],
         },{
           id: 'discovery',
           heading: 'Discovery',
           paragraphs: [
-            'We had to understand the most important touchpoints, main findings, and the PM point of view over the flow. What our clients often ask, what are the most important to them, what they usually hire with book',
+            'We had to understand the most important touchpoints of the customer journey, and how the market is set. What our clients often ask, what are the most important to them, what they usually hire with book',
           ],
           subsections: [
             {
-              id: 'customer-journey',
-              heading: 'Customer journey map',
+              id: 'experience-map',
+              heading: 'Experience map',
               paragraphs: [
-                'When I’ve joined indie campers a customer journey map was already created with the whole experience our clients have while traveling with us, from the first access on the website to the post weeks after the trip. One of the first things I’ve done was talk with the Product Managers(PM) who have compiled that journey.',
-                'We were going to change some of the touchpoints, including new steps. So I’ve discussed with them to include and update the Customer Journey Map with those new steps.',
+                'When I joined indie campers a customer journey map was already created with the whole experience our clients have while traveling with us, <strong>from the first access on the website to the post weeks after the trip</strong>. One of the first things I’ve done was talk with the Product Managers (PM) who have compiled that journey.',
+                'We were going to change some of the touchpoints, including new ones: The listing page and SignUp page. So I’ve discussed with PMs how those new steps would influence the Customer Journey Map.',
               ],
             },
           ],
@@ -200,20 +200,20 @@ export default {
           visualContent: {
             contentType: 'img',
             style: 'full-width',
-            source: '/img/portfolio/indie-campers-funnel-redesign/customer-journey-map.jpg',
+            source: '/img/portfolio/indie-campers-funnel-redesign/experience-map.jpg',
             sourceMobile: '',
             sourceCaption: '',
             imgAlt: '',
           },
         },{
-          subsections: [
-            {
-              paragraphs: [
-                'We were going to change some of the touchpoints, including new steps. So I’ve discussed with them to include and update the Customer Journey Map with those new steps.',
-              ],
-            },
-          ],
-        },{
+        //   subsections: [
+        //     {
+        //       paragraphs: [
+        //         'We were going to change some of the touchpoints, including new steps. So I’ve discussed with them to include and update the Experience Map with those new steps.',
+        //       ],
+        //     },
+        //   ],
+        // },{
           subsections: [
             {
               id: 'competitors-analysis',
@@ -298,17 +298,16 @@ export default {
               paragraphs: [
                 'Mobile is taking a huge space across the internet, and at Indie Campers is not different, around 70% of the access to the website is on mobile devices. So, <strong>I’ve started the approach of mobile-first and then adapt to other devices.</strong>',
               ],
+              visualContent: {
+                contentType: 'img',
+                style: 'same',
+                source: '/img/portfolio/indie-campers-funnel-redesign/mockups.jpg',
+                sourceMobile: '',
+                sourceCaption: '',
+                imgAlt: '',
+              },
             },
           ],
-        },{
-          visualContent: {
-            contentType: 'img',
-            style: 'full-width',
-            source: '/img/portfolio/indie-campers-funnel-redesign/competitors.jpg',
-            sourceMobile: '',
-            sourceCaption: '',
-            imgAlt: '',
-          },
         },{
           subsections: [
             {
@@ -323,25 +322,34 @@ export default {
             source: 'I’ve used Adobe XD to create the mockups and prototypes, and Adobe Illustrator to create the icons'
           }
         },{
+          visualContent: {
+            contentType: 'img',
+            style: 'full-width',
+            source: '/img/portfolio/indie-campers-funnel-redesign/prototype.jpg',
+            sourceMobile: '',
+            sourceCaption: '',
+            imgAlt: '',
+          },
+        },{
           id: 'development',
           heading: 'Development',
           paragraphs: [
-            'At Indie Campers, all designers have to have some knowledge in HTML and CSS, as they are people in charge to guarantee that what is being developed is what they’ve designed. Indie Campers’ website is build using VueJS and SASS on the front end, <strong>I’ve worked alongside a full-stack developer to create those pages.</strong>',
+            'At Indie Campers, all designers have to have some knowledge in HTML and CSS, as they are people in charge to guarantee that what is being developed is what they’ve designed. Indie Campers’ website is built using VueJS and SASS on the front end, <strong>I’ve worked alongside a full-stack developer to create those pages.</strong>',
           ],
         },{
           visualContent: {
             contentType: 'quote',
-            source: 'I was in charge of the SASS, the general HTML structure, and support a bit on VueJS'
+            source: 'I was in charge of the CSS / SASS, the general HTML structure, and support a bit on VueJS'
           }
         },{
           paragraphs: [
-            'At Indie Campers, the development team works on a <strong>Continuous Deploy methodology</strong>. So, as the MVP version was ready to be deployed we release it, and on the next sprints, we were increasing it.',
+            'At Indie Campers, the development team works on a <strong>Continuous Deploy methodology</strong>. So, as the MVP version was ready to be deployed we released it, and on the next sprints, we were increasing it.',
           ],
         },{
           id: 'results',
           heading: 'Results',
           paragraphs: [
-            '',
+            'The process took around <strong>3 months</strong>. Our Customer support team uses a platform that tracks the type of requests they receive. Comparing the 2 following months of the MVP version release with the same period of the previous year, we had a <strong>significant improvement on our Customer support</strong> team.',
           ],
         },{
           visualContent: {
@@ -354,7 +362,8 @@ export default {
           id: 'future-steps',
           heading: 'Future steps',
           paragraphs: [
-            'On the following day of the release, <strong>I’ve set a few trackers on our Hotjar account to identify potential new improvements or any issues</strong>. A lot of new content has been added explaining our vehicle, but we could identify new information we could explain in a better way in the future.',
+            'On the following day of the release, <strong>I’ve set a few trackers on our Hotjar account to identify potential new improvements or any issues</strong>. A lot of new content has been added explaining our vehicle, but we could identify new information we could explain better. ',
+            'We could identify we are explaining well about the vehicles, but information about the service should be better explained. Also, <strong>we are planning to start AB Tests</strong>, so in future we will be able to test several changes at the same time.'
           ],
         }
       ]
@@ -370,7 +379,7 @@ export default {
         imageUrl: '/img/portfolio/showcase-card-ace.png',
       },
       visibleItemNav: 'challenge',
-      readingTime: '5 min read - 2018',
+      readingTime: '5 min read',
       heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
       summaryContent: [
         {
@@ -384,7 +393,7 @@ export default {
         },{
           emoji: '⏳',
           title: 'Duration',
-          info: '3 months and a half',
+          info: '3 and a half months',
         },{
           emoji: '🔎',
           title: 'Discovery',
@@ -395,8 +404,8 @@ export default {
           info: 'Card sorting, paper prototype and high-fidelity',
         },{
           emoji: '🛠',
-          title: 'Tools / Dev',
-          info: 'HTML, CSS, WordPress, Google Analytics, Adobe Suite',
+          title: 'Tools / Tech',
+          info: 'InVision, HTML, CSS, WordPress, Google Analytics, Adobe Suite',
         }
       ],
       projectContent: [
@@ -404,7 +413,7 @@ export default {
           id: 'challenge',
           heading: 'The Challenge',
           paragraphs: [
-            'During internal research, I’ve identified our sales team spent a huge amount of time, answering e-mails to potential clients. However, <strong>a lot of those questions were answered with basic information</strong>, which could have been answered on an informative website, and this time could be used <strong>to convert a more qualified lead</strong>. Thus, we prioritize the website redesign, with a major goal:',
+            'After a previous internal research, I’ve identified our sales team spent a huge amount of time, answering e-mails to potential clients. However, <strong>a lot of those questions were answered with basic information</strong>, which could have been answered on an informative website, and this time could be used <strong>to convert a more qualified lead</strong>. Thus, we prioritize the website redesign, with a major goal:',
             '<ol><li>Reduce the wasted time of our sales team answering basic information;</li><li>Increase the number of direct bookings without compromising bookings from agencies.</li></ol>'
           ]
         },{
@@ -462,9 +471,6 @@ export default {
         },{
           subsections: [
             {
-              paragraphs: [
-                'Additionally, the answers gave another hint: the website content was not clear, easy to understand, and, even didn’t exist for some topics.',
-              ],
               visualContent: {
                 contentType: 'img',
                 style: 'same',
@@ -498,7 +504,8 @@ export default {
               id: 'customer-journey-map',
               heading: 'Customer journey map',
               paragraphs: [
-                'Then, I’ve decided to create two Customer Journey Maps — one for each type of student — trying to map and identify the pain-points and feelings of their experience across different touchpoints when choosing a school.',
+                'Then, I’ve created two Customer Journey Maps — one for each type of student — trying to map and identify the pain-points and feelings of their experience across different touchpoints when choosing a school.',
+                'Also, the website content was not clear, easy to understand, and, even didn’t have content for some topics.'
               ],
               visualContent: {
                 contentType: 'img',
@@ -565,7 +572,7 @@ export default {
               id: 'copyright-seo',
               heading: 'Copyright and SEO',
               paragraphs: [
-                'Another huge factor we had to think about, was the copyright. Because it directly influences how users understand the school, services provided, and important information to take into consideration. We’ve created, together with one of our teachers, some guidelines on how the website copy should be written and the tone of voice — not so formal, considering our main target, but not so informal.',
+                'Another huge factor we had to think about, was the copyright. Because it directly influences how users understand the school, services provided, and important information to take into consideration. We’ve created, together with one of our teachers, guidelines on how the website copy should be written and the tone of voice — not so formal, considering our main target, but not so informal.',
               ],
             },
           ],
@@ -642,7 +649,7 @@ export default {
         imageUrl: '/img/portfolio/showcase-card-time-to-place.png',
       },
       visibleItemNav: 'challenge',
-      readingTime: '3 min read - 2017',
+      readingTime: '3 min read',
       heroImg: 'time-to-place/time-to-place-header.jpg',
       summaryContent: [
         {
@@ -667,7 +674,7 @@ export default {
           info: 'Sketching, paper prototype and Mockups',
         },{
           emoji: '🛠',
-          title: 'Tools / Dev',
+          title: 'Tools / Tech',
           info: 'HTML, CSS, Mixpanel',
         }
       ],
@@ -804,7 +811,7 @@ export default {
         imageUrl: '/img/portfolio/showcase-card-carousel-ad.png',
       },
       visibleItemNav: 'motivation',
-      readingTime: '3 min read - 2017',
+      readingTime: '3 min read',
       heroImg: 'carousel-ad/carousel-ad-header.jpg',
       summaryContent: [
         {
@@ -829,7 +836,7 @@ export default {
           info: 'Card sorting, paper prototype and high-fidelity',
         },{
           emoji: '🛠',
-          title: 'Tools / Dev',
+          title: 'Tools / Tech',
           info: 'HTML, CSS, WordPress, Google Analytics, Adobe Suite',
         }
       ],

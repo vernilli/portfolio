@@ -114,5 +114,8 @@ export default {
   mounted() {
     this.visibleItemNav = this.$i18n.messages[this.$i18n.locale].projects[0].visibleItemNav
   },
+  head: {
+    title: 'Indie Campers',
+  },
 }
 </script>
