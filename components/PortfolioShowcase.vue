@@ -11,7 +11,6 @@
       :project-img-url="project.showcase.imageUrl"
       :class="[
         backgrounds[index % 4],
-        project.showcase.device,
       ]"
     />
   </div>
@@ -34,7 +33,8 @@ export default {
         'bg--green-dark',
         'bg--green',
         'bg--green-light',
-      ]
+        'bg--blue-dark',
+      ],
     }
   }
   

@@ -43,7 +43,7 @@
             "
             class="project-page__quote"
           >
-            "{{ item.visualContent.source }}"
+            {{ item.visualContent.source }}
           </p>
 
           <image-comparator

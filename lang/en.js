@@ -129,13 +129,254 @@ export default {
 
   projects: [
     {
+      permalink: 'indie-campers-funnel-redesign',
+      projectTitle: 'Indie Campers - Funnel redesign',
+      showcase: {
+        desc: 'Designing a new page for the Indie Campers’ vehicles, also redesigning the checkout page',
+        imageAlt: '',
+        imageUrl: '/img/portfolio/showcase-card-indie-campers.png',
+      },
+      visibleItemNav: 'challenge',
+      readingTime: '4 min read',
+      heroImg: 'indie-campers-funnel-redesign/mockups.jpg',
+      summaryContent: [
+        {
+          emoji: '🙋‍♂️',
+          title: 'My role',
+          info: 'Solo Designer',
+        },{
+          emoji: '👏',
+          title: 'Team',
+          info: 'Me, PM, CPTO, and Fullstack Devs',
+        },{
+          emoji: '⏳',
+          title: 'Duration',
+          info: '3 months',
+        },{
+          emoji: '🔎',
+          title: 'Discovery',
+          info: 'Customer listening, Experience Map and competitors analysis',
+        },{
+          emoji: '✏️',
+          title: 'Designing',
+          info: 'sketching, mockups, prototyping, and user testing',
+        },{
+          emoji: '🛠',
+          title: 'Tools / Tech',
+          info: 'Adobe XD, HTML, CSS, VueJS. Google Analytics, Adobe Suite, Hotjar',
+        }
+      ],
+      projectContent: [
+        {
+          id: 'challenge',
+          heading: 'The Challenge',
+          paragraphs: [
+            '<strong>Create a new page for the Indie Campers’ models/categories</strong>, showing technical info to support the clients when choosing a model to travel. <strong>The whole funnel experience — including sign up page and checkout page — also had to be redesigned</strong>, as it has a strong correlation with those new pages.',
+          ]
+        },{
+          id: 'context',
+          heading: 'Context',
+          paragraphs: [
+            'Traveling in a campervan is trending all over Europe although most travellers are doing that for the first time. <strong>Indie Campers is the biggest own-fleet campervan rental in Europe, with around 1600 vehicles around Europe</strong>. That said, our customer support team receives many requests and has to answer questions regarding the features, available extras and price breakdown',
+            // 'If clients are asking for basic information, they are not comfortable picking a modal, making their experience on the website is not smooth and they are not able to book a trip with Indie Campers.'
+          ],
+        },{
+          id: 'discovery',
+          heading: 'Discovery',
+          paragraphs: [
+            'We had to understand the most important touchpoints of the customer journey, and how the market is set. What our clients often ask, what are the most important to them, what they usually hire with book',
+          ],
+          subsections: [
+            {
+              id: 'experience-map',
+              heading: 'Experience map',
+              paragraphs: [
+                'When I joined indie campers a customer journey map was already created with the whole experience our clients have while traveling with us, <strong>from the first access on the website to the post weeks after the trip</strong>. One of the first things I’ve done was talk with the Product Managers (PM) who have compiled that journey.',
+                'We were going to change some of the touchpoints, including new ones: The listing page and SignUp page. So I’ve discussed with PMs how those new steps would influence the Customer Journey Map.',
+              ],
+            },
+          ],
+        },{
+          visualContent: {
+            contentType: 'img',
+            style: 'full-width',
+            source: '/img/portfolio/indie-campers-funnel-redesign/experience-map.jpg',
+            sourceMobile: '',
+            sourceCaption: '',
+            imgAlt: '',
+          },
+        },{
+        //   subsections: [
+        //     {
+        //       paragraphs: [
+        //         'We were going to change some of the touchpoints, including new steps. So I’ve discussed with them to include and update the Experience Map with those new steps.',
+        //       ],
+        //     },
+        //   ],
+        // },{
+          subsections: [
+            {
+              id: 'competitors-analysis',
+              heading: 'Competitors Analysis',
+              paragraphs: [
+                'The possibility to hire a campervan to travel is new on the mind of everybody. However, there a lot of players already in the market, so it would be extremely important to understand how our competitors built their listing pages and checkout step.',
+              ]
+            }
+          ]
+        },{
+          visualContent: {
+            contentType: 'quote',
+            source: 'We selected, compared, and analyzed some of our direct competitors’ listing pages'
+          }
+        },{
+          subsections: [
+            {
+              paragraphs: [
+                'We also analyzed other digital platforms — like Airbnb, Booking.com, Expedia — to check what other industries do nicely to give more ideas for our version.',
+              ],
+            },
+          ],
+        },{
+          visualContent: {
+            contentType: 'img',
+            style: 'full-width',
+            source: '/img/portfolio/indie-campers-funnel-redesign/competitors.jpg',
+            sourceMobile: '',
+            sourceCaption: '',
+            imgAlt: '',
+          },
+        },{
+          subsections: [
+            {
+              id: 'customer-listening',
+              heading: 'Customer listening',
+              paragraphs: [
+                'The Customer Support Team listed the most frequent questions they received about the vehicles, such as insurance, fuel type, extras available to hire, features and amenities, location to pick up the vehicle, etc.',
+              ]
+            }
+          ]
+        },{
+          id: 'designing',
+          heading: 'Designing',
+          // paragraphs: [
+          //   'We had to understand the most important touchpoints, main findings, and the PM point of view over the flow. What our clients often ask, what are the most important to them, what they usually hire with book',
+          // ],
+          subsections: [
+            {
+              id: 'sketching',
+              heading: 'Sketching',
+              paragraphs: [
+                'Alongside the Product Manager of this project, we used the previous findings to prioritize the information and create sketches based on phases. Our team works in an MVP model, so we deliver the minimum valuable product first and increment it in future iterations.',
+              ],
+            },
+          ],
+        },{
+          visualContent: {
+            contentType: 'quote',
+            source: 'In this stage, we mapped all possible paths the user would take until the booking confirmation'
+          }
+        },{
+          subsections: [
+            {
+              id: 'user-testing',
+              heading: 'User testing',
+              paragraphs: [
+                'Some topics we could clarify with the previous research, thus, I had to run a few tests. We have to be extremely careful when we display prices to users, as <strong>it could influence the perception of the clients over the product and if they will proceed on the funnel</strong>. So, I’ve tested with users several ideas of the price breakdown, to find the clearest version.',
+              ],
+            },
+          ],
+        },{
+          visualContent: {
+            contentType: 'quote',
+            source: 'The challenge here was to make the price breakdown more clear and simpler, with no hidden fees and clarity on what they will pay for'
+          }
+        },{
+          subsections: [
+            {
+              id: 'mockups-prototyping',
+              heading: 'Mockups and prototyping',
+              paragraphs: [
+                'Mobile is taking a huge space across the internet, and at Indie Campers is not different, around 70% of the access to the website is on mobile devices. So, <strong>I’ve started the approach of mobile-first and then adapt to other devices.</strong>',
+              ],
+              visualContent: {
+                contentType: 'img',
+                style: 'same',
+                source: '/img/portfolio/indie-campers-funnel-redesign/mockups.jpg',
+                sourceMobile: '',
+                sourceCaption: '',
+                imgAlt: '',
+              },
+            },
+          ],
+        },{
+          subsections: [
+            {
+              paragraphs: [
+                'As previously explained, we used an MVP approach, so <strong>I’ve created the MVP version and other steps to the most complete version. Furthermore, I’ve created an iconography style</strong> as a new set of icons was required, a set that could be used for the van features, facilities, and status messages.',
+              ],
+            },
+          ],
+        },{
+          visualContent: {
+            contentType: 'quote',
+            source: 'I’ve used Adobe XD to create the mockups and prototypes, and Adobe Illustrator to create the icons'
+          }
+        },{
+          visualContent: {
+            contentType: 'img',
+            style: 'full-width',
+            source: '/img/portfolio/indie-campers-funnel-redesign/prototype.jpg',
+            sourceMobile: '',
+            sourceCaption: '',
+            imgAlt: '',
+          },
+        },{
+          id: 'development',
+          heading: 'Development',
+          paragraphs: [
+            'At Indie Campers, all designers have to have some knowledge in HTML and CSS, as they are people in charge to guarantee that what is being developed is what they’ve designed. Indie Campers’ website is built using VueJS and SASS on the front end, <strong>I’ve worked alongside a full-stack developer to create those pages.</strong>',
+          ],
+        },{
+          visualContent: {
+            contentType: 'quote',
+            source: 'I was in charge of the CSS / SASS, the general HTML structure, and support a bit on VueJS'
+          }
+        },{
+          paragraphs: [
+            'At Indie Campers, the development team works on a <strong>Continuous Deploy methodology</strong>. So, as the MVP version was ready to be deployed we released it, and on the next sprints, we were increasing it.',
+          ],
+        },{
+          id: 'results',
+          heading: 'Results',
+          paragraphs: [
+            'The process took around <strong>3 months</strong>. Our Customer support team uses a platform that tracks the type of requests they receive. Comparing the 2 following months of the MVP version release with the same period of the previous year, we had a <strong>significant improvement on our Customer support</strong> team.',
+          ],
+        },{
+          visualContent: {
+            contentType: 'btn',
+            source: 'https://indiecampers.com/rent-an-rv/berlin/berlin/nomad/offer',
+            sourceMobile: '',
+            sourceCaption: 'Check the final result in live',
+          },
+        },{
+          id: 'future-steps',
+          heading: 'Future steps',
+          paragraphs: [
+            'On the following day of the release, <strong>I’ve set a few trackers on our Hotjar account to identify potential new improvements or any issues</strong>. A lot of new content has been added explaining our vehicle, but we could identify new information we could explain better. ',
+            'We could identify we are explaining well about the vehicles, but information about the service should be better explained. Also, <strong>we are planning to start AB Tests</strong>, so in future we will be able to test several changes at the same time.'
+          ],
+        }
+      ]
+    },
+    
+    
+    {
       permalink: 'ace-english-malta',
       projectTitle: 'ACE English Malta',
       showcase: {
         desc: 'Redesign the ACE English Malta’s site, English School based in Malta',
         imageAlt: 'Computer showing the mockup of ACE English Malta website redesign on screen',
-        imageUrl: '/img/portfolio/mockup-site-ace.png',
-        device: 'desktop',
+        imageUrl: '/img/portfolio/showcase-card-ace.png',
       },
       visibleItemNav: 'challenge',
       readingTime: '5 min read',
@@ -152,19 +393,19 @@ export default {
         },{
           emoji: '⏳',
           title: 'Duration',
-          info: '3 months and a half',
+          info: '3 and a half months',
         },{
           emoji: '🔎',
           title: 'Discovery',
-          info: 'Interviews, survey, market and competitors analysis',
+          info: 'Interviews, survey, customer journey map, market and competitors analysis',
         },{
           emoji: '✏️',
           title: 'Designing',
           info: 'Card sorting, paper prototype and high-fidelity',
         },{
           emoji: '🛠',
-          title: 'Tools / Dev',
-          info: 'HTML, CSS, WordPress, Google Analytics, Adobe Suite',
+          title: 'Tools / Tech',
+          info: 'InVision, HTML, CSS, WordPress, Google Analytics, Adobe Suite',
         }
       ],
       projectContent: [
@@ -172,7 +413,7 @@ export default {
           id: 'challenge',
           heading: 'The Challenge',
           paragraphs: [
-            'During internal research, I’ve identified our sales team spent a huge amount of time, answering e-mails to potential clients. However, <strong>a lot of those questions were answered with basic information</strong>, which could have been answered on an informative website, and this time could be used <strong>to convert a more qualified lead</strong>. Thus, we prioritize the website redesign, with a major goal:',
+            'After a previous internal research, I’ve identified our sales team spent a huge amount of time, answering e-mails to potential clients. However, <strong>a lot of those questions were answered with basic information</strong>, which could have been answered on an informative website, and this time could be used <strong>to convert a more qualified lead</strong>. Thus, we prioritize the website redesign, with a major goal:',
             '<ol><li>Reduce the wasted time of our sales team answering basic information;</li><li>Increase the number of direct bookings without compromising bookings from agencies.</li></ol>'
           ]
         },{
@@ -230,9 +471,6 @@ export default {
         },{
           subsections: [
             {
-              paragraphs: [
-                'Additionally, the answers gave another hint: the website content was not clear, easy to understand, and, even didn’t exist for some topics.',
-              ],
               visualContent: {
                 contentType: 'img',
                 style: 'same',
@@ -262,7 +500,22 @@ export default {
                 'Working alongside the Marketing Manager and the General Manager we reviewed ACE’s strategy and which public they considered the school target. With that strategy in mind, we’ve created a list of schools that we considered our direct competitors.',
                 'I analyzed several aspects of their way to communicate and the channels, website, Instagram, or Facebook. The points I was mainly focused on were: kind of content, tone of voice, etc.',
               ],
-            },
+            },{
+              id: 'customer-journey-map',
+              heading: 'Customer journey map',
+              paragraphs: [
+                'Then, I’ve created two Customer Journey Maps — one for each type of student — trying to map and identify the pain-points and feelings of their experience across different touchpoints when choosing a school.',
+                'Also, the website content was not clear, easy to understand, and, even didn’t have content for some topics.'
+              ],
+              visualContent: {
+                contentType: 'img',
+                style: 'same',
+                source: '/img/portfolio/ace-english-malta/.jpg',
+                sourceMobile: '',
+                sourceCaption: '',
+                imgAlt: '',
+              },
+            }
           ],
         },{
           id: 'designing',
@@ -319,7 +572,7 @@ export default {
               id: 'copyright-seo',
               heading: 'Copyright and SEO',
               paragraphs: [
-                'Another huge factor we had to think about, was the copyright. Because it directly influences how users understand the school, services provided, and important information to take into consideration. We’ve created, together with one of our teachers, some guidelines on how the website copy should be written and the tone of voice — not so formal, considering our main target, but not so informal.',
+                'Another huge factor we had to think about, was the copyright. Because it directly influences how users understand the school, services provided, and important information to take into consideration. We’ve created, together with one of our teachers, guidelines on how the website copy should be written and the tone of voice — not so formal, considering our main target, but not so informal.',
               ],
             },
           ],
@@ -393,11 +646,10 @@ export default {
       showcase: {
         desc: 'How is it possible to improve the user experience in mobile ads using context elements?',
         imageAlt: '',
-        imageUrl: '/img/portfolio/mockup-time-to-place.png',
-        device: 'mobile',
+        imageUrl: '/img/portfolio/showcase-card-time-to-place.png',
       },
       visibleItemNav: 'challenge',
-      readingTime: '4 min read',
+      readingTime: '3 min read',
       heroImg: 'time-to-place/time-to-place-header.jpg',
       summaryContent: [
         {
@@ -415,14 +667,14 @@ export default {
         },{
           emoji: '🔎',
           title: 'Discovery',
-          info: 'User journey, Focal group, Interview, Desk research, and competitors analysis',
+          info: 'Empathy map, Focal group, Interview, Desk research, and competitors analysis',
         },{
           emoji: '✏️',
           title: 'Designing',
           info: 'Sketching, paper prototype and Mockups',
         },{
           emoji: '🛠',
-          title: 'Tools / Dev',
+          title: 'Tools / Tech',
           info: 'HTML, CSS, Mixpanel',
         }
       ],
@@ -431,7 +683,7 @@ export default {
           id: 'challenge',
           heading: 'The Challenge',
           paragraphs: [
-            'Digital campaigns delivered by ad networks are, in general, completely generic. This project shows how inserting contextual information of users — location and time to the point-of-sale — on mobile ads can improve the performance of digital campaigns and increase visits to the point-of-sale(POS).',
+            'Digital campaigns delivered by ad networks are, in general, completely generic. This project shows how inserting contextual information of users — location and time to the point-of-sale — on mobile ads can <strong>improve the performance of digital campaigns and increase visits to the point-of-sale(POS)</strong>.',
           ]
         },{
           id: 'context',
@@ -556,8 +808,7 @@ export default {
       showcase: {
         desc: 'Researching and utilizing data to create a new mobile ad format',
         imageAlt: '',
-        imageUrl: '/img/portfolio/mockup-carousel-ad.png',
-        device: 'mobile',
+        imageUrl: '/img/portfolio/showcase-card-carousel-ad.png',
       },
       visibleItemNav: 'motivation',
       readingTime: '3 min read',
@@ -585,7 +836,7 @@ export default {
           info: 'Card sorting, paper prototype and high-fidelity',
         },{
           emoji: '🛠',
-          title: 'Tools / Dev',
+          title: 'Tools / Tech',
           info: 'HTML, CSS, WordPress, Google Analytics, Adobe Suite',
         }
       ],
@@ -612,7 +863,7 @@ export default {
               visualContent: {
                 contentType: 'img',
                 style: 'same',
-                source: '/img/portfolio/carousel-ad/carousel-ad-parallax.jpg',
+                source: '/img/portfolio/carousel-ad/carousel-ad-competitors.jpg',
                 sourceMobile: '',
                 sourceCaption: 'Several mobile screen shots of a range of different carousel ad used on the market',
                 imgAlt: 'Several mobile screen shots of a range of different carousel ad used on the market',
@@ -632,7 +883,7 @@ export default {
               visualContent: {
                 contentType: 'img',
                 style: 'same',
-                source: '/img/portfolio/carousel-ad/carousel-ad-sketch2.jpg',
+                source: '/img/portfolio/carousel-ad/carousel-ad-sketch.jpg',
                 sourceMobile: '',
                 sourceCaption: '<strong>Sketches</strong>: Low fidelity sketches of some ideas for Carousel Ads',
                 imgAlt: 'Low fidelity sketches draw on paper of some ideas for Carousel Ads',
@@ -685,7 +936,6 @@ export default {
     //     desc: 'Redesign the In Loco Media’s site - greatest mobile advertising platform in Brazil',
     //     imageAlt: '',
     //     imageUrl: '/img/portfolio/mockup-site-inlocomedia.png',
-    //     device: 'desktop',
     //   },
     //   visibleItemNav: 'goal',
     //   heroImg: 'inloco-media/inloco-media-header.jpg',

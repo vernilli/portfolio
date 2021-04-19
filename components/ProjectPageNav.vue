@@ -1,5 +1,5 @@
 <template>
-  <div class="project-page__nav-container d-none d-xl-flex">
+  <div class="project-page__nav-container d-none d-lg-flex">
     <ul>
       <li
         v-for="item in anchors"
