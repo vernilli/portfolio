@@ -2,7 +2,7 @@
   <nuxt-link 
     v-if="!hideProject"
     :to="projectUrl" 
-    class="portfolio__card d-flex flex-column justify-content-between p-4"
+    class="portfolio__card d-flex flex-column justify-content-md-between p-4"
   >
     <img 
       class="portfolio__card__image"

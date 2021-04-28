@@ -17,6 +17,7 @@
     @include transition(all 0.35s);
     border-radius: 5px;
     box-shadow: 0 0 0 0 transparent;
+    min-height: 300px;
     position: relative;
     text-align: left;
     overflow: hidden;
@@ -43,10 +44,15 @@
       object-position: bottom right;
       -o-object-position: bottom right;
       position: absolute;
-      height: 80%;
+      width: 80%;
       bottom: -$grid-xl;
       right: -15%;
       z-index: 0;
+
+      @include media-breakpoint-up(md) {
+        height: 80%;
+        width: unset;
+      }
     }
 
     &__title {
@@ -69,8 +75,13 @@
       font-size: $p-size;
       font-weight: 400;
       line-height: 1.25;
-      margin-bottom: $grid-xx;
-      width: 50%;
+      margin-bottom: $grid-md;
+      width: 80%;
+
+      @include media-breakpoint-up(md) {
+        margin-bottom: $grid-xx;
+        width: 50%;
+      }
     }
   }
 }

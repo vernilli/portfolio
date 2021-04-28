@@ -11,7 +11,7 @@ export default {
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
-    'My name is Victor Vernilli, an <strong>end-to-end Product Designer</strong> based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more ✨ <strong>amazing the outcomes will be</strong> ✨',
+    'My name is Victor Vernilli, an <strong>end-to-end Product Designer</strong> based in Lisbon who enjoys working in multicultural and diverse teams. I believe as the more diverse is the team, the more ✨ <strong>amazing the outcomes will be</strong> ✨',
     'Below are some projects 💻 📱 that I’ve done or participated in, I hope you like them 😊'
   ],
   otherProjectsCopy: 'Other projects',
@@ -132,7 +132,7 @@ export default {
       permalink: 'indie-campers-funnel-redesign',
       projectTitle: 'Indie Campers - Funnel redesign',
       showcase: {
-        desc: 'Designing a new page for the Indie Campers’ vehicles, also redesigning the checkout page',
+        desc: 'Designing a new page for the Indie Campers’ models/categories, also redesigning the funnel experience',
         imageAlt: '',
         imageUrl: '/img/portfolio/showcase-card-indie-campers.png',
       },
