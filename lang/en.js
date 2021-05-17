@@ -143,7 +143,7 @@ export default {
         {
           emoji: '🙋‍♂️',
           title: 'My role',
-          info: 'Solo Designer',
+          info: 'UX/UI Designer and Front-ender',
         },{
           emoji: '👏',
           title: 'Team',
@@ -385,7 +385,7 @@ export default {
         {
           emoji: '🙋‍♂️',
           title: 'My role',
-          info: 'Main contributor',
+          info: 'UX Searcher, UX/UI Designer, Web Designer',
         },{
           emoji: '👏',
           title: 'Team',
@@ -655,7 +655,7 @@ export default {
         {
           emoji: '🙋‍♂️',
           title: 'My role',
-          info: 'Main contributor',
+          info: 'UX Researcher, Web Designer',
         },{
           emoji: '👏',
           title: 'Team',
@@ -817,7 +817,7 @@ export default {
         {
           emoji: '🙋‍♂️',
           title: 'My role',
-          info: 'Researcher and Front-ender',
+          info: 'UX Researcher, UX/UI Designer and Front-ender',
         },{
           emoji: '👏',
           title: 'Team',

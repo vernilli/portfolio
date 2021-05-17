@@ -22,6 +22,10 @@
     text-align: left;
     overflow: hidden;
 
+    @include media-breakpoint-up(md) {
+      min-height: unset;
+    }
+
     * { 
       @include transition(all 0.35s);
       position: relative;
@@ -33,7 +37,7 @@
       text-decoration: none;
 
       .portfolio__card__image {
-        height: 81%;
+        height: 71%;
       }
     }
 
@@ -50,7 +54,7 @@
       z-index: 0;
 
       @include media-breakpoint-up(md) {
-        height: 80%;
+        height: 70%;
         width: unset;
       }
     }
@@ -80,7 +84,7 @@
 
       @include media-breakpoint-up(md) {
         margin-bottom: $grid-xx;
-        width: 50%;
+        width: 60%;
       }
     }
   }
