@@ -25,6 +25,13 @@ export default {
         href: 'https://www.google-analytics.com'
       },
     ],
+    script: [
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-0TWX0Q06NN', async: true,
+      },{
+        children: 'window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "G-0TWX0Q06NN");'
+      }
+    ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -49,7 +56,6 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxtjs/google-gtag',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
@@ -113,11 +119,6 @@ export default {
         { prefixIds: false }
       ]
     }
-  },
-
-  gtag: {
-    id: "G-0TWX0Q06NN",
-    debug: false
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
