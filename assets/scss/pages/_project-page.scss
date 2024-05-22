@@ -95,7 +95,7 @@
     top: 6rem;
     right: 0;
     float: right;
-    max-width: 200px;
+    max-width: 240px;
     width: 20vw;
     z-index: 0;
 
@@ -145,6 +145,7 @@
         &.active-item {
           color: $vv-gray-darkest;
           cursor: default;
+          font-weight: bold;
 
           &::before {
             width: 100%;
