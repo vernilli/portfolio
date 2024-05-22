@@ -14,7 +14,6 @@
 
       @include media-breakpoint-up(md) {
         font-size: $p-size;
-        line-height: 2;
         margin: 0 auto $grid-xl;
       }
     }

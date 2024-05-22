@@ -13,9 +13,9 @@
       <h2 class="portfolio__card__title mb-3">
         {{ projectTitle }}
       </h2>
-      <p class="portfolio__card__desc">
+      <label class="portfolio__card__desc">
         {{ projectDesc }}
-      </p>
+      </label>
     </div>
 
     <span class="portfolio__card__reading-time align-self-start px-2">

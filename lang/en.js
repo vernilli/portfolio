@@ -7,7 +7,7 @@ export default {
   projectsCopy: 'projects',
   aboutCopy: 'about me',
   resumeCopy: 'resume',
-  resumePath: 'https://vernilli.com/VictorVernilli-Resume2021.pdf',
+  resumePath: 'https://vernilli.com/VictorVernilli-Resume2024.pdf',
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
@@ -40,9 +40,16 @@ export default {
     experienceList: [
       {
         title: 'Product Designer',
+        company: 'Volkswagen Digital Solutions',
+        companyUrl: 'https://www.vwds.pt/',
+        period: 'Nov 2021 - Present',
+        location: 'Lisbon - Portugal',
+        locationFlag: '🇵🇹',
+      },{
+        title: 'Product Designer',
         company: 'Indie Campers',
         companyUrl: 'https://indiecampers.com/',
-        period: 'Nov 2019 - Present',
+        period: 'Nov 2019 - Nov 2021',
         location: 'Lisbon - Portugal',
         locationFlag: '🇵🇹',
       },{
@@ -66,13 +73,13 @@ export default {
         period: 'May 2016 - Dec 2016',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
-      },{
-        title: 'CEO / CMO / Frontend Developer',
-        company: 'CITi (Junior Enterprise)',
-        companyUrl: 'https://citi.org.br/',
-        period: 'Jan 2013 - Dec 2014',
-        location: 'Recife - Brazil',
-        locationFlag: '🇧🇷',
+      // },{
+      //   title: 'CEO / CMO / Frontend Developer',
+      //   company: 'CITi (Junior Enterprise)',
+      //   companyUrl: 'https://citi.org.br/',
+      //   period: 'Jan 2013 - Dec 2014',
+      //   location: 'Recife - Brazil',
+      //   locationFlag: '🇧🇷',
       },
     ],
     presentationCopy: 'Presentation',
@@ -99,28 +106,28 @@ export default {
         title: 'Digital Experience Design - Postgraduate course',
         company: 'Faculty of Fine Arts of The University of Lisbon',
         companyUrl: 'https://dxd.belasartes.ulisboa.pt/',
-        period: 'Sep 2020 - Today',
+        period: 'Jun 2021',
         location: 'Lisbon - Portugal',
         locationFlag: '🇵🇹',
       },{
         title: 'Computer Science - Bachelor’s Degree',
         company: 'Faculty of Information Tech. of UFPE',
         companyUrl: 'https://www2.cin.ufpe.br/en/',
-        period: 'Jan 2011 - Jun 2017',
+        period: 'Jun 2017',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'Interaction Designer / iOS Developer',
         company: 'Apple Developer Academy',
         companyUrl: 'https://academy.cin.ufpe.br/index.php/pt/academia',
-        period: 'Mar 2015 - Mar 2016',
+        period: 'Mar 2016',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },{
         title: 'Adobe Creative Suite',
         company: 'SAGA - Digital Design School',
         companyUrl: 'https://saga.art.br/',
-        period: 'Jan 2009 - Jun 2011',
+        period: 'Jun 2011',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
       },
@@ -640,292 +647,292 @@ export default {
 
 
 
-    {
-      permalink: 'time-to-place',
-      projectTitle: "Time to Place",
-      showcase: {
-        desc: 'How is it possible to improve the user experience in mobile ads using context elements?',
-        imageAlt: '',
-        imageUrl: '/img/portfolio/showcase-card-time-to-place.png',
-      },
-      visibleItemNav: 'challenge',
-      readingTime: '3 min read',
-      heroImg: 'time-to-place/time-to-place-header.jpg',
-      summaryContent: [
-        {
-          emoji: '🙋‍♂️',
-          title: 'My role',
-          info: 'UX Researcher, Web Designer',
-        },{
-          emoji: '👏',
-          title: 'Team',
-          info: 'Me, UX Designer and Marketing Analyst',
-        },{
-          emoji: '⏳',
-          title: 'Duration',
-          info: '5 months',
-        },{
-          emoji: '🔎',
-          title: 'Discovery',
-          info: 'Empathy map, Focal group, Interview, Desk research, and competitors analysis',
-        },{
-          emoji: '✏️',
-          title: 'Designing',
-          info: 'Sketching, paper prototype and Mockups',
-        },{
-          emoji: '🛠',
-          title: 'Tools / Tech',
-          info: 'HTML, CSS, Mixpanel',
-        }
-      ],
-      projectContent: [
-        {
-          id: 'challenge',
-          heading: 'The Challenge',
-          paragraphs: [
-            'Digital campaigns delivered by ad networks are, in general, completely generic. This project shows how inserting contextual information of users — location and time to the point-of-sale — on mobile ads can <strong>improve the performance of digital campaigns and increase visits to the point-of-sale(POS)</strong>.',
-          ]
-        },{
-          id: 'context',
-          heading: 'Context',
-          paragraphs: [
-            'Brands and app publishers rely on digital advertisements without thinking properly, the first wants to share their product/service, and the second wants to increase revenue. Most of them didn’t think is on how the app users will interact with those digital ads. That makes ads interrupt the users’ experience on the web.',
-          ]
-        },{
-          visualContent: {
-            contentType: 'quote',
-            source: 'Nobody wants to be interrupted while reading a text or watching a video. We want to continue doing what pleases us.'
-          }
-        },{
-          paragraphs: [
-            'The misuse of digital advertisement makes users start to dislike ads, and sometimes, even to dislike the brand which interrupts them. So, <strong>what if we could make the mobile ads more contextualized, will it increase performance and people’s perception of the ads?</strong>',
-          ]
-        },{
-          id: 'discovery',
-          heading: 'Discovery',
-          paragraphs: [
-            'I had to choose now which type of contextual information I would use. There are two main categories of contextual information:',
-            '<ul><li><strong>Digital</strong>: uses information and behavior in the <strong>digital world</strong>; or</li><li><strong>Physical</strong>: uses information and behavior used are found in the <strong>real world</strong></li></ul>',
-            'As In Loco Media was the biggest ad platform that uses geo-location data to deliver mobile ads, <strong>I choose the Physical context.</strong>',
-          ],
-          subsections: [
-            {
-              id: 'focal-groups-interviews',
-              heading: 'Focal groups and Interviews',
-              paragraphs: [
-                'What do the users think when they are interacting with ads? Thus, <strong>we’ve run some focal group sessions</strong> to analyze how other users would discuss the topic as a group of people. Also, to understand a bit deeper as they thoughts, <strong>I’ve interview other users to perceive a personal perspective</strong>.',
-              ],
-            },{
-              visualContent: {
-                contentType: 'img',
-                style: 'same',
-                source: '/img/portfolio/time-to-place/time-to-place-discovery.jpg',
-                sourceMobile: '',
-                sourceCaption: '',
-                imgAlt: '',
-              },
-            },{
-              id: 'desk-research',
-              heading: 'Desk research',
-              paragraphs: [
-                'Now, I had to discover what are the best practices in the market and if other companies were using contextual information on ads. During the research, <strong>I found the most common sizes: interstitial and small banners</strong>. Interstitial ones are the biggest ads, filling the whole device’s screen, giving more possibilities for creators.',
-                'The small banners are the most popular ones, generally shown at screen corners. However, due to their size, small banners are frequently ignored by users — consciously or not. This problem is well-known in the market, called <a href="https://www.nngroup.com/videos/banner-blindness/" target="_blank"><strong>banner blindness</strong></a>.',
-              ],
-            },
-          ],
-        },{
-          id: 'designing',
-          heading: 'Designing',
-          paragraphs: [
-            'During the interview and focus groups, one of the findings I could identify that nowadays people don’t realize short distances, what they realize is how long it will take to go to a place.',
-          ],
-        },{
-          visualContent: {
-            contentType: 'quote',
-            source: '\"It’s 300m from here. Nah, it’s far. I’m fine here.\" \"It’s 5min from here. Cool, it’s quicky, let’s go\" 5min = avg 400m'
-          }
-        },{
-          subsections: [
-            {
-              id: 'sketching',
-              heading: 'Sketching',
-              paragraphs: [
-                'I’ve selected some campaigns from real brands, as I wanted to test in real the real market, not in fake and unreal campaigns. My intervention on the images should be subtly and keeping the main focus on the product/service, as the major goal of the campaign is to share them.',
-              ],
-            }
-          ]
-        },{
-          visualContent: {
-            contentType: 'quote',
-            source: 'What if I insert an ’only 5 minutes away’ label on the image, would it increase performance?'
-          }
-        },{
-          subsections: [
-            {
-              visualContent: {
-                contentType: 'img',
-                style: 'same',
-                source: '/img/portfolio/time-to-place/time-to-place-sketches.jpg',
-                sourceMobile: '',
-                sourceCaption: '<strong>Sketches</strong>: Low fidelity sketches of some ideas for Time to Place',
-                imgAlt: 'Low fidelity sketches draw on paper of some ideas for Time to Place',
-              },
-            }
-          ]
-        },{
-          id: 'development',
-          heading: 'Development',
-          paragraphs: [
-            'I’ve developed several rich media ads, artifacts capable to identify and estimate the time between user and POS — when the user sees the ad. Mobile ads require to be light, thus I had to create the rich media structure using pure HTML, CSS, and JS.',
-          ],
-        },{
-          visualContent: {
-            contentType: 'img',
-            style: 'full-contained',
-            source: '/img/portfolio/time-to-place/time-to-place-mockups.jpg',
-            sourceMobile: '',
-            sourceCaption: 'Some examples of the rich media used during the tests',
-            imgAlt: 'Some examples of the rich media used during the tests',
-          },
-        },{
-          id: 'results',
-          heading: 'Results',
-          paragraphs: [
-            'The tests last 2 weeks, avoiding getting data for only one specific period — weekdays and weekends. Two versions were delivered:',
-            '<ul><li>Version A: the original image (no intervention);</li><li>Version B: the image showing the time to POS.</li></ul>',
-            'During the tests, there were almost <strong>104 thousand visualizations</strong>, the general results are below:',
-            '<ul><li>Visualizations:<ul><li>Version A: 56 thousand</li><li><strong>Version B: 48 thousand</strong></li></ul></li><li>Clicks:<ul><li>Version A: 905 clicks</li><li><strong>Version B: 1030 clicks (+13%)</strong></li></ul></li><li>CTR(Click Through Rate):<ul><li>Version A: 1.6%</li><li><strong>Version B: 2.1% (+30%)</strong></li></ul></li><li>Visits to POS (estimation):<ul><li>Version A: 236</li><li><strong>Version B: 284 (+20%)</strong></li></ul></li></ul>'
-          ],
-        },
-      ],
-    },
+    // {
+    //   permalink: 'time-to-place',
+    //   projectTitle: "Time to Place",
+    //   showcase: {
+    //     desc: 'How is it possible to improve the user experience in mobile ads using context elements?',
+    //     imageAlt: '',
+    //     imageUrl: '/img/portfolio/showcase-card-time-to-place.png',
+    //   },
+    //   visibleItemNav: 'challenge',
+    //   readingTime: '3 min read',
+    //   heroImg: 'time-to-place/time-to-place-header.jpg',
+    //   summaryContent: [
+    //     {
+    //       emoji: '🙋‍♂️',
+    //       title: 'My role',
+    //       info: 'UX Researcher, Web Designer',
+    //     },{
+    //       emoji: '👏',
+    //       title: 'Team',
+    //       info: 'Me, UX Designer and Marketing Analyst',
+    //     },{
+    //       emoji: '⏳',
+    //       title: 'Duration',
+    //       info: '5 months',
+    //     },{
+    //       emoji: '🔎',
+    //       title: 'Discovery',
+    //       info: 'Empathy map, Focal group, Interview, Desk research, and competitors analysis',
+    //     },{
+    //       emoji: '✏️',
+    //       title: 'Designing',
+    //       info: 'Sketching, paper prototype and Mockups',
+    //     },{
+    //       emoji: '🛠',
+    //       title: 'Tools / Tech',
+    //       info: 'HTML, CSS, Mixpanel',
+    //     }
+    //   ],
+    //   projectContent: [
+    //     {
+    //       id: 'challenge',
+    //       heading: 'The Challenge',
+    //       paragraphs: [
+    //         'Digital campaigns delivered by ad networks are, in general, completely generic. This project shows how inserting contextual information of users — location and time to the point-of-sale — on mobile ads can <strong>improve the performance of digital campaigns and increase visits to the point-of-sale(POS)</strong>.',
+    //       ]
+    //     },{
+    //       id: 'context',
+    //       heading: 'Context',
+    //       paragraphs: [
+    //         'Brands and app publishers rely on digital advertisements without thinking properly, the first wants to share their product/service, and the second wants to increase revenue. Most of them didn’t think is on how the app users will interact with those digital ads. That makes ads interrupt the users’ experience on the web.',
+    //       ]
+    //     },{
+    //       visualContent: {
+    //         contentType: 'quote',
+    //         source: 'Nobody wants to be interrupted while reading a text or watching a video. We want to continue doing what pleases us.'
+    //       }
+    //     },{
+    //       paragraphs: [
+    //         'The misuse of digital advertisement makes users start to dislike ads, and sometimes, even to dislike the brand which interrupts them. So, <strong>what if we could make the mobile ads more contextualized, will it increase performance and people’s perception of the ads?</strong>',
+    //       ]
+    //     },{
+    //       id: 'discovery',
+    //       heading: 'Discovery',
+    //       paragraphs: [
+    //         'I had to choose now which type of contextual information I would use. There are two main categories of contextual information:',
+    //         '<ul><li><strong>Digital</strong>: uses information and behavior in the <strong>digital world</strong>; or</li><li><strong>Physical</strong>: uses information and behavior used are found in the <strong>real world</strong></li></ul>',
+    //         'As In Loco Media was the biggest ad platform that uses geo-location data to deliver mobile ads, <strong>I choose the Physical context.</strong>',
+    //       ],
+    //       subsections: [
+    //         {
+    //           id: 'focal-groups-interviews',
+    //           heading: 'Focal groups and Interviews',
+    //           paragraphs: [
+    //             'What do the users think when they are interacting with ads? Thus, <strong>we’ve run some focal group sessions</strong> to analyze how other users would discuss the topic as a group of people. Also, to understand a bit deeper as they thoughts, <strong>I’ve interview other users to perceive a personal perspective</strong>.',
+    //           ],
+    //         },{
+    //           visualContent: {
+    //             contentType: 'img',
+    //             style: 'same',
+    //             source: '/img/portfolio/time-to-place/time-to-place-discovery.jpg',
+    //             sourceMobile: '',
+    //             sourceCaption: '',
+    //             imgAlt: '',
+    //           },
+    //         },{
+    //           id: 'desk-research',
+    //           heading: 'Desk research',
+    //           paragraphs: [
+    //             'Now, I had to discover what are the best practices in the market and if other companies were using contextual information on ads. During the research, <strong>I found the most common sizes: interstitial and small banners</strong>. Interstitial ones are the biggest ads, filling the whole device’s screen, giving more possibilities for creators.',
+    //             'The small banners are the most popular ones, generally shown at screen corners. However, due to their size, small banners are frequently ignored by users — consciously or not. This problem is well-known in the market, called <a href="https://www.nngroup.com/videos/banner-blindness/" target="_blank"><strong>banner blindness</strong></a>.',
+    //           ],
+    //         },
+    //       ],
+    //     },{
+    //       id: 'designing',
+    //       heading: 'Designing',
+    //       paragraphs: [
+    //         'During the interview and focus groups, one of the findings I could identify that nowadays people don’t realize short distances, what they realize is how long it will take to go to a place.',
+    //       ],
+    //     },{
+    //       visualContent: {
+    //         contentType: 'quote',
+    //         source: '\"It’s 300m from here. Nah, it’s far. I’m fine here.\" \"It’s 5min from here. Cool, it’s quicky, let’s go\" 5min = avg 400m'
+    //       }
+    //     },{
+    //       subsections: [
+    //         {
+    //           id: 'sketching',
+    //           heading: 'Sketching',
+    //           paragraphs: [
+    //             'I’ve selected some campaigns from real brands, as I wanted to test in real the real market, not in fake and unreal campaigns. My intervention on the images should be subtly and keeping the main focus on the product/service, as the major goal of the campaign is to share them.',
+    //           ],
+    //         }
+    //       ]
+    //     },{
+    //       visualContent: {
+    //         contentType: 'quote',
+    //         source: 'What if I insert an ’only 5 minutes away’ label on the image, would it increase performance?'
+    //       }
+    //     },{
+    //       subsections: [
+    //         {
+    //           visualContent: {
+    //             contentType: 'img',
+    //             style: 'same',
+    //             source: '/img/portfolio/time-to-place/time-to-place-sketches.jpg',
+    //             sourceMobile: '',
+    //             sourceCaption: '<strong>Sketches</strong>: Low fidelity sketches of some ideas for Time to Place',
+    //             imgAlt: 'Low fidelity sketches draw on paper of some ideas for Time to Place',
+    //           },
+    //         }
+    //       ]
+    //     },{
+    //       id: 'development',
+    //       heading: 'Development',
+    //       paragraphs: [
+    //         'I’ve developed several rich media ads, artifacts capable to identify and estimate the time between user and POS — when the user sees the ad. Mobile ads require to be light, thus I had to create the rich media structure using pure HTML, CSS, and JS.',
+    //       ],
+    //     },{
+    //       visualContent: {
+    //         contentType: 'img',
+    //         style: 'full-contained',
+    //         source: '/img/portfolio/time-to-place/time-to-place-mockups.jpg',
+    //         sourceMobile: '',
+    //         sourceCaption: 'Some examples of the rich media used during the tests',
+    //         imgAlt: 'Some examples of the rich media used during the tests',
+    //       },
+    //     },{
+    //       id: 'results',
+    //       heading: 'Results',
+    //       paragraphs: [
+    //         'The tests last 2 weeks, avoiding getting data for only one specific period — weekdays and weekends. Two versions were delivered:',
+    //         '<ul><li>Version A: the original image (no intervention);</li><li>Version B: the image showing the time to POS.</li></ul>',
+    //         'During the tests, there were almost <strong>104 thousand visualizations</strong>, the general results are below:',
+    //         '<ul><li>Visualizations:<ul><li>Version A: 56 thousand</li><li><strong>Version B: 48 thousand</strong></li></ul></li><li>Clicks:<ul><li>Version A: 905 clicks</li><li><strong>Version B: 1030 clicks (+13%)</strong></li></ul></li><li>CTR(Click Through Rate):<ul><li>Version A: 1.6%</li><li><strong>Version B: 2.1% (+30%)</strong></li></ul></li><li>Visits to POS (estimation):<ul><li>Version A: 236</li><li><strong>Version B: 284 (+20%)</strong></li></ul></li></ul>'
+    //       ],
+    //     },
+    //   ],
+    // },
 
 
 
-    {
-      permalink: 'carousel-ad',
-      projectTitle: 'Carousel Ad',
-      showcase: {
-        desc: 'Researching and utilizing data to create a new mobile ad format',
-        imageAlt: '',
-        imageUrl: '/img/portfolio/showcase-card-carousel-ad.png',
-      },
-      visibleItemNav: 'motivation',
-      readingTime: '3 min read',
-      heroImg: 'carousel-ad/carousel-ad-header.jpg',
-      summaryContent: [
-        {
-          emoji: '🙋‍♂️',
-          title: 'My role',
-          info: 'UX Researcher, UX/UI Designer and Front-ender',
-        },{
-          emoji: '👏',
-          title: 'Team',
-          info: 'Me, Product Designer and Back-end developer',
-        },{
-          emoji: '⏳',
-          title: 'Duration',
-          info: '3 months',
-        },{
-          emoji: '🔎',
-          title: 'Discovery',
-          info: 'Interviews, survey, market and competitors analysis',
-        },{
-          emoji: '✏️',
-          title: 'Designing',
-          info: 'Card sorting, paper prototype and high-fidelity',
-        },{
-          emoji: '🛠',
-          title: 'Tools / Tech',
-          info: 'HTML, CSS, WordPress, Google Analytics, Adobe Suite',
-        }
-      ],
-      projectContent: [
-        {
-          id: 'motivation',
-          heading: 'Motivation',
-          paragraphs: [
-            'During my experience at In Loco Media, I worked in the Ads Innovation team. This team was responsible for designing and developing new ad formats and improving the user experience of the existing formats at the time. And for that, we used user-centered design methodologies to reach these goals. One of these new formats was the carousel ad - also known as a gallery ad.',
-          ]
-        },{
-          id: 'process',
-          heading: 'Process',
-          subsections: [
-            {
-              id: 'research-ideation',
-              heading: 'Research and Ideation',
-              paragraphs: [
-                'Before developing the format itself, it was necessary to decide which format should be made. We listed the formats that we already offered to our clients at that time, and we identified which formats we could develop. We raised positive and negative points for each format and we also identified the goal and segmentation that better combined with each one.',
-                'After that, we analyzed which could be the goals that our portfolio didn’t cover or didn’t support well. For example, campaigns focused to announce various products simultaneously weren’t cover by our formats.',
-                'With this information on hand, we started to research some formats of ours competitors - like Facebook Ads, Instagram Ads, Google Ads, etc - offers and which the best value that we could deliver to our clients.',
-                'After this analysis, we found the <strong>carousel ad</strong>. This new format would add something new to our portfolio and our clients could see a new value.'
-              ],
-              visualContent: {
-                contentType: 'img',
-                style: 'same',
-                source: '/img/portfolio/carousel-ad/carousel-ad-competitors.jpg',
-                sourceMobile: '',
-                sourceCaption: 'Several mobile screen shots of a range of different carousel ad used on the market',
-                imgAlt: 'Several mobile screen shots of a range of different carousel ad used on the market',
-              },
-            },
-          ],
-        },{
-          subsections: [
-            {
-              id: 'prototyping',
-              heading: 'Prototyping',
-              paragraphs: [
-                'With the format finally decided, we started the prototyping step. We wanted to create an ad that provided good experience to users, that wouldn’t create doubts about what has been announced nor about what would happen after the click.',
-                'By analyzing our competitors, we gathered the resources which were more utilized and widespread in the digital advertising market. We listed some elements that would be required to deliver value to our clients.',
-                'We created several sketches of this new format, identifying variations of elements, positions, dimensions, texts, etc.',
-              ],
-              visualContent: {
-                contentType: 'img',
-                style: 'same',
-                source: '/img/portfolio/carousel-ad/carousel-ad-sketch.jpg',
-                sourceMobile: '',
-                sourceCaption: '<strong>Sketches</strong>: Low fidelity sketches of some ideas for Carousel Ads',
-                imgAlt: 'Low fidelity sketches draw on paper of some ideas for Carousel Ads',
-              },
-            },{
-              id: 'development',
-              heading: 'Development',
-              paragraphs: [
-                'For development, we used front-end techs - HTML, CSS, and JS - for ad creation, which is known in the digital advertising market as rich media. It’s always required to think that the ad could appear on various types of screens and devices.',
-                'So the attention given to performance and loading time is extremely important, which leads to the development of lighter pieces that provide the proposed goal and value. We raised some options for development, which were: to create all pieces from zero; or to utilize a new framework, <a href="https://amp.dev/" target="_blank">AMP framework</a>. We decided to develop both and test which would have a better performance, both the loading time as the total clicks.',
-                'Now, it was necessary to decide which metrics we would need to analyze to decide if the new format would be a success or not. We listed some metrics, such as:',
-                '<ul><li>Loading time</li><li>Viewing time</li><li>Number of swipes</li><li>Number of cards viewed</li></ul>',
-                'In order to gather this data, besides getting the data from In Loco Media’ ad network - as views and clicks - we utilized <a href="https://mixpanel.com/" target="_blank">Mixpanel</a>, a software analytics tool - but an event-based one, in contrast to Google Analytics, a view-based - to understand the users’ interest by the content. With Mixpanel it’s possible to identify the user behavior inside of a page - in this case inside the ad - and with which items the user interacted. Then it would be possible to gather this complementary data to understand the user behavior while interacting with this new ad format.',
-              ],
-              visualContent: {
-                contentType: 'img',
-                style: 'same',
-                source: '/img/portfolio/carousel-ad/carousel-ad-high-fid.jpg',
-                sourceMobile: '',
-                sourceCaption: 'High fidelity prototypes of some ideas for Carousel Ads after all iterations',
-                imgAlt: 'High fidelity prototypes of some ideas for Carousel Ads after all iterations',
-              },
-            },{
-              id: 'iterations',
-              heading: 'Iterations',
-              paragraphs: [
-                'One important step in the user-centered-design process is iterate. Due to the high volume of our campaigns, we ran a 2-week test cycle with significant collected data. This period of two weeks was chosen because it avoided a seasonal behavior by users during the weekdays compared to weekends. Thus, collect data and understand this information helped us to make some changes for every interaction, changing elements, positions, dimensions, copy, CTA, etc.',
-              ],
-            }
-          ],
-        },{
-          id: 'results',
-          heading: 'Results',
-          paragraphs: [
-            'At the end of this cycle, we created a new format, the carousel ad, a new type of ad for brands to announce more content with less screen space. With this ad, it’s possible to advertise many products or to create storytelling about a product/service. We run several tests, utilizing both versions and different elements.',
-            'The version which we decided to put on our portfolio was the AMP version because it loaded faster than the second version. In this version, the user didn’t have to wait for too much and the other images were loaded in the background while the user saw the first image.',
-            'The AMP version <strong>had more viewing time</strong>, which means, people spent more time viewing the content of the ad which increased the number of swipes and viewed content.',
-          ]
-        },
+    // {
+    //   permalink: 'carousel-ad',
+    //   projectTitle: 'Carousel Ad',
+    //   showcase: {
+    //     desc: 'Researching and utilizing data to create a new mobile ad format',
+    //     imageAlt: '',
+    //     imageUrl: '/img/portfolio/showcase-card-carousel-ad.png',
+    //   },
+    //   visibleItemNav: 'motivation',
+    //   readingTime: '3 min read',
+    //   heroImg: 'carousel-ad/carousel-ad-header.jpg',
+    //   summaryContent: [
+    //     {
+    //       emoji: '🙋‍♂️',
+    //       title: 'My role',
+    //       info: 'UX Researcher, UX/UI Designer and Front-ender',
+    //     },{
+    //       emoji: '👏',
+    //       title: 'Team',
+    //       info: 'Me, Product Designer and Back-end developer',
+    //     },{
+    //       emoji: '⏳',
+    //       title: 'Duration',
+    //       info: '3 months',
+    //     },{
+    //       emoji: '🔎',
+    //       title: 'Discovery',
+    //       info: 'Interviews, survey, market and competitors analysis',
+    //     },{
+    //       emoji: '✏️',
+    //       title: 'Designing',
+    //       info: 'Card sorting, paper prototype and high-fidelity',
+    //     },{
+    //       emoji: '🛠',
+    //       title: 'Tools / Tech',
+    //       info: 'HTML, CSS, WordPress, Google Analytics, Adobe Suite',
+    //     }
+    //   ],
+    //   projectContent: [
+    //     {
+    //       id: 'motivation',
+    //       heading: 'Motivation',
+    //       paragraphs: [
+    //         'During my experience at In Loco Media, I worked in the Ads Innovation team. This team was responsible for designing and developing new ad formats and improving the user experience of the existing formats at the time. And for that, we used user-centered design methodologies to reach these goals. One of these new formats was the carousel ad - also known as a gallery ad.',
+    //       ]
+    //     },{
+    //       id: 'process',
+    //       heading: 'Process',
+    //       subsections: [
+    //         {
+    //           id: 'research-ideation',
+    //           heading: 'Research and Ideation',
+    //           paragraphs: [
+    //             'Before developing the format itself, it was necessary to decide which format should be made. We listed the formats that we already offered to our clients at that time, and we identified which formats we could develop. We raised positive and negative points for each format and we also identified the goal and segmentation that better combined with each one.',
+    //             'After that, we analyzed which could be the goals that our portfolio didn’t cover or didn’t support well. For example, campaigns focused to announce various products simultaneously weren’t cover by our formats.',
+    //             'With this information on hand, we started to research some formats of ours competitors - like Facebook Ads, Instagram Ads, Google Ads, etc - offers and which the best value that we could deliver to our clients.',
+    //             'After this analysis, we found the <strong>carousel ad</strong>. This new format would add something new to our portfolio and our clients could see a new value.'
+    //           ],
+    //           visualContent: {
+    //             contentType: 'img',
+    //             style: 'same',
+    //             source: '/img/portfolio/carousel-ad/carousel-ad-competitors.jpg',
+    //             sourceMobile: '',
+    //             sourceCaption: 'Several mobile screen shots of a range of different carousel ad used on the market',
+    //             imgAlt: 'Several mobile screen shots of a range of different carousel ad used on the market',
+    //           },
+    //         },
+    //       ],
+    //     },{
+    //       subsections: [
+    //         {
+    //           id: 'prototyping',
+    //           heading: 'Prototyping',
+    //           paragraphs: [
+    //             'With the format finally decided, we started the prototyping step. We wanted to create an ad that provided good experience to users, that wouldn’t create doubts about what has been announced nor about what would happen after the click.',
+    //             'By analyzing our competitors, we gathered the resources which were more utilized and widespread in the digital advertising market. We listed some elements that would be required to deliver value to our clients.',
+    //             'We created several sketches of this new format, identifying variations of elements, positions, dimensions, texts, etc.',
+    //           ],
+    //           visualContent: {
+    //             contentType: 'img',
+    //             style: 'same',
+    //             source: '/img/portfolio/carousel-ad/carousel-ad-sketch.jpg',
+    //             sourceMobile: '',
+    //             sourceCaption: '<strong>Sketches</strong>: Low fidelity sketches of some ideas for Carousel Ads',
+    //             imgAlt: 'Low fidelity sketches draw on paper of some ideas for Carousel Ads',
+    //           },
+    //         },{
+    //           id: 'development',
+    //           heading: 'Development',
+    //           paragraphs: [
+    //             'For development, we used front-end techs - HTML, CSS, and JS - for ad creation, which is known in the digital advertising market as rich media. It’s always required to think that the ad could appear on various types of screens and devices.',
+    //             'So the attention given to performance and loading time is extremely important, which leads to the development of lighter pieces that provide the proposed goal and value. We raised some options for development, which were: to create all pieces from zero; or to utilize a new framework, <a href="https://amp.dev/" target="_blank">AMP framework</a>. We decided to develop both and test which would have a better performance, both the loading time as the total clicks.',
+    //             'Now, it was necessary to decide which metrics we would need to analyze to decide if the new format would be a success or not. We listed some metrics, such as:',
+    //             '<ul><li>Loading time</li><li>Viewing time</li><li>Number of swipes</li><li>Number of cards viewed</li></ul>',
+    //             'In order to gather this data, besides getting the data from In Loco Media’ ad network - as views and clicks - we utilized <a href="https://mixpanel.com/" target="_blank">Mixpanel</a>, a software analytics tool - but an event-based one, in contrast to Google Analytics, a view-based - to understand the users’ interest by the content. With Mixpanel it’s possible to identify the user behavior inside of a page - in this case inside the ad - and with which items the user interacted. Then it would be possible to gather this complementary data to understand the user behavior while interacting with this new ad format.',
+    //           ],
+    //           visualContent: {
+    //             contentType: 'img',
+    //             style: 'same',
+    //             source: '/img/portfolio/carousel-ad/carousel-ad-high-fid.jpg',
+    //             sourceMobile: '',
+    //             sourceCaption: 'High fidelity prototypes of some ideas for Carousel Ads after all iterations',
+    //             imgAlt: 'High fidelity prototypes of some ideas for Carousel Ads after all iterations',
+    //           },
+    //         },{
+    //           id: 'iterations',
+    //           heading: 'Iterations',
+    //           paragraphs: [
+    //             'One important step in the user-centered-design process is iterate. Due to the high volume of our campaigns, we ran a 2-week test cycle with significant collected data. This period of two weeks was chosen because it avoided a seasonal behavior by users during the weekdays compared to weekends. Thus, collect data and understand this information helped us to make some changes for every interaction, changing elements, positions, dimensions, copy, CTA, etc.',
+    //           ],
+    //         }
+    //       ],
+    //     },{
+    //       id: 'results',
+    //       heading: 'Results',
+    //       paragraphs: [
+    //         'At the end of this cycle, we created a new format, the carousel ad, a new type of ad for brands to announce more content with less screen space. With this ad, it’s possible to advertise many products or to create storytelling about a product/service. We run several tests, utilizing both versions and different elements.',
+    //         'The version which we decided to put on our portfolio was the AMP version because it loaded faster than the second version. In this version, the user didn’t have to wait for too much and the other images were loaded in the background while the user saw the first image.',
+    //         'The AMP version <strong>had more viewing time</strong>, which means, people spent more time viewing the content of the ad which increased the number of swipes and viewed content.',
+    //       ]
+    //     },
         
-      ]
-    },
+    //   ]
+    // },
 
 
 
