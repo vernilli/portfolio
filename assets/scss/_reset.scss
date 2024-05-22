@@ -49,21 +49,20 @@ h6 { font-size: $h6-size-mobile; }
 
 p {
   color: $vv-gray-darker;
-  font-family: $font-sans;
+  font-family: $font-serif;
   font-size: $p-size-mobile;
   line-height: 1.8;
-  max-width: 60ch;
+  max-width: 700px;
   margin-bottom: $grid-xl;
 
   @include media-breakpoint-up(md) {
     font-size: $p-size;
-    line-height: 2;
-    width: 60ch;
+    // width: 60ch;
   }
   
   strong { 
     color: $vv-gray-darkest;
-    font-family: $font-sans;
+    font-family: $font-serif;
     font-weight: 600;
   }
 
@@ -71,7 +70,7 @@ p {
     @include transition(all 0.2s);
     border-bottom: solid 1px $vv-gray-dark;
     color: $vv-gray-darker;
-    font-family: $font-sans;
+    font-family: $font-serif;
     position: relative;
     text-decoration: none;
     white-space: nowrap;
@@ -98,7 +97,7 @@ p {
 
       strong {
         color: $vv-gray-darkest;
-        font-family: $font-sans;
+        font-family: $font-serif;
       }
     }
   }

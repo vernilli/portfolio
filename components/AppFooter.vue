@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <div class="footer__links-container col-12 text-center">
+      <!-- <div class="footer__links-container col-12 text-center">
         <a 
           :href="email.link"
           target="_blank"
@@ -26,7 +26,7 @@
         >
           {{ email.text }}
         </a>
-      </div>
+      </div> -->
       
     </div>
   </footer>
@@ -46,8 +46,10 @@ export default {
           text: 'linkedin',
           link: 'https://www.linkedin.com/in/vernilli/',
         },{
-          text: 'medium',
-          link: 'https://medium.com/@vernilli',
+          text: 'victor[dot]vernilli[at]gmail[dot]com',
+          link: 'mailto:victor.vernilli@gmail.com',
+        //   text: 'medium',
+        //   link: 'https://medium.com/@vernilli',
         },{
           text: 'github',
           link: 'https://github.com/vernilli',

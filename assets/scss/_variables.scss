@@ -23,20 +23,21 @@ $vv-wine:            hsl(0, 100%, 25%);
 $vv-wine-dark:       hsl(0, 100%, 15%);
 
 // Font families
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,900&font-display=swap');
-@import url('https://fonts.googleapis.com/css?family=Varela:100,300,400,500,600,700,900&font-display=swap');
-@import url('https://fonts.googleapis.com/css?family=Varela+Round:100,300,400,500,600,700,900&font-display=swap');
-// @import url('https://fonts.googleapis.com/css?family=Lora:100,300,400,700,900&font-display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Varela:100,300,400,500,600,700,900&font-display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Varela+Round:100,300,400,500,600,700,900&font-display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 // @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&font-display=swap');
 // @import url('https://fonts.googleapis.com/css?family=Merriweather:100,300,400,700,900&font-display=swap');
-$font-sans:  'Montserrat', 'Varela Round', 'Varela', sans-serif;
-$font-serif: 'Lora', serif;
+$font-sans:  'Montserrat', sans-serif;
+// $font-sans:  'Montserrat', 'Varela Round', 'Varela', sans-serif;
+$font-serif: 'PT Serif', serif;
 
 // Font sizes
 // Major third scale. Reference at https://type-scale.com/
 $span-size:  14px;
 $label-size: 16px;
-$p-size:     16px;
+$p-size:     20px;
 $h6-size:    18px;
 $h5-size:    20px;
 $h4-size:    24px;
@@ -46,7 +47,7 @@ $h1-size:    48px;
 
 $span-size-mobile:  12px;
 $label-size-mobile: 14px;
-$p-size-mobile:     18px;
+$p-size-mobile:     16px;
 $h6-size-mobile:    18px;
 $h5-size-mobile:    18px;
 $h4-size-mobile:    22px;
