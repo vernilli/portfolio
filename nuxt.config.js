@@ -49,6 +49,7 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxtjs/google-gtag',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
@@ -114,8 +115,9 @@ export default {
     }
   },
 
-  googleAnalytics: {
-    id: 'UA-114959088-1'
+  gtag: {
+    id: "G-0TWX0Q06NN",
+    debug: false
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
