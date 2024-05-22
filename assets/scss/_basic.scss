@@ -77,13 +77,25 @@ a.main-link {
 
   &.nuxt-link-exact-active {
     cursor: default !important;
+    
+    &::before {
+      width: 100%;
+    }
+
+    &:hover {
+      color: $vv-gray-dark;
+
+      &::before {
+        background-color: $vv-gray-dark;
+      }
+    }
   }
 
-  &:hover,
-  &.nuxt-link-exact-active {
-    color: $vv-gray-darkest;
+  &:hover {
+    color: $vv-green;
 
     &::before {
+      background-color: $vv-green;
       width: 100%;
     }
   }

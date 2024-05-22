@@ -122,7 +122,7 @@
         &::before {
           @include transition(all 0.2s);
           content: '';
-          background-color: $vv-gray-darkest;
+          background-color: $vv-green;
           border-radius: 100px;
           height: 2px;
           width: 0;
@@ -135,7 +135,7 @@
         
         &:focus,
         &:hover {
-          color: $vv-gray-darkest;
+          color: $vv-green;
   
           &::before {
             width: 100%;
@@ -148,6 +148,7 @@
           font-weight: bold;
 
           &::before {
+            background-color: $vv-gray-darkest;
             width: 100%;
           }
         }
