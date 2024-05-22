@@ -23,13 +23,13 @@ $vv-wine:            hsl(0, 100%, 25%);
 $vv-wine-dark:       hsl(0, 100%, 15%);
 
 // Font families
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,900&font-display=swap');
 @import url('https://fonts.googleapis.com/css?family=Varela:100,300,400,500,600,700,900&font-display=swap');
 @import url('https://fonts.googleapis.com/css?family=Varela+Round:100,300,400,500,600,700,900&font-display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700,900&font-display=swap');
 // @import url('https://fonts.googleapis.com/css?family=Lora:100,300,400,700,900&font-display=swap');
 // @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&font-display=swap');
 // @import url('https://fonts.googleapis.com/css?family=Merriweather:100,300,400,700,900&font-display=swap');
-$font-sans:  'Varela Round', 'Varela', 'Montserrat', sans-serif;
+$font-sans:  'Montserrat', 'Varela Round', 'Varela', sans-serif;
 $font-serif: 'Lora', serif;
 
 // Font sizes
