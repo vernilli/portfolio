@@ -66,13 +66,13 @@ export default {
         period: 'Jan 2017 - Jan 2018',
         location: 'Recife - Brazil',
         locationFlag: '🇧🇷',
-      },{
-        title: 'Web Designer Intern',
-        company: 'In Loco Media',
-        companyUrl: 'https://www.incognia.com/',
-        period: 'May 2016 - Dec 2016',
-        location: 'Recife - Brazil',
-        locationFlag: '🇧🇷',
+      // },{
+      //   title: 'Web Designer Intern',
+      //   company: 'In Loco Media',
+      //   companyUrl: 'https://www.incognia.com/',
+      //   period: 'May 2016 - Dec 2016',
+      //   location: 'Recife - Brazil',
+      //   locationFlag: '🇧🇷',
       // },{
       //   title: 'CEO / CMO / Frontend Developer',
       //   company: 'CITi (Junior Enterprise)',
