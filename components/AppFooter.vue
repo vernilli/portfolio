@@ -18,15 +18,15 @@
         </div>
       </div>
 
-      <!-- <div class="footer__links-container col-12 text-center">
-        <a 
+      <div class="footer__links-container col-12 text-center">
+        <!-- <a 
           :href="email.link"
           target="_blank"
           class="main-link"
-        >
-          {{ email.text }}
-        </a>
-      </div> -->
+        > -->
+          {{ development.text }}
+        <!-- </a> -->
+      </div>
       
     </div>
   </footer>
@@ -37,10 +37,6 @@ export default {
   name: 'app-footer',
   data() {
     return {
-      email: {
-        text: 'victor[dot]vernilli[at]gmail[dot]com',
-        link: 'mailto:victor.vernilli@gmail.com',
-      },
       links: [
         {
           text: 'linkedin',
@@ -55,6 +51,10 @@ export default {
           link: 'https://github.com/vernilli',
         },
       ],
+      development: {
+        text: 'coded by me with VUE.js & NUXT',
+        // link: 'mailto:victor.vernilli@gmail.com',
+      },
       burgerOpen: false,
     }
   },

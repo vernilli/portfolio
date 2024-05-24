@@ -1,5 +1,5 @@
 <template>
-  <div class="portfolio__showcase pt-5 pb-3">
+  <div class="portfolio__showcase py-3">
     <portfolio-card
       v-for="(project, index) in $t('projects', { returnObjects: true })" :key="index"
       :hide-project="project.permalink === hideProject"

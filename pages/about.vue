@@ -42,14 +42,14 @@
         <career-list :list="$t('aboutPage.experienceList', { returnObjects: true })" />
 
         <h2 class="mt-5 mb-4">
-          {{ $t('aboutPage.presentationCopy') }}
-        </h2>
-        <career-list :list="$t('aboutPage.presentationList', { returnObjects: true })" />
-
-        <h2 class="mt-5 mb-4">
           {{ $t('aboutPage.educationCopy') }}
         </h2>
         <career-list :list="$t('aboutPage.educationList', { returnObjects: true })" />
+
+        <h2 class="mt-5 mb-4">
+          {{ $t('aboutPage.presentationCopy') }}
+        </h2>
+        <career-list :list="$t('aboutPage.presentationList', { returnObjects: true })" />
 
       </div>
       

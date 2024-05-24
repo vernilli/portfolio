@@ -1,12 +1,16 @@
 .portfolio{
   &__showcase {
-    display: grid;
-    grid-gap: $grid-md;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: $grid-md;
+    justify-content: center;
+    // grid-gap: $grid-md;
+    // grid-template-columns: repeat(1, 1fr);
 
-    @include media-breakpoint-up(md) {
-      grid-template-columns: repeat(2, 1fr);
-    }
+    // @include media-breakpoint-up(md) {
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
 
     // @include media-breakpoint-up(lg) {
     //   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
@@ -17,6 +21,8 @@
     @include transition(all 0.35s);
     border-radius: 5px;
     box-shadow: 0 0 0 0 transparent;
+    width: 700px;
+    max-width: 700px;
     min-height: 300px;
     position: relative;
     text-align: left;
@@ -37,7 +43,7 @@
       text-decoration: none;
 
       .portfolio__card__image {
-        height: 71%;
+        height: 102%;
       }
     }
 
@@ -54,7 +60,7 @@
       z-index: 0;
 
       @include media-breakpoint-up(md) {
-        height: 70%;
+        height: 100%;
         width: unset;
       }
     }
@@ -84,7 +90,7 @@
 
       @include media-breakpoint-up(md) {
         margin-bottom: $grid-xx;
-        width: 60%;
+        width: 50%;
       }
     }
   }
