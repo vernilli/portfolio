@@ -1,6 +1,6 @@
 .vv-button {
   border: solid 2px $vv-black;
-  border-radius: 5px;
+  border-radius: 25px;
   color: $vv-black;
   font-weight: 600;
   position: relative;
@@ -24,6 +24,7 @@
     @include transition(all 0.2s);
     content: '';
     background-color: rgba($color: $vv-black, $alpha: 0.1);
+    border-radius: 25px;
     position: absolute;
     top: 0;
     bottom: 0;

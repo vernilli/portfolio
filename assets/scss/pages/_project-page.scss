@@ -52,6 +52,7 @@
     background: $vv-white;
     border-radius: 0 0 10px 10px;
     font-size: $h5-size-mobile;
+    font-weight: 600;
     padding: $grid-sm $grid-lg;
 
     @include media-breakpoint-up(md) {

@@ -5,11 +5,11 @@
         {{ $t('positionCopy') }}
       </h1>
 
-      <div class="d-flex flex-wrap flex-column flex-md-row align-items-md-center mb-3">
-        <div class="about__greetings col-12 col-md-6 offset-md-1 pl-0">
-          <p class="mb-md-0">
+      <div class="d-flex flex-wrap flex-column flex-md-row align-items-md-center mb-4">
+        <div class="about__greetings col-12 col-md-8 pl-0">
+          <h3 class="mb-md-0">
             {{ $t('aboutPage.greetingsCopy') }}
-          </p>
+          </h3>
         </div>
         <div class="about__profile-picture position-relative col-12 col-md-4 pr-md-0">
           <img 
@@ -79,7 +79,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.'
+        content: 'Hello, my name is Victor Vernilli, an end-to-end Product Designer based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more amazing the outcomes will be.'
       },{
         hid: 'keywords',
         name: 'keywords',
@@ -109,7 +109,7 @@ export default {
       },{
         hid: 'og:og:description',
         property: 'og:og:description',
-        content: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.'
+        content: 'Hello, my name is Victor Vernilli, an end-to-end Product Designer based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more amazing the outcomes will be.'
       },{
         hid: 'og:image',
         property: 'og:image',
@@ -147,7 +147,7 @@ export default {
       },{
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'My name is Victor Vernilli and I’m a Product Designer. I’ve graduated in Computer Science from the Universidade Federal de Pernambuco. Although I had a very technical degree, I fell in love with the idea/concept of UX since the first time I discovered it during college.'
+        content: 'Hello, my name is Victor Vernilli, an end-to-end Product Designer based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more amazing the outcomes will be.'
       }
     ],
   },

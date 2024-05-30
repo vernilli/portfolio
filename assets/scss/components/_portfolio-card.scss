@@ -19,7 +19,7 @@
 
   &__card {
     @include transition(all 0.35s);
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 0 0 0 transparent;
     width: 700px;
     max-width: 700px;
@@ -73,8 +73,8 @@
     }
 
     &__reading-time {
-      background: rgba($color: $vv-white, $alpha: 0.6);
-      border-radius: 3px;
+      background: rgba($color: $vv-white, $alpha: 0.8);
+      border-radius: 25px;
       color: $vv-green-darker;
       font-size: $span-size;
       font-weight: 600;

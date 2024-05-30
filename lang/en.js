@@ -27,11 +27,11 @@ export default {
 
   aboutPage: {
     greetingsCopy: 'I’m an end-to-end product designer who strongly believes user-centered design can create meaningful and impactful products.',
-    altImg: 'Picture of Victor Vernilli, a young adult smiling, short dark-brown hair and he is wearing a dark-blue with flowers t-shirt',
+    altImg: 'Picture of Victor Vernilli, a young adult smiling, short dark-brown hair and he is wearing a light-blue sweater',
     backgroundCopy: [
-      '<strong>Defined as a generalist</strong>, I’m comfortable collaborating and building products from scratch to release. With a strong tech background, I’m able to transit from research to front-end technologies.',
-      'I’m the type of designer who loves work hands-on, researching, designing, and coding and sees all the work comes alive.',
-      'But before a Designer, <strong>I’m a human being... we all ARE</strong>. Before users or clients, we are HUMANS. That mindset can make the best changes in the tech-based industry.',
+      'I’m comfortable collaborating and building products from <strong>problem discovery to release phase</strong>. With a strong tech background, I’m able to transit from research to front-end development.',
+      'I’m the type of designer who loves work hands-on, researching, designing, and coding. I love to see team collaboration and the work comes alive as a digital product.',
+      'But before a Designer, <strong>I’m a human being... we all ARE</strong>. Before users or clients, we are HUMANS. That mindset can make the best changes in the tech industry.',
       'Also, I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one of my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕',
       '<strong>So, let’s grab a coffee and have a talk.</strong>',
     ],
@@ -136,8 +136,8 @@ export default {
 
   projects: [
     {
-      permalink: 'indie-campers-funnel-redesign',
-      projectTitle: 'Indie Campers - Funnel redesign',
+      permalink: 'indie-campers',
+      projectTitle: 'Indie Campers',
       showcase: {
         desc: 'Designing a new page for the Indie Campers’ models/categories, also redesigning the funnel experience',
         imageAlt: '',
@@ -145,7 +145,7 @@ export default {
       },
       visibleItemNav: 'challenge',
       readingTime: '4 min read',
-      heroImg: 'indie-campers-funnel-redesign/mockups.jpg',
+      heroImg: 'indie-campers/mockups.jpg',
       summaryContent: [
         {
           emoji: '🙋‍♂️',
@@ -207,7 +207,7 @@ export default {
           visualContent: {
             contentType: 'img',
             style: 'full-width',
-            source: '/img/portfolio/indie-campers-funnel-redesign/experience-map.jpg',
+            source: '/img/portfolio/indie-campers/experience-map.jpg',
             sourceMobile: '',
             sourceCaption: '',
             imgAlt: '',
@@ -247,7 +247,7 @@ export default {
           visualContent: {
             contentType: 'img',
             style: 'full-width',
-            source: '/img/portfolio/indie-campers-funnel-redesign/competitors.jpg',
+            source: '/img/portfolio/indie-campers/competitors.jpg',
             sourceMobile: '',
             sourceCaption: '',
             imgAlt: '',
@@ -308,7 +308,7 @@ export default {
               visualContent: {
                 contentType: 'img',
                 style: 'same',
-                source: '/img/portfolio/indie-campers-funnel-redesign/mockups.jpg',
+                source: '/img/portfolio/indie-campers/mockups.jpg',
                 sourceMobile: '',
                 sourceCaption: '',
                 imgAlt: '',
@@ -332,7 +332,7 @@ export default {
           visualContent: {
             contentType: 'img',
             style: 'full-width',
-            source: '/img/portfolio/indie-campers-funnel-redesign/prototype.jpg',
+            source: '/img/portfolio/indie-campers/prototype.jpg',
             sourceMobile: '',
             sourceCaption: '',
             imgAlt: '',
