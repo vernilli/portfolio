@@ -53,7 +53,7 @@ export default {
         location: 'Lisbon - Portugal',
         locationFlag: '🇵🇹',
       },{
-        title: 'UX Designer / Web Developer',
+        title: 'Product Designer',
         company: 'ACE English Malta',
         companyUrl: 'https://www.aceenglishmalta.com/',
         period: 'Jun 2018 - Nov 2019',
