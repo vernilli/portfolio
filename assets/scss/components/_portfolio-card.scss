@@ -24,7 +24,7 @@
     cursor: pointer;
     width: 700px;
     max-width: 700px;
-    min-height: 300px;
+    min-height: 320px;
     position: relative;
     text-align: left;
     overflow: hidden;
@@ -74,7 +74,7 @@
     }
 
     &__reading-time {
-      background: rgba($color: $vv-white, $alpha: 0.8);
+      background: rgba($color: $vv-white, $alpha: 0.9);
       border-radius: 25px;
       color: $vv-black;
       font-size: $span-size;
@@ -88,7 +88,7 @@
       font-weight: 400;
       line-height: 1.25;
       margin-bottom: $grid-md;
-      width: 80%;
+      width: 90%;
 
       @include media-breakpoint-up(md) {
         margin-bottom: $grid-xx;

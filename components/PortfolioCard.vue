@@ -19,7 +19,7 @@
       </label>
     </div>
 
-    <span class="portfolio__card__reading-time align-self-start px-2">
+    <span class="portfolio__card__reading-time align-self-start py-1 px-3">
       {{ projectReadingTime }}
     </span>
   </nuxt-link>

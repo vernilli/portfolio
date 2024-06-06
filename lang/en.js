@@ -144,7 +144,7 @@ export default {
         imageUrl: '/img/portfolio/showcase-card-sara.png',
       },
       visibleItemNav: 'challenge',
-      readingTime: 'Ask for presentation',
+      readingTime: 'NDA - Ask for presentation',
       heroImg: 'indie-campers/mockups.jpg',
       summaryContent: [
         {
