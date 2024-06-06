@@ -5,7 +5,7 @@
 
   &__greetings {
     p {
-      font-size: $h5-size;
+      font-size: $h3-size-mobile;
       line-height: 1.6;
       margin: 0 auto $grid-xl;
       width: unset;
@@ -53,9 +53,11 @@
 
     &__position {
       font-size: $h4-size-mobile;
+      font-weight: 700;
 
       @include media-breakpoint-up(md) {
         font-size: $h4-size;
+        font-weight: 500;
       }
     }
 

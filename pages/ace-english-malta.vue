@@ -3,32 +3,32 @@
     <div :key="currentLocale" class="project-page">
       <div class="project-page__hero desktop-image mb-2 mb-md-4">
         <img 
-          :src="require(`~/static/img/portfolio/${$t('projects[1].heroImg')}`)" 
+          :src="require(`~/static/img/portfolio/${$t('projects[2].heroImg')}`)" 
           alt="" 
           class="w-100 h-100"
         >
 
         <div class="d-none d-md-block text-center">
           <h1 class="project-page__title">
-            {{ $t('projects[1].projectTitle') }}
+            {{ $t('projects[2].projectTitle') }}
           </h1>
           <span class="project-page__reading-time">
-            {{ $t('projects[1].readingTime') }}
+            {{ $t('projects[2].readingTime') }}
           </span>
         </div>
       </div>
 
       <div class="d-block d-md-none text-center justify-content-center w-100">
         <h1 class="project-page__title">
-          {{ $t('projects[1].projectTitle') }}
+          {{ $t('projects[2].projectTitle') }}
         </h1>
         <span class="project-page__reading-time">
-          {{ $t('projects[1].readingTime') }}
+          {{ $t('projects[2].readingTime') }}
         </span>
       </div>
 
       <project-page-summary
-        :summaryContent="$t('projects[1].summaryContent', { returnObjects: true })"
+        :summaryContent="$t('projects[2].summaryContent', { returnObjects: true })"
       />
 
       <main>
@@ -38,7 +38,7 @@
         />
 
         <project-page-main
-          :content="$t('projects[1].projectContent', { returnObjects: true })"
+          :content="$t('projects[2].projectContent', { returnObjects: true })"
           @heading-visible-id="activeItemChanged"
         />
       </main>
@@ -47,7 +47,7 @@
         <h2 class="text-center">
           {{ $t('otherProjectsCopy') }}
         </h2>
-        <portfolio-showcase :hideProject="$t('projects[1].permalink')" />
+        <portfolio-showcase :hideProject="$t('projects[2].permalink')" />
       </div>
       
     </div>
@@ -77,7 +77,7 @@ export default {
       return this.$i18n.locale
     },
     pageContent: function() {
-      return this.$i18n.messages[this.$i18n.locale].projects[1].projectContent
+      return this.$i18n.messages[this.$i18n.locale].projects[2].projectContent
     },
     itemsPageNav: function() {
       let ids = []
@@ -112,7 +112,7 @@ export default {
     },
   },
   mounted() {
-    this.visibleItemNav = this.$i18n.messages[this.$i18n.locale].projects[1].visibleItemNav
+    this.visibleItemNav = this.$i18n.messages[this.$i18n.locale].projects[2].visibleItemNav
   },
   head: {
     title: 'ACE English Malta',

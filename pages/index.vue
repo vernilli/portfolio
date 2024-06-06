@@ -1,7 +1,7 @@
 <template>
   <transition name="fade" mode="out-in">
     <div :key="currentLocale" class="container mt-5 pt-5">
-      <h1 class="home__title text-center mt-4 mt-md-5 mb-4 mb-md-5">
+      <h1 class="home__title text-center mt-3 mt-md-5 mb-4 mb-md-5">
         {{ $t('positionCopy') }}
       </h1>
     

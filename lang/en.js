@@ -82,24 +82,6 @@ export default {
       //   locationFlag: '🇧🇷',
       },
     ],
-    presentationCopy: 'Presentation',
-    presentationList: [
-      {
-        title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
-        company: 'Interaction South America',
-        companyUrl: 'http://isa.ixda.org/2017/',
-        period: 'Nov 2017',
-        location: 'Florianópolis - Brazil',
-        locationFlag: '🇧🇷',
-      },{
-        title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
-        company: 'The Developers Conference',
-        companyUrl: 'https://thedevconf.com/en',
-        period: 'Nov 2017',
-        location: 'Porto Alegre - Brazil',
-        locationFlag: '🇧🇷',
-      },
-    ],
     educationCopy: 'Education',
     educationList: [
       {
@@ -132,15 +114,83 @@ export default {
         locationFlag: '🇧🇷',
       },
     ],
+    presentationCopy: 'Presentation',
+    presentationList: [
+      {
+        title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
+        company: 'Interaction South America',
+        companyUrl: 'http://isa.ixda.org/2017/',
+        period: 'Nov 2017',
+        location: 'Florianópolis - Brazil',
+        locationFlag: '🇧🇷',
+      },{
+        title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
+        company: 'The Developers Conference',
+        companyUrl: 'https://thedevconf.com/en',
+        period: 'Nov 2017',
+        location: 'Porto Alegre - Brazil',
+        locationFlag: '🇧🇷',
+      },
+    ],
   },
 
   projects: [
+    {
+      permalink: '',
+      projectTitle: 'Volkwagen Strategy and Risk Analysis',
+      showcase: {
+        desc: 'A VW group-wide solution to analyse and mitigate effects of geopolitical events by combining VW group internal and external data',
+        imageAlt: '',
+        imageUrl: '/img/portfolio/showcase-card-sara.png',
+      },
+      visibleItemNav: 'challenge',
+      readingTime: 'NDA - Ask for presentation',
+      heroImg: 'indie-campers/mockups.jpg',
+      summaryContent: [
+        {
+          emoji: '🙋‍♂️',
+          title: 'My role',
+          info: 'Product designer',
+        },{
+          emoji: '👏',
+          title: 'Team',
+          info: '2 product designers, 2 product managers, and 2fFullstack devs',
+        },{
+          emoji: '⏳',
+          title: 'Duration',
+          info: '1.5 year',
+        },{
+          emoji: '🔎',
+          title: 'Discovery',
+          info: 'User interviews, costumer journey map, and opportunity solution tree',
+        },{
+          emoji: '✏️',
+          title: 'Designing',
+          info: 'Sketching, mockups, prototyping, data visualization and user testing',
+        },{
+          emoji: '🛠',
+          title: 'Tools / Tech',
+          info: 'Figma, Miro, Tableau',
+        }
+      ],
+      projectContent: [
+        {
+          id: 'challenge',
+          heading: 'The Challenge',
+          paragraphs: [
+            'A VW group-wide solution to analyse and mitigate effects of geopolitical events by combining VW group internal and external data',
+          ]
+        }
+      ]
+    },
+    
+    
     {
       permalink: 'indie-campers',
       projectTitle: 'Indie Campers',
       showcase: {
         desc: 'Designing a new page for the Indie Campers’ models/categories, also redesigning the funnel experience',
-        imageAlt: '',
+        imageAlt: 'Computer showing the mockup of Indie Campers vehicle page on mobile and desktop screens',
         imageUrl: '/img/portfolio/showcase-card-indie-campers.png',
       },
       visibleItemNav: 'challenge',
@@ -162,15 +212,15 @@ export default {
         },{
           emoji: '🔎',
           title: 'Discovery',
-          info: 'Customer listening, Experience Map and competitors analysis',
+          info: 'Customer listening, experience map and competitors analysis',
         },{
           emoji: '✏️',
           title: 'Designing',
-          info: 'sketching, mockups, prototyping, and user testing',
+          info: 'Sketching, mockups, prototyping, and user testing',
         },{
           emoji: '🛠',
           title: 'Tools / Tech',
-          info: 'Adobe XD, HTML, CSS, VueJS. Google Analytics, Adobe Suite, Hotjar',
+          info: 'Figma, Adobe XD, HTML, CSS, VueJS, Google Analytics, Adobe Suite, Hotjar',
         }
       ],
       projectContent: [
@@ -381,8 +431,8 @@ export default {
       permalink: 'ace-english-malta',
       projectTitle: 'ACE English Malta',
       showcase: {
-        desc: 'Redesign the ACE English Malta’s site, English School based in Malta',
-        imageAlt: 'Computer showing the mockup of ACE English Malta website redesign on screen',
+        desc: 'Redesign the ACE English Malta site – English School based in Malta – through user-centric design and data analysis',
+        imageAlt: 'Computer showing the mockup of ACE English Malta website redesign on on mobile and desktop screens',
         imageUrl: '/img/portfolio/showcase-card-ace.png',
       },
       visibleItemNav: 'challenge',
@@ -392,11 +442,11 @@ export default {
         {
           emoji: '🙋‍♂️',
           title: 'My role',
-          info: 'UX Searcher, UX/UI Designer, Web Designer',
+          info: 'UX/UI Designer, Web developer',
         },{
           emoji: '👏',
           title: 'Team',
-          info: 'Me, CMO, SEO Writer and Photographer',
+          info: 'Me, CMO, SEO writer and photographer',
         },{
           emoji: '⏳',
           title: 'Duration',

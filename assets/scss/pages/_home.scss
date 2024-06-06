@@ -1,6 +1,6 @@
 .home {
   &__title {
-    font-weight: 900;
+    font-weight: 800;
 
     @include media-breakpoint-up(md) {
       font-weight: 600;
