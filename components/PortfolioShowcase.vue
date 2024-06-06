@@ -30,9 +30,9 @@ export default {
   data() {
     return {
       backgrounds: [
+        'bg--green-darker',
         'bg--green-dark',
         'bg--green',
-        'bg--green-light',
         'bg--blue-dark',
       ],
     }

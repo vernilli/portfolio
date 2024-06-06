@@ -6,13 +6,13 @@
       class="about__career-item d-flex flex-column flex-md-row align-items-start justify-content-between"
     >
       <div class="col-12 col-md-8 p-0 mb-2 mb-md-0">
-        <h3 class="about__career-item__position">
+        <h3 class="about__career-item__position mb-2">
           {{ item.title }}
         </h3>
         <a 
           :href="item.companyUrl" 
           target="_blank"
-          class="about__career-item__company-conference main-link"
+          class="about__career-item__company-conference main-link text-left"
         >
           {{ item.company }}
           <!-- <external-link-icon :width="20" :height="20" /> -->

@@ -164,7 +164,7 @@
     font-family: $font-sans;
     font-weight: 600;
     font-style: italic;
-    font-size: $h6-size-mobile;
+    font-size: $label-size-mobile;
     line-height: $h3-size-mobile;
     // margin: $grid-xs auto $grid-xl;
     margin: $grid-xs auto;
@@ -172,7 +172,7 @@
     padding: 16px 24px;
 
     @include media-breakpoint-up(md) {
-      font-size: $h6-size;
+      font-size: $label-size;
       line-height: $h3-size;
       // margin: $grid-sm auto $grid-xx;
       margin: $grid-sm auto;

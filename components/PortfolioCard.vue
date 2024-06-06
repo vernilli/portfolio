@@ -2,7 +2,8 @@
   <nuxt-link 
     v-if="!hideProject"
     :to="projectUrl" 
-    class="portfolio__card d-flex flex-column justify-content-md-between p-4"
+    :class="[ disabledCard ? 'portfolio__card' : 'portfolio__card--disabled' ]"
+    class="d-flex flex-column justify-content-md-between p-4"
   >
     <img 
       class="portfolio__card__image"
@@ -35,6 +36,11 @@ export default {
     projectUrl: String,
     projectImgUrl: String,
     projectImgAlt: String,
+  },
+  computed: {
+    disabledCard () {
+      return this.projectUrl !== ''
+    }
   },
 }
 </script>
