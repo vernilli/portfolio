@@ -11,26 +11,26 @@ export default {
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
-    'My name is Victor Vernilli, an <strong>end-to-end Product Designer</strong> based in Lisbon who enjoys working in multicultural and diverse teams. I believe as the more diverse is the team, the more ✨ <strong>amazing the outcomes will be</strong> ✨',
-    'Below are some projects 💻 📱 that I’ve done or participated in, I hope you like them 😊'
+    'My name is Victor Vernilli, an <strong>end-to-end hands-on Product Designer</strong> based in Lisbon with computer science background. I enjoy working in multicultural and diverse teams, as I believe that the more diverse is the team, the greater ✨ <strong> the outcomes will be</strong> ✨',
+    'Below I listed some projects 💻 📱 where I’ve been participated. I hope you like them 😊'
   ],
   otherProjectsCopy: 'Other projects',
   imageComparatorUsageCopy: 'Drag and slide the green circle to compare versions',
   homeHead: {
     headTitle: 'Portfolio',
     meta: {
-      desc: 'Hello, my name is Victor Vernilli, an end-to-end Product Designer based in Lisbon who enjoys working on multicultural and diverse teams. I believe as the more diverse is the team, the more amazing the outcomes will be.',
-      keywords: 'time to place, in loco, in loco media, carousel ad, context ads, victor vernilli, ux portfolio, mobile portfolio, ux mobile, ux designer, user-centered design',
+      desc: 'My name is Victor Vernilli, an end-to-end hands-on Product Designer based in Lisbon with computer science background. I enjoy working in multicultural and diverse teams, as I believe that the more diverse is the team, the greater the outcomes will be.',
+      keywords: 'vw, vwds, risk management, risk analysis, geopolitical risks, indie campers, sales funnel, time to place, in loco, in loco media, carousel ad, context ads, victor vernilli, ux portfolio, mobile portfolio, ux mobile, ux designer, user-centered design, volkswagen',
       author: 'Victor Vernilli'
     }
   },
 
   aboutPage: {
-    greetingsCopy: 'I’m an end-to-end product designer who strongly believes user-centered design can create meaningful and impactful products.',
+    greetingsCopy: 'I’m an end-to-end hands-on product designer with tech background who strongly believes user-centered design can create meaningful and impactful products.',
     altImg: 'Picture of Victor Vernilli, a young adult smiling, short dark-brown hair and he is wearing a light-blue sweater',
     backgroundCopy: [
       'I’m comfortable collaborating and building products from <strong>problem discovery to release phase</strong>. With a strong tech background, I’m able to transit from research to front-end development.',
-      'I’m the type of designer who loves work hands-on, researching, designing, and coding. I love to see team collaboration and the work comes alive as a digital product.',
+      'I’m the type of designer who loves <strong>working hands-on, researching, designing, data analysis and coding</strong>. I love to see team collaboration and the work comes alive as a digital product.',
       'But before a Designer, <strong>I’m a human being... we all ARE</strong>. Before users or clients, we are HUMANS. That mindset can make the best changes in the tech industry.',
       'Also, I love history 🗿 (we can learn a lot with it) and eager to discover new things. Practicing sports is one of my favorite hobbies (Table tennis player in development 🏓) I’m also a coffee lover ☕',
       '<strong>So, let’s grab a coffee and have a talk.</strong>',
@@ -117,6 +117,13 @@ export default {
     presentationCopy: 'Presentation',
     presentationList: [
       {
+        title: 'Designing great data visualizations through stakeholder partnerships',
+        company: 'Volkswagen Digital Solutions Summit',
+        companyUrl: '',
+        period: 'May 2024',
+        location: 'Lisbon - Portugal',
+        locationFlag: '🇵🇹',
+      },{
         title: 'UX + Mobile Ads: Learning to Create Experiences in Mobile Ads',
         company: 'Interaction South America',
         companyUrl: 'http://isa.ixda.org/2017/',
@@ -141,11 +148,11 @@ export default {
       showcase: {
         desc: 'A VW group-wide solution to analyse and mitigate effects of geopolitical events by combining VW group internal and external data',
         imageAlt: '',
-        imageUrl: '/img/portfolio/showcase-card-sara.png',
+        imageUrl: '',
       },
       visibleItemNav: 'challenge',
       readingTime: 'NDA - Ask for presentation',
-      heroImg: 'indie-campers/mockups.jpg',
+      heroImg: '',
       summaryContent: [
         {
           emoji: '🙋‍♂️',
@@ -234,22 +241,22 @@ export default {
           id: 'context',
           heading: 'Context',
           paragraphs: [
-            'Traveling in a campervan is trending all over Europe although most travellers are doing that for the first time. <strong>Indie Campers is the biggest own-fleet campervan rental in Europe, with around 1600 vehicles around Europe</strong>. That said, our customer support team receives many requests and has to answer questions regarding the features, available extras and price breakdown',
+            'Travelling in a campervan is trending all over Europe, although most travellers are doing that for the first time. <strong>Indie Campers is the largest own-fleet campervan rental company in Europe, with around 1600 vehicles across the continent</strong>. That said, our customer support team receives many requests and has to answer questions regarding the features, available extras and price breakdown.',
             // 'If clients are asking for basic information, they are not comfortable picking a modal, making their experience on the website is not smooth and they are not able to book a trip with Indie Campers.'
           ],
         },{
           id: 'discovery',
           heading: 'Discovery',
           paragraphs: [
-            'We had to understand the most important touchpoints of the customer journey, and how the market is set. What our clients often ask, what are the most important to them, what they usually hire with book',
+            'We had to understand the most important touchpoints of the customer journey, and how the market is set. What our clients often ask, what are the most important to them, what they usually hire with book.',
           ],
           subsections: [
             {
               id: 'experience-map',
               heading: 'Experience map',
               paragraphs: [
-                'When I joined indie campers a customer journey map was already created with the whole experience our clients have while traveling with us, <strong>from the first access on the website to the post weeks after the trip</strong>. One of the first things I’ve done was talk with the Product Managers (PM) who have compiled that journey.',
-                'We were going to change some of the touchpoints, including new ones: The listing page and SignUp page. So I’ve discussed with PMs how those new steps would influence the Customer Journey Map.',
+                'When I joined indie campers a customer journey map was already created with <strong>the whole experience our clients have while traveling with us, from the first access on the website to the post weeks after the trip</strong>. One of the first things I did was talk with the Product Managers (PMs) who compiled that journey.',
+                'We were going to change some of the touchpoints, including new ones: The listing page and SignUp page. So I‘ve discussed with PMs what those new steps would influence the Customer Journey Map.',
               ],
             },
           ],
@@ -276,7 +283,7 @@ export default {
               id: 'competitors-analysis',
               heading: 'Competitors Analysis',
               paragraphs: [
-                'The possibility to hire a campervan to travel is new on the mind of everybody. However, there a lot of players already in the market, so it would be extremely important to understand how our competitors built their listing pages and checkout step.',
+                'The possibility of hiring a campervan to travel is new in everyone’s mind. However, there are a lot of players already in the market, so it would be extremely important to understand how our competitors built their listing pages and checkout step.',
               ]
             }
           ]
@@ -323,7 +330,7 @@ export default {
               id: 'sketching',
               heading: 'Sketching',
               paragraphs: [
-                'Alongside the Product Manager of this project, we used the previous findings to prioritize the information and create sketches based on phases. Our team works in an MVP model, so we deliver the minimum valuable product first and increment it in future iterations.',
+                'Alongside the Product Manager for this project, we used the previous findings to prioritize the information and create sketches in phases. Our team works in an MVP model, so we deliver the minimum valuable product first and increment it in future iterations.',
               ],
             },
           ],
@@ -338,7 +345,7 @@ export default {
               id: 'user-testing',
               heading: 'User testing',
               paragraphs: [
-                'Some topics we could clarify with the previous research, thus, I had to run a few tests. We have to be extremely careful when we display prices to users, as <strong>it could influence the perception of the clients over the product and if they will proceed on the funnel</strong>. So, I’ve tested with users several ideas of the price breakdown, to find the clearest version.',
+                'Some topics we could clarify with the previous research, thus, I had to run a few tests. We had to be extremely careful when displaying prices to users, as <strong>it could influence their perception of the product and their likelihood to proceed through the funnel</strong>. So, I tested several ideas for the price breakdown with users to find the clearest version.',
               ],
             },
           ],
@@ -369,7 +376,7 @@ export default {
           subsections: [
             {
               paragraphs: [
-                'As previously explained, we used an MVP approach, so <strong>I’ve created the MVP version and other steps to the most complete version. Furthermore, I’ve created an iconography style</strong> as a new set of icons was required, a set that could be used for the van features, facilities, and status messages.',
+                'As previously explained, we used an MVP approach, so <strong>I created the MVP version and additional steps for the most complete version. Furthermore, I’ve created an iconography style</strong> as a new set of icons was required, a set that could be used for the van features, facilities, and status messages.',
               ],
             },
           ],
@@ -396,7 +403,7 @@ export default {
         },{
           visualContent: {
             contentType: 'quote',
-            source: 'I was in charge of the CSS / SASS, the general HTML structure, and support a bit on VueJS'
+            source: 'I was in charge of the general HTML structure, the CSS/SASS and provided some support with VueJS'
           }
         },{
           paragraphs: [
@@ -419,8 +426,8 @@ export default {
           id: 'future-steps',
           heading: 'Future steps',
           paragraphs: [
-            'On the following day of the release, <strong>I’ve set a few trackers on our Hotjar account to identify potential new improvements or any issues</strong>. A lot of new content has been added explaining our vehicle, but we could identify new information we could explain better. ',
-            'We could identify we are explaining well about the vehicles, but information about the service should be better explained. Also, <strong>we are planning to start AB Tests</strong>, so in future we will be able to test several changes at the same time.'
+            'The day after the release, <strong>I set up several trackers on our Hotjar account to identify potential improvements or issues</strong>. A lot of new content was added explaining our vehicles, but we identified areas where we could provide clearer information.',
+            'While the vehicle descriptions were well explained, the information about the service needed to be clearer. Also, we were planning to start AB Tests, so in future we will be able to test several changes at the same time.'
           ],
         }
       ]
