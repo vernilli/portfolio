@@ -457,7 +457,7 @@ export default {
         },{
           emoji: '⏳',
           title: 'Duration',
-          info: '3 and a half months',
+          info: '3 months and a half',
         },{
           emoji: '🔎',
           title: 'Discovery',
@@ -477,14 +477,14 @@ export default {
           id: 'challenge',
           heading: 'The Challenge',
           paragraphs: [
-            'After a previous internal research, I’ve identified our sales team spent a huge amount of time, answering e-mails to potential clients. However, <strong>a lot of those questions were answered with basic information</strong>, which could have been answered on an informative website, and this time could be used <strong>to convert a more qualified lead</strong>. Thus, we prioritize the website redesign, with a major goal:',
+            'After conducting internal research, I identified that our sales team spent a significant amount of time answering emails from potential clients. However, <strong>a lot of those questions were answered with basic information</strong>, which could have been answered on an informative website, and this time could be used <strong>to convert a more qualified lead</strong>. Therefore, we prioritized the website redesign with a major goal:',
             '<ol><li>Reduce the wasted time of our sales team answering basic information;</li><li>Increase the number of direct bookings without compromising bookings from agencies.</li></ol>'
           ]
         },{
           id: 'discovery',
           heading: 'Discovery',
           paragraphs: [
-            'English schools as a foreign language have 2 main stakeholders: the traveling agencies and the students. However, the last ones are our clients, they decided which school they will study at.',
+            'English schools for foreign language learners have two main stakeholders: students and travel agencies. However, the first ones are our direct clients, they decide which school they will study at.',
             'Therefore, the goal of my research was to uncover <strong>the main reasons the students take into consideration to choose a school</strong> and which aspects they are looking for.'
           ],
           subsections: [
@@ -492,7 +492,7 @@ export default {
               id: 'market-analysis',
               heading: 'Market analysis',
               paragraphs: [
-                'Malta attracts a lot of foreign students from the whole globe, as the government investment in the “English as a foreign language” industry increased in the last years. Early, a <a href="https://nso.gov.mt/en/Pages/NSO-Home.aspx" target="_blank">report is released</a> <strong>with data from all Maltese schools</strong>, where it’s possible to check how many students came to Malta to study English in the past year, as their nationalities, gender, and so on.',
+                'Malta attracts a lot of foreign students from the whole globe, as the government investment in the “English as a foreign language” industry increased in the last years. <a href="https://nso.gov.mt/en/Pages/NSO-Home.aspx" target="_blank">A report is released</a> <strong>with data from all Maltese schools</strong>, allowing us to check how many students came to Malta to study English in the past year, their nationalities, gender, and more.',
               ],
             },
           ],
@@ -523,7 +523,7 @@ export default {
               id: 'surveys',
               heading: 'Surveys',
               paragraphs: [
-                'Every week, dozens of new students arrive from and depart to different countries and ages. The school distributes to its students a survey at the end of their course to understand their point of view. I reformulated some of the questions trying to understand not only how was their experience, but how everything started.',
+                'Every week, dozens of new students arrive from and depart to different countries and age groups. The school distributes to its students a survey at the end of their course to understand their point of view. I reformulated some of the questions trying to understand not only how was their experience, but how everything started.',
               ],
             },
           ],
@@ -554,7 +554,7 @@ export default {
                 'The surveys worked as my quantitative tool, then I had to go for a qualitative one. So, I decided to run some In-deep interviews. Thus, I’ve created a script for a semi-structured interview which would help me during the interview sessions.',
                 'Based on the previous analysis of the Maltese market and the historic data of the school, 10 students have been invited to participate. I tried to create a diverse pool of students, the general criteria to select them were:',
                 '<ul><li>5 biggest nationalities at ACE English Malta history;</li><li>Market not well explored by the school with huge potential.</li></ul>',
-                'I also had to invite some school staff to translate if the students didn’t understand any of the questions, as I tried to diverse as much as I could, <strong>inviting different genders, ages, and proficiencies in English</strong>. During the interviews, I could identify and validate some of the findings previously discovered.',
+                'I also had to invite some school staff to translate if the students didn’t understand any of the questions, <strong>I diversified the participants by inviting individuals of different genders, ages, and English proficiencies.</strong>. During the interviews, I could identify and validate some of the findings previously discovered.',
                 'After the interviews, I could point several factors which people may consider to choose a school: price, country, location, technological techniques in the classroom, etc. '
               ],
             },{
@@ -562,7 +562,7 @@ export default {
               heading: 'Competitors',
               paragraphs: [
                 'Working alongside the Marketing Manager and the General Manager we reviewed ACE’s strategy and which public they considered the school target. With that strategy in mind, we’ve created a list of schools that we considered our direct competitors.',
-                'I analyzed several aspects of their way to communicate and the channels, website, Instagram, or Facebook. The points I was mainly focused on were: kind of content, tone of voice, etc.',
+                'I analyzed several aspects of their way to communicate and the channels, website, Instagram, or Facebook. The aspects I primarily focused on were: type of content, tone of voice, etc.',
               ],
             },{
               id: 'customer-journey-map',
@@ -596,7 +596,7 @@ export default {
           subsections: [
             {
               id: 'information-architecture',
-              heading: 'Information Architecture',
+              heading: 'Information architecture',
               paragraphs: [
                 'Nowadays, English is a language a lot of people want to learn. ACE English Malta has several courses, one for each type of learner, from age to methodology. One of the biggest challenges at this stage was: <strong>How to show all those courses understandably?</strong>',
                 'I’ve run some card sorting sessions with different groups of students. My goal was to find how they would group and categorize all the courses the school offers. Also, to have a wider perspective, I’ve invited the school staff and the management to participate in other different sessions.'
@@ -617,7 +617,7 @@ export default {
               id: 'sketch-prototype',
               heading: 'Sketch and Prototype',
               paragraphs: [
-                'Before start drawing anything, I had to understand where we would create the website. As I wouldn’t have any developer working with me, we decided to use WordPress. Thus, I started to analyze which kind of components I could use to create the prototypes, and in the future, the website.',
+                'Before starting any sketches, I needed to determine where we would create the website. As I wouldn’t have any developer working with me, we decided to use WordPress. Thus, I started to analyze which kind of components I could use to create the prototypes, and in the future, the website.',
                 'I’ve decided to create two kinds of prototypes: a low-fidelity prototype or paper prototype; and a high-fidelity one. The goal of the first was to understand the better user flow; the second to test the interface itself and check with chosen elements work on the interface.',
               ],
               visualContent: {
@@ -636,7 +636,7 @@ export default {
               id: 'copyright-seo',
               heading: 'Copyright and SEO',
               paragraphs: [
-                'Another huge factor we had to think about, was the copyright. Because it directly influences how users understand the school, services provided, and important information to take into consideration. We’ve created, together with one of our teachers, guidelines on how the website copy should be written and the tone of voice — not so formal, considering our main target, but not so informal.',
+                'Another huge factor we had to think about, was the copyright. Because it directly influences how users understand the school, services provided, and important information they need to consider. We’ve created, together with one of our teachers, guidelines on how the website copy should be written and the tone of voice — not so formal, considering our main target, but not so informal.',
               ],
             },
           ],
@@ -656,7 +656,7 @@ export default {
               id: 'development',
               heading: 'Development',
               paragraphs: [
-                'As mentioned previously, I’ve built the website using WordPress, due to my previous experience with the tool. My expertise with HTML and CSS supported me to I could build and change the website the way I wanted.',
+                'As mentioned previously, I’ve built the website using WordPress, due to my previous experience with the tool. My expertise with HTML and CSS supported me so I could build and customize the website as needed.',
               ],
             },
           ],
@@ -673,7 +673,7 @@ export default {
           id: 'results',
           heading: 'Results',
           paragraphs: [
-            'The entire process took around <strong>3 months and a half</strong>, considering the research to the release. In the beginning, we identified on Google Analytics a huge increase in website access, which gave us a good first impression. After 5 months, I’ve compared the numbers of the new version with 5 months before — the old version:',
+            'The entire process took around <strong>3 months and a half</strong>, considering the research to the release. In the beginning, we identified on Google Analytics a huge increase in website access, which gave us a good first impression. After 5 months, I compared the metrics of the new version with those from 5 months prior (the old version):',
             '<ul><li>New users: <strong>increased by 20%</strong>;</li><li>New sessions: <strong>increased by 30%</strong>;</li><li><strong>36% more visualization</strong> on the pages;</li><li>Users spent <strong>8% more time</strong>;</li><li>“Get a quote” page access: <strong>increased 150+%</strong>;</li><li><strong>28% more direct bookings</strong></li></ul>'
           ],
           visualContent: {
@@ -693,7 +693,7 @@ export default {
           id: 'future-steps',
           heading: 'Future Steps',
           paragraphs: [
-            'I plan to continue improving and enhancing the experience ACE English Malta provides to its clients and visitors. Add new languages on the website might be small or simple, however, it can impact significantly as <strong>the students are not well familiar with the language when they are searching for a school</strong>. Translating all the content to another language is, indeed, a hard and long job, however, we have to step back to another challenge: understand all the targets more in detail for each new translation.',
+            'I plan to continue improving and enhancing the experience ACE English Malta provides to its clients and visitors. Adding new languages to the website might seem minor or straightforward; however, it can have a significant impact, <strong>as students may not be familiar with the language when searching for a school.</strong>. Translating all the content to another language is, indeed, a hard and long job, however, we have to step back to another challenge: understand all the targets more in detail for each new translation.',
             'Curious and unexpected information I found out analyzing our Google Analytics account: <strong>15% of the website access is from Malta</strong>. That is a big challenge to understand why those numbers are so high, considering our target is not Maltese people. But this is a conversation for another time.'
           ],
         },
