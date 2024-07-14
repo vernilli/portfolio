@@ -270,14 +270,6 @@ export default {
             imgAlt: '',
           },
         },{
-        //   subsections: [
-        //     {
-        //       paragraphs: [
-        //         'We were going to change some of the touchpoints, including new steps. So I’ve discussed with them to include and update the Experience Map with those new steps.',
-        //       ],
-        //     },
-        //   ],
-        // },{
           subsections: [
             {
               id: 'competitors-analysis',
@@ -322,9 +314,6 @@ export default {
         },{
           id: 'designing',
           heading: 'Designing',
-          // paragraphs: [
-          //   'We had to understand the most important touchpoints, main findings, and the PM point of view over the flow. What our clients often ask, what are the most important to them, what they usually hire with book',
-          // ],
           subsections: [
             {
               id: 'sketching',
@@ -485,14 +474,14 @@ export default {
           heading: 'Discovery',
           paragraphs: [
             'English schools for foreign language learners have two main stakeholders: students and travel agencies. However, the first ones are our direct clients, they decide which school they will study at.',
-            'Therefore, the goal of my research was to uncover <strong>the main reasons the students take into consideration to choose a school</strong> and which aspects they are looking for.'
+            'Therefore, <strong>the goal of my research was to uncover the main reasons the students take into consideration to choose a school</strong> and which aspects they are looking for.'
           ],
           subsections: [
             {
               id: 'market-analysis',
               heading: 'Market analysis',
               paragraphs: [
-                'Malta attracts a lot of foreign students from the whole globe, as the government investment in the “English as a foreign language” industry increased in the last years. <a href="https://nso.gov.mt/en/Pages/NSO-Home.aspx" target="_blank">A report is released</a> <strong>with data from all Maltese schools</strong>, allowing us to check how many students came to Malta to study English in the past year, their nationalities, gender, and more.',
+                'Malta attracts a lot of foreign students from the whole globe, as the government investment in the “English as a foreign language” industry increased in the last years. <a href="https://nso.gov.mt/en/Pages/NSO-Home.aspx" target="_blank">A report is released yearly</a> <strong>with data from all Maltese schools</strong>, where it’s possible to check how many students came to Malta to study English in the past year, as their nationalities, gender, and so on.',
               ],
             },
           ],
@@ -505,7 +494,7 @@ export default {
           subsections: [
             {
               paragraphs: [
-                'This report supported me to <strong>understand the big picture of the market around the country</strong>, comparing ACE English Malta with other competitors, also opportunities to attack or new markets.',
+                'This report helped me to <strong>understand the big picture of the market around the country</strong>, comparing ACE English Malta with other competitors, also opportunities to pursue or new markets to discover.',
               ],
               visualContent: {
                 contentType: 'img',
@@ -523,7 +512,7 @@ export default {
               id: 'surveys',
               heading: 'Surveys',
               paragraphs: [
-                'Every week, dozens of new students arrive from and depart to different countries and age groups. The school distributes to its students a survey at the end of their course to understand their point of view. I reformulated some of the questions trying to understand not only how was their experience, but how everything started.',
+                'Every week, dozens of new students arrive from and depart to different countries and age groups. The school shares with its students a survey at the end of their course to understand their point of view. I reformulated some of the questions trying to understand not only how their experience was, but how everything started.',
               ],
             },
           ],
@@ -551,11 +540,11 @@ export default {
               id: 'interviews',
               heading: 'Interviews',
               paragraphs: [
-                'The surveys worked as my quantitative tool, then I had to go for a qualitative one. So, I decided to run some In-deep interviews. Thus, I’ve created a script for a semi-structured interview which would help me during the interview sessions.',
+                'The surveys worked as my quantitative tool, then I had to go for a qualitative one. So, I decided to run some in-depth interviews. Thus, I’ve created a script for a semi-structured interview which would help me during the interview sessions.',
                 'Based on the previous analysis of the Maltese market and the historic data of the school, 10 students have been invited to participate. I tried to create a diverse pool of students, the general criteria to select them were:',
                 '<ul><li>5 biggest nationalities at ACE English Malta history;</li><li>Market not well explored by the school with huge potential.</li></ul>',
-                'I also had to invite some school staff to translate if the students didn’t understand any of the questions, <strong>I diversified the participants by inviting individuals of different genders, ages, and English proficiencies.</strong>. During the interviews, I could identify and validate some of the findings previously discovered.',
-                'After the interviews, I could point several factors which people may consider to choose a school: price, country, location, technological techniques in the classroom, etc. '
+                'I also had to invite some school staff to translate if the students didn’t understand any of the questions, <strong>I diversified the participants by inviting individuals of different genders, ages, and English proficiencies</strong>. During the interviews, I could identify and validate some of the findings previously discovered.',
+                'After the interviews, I could point out several factors which people may consider to choose a school: price, country, location, technological techniques in the classroom, etc.'
               ],
             },{
               id: 'competitors',
@@ -568,8 +557,8 @@ export default {
               id: 'customer-journey-map',
               heading: 'Customer journey map',
               paragraphs: [
-                'Then, I’ve created two Customer Journey Maps — one for each type of student — trying to map and identify the pain-points and feelings of their experience across different touchpoints when choosing a school.',
-                'Also, the website content was not clear, easy to understand, and, even didn’t have content for some topics.'
+                'Then, I’ve created two Customer Journey Maps — one for each type of student — trying to map and identify the pain-points and feelings of their experience across different touch points when choosing a school.',
+                'Also, the website content was not clear, easy to understand, and didn‘t even have content for some topics.'
               ],
               visualContent: {
                 contentType: 'img',
@@ -590,7 +579,7 @@ export default {
         },{
           visualContent: {
             contentType: 'quote',
-            source: 'Our new website should be easy to navigate and the content should be easy to be found and to be readen.'
+            source: 'Our new website should be easy to navigate and the content should be easy to find and to read.'
           }
         },{
           subsections: [
@@ -636,7 +625,7 @@ export default {
               id: 'copyright-seo',
               heading: 'Copyright and SEO',
               paragraphs: [
-                'Another huge factor we had to think about, was the copyright. Because it directly influences how users understand the school, services provided, and important information they need to consider. We’ve created, together with one of our teachers, guidelines on how the website copy should be written and the tone of voice — not so formal, considering our main target, but not so informal.',
+                'Another huge factor we had to think about was the copyright. Because it directly influences how users understand the school, services provided, and important information they need to consider. We’ve created, together with one of our teachers, guidelines on how the website copy should be written and the tone of voice — not so formal, considering our main target, but not so informal.',
               ],
             },
           ],
@@ -650,7 +639,6 @@ export default {
             {
               paragraphs: [
                 'In these guidelines, each page should have a copy explaining the topic, but also based on keywords focused on SEO. Working directly with one of our teachers was a great idea because he could bring and combine his outstanding English language expertise with his knowledge about the school and the students.',
-                // 'Another important aspect was the pictures to be used on the new website. Thus, we hired a professional photographer, and coordinating with her, we aligned the ideas and concepts of pictures, and how we would like to express them on the website.',
               ],
             },{
               id: 'development',
@@ -693,7 +681,7 @@ export default {
           id: 'future-steps',
           heading: 'Future Steps',
           paragraphs: [
-            'I plan to continue improving and enhancing the experience ACE English Malta provides to its clients and visitors. Adding new languages to the website might seem minor or straightforward; however, it can have a significant impact, <strong>as students may not be familiar with the language when searching for a school.</strong>. Translating all the content to another language is, indeed, a hard and long job, however, we have to step back to another challenge: understand all the targets more in detail for each new translation.',
+            'I plan to continue improving and enhancing the experience ACE English Malta provides to its clients and visitors. Adding new languages to the website might seem minor or straightforward; however, it can have a significant impact, <strong>as students may not be familiar with the language when searching for a school</strong>. Translating all the content to another language is, indeed, a hard and long job, however, we have to step back to another challenge: understand all the targets more in detail for each new translation.',
             'Curious and unexpected information I found out analyzing our Google Analytics account: <strong>15% of the website access is from Malta</strong>. That is a big challenge to understand why those numbers are so high, considering our target is not Maltese people. But this is a conversation for another time.'
           ],
         },
