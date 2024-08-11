@@ -88,6 +88,15 @@
     }
   }
 
+  &__tag {
+    background: $vv-gray-dark;
+    border-radius: 1000px;
+    color: $vv-white;
+    font-size: $span-size;
+    font-weight: 600;
+    text-wrap: nowrap;
+  }
+
   &__nav-container {
     background: rgba($color: $vv-white, $alpha: 0.9);
     border-radius: 5px;

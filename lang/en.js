@@ -159,7 +159,7 @@ export default {
           title: 'My role',
           info: 'Product designer',
         },{
-          emoji: '👏',
+          emoji: '🤝',
           title: 'Team',
           info: '2 product designers, 2 product managers, and 2fFullstack devs',
         },{
@@ -196,12 +196,12 @@ export default {
       permalink: 'indie-campers',
       projectTitle: 'Indie Campers',
       showcase: {
-        desc: 'Designing a new page for the Indie Campers’ models/categories, also redesigning the funnel experience',
+        desc: 'Designing a new page for the Indie Campers’ vehicle models/categories, also redesigning the funnel experience',
         imageAlt: 'Computer showing the mockup of Indie Campers vehicle page on mobile and desktop screens',
         imageUrl: '/img/portfolio/showcase-card-indie-campers.png',
       },
       visibleItemNav: 'challenge',
-      readingTime: '4 min read',
+      readingTime: '4-min read',
       heroImg: 'indie-campers/mockups.jpg',
       summaryContent: [
         {
@@ -209,7 +209,7 @@ export default {
           title: 'My role',
           info: 'UX/UI Designer and Front-ender',
         },{
-          emoji: '👏',
+          emoji: '🤝',
           title: 'Team',
           info: 'Me, PM, CPTO, and Fullstack Devs',
         },{
@@ -219,15 +219,33 @@ export default {
         },{
           emoji: '🔎',
           title: 'Discovery',
-          info: 'Customer listening, experience map and competitors analysis',
+          info: [
+            'Customer listening',
+            'Experience map',
+            'Competitors analysis',
+          ],
         },{
           emoji: '✏️',
           title: 'Designing',
-          info: 'Sketching, mockups, prototyping, and user testing',
+          info: [
+            'Sketching', 
+            'Mockups', 
+            'Prototyping',
+            'User testing',
+          ],
         },{
           emoji: '🛠',
           title: 'Tools / Tech',
-          info: 'Figma, Adobe XD, HTML, CSS, VueJS, Google Analytics, Adobe Suite, Hotjar',
+          info: [
+            'Figma',
+            'Adobe XD',
+            'HTML',
+            'CSS',
+            'VueJS',
+            'Hotjar',
+            'Adobe Suite',
+            'Google Analytics',
+          ],
         }
       ],
       projectContent: [
@@ -235,20 +253,19 @@ export default {
           id: 'challenge',
           heading: 'The Challenge',
           paragraphs: [
-            '<strong>Create a new page for the Indie Campers’ models/categories</strong>, showing technical info to support the clients when choosing a model to travel. <strong>The whole funnel experience — including sign up page and checkout page — also had to be redesigned</strong>, as it has a strong correlation with those new pages.',
+            '<strong>Create a new page for the Indie Campers‘ vehicle models/categories</strong>, showing technical info to support the clients when choosing a model to travel. <strong>The whole funnel experience — including sign up page and checkout page — also had to be redesigned</strong>, as it has a strong correlation with those new pages.',
           ]
         },{
           id: 'context',
           heading: 'Context',
           paragraphs: [
-            'Travelling in a campervan is trending all over Europe, although most travellers are doing that for the first time. <strong>Indie Campers is the largest own-fleet campervan rental company in Europe, with around 1600 vehicles across the continent</strong>. That said, our customer support team receives many requests and has to answer questions regarding the features, available extras and price breakdown.',
-            // 'If clients are asking for basic information, they are not comfortable picking a modal, making their experience on the website is not smooth and they are not able to book a trip with Indie Campers.'
+            'Travelling in a campervan is trending all over Europe, although most travellers are doing that for the first time. <stron>Indie Campers is the largest own-fleet campervan rental company in Europe, with around 1600 vehicles across the continent</strong>. That said, our customer support team receives many requests and has to answer questions regarding the features, available extras and price breakdown.',
           ],
         },{
           id: 'discovery',
           heading: 'Discovery',
           paragraphs: [
-            'We had to understand the most important touchpoints of the customer journey, and how the market is set. What our clients often ask, what are the most important to them, what they usually hire with book.',
+            'We had to understand the most important touchpoints of the customer journey, and how the market is set. What our clients often ask, what is most important to them, what they usually hire with a book.',
           ],
           subsections: [
             {
@@ -282,7 +299,7 @@ export default {
         },{
           visualContent: {
             contentType: 'quote',
-            source: 'We selected, compared, and analyzed some of our direct competitors’ listing pages'
+            source: 'We selected, compared, and analyzed some of our direct competitors‘ listing pages'
           }
         },{
           subsections: [
@@ -372,7 +389,7 @@ export default {
         },{
           visualContent: {
             contentType: 'quote',
-            source: 'I’ve used Adobe XD to create the mockups and prototypes, and Adobe Illustrator to create the icons'
+            source: 'I‘ve used Adobe XD to create the mockups and prototypes, and Adobe Illustrator to create the icons'
           }
         },{
           visualContent: {
@@ -402,7 +419,8 @@ export default {
           id: 'results',
           heading: 'Results',
           paragraphs: [
-            'The process took around <strong>3 months</strong>. Our Customer support team uses a platform that tracks the type of requests they receive. Comparing the 2 following months of the MVP version release with the same period of the previous year, we had a <strong>significant improvement on our Customer support</strong> team.',
+            'The process took around <strong>3 months</strong>. Our Customer support team uses a platform that tracks the type of requests they receive. Comparing the 2 following months of the MVP version release with the same period of the previous year, we had a <strong>significant improvement on our Customer support </strong>team.',
+            '<ul><li><strong>Reduced in 23%</strong> number of tickets asking for “Information of the vehicle models/categories”</li></ul>'
           ],
         },{
           visualContent: {
@@ -432,7 +450,7 @@ export default {
         imageUrl: '/img/portfolio/showcase-card-ace.png',
       },
       visibleItemNav: 'challenge',
-      readingTime: '5 min read',
+      readingTime: '5-min read',
       heroImg: 'ace-english-malta/ace-english-malta-header.jpg',
       summaryContent: [
         {
@@ -440,7 +458,7 @@ export default {
           title: 'My role',
           info: 'UX/UI Designer, Web developer',
         },{
-          emoji: '👏',
+          emoji: '🤝',
           title: 'Team',
           info: 'Me, CMO, SEO writer and photographer',
         },{
@@ -450,15 +468,31 @@ export default {
         },{
           emoji: '🔎',
           title: 'Discovery',
-          info: 'Interviews, survey, customer journey map, market and competitors analysis',
+          info: [
+            'Interviews', 
+            'Survey', 
+            'Customer journey map', 
+            'Competitors analysis',
+          ],
         },{
           emoji: '✏️',
           title: 'Designing',
-          info: 'Card sorting, paper prototype and high-fidelity',
+          info: [
+            'Card sorting', 
+            'Paper prototype testing',
+            'Hi-fi prototype',
+          ],
         },{
           emoji: '🛠',
           title: 'Tools / Tech',
-          info: 'InVision, HTML, CSS, WordPress, Google Analytics, Adobe Suite',
+          info: [
+            'InVision', 
+            'HTML', 
+            'CSS', 
+            'WordPress', 
+            'Google Analytics', 
+            'Adobe Suite',
+          ],
         }
       ],
       projectContent: [
@@ -701,7 +735,7 @@ export default {
     //     imageUrl: '/img/portfolio/showcase-card-time-to-place.png',
     //   },
     //   visibleItemNav: 'challenge',
-    //   readingTime: '3 min read',
+    //   readingTime: '3-min read',
     //   heroImg: 'time-to-place/time-to-place-header.jpg',
     //   summaryContent: [
     //     {
@@ -709,7 +743,7 @@ export default {
     //       title: 'My role',
     //       info: 'UX Researcher, Web Designer',
     //     },{
-    //       emoji: '👏',
+    //       emoji: '🤝',
     //       title: 'Team',
     //       info: 'Me, UX Designer and Marketing Analyst',
     //     },{
@@ -863,7 +897,7 @@ export default {
     //     imageUrl: '/img/portfolio/showcase-card-carousel-ad.png',
     //   },
     //   visibleItemNav: 'motivation',
-    //   readingTime: '3 min read',
+    //   readingTime: '3-min read',
     //   heroImg: 'carousel-ad/carousel-ad-header.jpg',
     //   summaryContent: [
     //     {
@@ -871,7 +905,7 @@ export default {
     //       title: 'My role',
     //       info: 'UX Researcher, UX/UI Designer and Front-ender',
     //     },{
-    //       emoji: '👏',
+    //       emoji: '🤝',
     //       title: 'Team',
     //       info: 'Me, Product Designer and Back-end developer',
     //     },{

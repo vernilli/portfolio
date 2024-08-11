@@ -14,9 +14,23 @@
           <div class="project-page__summary__title mb-1">
             {{ item.title }}
           </div>
-          <span class="project-page__summary__info">
+          <span 
+            v-if="Array.isArray(item.info) == false"
+            class="project-page__summary__info"
+          >
             {{ item.info }}
           </span>
+          <div 
+            v-else
+            class="project-page__summary__info d-flex flex-wrap"
+          >
+            <span
+              v-for="(tag, index) in item.info"
+              class="project-page__tag mb-1 mr-1 py-1 px-3"
+            >
+              {{ tag }}
+            </span>
+          </div>
         </div>
       </div>
 
