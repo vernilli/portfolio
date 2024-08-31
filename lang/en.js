@@ -143,7 +143,7 @@ export default {
 
   projects: [
     {
-      permalink: '',
+      permalink: 'sara',
       projectTitle: 'Volkwagen Strategy and Risk Analysis',
       showcase: {
         desc: 'A VW group-wide solution to analyse and mitigate effects of geopolitical events by combining VW group internal and external data',
@@ -151,7 +151,7 @@ export default {
         imageUrl: '',
       },
       visibleItemNav: 'challenge',
-      readingTime: 'NDA - Ask for presentation',
+      readingTime: '8 min',
       heroImg: '',
       summaryContent: [
         {
@@ -161,23 +161,35 @@ export default {
         },{
           emoji: '🤝',
           title: 'Team',
-          info: '2 product designers, 2 product managers, and 2fFullstack devs',
+          info: '2 product designers, 2 product managers, and [2 ~ 4] fullstack devs',
         },{
           emoji: '⏳',
           title: 'Duration',
-          info: '1.5 year',
+          info: '1 year and a half',
         },{
           emoji: '🔎',
           title: 'Discovery',
-          info: 'User interviews, costumer journey map, and opportunity solution tree',
+          info: [
+            'User interviews', 
+            'Costumer journey map', 
+            'Opportunity solution tree'],
         },{
           emoji: '✏️',
           title: 'Designing',
-          info: 'Sketching, mockups, prototyping, data visualization and user testing',
+          info: [
+            'Sketching', 
+            'Mockups', 
+            'Prototyping', 
+            'Data visualization',
+            'User testing'],
         },{
           emoji: '🛠',
           title: 'Tools / Tech',
-          info: 'Figma, Miro, Tableau',
+          info: [
+            'Figma', 
+            'Miro', 
+            'Tableau',
+          ],
         }
       ],
       projectContent: [
@@ -185,9 +197,22 @@ export default {
           id: 'challenge',
           heading: 'The Challenge',
           paragraphs: [
-            'A VW group-wide solution to analyse and mitigate effects of geopolitical events by combining VW group internal and external data',
+            'Create a VW group-wide internal solution to support the procurement departments to analyse and mitigate geopolitical risks and natural hazards to avoid disruptions in the supply chain, and stoppages in the production lines, costing additional losses, by combining VW internal and external data.',
+            '<iframe width="700" height="395" src="https://www.youtube.com/embed/5cH4RXSowDg?si=r54RMIpc_aNdBP36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
           ]
-        }
+        },{
+          id: 'context',
+          heading: 'Context',
+          paragraphs: [
+            'Volkswagen wanted to standardise its process across the group to analyse, prevent and mitigate risks regarding geopolitical topics and natural hazard events that might disrupt the supply chain.',
+            'In this product we envision to combine external scores from the regions with internal VW data to give VW buyers more visibility about geopolitical risks that could affect their contracted supplier and support them to create future strategies to avoid disruptions.',
+          ],
+        },{
+          visualContent: {
+            contentType: 'quote',
+            source: 'At Volkswagen Digital Solution – an VW group office focused on software development – all roles work in pairs, so I mostly paired, discussed and designed alongside another designer during this product.'
+          }
+        },
       ]
     },
     
