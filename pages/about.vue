@@ -35,7 +35,7 @@
         />
       </div>
 
-      <div>
+      <div class="about__career-list">
         <h2 class="text-center text-md-left mt-5 mb-3 mb-md-4">
           {{ $t('aboutPage.experienceCopy') }}
         </h2>
