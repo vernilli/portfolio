@@ -43,6 +43,11 @@
     }
   }
 
+  &__career-list {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
   &__career-item {
     border-bottom: solid 1px $vv-gray-lightest;
     padding: $grid-lg 0;

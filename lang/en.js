@@ -7,7 +7,7 @@ export default {
   projectsCopy: 'projects',
   aboutCopy: 'about me',
   resumeCopy: 'resume',
-  resumePath: 'https://vernilli.com/VictorVernilli-Resume2024.pdf',
+  resumePath: 'https://vernilli.com/VictorVernilli-Resume2025.pdf',
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',
@@ -151,7 +151,7 @@ export default {
         imageUrl: '',
       },
       visibleItemNav: 'challenge',
-      readingTime: '8 min',
+      readingTime: '8-min read',
       heroImg: '',
       summaryContent: [
         {
@@ -198,13 +198,13 @@ export default {
           heading: 'The Challenge',
           paragraphs: [
             'Create a VW group-wide internal solution to support the procurement departments to analyse and mitigate geopolitical risks and natural hazards to avoid disruptions in the supply chain, and stoppages in the production lines, costing additional losses, by combining VW internal and external data.',
-            '<iframe width="700" height="395" src="https://www.youtube.com/embed/5cH4RXSowDg?si=r54RMIpc_aNdBP36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
           ]
         },{
           id: 'context',
           heading: 'Context',
           paragraphs: [
             'Volkswagen wanted to standardise its process across the group to analyse, prevent and mitigate risks regarding geopolitical topics and natural hazard events that might disrupt the supply chain.',
+            '<iframe width="700" height="395" src="https://www.youtube.com/embed/5cH4RXSowDg?si=r54RMIpc_aNdBP36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
             'In this product we envision to combine external scores from the regions with internal VW data to give VW buyers more visibility about geopolitical risks that could affect their contracted supplier and support them to create future strategies to avoid disruptions.',
           ],
         },{
