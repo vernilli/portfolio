@@ -284,7 +284,7 @@ export default {
           id: 'context',
           heading: 'Context',
           paragraphs: [
-            'Travelling in a campervan is trending all over Europe, although most travellers are doing that for the first time. <stron>Indie Campers is the largest own-fleet campervan rental company in Europe, with around 1600 vehicles across the continent</strong>. That said, our customer support team receives many requests and has to answer questions regarding the features, available extras and price breakdown.',
+            'Travelling in a campervan is trending all over Europe, although most travellers are doing that for the first time. <strong>Indie Campers is the largest own-fleet campervan rental company in Europe, with around 1600 vehicles across the continent</strong>. That said, our customer support team receives many requests and has to answer questions regarding the features, available extras and price breakdown.',
           ],
         },{
           id: 'discovery',
