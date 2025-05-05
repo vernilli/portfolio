@@ -147,8 +147,8 @@ export default {
       projectTitle: 'Volkwagen Strategy and Risk Analysis',
       showcase: {
         desc: 'A VW group-wide solution to analyse and mitigate effects of geopolitical events by combining VW group internal and external data',
-        imageAlt: '',
-        imageUrl: '',
+        imageAlt: 'Computer showing the mockup of Volkswagen Strategy and Risk Analysis home dashboard on desktop screen',
+        imageUrl: '/img/portfolio/showcase-card-sara.png',
       },
       visibleItemNav: 'challenge',
       readingTime: '8-min read',
