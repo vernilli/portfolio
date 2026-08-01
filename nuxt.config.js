@@ -56,12 +56,9 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-svg-loader',
-    'nuxt-gtag',
     [
       'nuxt-mq',
       {
@@ -83,10 +80,6 @@ export default {
             code: 'en',
             file: 'en.js',
           },
-          // {
-          //   code: 'pt-BR',
-          //   file: 'pt-BR.js', 
-          // }
         ],
         lazy: true,
         langDir: 'lang/',
@@ -105,7 +98,6 @@ export default {
         pages: {
           about: {
             'en': '/about',
-            // 'pt-BR': '/sobre',
           },
         },
       }
@@ -129,25 +121,6 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
-
-  // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
-  // vuetify: {
-  //   customVariables: ['~/assets/variables.scss'],
-  //   theme: {
-  //     dark: true,
-  //     themes: {
-  //       dark: {
-  //         primary: colors.blue.darken2,
-  //         accent: colors.grey.darken3,
-  //         secondary: colors.amber.darken3,
-  //         info: colors.teal.lighten1,
-  //         warning: colors.amber.base,
-  //         error: colors.deepOrange.accent4,
-  //         success: colors.green.accent3,
-  //       },
-  //     },
-  //   },
-  // },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
