@@ -19,13 +19,13 @@
       </div>
 
       <div class="footer__links-container col-12 text-center">
-        <!-- <a 
-          :href="email.link"
+        <a 
+          :href="development.link"
           target="_blank"
           class="main-link"
-        > -->
+        >
           {{ development.text }}
-        <!-- </a> -->
+        </a>
       </div>
       
     </div>
@@ -53,7 +53,7 @@ export default {
       ],
       development: {
         text: 'coded by me with VUE.js & NUXT',
-        // link: 'mailto:victor.vernilli@gmail.com',
+        link: 'https://github.com/vernilli/portfolio',
       },
       burgerOpen: false,
     }

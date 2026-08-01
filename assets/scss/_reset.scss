@@ -66,6 +66,10 @@ p {
     font-weight: 600;
   }
 
+  ul li {
+    margin-bottom: initial;
+  }
+
   li {
     @extend p;
     line-height: initial;
