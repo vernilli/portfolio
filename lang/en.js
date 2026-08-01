@@ -7,7 +7,7 @@ export default {
   projectsCopy: 'projects',
   aboutCopy: 'about me',
   resumeCopy: 'resume',
-  resumePath: 'https://vernilli.com/VictorVernilli-Resume2025.pdf',
+  resumePath: 'https://vernilli.com/VictorVernilli-Resume.pdf',
   positionCopy: 'Product Designer',
   greetingsCopy: [
     'Hello!',

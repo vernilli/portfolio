@@ -61,6 +61,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-svg-loader',
+    'nuxt-gtag',
     [
       'nuxt-mq',
       {
@@ -110,7 +111,9 @@ export default {
       }
     ]
   ],
-
+  gtag: {
+    id: 'G-0TWX0Q06NN'
+  },
   svgLoader: {
     svgoConfig: {
       plugins: [
